@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "Mochigo: JLPT Vocabulary & Japanese Quiz"
+  },
+  "android": {
+    "app_name": "Mochigo: JLPT Vocabulary & Japanese Quiz"
+  }
+}

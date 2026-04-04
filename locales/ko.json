@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "CFBundleDisplayName": "모찌고: JLPT 일본어 단어장 & 퀴즈"
+  },
+  "android": {
+    "app_name": "모찌고: JLPT 일본어 단어장 & 퀴즈"
+  }
+}

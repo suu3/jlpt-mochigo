@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "JLPT Bunny",
-    "slug": "jlpt-bunny",
+    "name": "Mochigo: JLPT Vocabulary & Japanese Quiz",
+    "slug": "mochigo",
     "version": "0.1.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
@@ -10,16 +10,27 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true
+      },
+      "bundleIdentifier": "com.mochigo.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./src/assets/icon.png",
         "backgroundColor": "#F3F0E8"
-      }
+      },
+      "package": "com.mochigo.app"
     },
     "plugins": [
+      "expo-font",
+      "expo-localization",
       "expo-sqlite"
-    ]
+    ],
+    "locales": {
+      "ko": "./locales/ko.json",
+      "en": "./locales/en.json"
+    }
   }
 }
