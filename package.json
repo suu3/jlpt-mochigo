@@ -1,6 +1,6 @@
 {
   "name": "mochigo",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": true,
   "engines": {
     "node": ">=20 <25"
