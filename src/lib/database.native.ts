@@ -236,6 +236,17 @@ export const quizDatabase = {
     );
   },
 
+  async deleteWrongAnswer(record: Pick<WrongAnswerRecord, "wordId" | "questionType">) {
+    await this.initialize();
+    const db = await getDatabase();
+    await db.runAsync(
+      `DELETE FROM wrong_answers
+       WHERE word_id = ? AND question_type = ?`,
+      record.wordId,
+      record.questionType
+    );
+  },
+
   async getHistory(limit = 20) {
     await this.initialize();
     const db = await getDatabase();

@@ -87,7 +87,8 @@ export function buildSessionQuestions(
   wrongAnswers: WrongAnswerRecord[],
   count = 3,
   mode: "mixed" | "review" = "mixed",
-  language: AppLanguage = "en"
+  language: AppLanguage = "en",
+  excludedWordIds: string[] = []
 ) {
   const prioritizedWords = shuffle(words).sort((left, right) => {
     const leftWrong = wrongAnswers.find((record) => record.wordId === left.id)?.wrongCount ?? 0;
@@ -99,9 +100,18 @@ export function buildSessionQuestions(
     wrongAnswers.some((record) => record.wordId === word.id)
   );
 
-  const selected = (mode === "review" ? reviewWords : prioritizedWords).slice(0, count);
-  const fallbackWords = prioritizedWords.slice(0, count);
-  const finalWords = shuffle(selected.length >= count ? selected : fallbackWords);
+  const preferredWords = mode === "review" ? reviewWords : prioritizedWords;
+  const filteredPreferredWords = preferredWords.filter((word) => !excludedWordIds.includes(word.id));
+  const filteredFallbackWords = prioritizedWords.filter((word) => !excludedWordIds.includes(word.id));
+  const selected = filteredPreferredWords.slice(0, count);
+  const fallbackWords = filteredFallbackWords.slice(0, count);
+  const baseWords =
+    selected.length >= count
+      ? selected
+      : fallbackWords.length >= count
+        ? fallbackWords
+        : preferredWords.slice(0, count);
+  const finalWords = shuffle(baseWords);
   const mixedQuestionTypes = buildMixedQuestionTypes(finalWords.length);
 
   return finalWords.map((word, index) => {

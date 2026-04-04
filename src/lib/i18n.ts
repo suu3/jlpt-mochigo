@@ -11,10 +11,6 @@ export type CopyKey =
   | "heroTitle"
   | "homeGoalCompleteTitle"
   | "homeGoalCompleteBody"
-  | "refreshing"
-  | "refreshWordDataTitle"
-  | "refreshWordDataHelper"
-  | "refreshWordDataButton"
   | "dailyGoal"
   | "dailyProgressHint"
   | "dailyProgressCompleteHint"
@@ -89,6 +85,7 @@ export type CopyKey =
   | "reviewNeeded"
   | "meaningLabel"
   | "readingLabel"
+  | "markReviewDone"
   | "focusNextWord"
   | "level"
   | "wordBankEyebrow"
@@ -205,11 +202,6 @@ const dictionary = {
     homeGoalCompleteTitle: "오늘 학습을 다 풀었어요.",
     homeGoalCompleteBody:
       "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 학습 더 이어가도 좋아요.",
-    refreshing: "새로고침 중...",
-    refreshWordDataTitle: "단어 데이터 새로고침",
-    refreshWordDataHelper:
-      "앱 번들에서 번역된 최신 단어 정보를 다시 불러옵니다. 학습 기록은 유지돼요.",
-    refreshWordDataButton: "데이터 동기화",
     dailyGoal: "오늘 분량",
     dailyProgressHint: "오늘 목표까지 {count}학습 남았어요.",
     dailyProgressCompleteHint:
@@ -289,6 +281,7 @@ const dictionary = {
     reviewNeeded: "복습 추천",
     meaningLabel: "의미",
     readingLabel: "읽기",
+    markReviewDone: "복습 완료",
     focusNextWord:
       '다음엔 "{word}"만 한 번 더 보면 돼요. 금방 손에 익을 거예요.',
     level: "난이도",
@@ -415,11 +408,6 @@ const dictionary = {
     homeGoalCompleteTitle: "Your garden is glowing today.",
     homeGoalCompleteBody:
       "You've finished today's goal. Rest here for a moment, or keep the calm going with one more round.",
-    refreshing: "Refreshing...",
-    refreshWordDataTitle: "Refresh Word Data",
-    refreshWordDataHelper:
-      "Reload latest translated word info from the app bundle. Your history will be kept.",
-    refreshWordDataButton: "Sync Data",
     dailyGoal: "Daily Goal",
     dailyProgressHint: "{count} more sessions to reach today's calm finish.",
     dailyProgressCompleteHint:
@@ -500,6 +488,7 @@ const dictionary = {
     reviewNeeded: "Review needed",
     meaningLabel: "Meaning",
     readingLabel: "Reading",
+    markReviewDone: "Mark done",
     focusNextWord:
       'Focus on "{word}" next. One more calm pass will help it stick.',
     level: "Level",

@@ -39,18 +39,6 @@ export function SettingsScreen() {
     }
   ] as const;
 
-  const handleRefreshWordData = React.useCallback(async () => {
-    try {
-      await useAppStore.getState().refreshWordData();
-      Alert.alert(
-        t(settings.language, "refreshWordDataTitle"),
-        t(settings.language, "customWordAdded") // Using existing "Added" key for simple feedback
-      );
-    } catch (error) {
-      console.error("Manual refresh failed", error);
-    }
-  }, [settings.language]);
-
   const handleResetStudyData = React.useCallback(() => {
     Alert.alert(
       t(settings.language, "resetStudyDataConfirmTitle"),
@@ -125,21 +113,6 @@ export function SettingsScreen() {
         }}
 
       />
-
-      <Card style={styles.refreshCard}>
-        <View style={styles.refreshContent}>
-          <View style={styles.refreshText}>
-            <Text style={styles.refreshTitle}>{t(settings.language, "refreshWordDataTitle")}</Text>
-            <Text style={styles.refreshHelper}>{t(settings.language, "refreshWordDataHelper")}</Text>
-          </View>
-          <PrimaryButton
-            label={t(settings.language, "refreshWordDataButton")}
-            onPress={handleRefreshWordData}
-            variant="ghost"
-            style={styles.refreshButton}
-          />
-        </View>
-      </Card>
 
       <Card style={styles.sourcesCard}>
         <Pressable
@@ -313,30 +286,4 @@ const styles = StyleSheet.create({
     backgroundColor: colors.errorSoft,
     shadowOpacity: 0
   },
-  refreshCard: {
-    backgroundColor: colors.surface
-  },
-  refreshContent: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: spacing.md
-  },
-  refreshText: {
-    flex: 1,
-    gap: 4
-  },
-  refreshTitle: {
-    color: colors.primaryDeep,
-    fontSize: 18,
-    fontWeight: "900"
-  },
-  refreshHelper: {
-    color: colors.textMuted,
-    fontSize: 14,
-    lineHeight: 20
-  },
-  refreshButton: {
-    paddingHorizontal: spacing.md,
-    height: 48
-  }
 });

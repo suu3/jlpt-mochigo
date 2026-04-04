@@ -49,6 +49,15 @@ export const quizDatabase = {
     await storage.legacy.writeWrongAnswers(existing);
   },
 
+  async deleteWrongAnswer(record: Pick<WrongAnswerRecord, "wordId" | "questionType">) {
+    const existing = await storage.legacy.readWrongAnswers([]);
+    const nextWrongAnswers = existing.filter(
+      (item) => !(item.wordId === record.wordId && item.questionType === record.questionType)
+    );
+
+    await storage.legacy.writeWrongAnswers(nextWrongAnswers);
+  },
+
   async getHistory(limit = 20) {
     const history = await storage.legacy.readHistory([]);
     return history.slice(0, limit);

@@ -12,6 +12,7 @@ import {
   RotateCcw,
   Settings2,
   SlidersHorizontal,
+  Trash2,
   Volume2
 } from "lucide-react-native";
 import { colors } from "../constants/theme";
@@ -28,7 +29,8 @@ const icons = {
   eyeOff: EyeOff,
   check: Check,
   filters: SlidersHorizontal,
-  volume: Volume2
+  volume: Volume2,
+  trash: Trash2
 } as const;
 
 type IconName = keyof typeof icons;

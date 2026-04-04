@@ -8,6 +8,7 @@ export declare const quizDatabase: {
   getCachedLevelWords(level: JLPTLevel): Promise<WordEntry[]>;
   getWrongAnswers(): Promise<WrongAnswerRecord[]>;
   upsertWrongAnswer(record: WrongAnswerRecord): Promise<void>;
+  deleteWrongAnswer(record: Pick<WrongAnswerRecord, "wordId" | "questionType">): Promise<void>;
   getHistory(limit?: number): Promise<SessionHistory[]>;
   insertHistory(entry: SessionHistory, limit?: number): Promise<void>;
   clearStudyData(): Promise<void>;

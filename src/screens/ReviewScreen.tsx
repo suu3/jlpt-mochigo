@@ -1,5 +1,5 @@
-import React from "react";
-import { StyleSheet, View } from "react-native";
+import React, { useState } from "react";
+import { Pressable, StyleSheet, View } from "react-native";
 import { AppText as Text } from "../components/AppText";
 import { Card } from "../components/Card";
 import { PrimaryButton } from "../components/PrimaryButton";
@@ -11,9 +11,11 @@ import { FoxTeacher } from "../components/FoxTeacher";
 import { WordEntry } from "../types/app";
 import { AnimateEntrance } from "../components/AnimateEntrance";
 import { animations } from "../constants/theme";
+import { AppIcon } from "../components/AppIcon";
 
 export function ReviewScreen() {
-  const { settings, wrongAnswers, customWords, wordsByLevel, startSession, goHome } = useAppStore();
+  const [removingKey, setRemovingKey] = useState<string | null>(null);
+  const { settings, wrongAnswers, customWords, wordsByLevel, startSession, goHome, removeWrongAnswer } = useAppStore();
   const copy = settings.language;
   const allJlptWords = Object.values(wordsByLevel).flat().filter((w): w is WordEntry => !!w);
   const fullWordPool = [
@@ -27,6 +29,17 @@ export function ReviewScreen() {
       return word ? [{ ...record, word }] : [];
     });
   const topItem = reviewItems[0];
+
+  async function handleRemoveWrongAnswer(wordId: string, questionType: "meaning" | "reading") {
+    const key = `${wordId}-${questionType}`;
+    setRemovingKey(key);
+
+    try {
+      await removeWrongAnswer({ wordId, questionType });
+    } finally {
+      setRemovingKey((current) => (current === key ? null : current));
+    }
+  }
 
   return (
     <View style={styles.container}>
@@ -70,9 +83,24 @@ export function ReviewScreen() {
                     <Text style={styles.footerMeta}>
                       {item.wrongCount >= 5 ? t(copy, "highPriorityFocus") : t(copy, "reviewNeeded")}
                     </Text>
-                    <Text style={styles.footerStatus}>
-                      {item.questionType === "meaning" ? t(copy, "meaningLabel") : t(copy, "readingLabel")}
-                    </Text>
+                    <View style={styles.footerActions}>
+                      <Text style={styles.footerStatus}>
+                        {item.questionType === "meaning" ? t(copy, "meaningLabel") : t(copy, "readingLabel")}
+                      </Text>
+                      <Pressable
+                        accessibilityRole="button"
+                        disabled={removingKey === `${item.wordId}-${item.questionType}`}
+                        onPress={() => handleRemoveWrongAnswer(item.wordId, item.questionType)}
+                        style={({ pressed }) => [
+                          styles.completeButton,
+                          pressed && styles.completeButtonPressed,
+                          removingKey === `${item.wordId}-${item.questionType}` && styles.completeButtonDisabled
+                        ]}
+                      >
+                        <AppIcon name="check" size={14} color={colors.primaryDeep} />
+                        <Text style={styles.completeButtonLabel}>{t(copy, "markReviewDone")}</Text>
+                      </Pressable>
+                    </View>
                   </View>
                 </View>
             </AnimateEntrance>
@@ -224,16 +252,44 @@ const styles = StyleSheet.create({
   cardFooter: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center"
+    alignItems: "center",
+    gap: spacing.sm
   },
   footerMeta: {
     color: colors.textMuted,
     fontSize: 12,
     fontWeight: "600"
   },
+  footerActions: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm
+  },
   footerStatus: {
     color: colors.primary,
     fontSize: 13,
+    fontWeight: "800"
+  },
+  completeButton: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs,
+    borderWidth: borderWidths.base,
+    borderColor: colors.border,
+    borderRadius: radii.pill,
+    backgroundColor: colors.primarySoft,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs
+  },
+  completeButtonPressed: {
+    transform: [{ translateX: 1 }, { translateY: 1 }]
+  },
+  completeButtonDisabled: {
+    opacity: 0.5
+  },
+  completeButtonLabel: {
+    color: colors.primaryDeep,
+    fontSize: 12,
     fontWeight: "800"
   },
   mascotCard: {

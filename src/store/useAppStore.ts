@@ -38,11 +38,11 @@ type AppState = {
   currentSessionSource: QuizSource;
   currentIndex: number;
   currentWrongWordIds: string[];
+  recentSessionWordIds: string[];
   lastSummary: SessionSummary | null;
   totalStudyCount: number;
   selectedSource: QuizSource;
   initialize: () => Promise<void>;
-  refreshWordData: () => Promise<void>;
   ensureLevelWords: (level: JLPTLevel) => Promise<WordEntry[]>;
   preloadAllLevels: () => Promise<void>;
   setLevel: (level: JLPTLevel) => Promise<void>;
@@ -61,6 +61,7 @@ type AppState = {
   removeCustomWord: (wordId: string) => Promise<void>;
   toggleWordBookmark: (wordId: string) => Promise<void>;
   toggleWordMemorized: (wordId: string) => Promise<void>;
+  removeWrongAnswer: (record: Pick<WrongAnswerRecord, "wordId" | "questionType">) => Promise<void>;
   startSession: (mode?: "mixed" | "review", source?: QuizSource) => Promise<void>;
   answerCurrentQuestion: (isCorrect: boolean) => void;
   goHome: () => void;
@@ -147,6 +148,7 @@ export const useAppStore = create<AppState>((set, get) => {
     currentSessionSource: "jlpt",
     currentIndex: 0,
     currentWrongWordIds: [],
+    recentSessionWordIds: [],
     lastSummary: null,
     totalStudyCount: 0,
     selectedSource: "jlpt",
@@ -217,24 +219,6 @@ export const useAppStore = create<AppState>((set, get) => {
       } catch (error) {
         console.error("Critical failure during initialization", error);
         set({ isReady: true, isWordDataLoading: false }); // Show UI even if partial failure
-      }
-    },
-
-    async refreshWordData() {
-      const { settings } = get();
-      set({ isWordDataLoading: true });
-      
-      try {
-        await quizDatabase.clearWordCache();
-        const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
-        // Reload all levels to ensure entire cache is fresh
-        for (const level of LEVELS_ASCENDING) {
-          const words = await quizDatabase.getLevelWords(level, settings.language);
-          wordsByLevel[level] = words;
-        }
-        set({ wordsByLevel });
-      } finally {
-        set({ isWordDataLoading: false });
       }
     },
 
@@ -359,6 +343,7 @@ export const useAppStore = create<AppState>((set, get) => {
         currentQuestions: [],
         currentIndex: 0,
         currentWrongWordIds: [],
+        recentSessionWordIds: [],
         lastSummary: null,
         totalStudyCount: 0,
         screen: "home"
@@ -438,8 +423,17 @@ export const useAppStore = create<AppState>((set, get) => {
       await storage.writeMemorizedWordIds(memorizedWordIds);
     },
 
+    async removeWrongAnswer(record) {
+      const wrongAnswers = get().wrongAnswers.filter(
+        (item) => !(item.wordId === record.wordId && item.questionType === record.questionType)
+      );
+
+      set({ wrongAnswers });
+      await quizDatabase.deleteWrongAnswer(record);
+    },
+
     async startSession(mode = "mixed", source = "jlpt") {
-      const { settings, wrongAnswers, customWords } = get();
+      const { settings, wrongAnswers, customWords, recentSessionWordIds } = get();
       const allJlptWords = Object.values(get().wordsByLevel).flat().filter((w): w is WordEntry => !!w);
       const currentLevelWords = get().wordsByLevel[settings.level] || [];
       
@@ -459,7 +453,16 @@ export const useAppStore = create<AppState>((set, get) => {
         return;
       }
 
-      const currentQuestions = buildSessionQuestions(words, wrongAnswers, 3, mode, settings.language);
+      const excludedWordIds =
+        mode === "mixed" && words.length > 3 ? recentSessionWordIds : [];
+      const currentQuestions = buildSessionQuestions(
+        words,
+        wrongAnswers,
+        3,
+        mode,
+        settings.language,
+        excludedWordIds
+      );
 
       set({
         screen: "quiz",
@@ -467,6 +470,7 @@ export const useAppStore = create<AppState>((set, get) => {
         currentSessionSource: effectiveSource,
         currentIndex: 0,
         currentWrongWordIds: [],
+        recentSessionWordIds: currentQuestions.map((item) => item.wordId),
         lastSummary: null
       });
     },

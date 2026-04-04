@@ -6,13 +6,20 @@ import { BunnyBadge } from "../components/BunnyBadge";
 import { Card } from "../components/Card";
 import { borderWidths, colors, radii, spacing } from "../constants/theme";
 import { LEVELS_ASCENDING } from "../data/levelLoader";
-import { resolveLanguage, t } from "../lib/i18n";
+import { t } from "../lib/i18n";
 import { getLocalizedMeaning } from "../lib/quiz";
 import { useAppStore } from "../store/useAppStore";
 
 export function BookmarksScreen() {
-  const { settings, bookmarkWordIds, customWords, toggleWordBookmark, wordsByLevel, totalStudyCount } = useAppStore();
-  const resolvedLanguage = resolveLanguage(settings.language);
+  const {
+    settings,
+    bookmarkWordIds,
+    customWords,
+    toggleWordBookmark,
+    removeCustomWord,
+    wordsByLevel,
+    totalStudyCount
+  } = useAppStore();
   const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1;
   const [showMeanings, setShowMeanings] = useState(true);
   const allWords = useMemo(
@@ -74,18 +81,33 @@ export function BookmarksScreen() {
                   <Text style={styles.levelText}>{word.jlptLevel}</Text>
                 </View>
 
-                <Pressable
-                  onPress={async () => {
-                    await toggleWordBookmark(word.id);
-                  }}
-                  style={({ pressed }) => [
-                    styles.bookmarkIconButton,
-                    styles.bookmarkIconButtonActive,
-                    pressed && styles.pressed
-                  ]}
-                >
-                  <AppIcon name="bookmarkActive" size={18} color={colors.text} />
-                </Pressable>
+                <View style={styles.headerActions}>
+                  {word.source === "custom" ? (
+                    <Pressable
+                      onPress={async () => {
+                        await removeCustomWord(word.id);
+                      }}
+                      style={({ pressed }) => [
+                        styles.deleteIconButton,
+                        pressed && styles.pressed
+                      ]}
+                    >
+                      <AppIcon name="trash" size={16} color={colors.error} strokeWidth={2} />
+                    </Pressable>
+                  ) : null}
+                  <Pressable
+                    onPress={async () => {
+                      await toggleWordBookmark(word.id);
+                    }}
+                    style={({ pressed }) => [
+                      styles.bookmarkIconButton,
+                      styles.bookmarkIconButtonActive,
+                      pressed && styles.pressed
+                    ]}
+                  >
+                    <AppIcon name="bookmarkActive" size={18} color={colors.text} />
+                  </Pressable>
+                </View>
               </View>
 
               <Text style={styles.kanji}>{word.kanji || word.kana}</Text>
@@ -177,6 +199,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: spacing.sm
   },
+  headerActions: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.xs
+  },
   wordMetaRow: {
     flexDirection: "row",
     alignItems: "center",
@@ -208,6 +235,16 @@ const styles = StyleSheet.create({
     borderWidth: borderWidths.base,
     borderColor: colors.borderSoft,
     backgroundColor: colors.surfaceLow,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  deleteIconButton: {
+    width: 42,
+    height: 42,
+    borderRadius: 21,
+    borderWidth: borderWidths.base,
+    borderColor: colors.borderSoft,
+    backgroundColor: colors.errorSoft,
     alignItems: "center",
     justifyContent: "center"
   },

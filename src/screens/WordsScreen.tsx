@@ -788,9 +788,12 @@ export function WordsScreen() {
                           pressed && styles.pressed
                         ]}
                       >
-                        <Text style={styles.deleteButtonText}>
-                          {t(settings.language, "customWordDelete")}
-                        </Text>
+                        <AppIcon
+                          name="trash"
+                          size={16}
+                          color={colors.error}
+                          strokeWidth={2}
+                        />
                       </Pressable>
                     </View>
                     <Text style={styles.customWordMeaning}>
@@ -1239,19 +1242,14 @@ const styles = StyleSheet.create({
     lineHeight: 22
   },
   deleteButton: {
-    minHeight: 34,
-    paddingHorizontal: spacing.md,
-    borderRadius: radii.pill,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
     borderWidth: borderWidths.base,
     borderColor: colors.borderSoft,
     backgroundColor: colors.errorSoft,
     alignItems: "center",
     justifyContent: "center"
-  },
-  deleteButtonText: {
-    color: colors.text,
-    fontSize: 12,
-    fontWeight: "800"
   },
   noticeTitle: {
     color: colors.text,
