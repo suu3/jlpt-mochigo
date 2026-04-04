@@ -7,7 +7,6 @@ import { storage } from "../lib/storage"
 import {
   AppSettings,
   DailyProgress,
-  HomeDensitySetting,
   JLPTLevel,
   QuizQuestion,
   QuizSource,
@@ -49,8 +48,7 @@ type AppState = {
   setTtsEnabled: (enabled: boolean) => Promise<void>;
   setSpeechRate: (rate: SpeechRateSetting) => Promise<void>;
   setSpeechPitch: (pitch: SpeechPitchSetting) => Promise<void>;
-  setHomeDensity: (density: HomeDensitySetting) => Promise<void>;
-  completeOnboarding: (settings: Pick<AppSettings, "level" | "language" | "homeDensity">) => Promise<void>;
+  completeOnboarding: (settings: Pick<AppSettings, "level" | "language">) => Promise<void>;
   resetStudyData: () => Promise<void>;
   addCustomWord: (input: {
     kana: string;
@@ -86,7 +84,6 @@ function defaultSettings(): AppSettings {
     ttsEnabled: true,
     speechRate: "normal",
     speechPitch: "normal",
-    homeDensity: "balanced",
     language: "system"
   }
 }
@@ -101,7 +98,8 @@ function defaultProgress(): DailyProgress {
 
 export const useAppStore = create<AppState>((set, get) => {
   const ensureLevelWords = async (level: JLPTLevel) => {
-    const cachedWords = get().wordsByLevel[level]
+    const { settings, wordsByLevel } = get()
+    const cachedWords = wordsByLevel[level]
     if (cachedWords) {
       return cachedWords
     }
@@ -109,7 +107,7 @@ export const useAppStore = create<AppState>((set, get) => {
     set({ isWordDataLoading: true })
 
     try {
-      const levelWords = await quizDatabase.getLevelWords(level)
+      const levelWords = await quizDatabase.getLevelWords(level, settings.language)
       set((state) => ({
         wordsByLevel: {
           ...state.wordsByLevel,
@@ -182,7 +180,7 @@ export const useAppStore = create<AppState>((set, get) => {
         ...fallbackSettings,
         ...storedSettings
       }
-      const initialLevelWords = await quizDatabase.getLevelWords(settings.level)
+      const initialLevelWords = await quizDatabase.getLevelWords(settings.level, settings.language)
 
       const totalStudyCount = history.reduce((sum, entry) => sum + entry.total, 0)
       const normalizedProgress =
@@ -205,6 +203,7 @@ export const useAppStore = create<AppState>((set, get) => {
         },
         bookmarkWordIds,
         memorizedWordIds,
+        isWordDataLoading: false,
         totalStudyCount
       })
     },
@@ -214,16 +213,23 @@ export const useAppStore = create<AppState>((set, get) => {
     preloadAllLevels,
 
     async setLevel(level) {
-      await ensureLevelWords(level)
       const nextSettings = { ...get().settings, level }
       set({ settings: nextSettings })
       await storage.writeSettings(nextSettings)
+      await ensureLevelWords(level)
     },
 
     async setLanguage(language) {
       const nextSettings = { ...get().settings, language }
-      set({ settings: nextSettings })
+      set({ 
+        settings: nextSettings,
+        wordsByLevel: {}, // Clear cache on language change
+        isWordDataLoading: true 
+      })
       await storage.writeSettings(nextSettings)
+      await quizDatabase.clearWordCache() // Clear SQLite cache for new language
+      await ensureLevelWords(nextSettings.level)
+      set({ isWordDataLoading: false })
     },
 
     async setTtsEnabled(ttsEnabled) {
@@ -244,11 +250,7 @@ export const useAppStore = create<AppState>((set, get) => {
       await storage.writeSettings(nextSettings)
     },
 
-    async setHomeDensity(homeDensity) {
-      const nextSettings = { ...get().settings, homeDensity }
-      set({ settings: nextSettings })
-      await storage.writeSettings(nextSettings)
-    },
+
 
     async completeOnboarding(partialSettings) {
       const nextSettings = {
@@ -369,7 +371,7 @@ export const useAppStore = create<AppState>((set, get) => {
           : effectiveSource === "custom"
             ? customWords
             : [...levelWords, ...customWords]
-      const words = getStudyWords(sourceWords, settings.homeDensity)
+      const words = getStudyWords(sourceWords)
 
       if (words.length === 0) {
         return
@@ -502,13 +504,13 @@ export const useAppStore = create<AppState>((set, get) => {
     },
 
     async openReview() {
-      await ensureLevelWords(get().settings.level)
       set({ screen: "review" })
+      await ensureLevelWords(get().settings.level)
     },
 
     async openWords() {
-      await ensureLevelWords(get().settings.level)
       set({ screen: "words" })
+      await ensureLevelWords(get().settings.level)
     },
 
     async openBookmarks() {

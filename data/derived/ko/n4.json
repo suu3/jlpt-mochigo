@@ -1,0 +1,8522 @@
+[
+  {
+    "id": "jm-1450270",
+    "kana": "ふむ",
+    "kanji": "踏む",
+    "meaning": "밟다",
+    "meanings": [
+      "밟다",
+      "짓밟다",
+      "밟다 (예: 외국 땅)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-1",
+    "kana": "～く",
+    "kanji": "～区",
+    "meaning": "~ district, ~ ward, ~ borough",
+    "meanings": [
+      "~ district, ~ ward, ~ borough"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006140",
+    "kana": "すっと",
+    "kanji": "すっと",
+    "meaning": "곧게",
+    "meanings": [
+      "곧게",
+      "빠르게",
+      "직접",
+      "갑자기",
+      "조용히"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1448440",
+    "kana": "ぬすむ",
+    "kanji": "盗む",
+    "meaning": "훔치다",
+    "meanings": [
+      "훔치다",
+      "표절하다",
+      "(기술, 아이디어 등)을 훔치다",
+      "보고 배우다",
+      "은밀하게 행하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1414580",
+    "kana": "たいてい",
+    "kanji": "大抵",
+    "meaning": "대부분",
+    "meanings": [
+      "대부분",
+      "보통",
+      "일반적으로",
+      "아마"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1449890",
+    "kana": "とうとう",
+    "kanji": "とうとう",
+    "meaning": "마침내",
+    "meanings": [
+      "마침내",
+      "드디어",
+      "결국"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1040250",
+    "kana": "ガソリン",
+    "kanji": "ガソリン",
+    "meaning": "휘발유",
+    "meanings": [
+      "휘발유"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1532910",
+    "kana": "なる",
+    "kanji": "鳴る",
+    "meaning": "소리를 내다",
+    "meanings": [
+      "소리를 내다",
+      "울리다",
+      "메아리치다",
+      "으르렁거리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1594400",
+    "kana": "しっかり",
+    "kanji": "しっかり",
+    "meaning": "단단히(붙잡다)",
+    "meanings": [
+      "단단히(붙잡다)",
+      "굳건히",
+      "단단히",
+      "강하게(붙들고)",
+      "단단하게"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1378520",
+    "kana": "いきる",
+    "kanji": "生きる",
+    "meaning": "살다",
+    "meanings": [
+      "살다",
+      "존재하다",
+      "생활하다",
+      "생존하다",
+      "유효하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1244310",
+    "kana": "にがい",
+    "kanji": "苦い",
+    "meaning": "쓰라린",
+    "meanings": [
+      "쓰라린"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1606680",
+    "kana": "わく",
+    "kanji": "沸く",
+    "meaning": "뜨거워지다 (예: 물)",
+    "meanings": [
+      "뜨거워지다 (예: 물)",
+      "끓다",
+      "분출하다 (박수, 환호 등)",
+      "발효되다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1156530",
+    "kana": "いけん",
+    "kanji": "意見",
+    "meaning": "의견",
+    "meanings": [
+      "의견",
+      "보기",
+      "댓글",
+      "꾸짖음",
+      "질책"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-13",
+    "kana": "やはり; やっぱり",
+    "kanji": "やはり; やっぱり",
+    "meaning": "as I thought, absolutely",
+    "meanings": [
+      "as I thought, absolutely"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1526920",
+    "kana": "まんが",
+    "kanji": "漫画",
+    "meaning": "만화",
+    "meanings": [
+      "만화"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1070650",
+    "kana": "ステレオ",
+    "kanji": "ステレオ",
+    "meaning": "스테레오(사운드)",
+    "meanings": [
+      "스테레오(사운드)",
+      "스테레오(플레이어, 세트)",
+      "스테레오",
+      "스테레오포닉",
+      "스테레오스코픽"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1159810",
+    "kana": "いがく",
+    "kanji": "医学",
+    "meaning": "의학",
+    "meanings": [
+      "의학"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1079290",
+    "kana": "テキスト",
+    "kanji": "テキスト",
+    "meaning": "텍스트",
+    "meanings": [
+      "텍스트",
+      "교과서"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-18",
+    "kana": "～つき",
+    "kanji": "～月",
+    "meaning": "month",
+    "meanings": [
+      "month"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1385910",
+    "kana": "おる",
+    "kanji": "折る",
+    "meaning": "부수다",
+    "meanings": [
+      "부수다",
+      "부러뜨리다",
+      "따다 (예: 꽃)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-20",
+    "kana": "～かい",
+    "kanji": "～会",
+    "meaning": "~ meeting",
+    "meanings": [
+      "~ meeting"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1172230",
+    "kana": "うかがう",
+    "kanji": "うかがう",
+    "meaning": "엿보다 (꿰뚫어)",
+    "meanings": [
+      "엿보다 (꿰뚫어)",
+      "엿보다",
+      "조사하다 (특히 은밀하게)",
+      "기다리다 (기회를)",
+      "짐작하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1591150",
+    "kana": "きこえる",
+    "kanji": "聞こえる",
+    "meaning": "들리다",
+    "meanings": [
+      "들리다",
+      "귀에 닿다",
+      "소리를 내다",
+      "우연히 만나다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1521400",
+    "kana": "ぼく",
+    "kanji": "僕",
+    "meaning": "나",
+    "meanings": [
+      "나",
+      "당신",
+      "하인"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1487400",
+    "kana": "かならず",
+    "kanji": "必ず",
+    "meaning": "항상",
+    "meanings": [
+      "항상",
+      "예외없이",
+      "필연적으로",
+      "반드시",
+      "어김없이"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1199890",
+    "kana": "こわす",
+    "kanji": "壊す",
+    "meaning": "부수다",
+    "meanings": [
+      "부수다",
+      "파괴하다",
+      "파멸시키다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1445690",
+    "kana": "おこる",
+    "kanji": "怒る",
+    "meaning": "화를 내다",
+    "meanings": [
+      "화를 내다",
+      "꾸짖다",
+      "(누군가를) 꾸짖다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1349410",
+    "kana": "とこや",
+    "kanji": "床屋",
+    "meaning": "이발소",
+    "meanings": [
+      "이발소"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1032030",
+    "kana": "オートバイ",
+    "kanji": "オートバイ",
+    "meaning": "오토바이",
+    "meanings": [
+      "오토바이"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1172910",
+    "kana": "うんどうする",
+    "kanji": "運動",
+    "meaning": "운동",
+    "meanings": [
+      "운동",
+      "체력 단련",
+      "스포츠",
+      "운동 경기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310640",
+    "kana": "やむ",
+    "kanji": "止む",
+    "meaning": "멈추다",
+    "meanings": [
+      "멈추다",
+      "끝나다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1012500",
+    "kana": "もし",
+    "kanji": "もし",
+    "meaning": "만약에",
+    "meanings": [
+      "만약에",
+      "가정한다면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1489340",
+    "kana": "おもて",
+    "kanji": "表",
+    "meaning": "표면",
+    "meanings": [
+      "표면",
+      "얼굴(즉, 물체의 눈에 보이는 면)",
+      "앞면(건물 등)",
+      "동전의 뒷면(즉, \"머리\")",
+      "외부"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1413260",
+    "kana": "だいがくせい",
+    "kanji": "大学生",
+    "meaning": "대학생",
+    "meanings": [
+      "대학생"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1172870",
+    "kana": "うんてんしゅ",
+    "kanji": "運転手",
+    "meaning": "운전사",
+    "meanings": [
+      "운전사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1543070",
+    "kana": "よしゅう",
+    "kanji": "予習",
+    "meaning": "수업 준비",
+    "meanings": [
+      "수업 준비"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1360930",
+    "kana": "しんぱいする",
+    "kanji": "心配",
+    "meaning": "걱정",
+    "meanings": [
+      "걱정",
+      "불안",
+      "두려움"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1509430",
+    "kana": "べつ",
+    "kanji": "別",
+    "meaning": "구별",
+    "meanings": [
+      "구별",
+      "차이",
+      "차별",
+      "분리",
+      "다르다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1484930",
+    "kana": "ひじょうに",
+    "kanji": "非常に",
+    "meaning": "매우",
+    "meanings": [
+      "매우"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002400",
+    "kana": "おたく",
+    "kanji": "お宅",
+    "meaning": "당신의 집",
+    "meanings": [
+      "당신의 집",
+      "당신의 가족",
+      "당신의 남편",
+      "당신의 조직"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1605630",
+    "kana": "やわらかい",
+    "kanji": "柔らかい",
+    "meaning": "부드럽다",
+    "meanings": [
+      "부드럽다",
+      "유연하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1332570",
+    "kana": "ひろう",
+    "kanji": "拾う",
+    "meaning": "줍다",
+    "meanings": [
+      "줍다",
+      "모으다",
+      "찾다 (그리고 줍다; 누군가가 떨어뜨린 것을 줍다)",
+      "선택하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-42",
+    "kana": "～ございます",
+    "kanji": "～ございます",
+    "meaning": "to be (polite), to exist",
+    "meanings": [
+      "to be (polite), to exist"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1221520",
+    "kana": "き",
+    "kanji": "気",
+    "meaning": "정신",
+    "meanings": [
+      "정신",
+      "마음",
+      "성품"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483540",
+    "kana": "くらべる",
+    "kanji": "比べる",
+    "meaning": "비교하다",
+    "meanings": [
+      "비교하다",
+      "비교하다 (사이에)",
+      "경쟁하다 (에)",
+      "측정하다 (다른 사람과 비교하여 자신의 힘, 능력 등)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1522050",
+    "kana": "ほとんど",
+    "kanji": "ほとんど",
+    "meaning": "거의",
+    "meanings": [
+      "거의",
+      "실질적으로",
+      "사실상"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1382980",
+    "kana": "つもり",
+    "kanji": "つもり",
+    "meaning": "의도",
+    "meanings": [
+      "의도",
+      "계획",
+      "목적",
+      "기대",
+      "믿음"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1282490",
+    "kana": "こうがい",
+    "kanji": "郊外",
+    "meaning": "교외",
+    "meanings": [
+      "교외",
+      "도시 외곽의 주거 지역",
+      "통근 벨트"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1409110",
+    "kana": "だめ",
+    "kanji": "だめ",
+    "meaning": "좋지 않다",
+    "meanings": [
+      "좋지 않다",
+      "목적에 부합하지 않는다",
+      "쓸모없다",
+      "망가졌다",
+      "희망이 없다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1588550",
+    "kana": "うりば",
+    "kanji": "売り場",
+    "meaning": "판매 구역",
+    "meanings": [
+      "판매 구역",
+      "카운터",
+      "섹션",
+      "부서",
+      "매장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1377030",
+    "kana": "しょうがつ",
+    "kanji": "正月",
+    "meaning": "새해(특히 처음 3일)",
+    "meanings": [
+      "새해(특히 처음 3일)",
+      "그 해의 첫 번째 달",
+      "1월"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1223021",
+    "kana": "きそく",
+    "kanji": "規則",
+    "meaning": "규칙",
+    "meanings": [
+      "규칙",
+      "규제"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001090",
+    "kana": "うん",
+    "kanji": "うん",
+    "meaning": "네",
+    "meanings": [
+      "네",
+      "어허",
+      "흠"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1477170",
+    "kana": "はつおん",
+    "kanji": "発音",
+    "meaning": "발음",
+    "meanings": [
+      "발음",
+      "소리의 생성"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1350600",
+    "kana": "やく",
+    "kanji": "焼く",
+    "meaning": "굽다",
+    "meanings": [
+      "굽다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1182710",
+    "kana": "おくじょう",
+    "kanji": "屋上",
+    "meaning": "옥상",
+    "meanings": [
+      "옥상"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1320230",
+    "kana": "しつれい",
+    "kanji": "失礼",
+    "meaning": "무례함",
+    "meanings": [
+      "무례함",
+      "실례합니다",
+      "안녕",
+      "떠나요"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1369900",
+    "kana": "ごみ",
+    "kanji": "ごみ",
+    "meaning": "rubbish",
+    "meanings": [
+      "rubbish",
+      "trash",
+      "garbage",
+      "refuse",
+      "litter"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1929050",
+    "kana": "アフリカ",
+    "kanji": "アフリカ",
+    "meaning": "아프리카",
+    "meanings": [
+      "아프리카"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1441390",
+    "kana": "てん",
+    "kanji": "点",
+    "meaning": "점",
+    "meanings": [
+      "점",
+      "반점",
+      "표시"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1164010",
+    "kana": "いっしょうけんめい",
+    "kanji": "一生懸命",
+    "meaning": "매우 열심히",
+    "meanings": [
+      "매우 열심히",
+      "최선을 다해",
+      "가능한 한 열심히",
+      "온 힘을 다해",
+      "사랑하는 삶을 위해"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1289370",
+    "kana": "こんど",
+    "kanji": "今度",
+    "meaning": "이번에",
+    "meanings": [
+      "이번에",
+      "지금",
+      "다음 번에",
+      "곧"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1220800",
+    "kana": "きかい",
+    "kanji": "機会",
+    "meaning": "기회",
+    "meanings": [
+      "기회",
+      "사건"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1257330",
+    "kana": "たてる",
+    "kanji": "建てる",
+    "meaning": "짓다",
+    "meanings": [
+      "짓다",
+      "건설하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1501350",
+    "kana": "ふくざつ",
+    "kanji": "複雑",
+    "meaning": "복잡하다",
+    "meanings": [
+      "복잡하다",
+      "혼합하다(감정)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483070",
+    "kana": "かれ",
+    "kanji": "彼",
+    "meaning": "그",
+    "meanings": [
+      "그",
+      "남자친구"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1000940",
+    "kana": "いらっしゃる",
+    "kanji": "いらっしゃる",
+    "meaning": "오다",
+    "meanings": [
+      "오다",
+      "가다",
+      "(어딘가에)",
+      "(하고)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1496890",
+    "kana": "ふとん",
+    "kanji": "布団",
+    "meaning": "이불",
+    "meanings": [
+      "이불",
+      "매트리스와 이불로 구성된 일본식 침구",
+      "명상에 사용되는 둥근 쿠션 (전통적으로 갈대 잎으로 짠 것)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1413940",
+    "kana": "だいじ",
+    "kanji": "大事",
+    "meaning": "중요한",
+    "meanings": [
+      "중요한",
+      "심각한",
+      "결정적인",
+      "귀중한",
+      "소중한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589030",
+    "kana": "おくりもの",
+    "kanji": "贈り物",
+    "meaning": "선물",
+    "meanings": [
+      "선물"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1599340",
+    "kana": "どろぼう",
+    "kanji": "泥棒",
+    "meaning": "도둑",
+    "meanings": [
+      "도둑",
+      "강도",
+      "절도"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-71",
+    "kana": "～せい",
+    "kanji": "～製",
+    "meaning": "made in ~",
+    "meanings": [
+      "made in ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1426530",
+    "kana": "ちゅうい",
+    "kanji": "注意",
+    "meaning": "관심",
+    "meanings": [
+      "관심",
+      "주의"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1596780",
+    "kana": "たいふう",
+    "kanji": "台風",
+    "meaning": "태풍",
+    "meanings": [
+      "태풍",
+      "허리케인"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1463770",
+    "kana": "ひ",
+    "kanji": "日",
+    "meaning": "일",
+    "meanings": [
+      "일",
+      "태양",
+      "햇빛"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-75",
+    "kana": "～けん",
+    "kanji": "～軒",
+    "meaning": "counter for houses",
+    "meanings": [
+      "counter for houses"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006610",
+    "kana": "そう",
+    "kanji": "そう",
+    "meaning": "~처럼 보인다",
+    "meanings": [
+      "~처럼 보인다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1433030",
+    "kana": "とおる",
+    "kanji": "通る",
+    "meaning": "지나가다",
+    "meanings": [
+      "지나가다",
+      "따라가다",
+      "여행하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1195970",
+    "kana": "すぎる",
+    "kanji": "過ぎる",
+    "meaning": "지나가다",
+    "meanings": [
+      "지나가다",
+      "넘어가다",
+      "(시간이) 지나가다",
+      "경과하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-79",
+    "kana": "レポート; リポート",
+    "kanji": "レポート; リポート",
+    "meaning": "report",
+    "meanings": [
+      "report"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546550",
+    "kana": "は",
+    "kanji": "葉",
+    "meaning": "잎",
+    "meanings": [
+      "잎",
+      "잎 (풀)",
+      "(소나무) 바늘"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1487660",
+    "kana": "ひつよう",
+    "kanji": "必要",
+    "meaning": "꼭 필요해요",
+    "meanings": [
+      "꼭 필요해요",
+      "필수적이에요",
+      "필수불가결해요",
+      "필요해요"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1195840",
+    "kana": "かちょう",
+    "kanji": "課長",
+    "meaning": "과장",
+    "meanings": [
+      "과장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421210",
+    "kana": "じしん",
+    "kanji": "地震",
+    "meaning": "지진",
+    "meanings": [
+      "지진"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006280",
+    "kana": "すると",
+    "kanji": "すると",
+    "meaning": "(그리고) 그러면",
+    "meanings": [
+      "(그리고) 그러면",
+      "그리고",
+      "그러면",
+      "그렇다면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310680",
+    "kana": "やめる",
+    "kanji": "止める",
+    "meaning": "(활동을) 멈추다",
+    "meanings": [
+      "(활동을) 멈추다",
+      "중지하다",
+      "중단하다",
+      "끝내다",
+      "그만두다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1040380",
+    "kana": "ガラス",
+    "kanji": "ガラス",
+    "meaning": "유리",
+    "meanings": [
+      "유리",
+      "패널"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-87",
+    "kana": "～がくぶ",
+    "kanji": "～学部",
+    "meaning": "department of a university",
+    "meanings": [
+      "department of a university"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1262530",
+    "kana": "きびしい",
+    "kanji": "厳しい",
+    "meaning": "가혹한",
+    "meanings": [
+      "가혹한",
+      "엄격한",
+      "인색한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1028580",
+    "kana": "エスカレーター",
+    "kanji": "エスカレーター",
+    "meaning": "에스컬레이터",
+    "meanings": [
+      "에스컬레이터"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1367300",
+    "kana": "じんこう",
+    "kanji": "人口",
+    "meaning": "인구",
+    "meanings": [
+      "인구",
+      "일반적인 이야기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1255430",
+    "kana": "つき",
+    "kanji": "月",
+    "meaning": "달",
+    "meanings": [
+      "달",
+      "달빛",
+      "자연위성"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1258710",
+    "kana": "きぬ",
+    "kanji": "絹",
+    "meaning": "실크",
+    "meanings": [
+      "실크"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1007560",
+    "kana": "ちっとも",
+    "kanji": "ちっとも",
+    "meaning": "(아님) 전혀",
+    "meanings": [
+      "(아님) 전혀",
+      "(아님) 조금",
+      "(아님) 조금도"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1362640",
+    "kana": "ふかい",
+    "kanji": "深い",
+    "meaning": "깊다",
+    "meanings": [
+      "깊다",
+      "조밀하다",
+      "두껍다",
+      "가깝다 (관계)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1199900",
+    "kana": "こわれる",
+    "kanji": "壊れる",
+    "meaning": "부서지다",
+    "meanings": [
+      "부서지다",
+      "무너지다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1545710",
+    "kana": "ゆれる",
+    "kanji": "揺れる",
+    "meaning": "흔들리다",
+    "meanings": [
+      "흔들리다",
+      "흔들다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1548550",
+    "kana": "おちる",
+    "kanji": "落る",
+    "meaning": "넘어지다",
+    "meanings": [
+      "넘어지다",
+      "떨어지다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1340460",
+    "kana": "できるだけ",
+    "kanji": "できるだけ",
+    "meaning": "가능한 한",
+    "meanings": [
+      "가능한 한",
+      "가능하다면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483190",
+    "kana": "かなしい",
+    "kanji": "悲しい",
+    "meaning": "슬프다",
+    "meanings": [
+      "슬프다",
+      "비참하다",
+      "불행하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1423650",
+    "kana": "ちゅうがっこう",
+    "kanji": "中学校",
+    "meaning": "중학교",
+    "meanings": [
+      "중학교"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1040060",
+    "kana": "ガス",
+    "kanji": "ガス",
+    "meaning": "가스(연료)",
+    "meanings": [
+      "가스(연료)",
+      "가스(물질의 상태)",
+      "독가스",
+      "짙은 안개"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1222770",
+    "kana": "いのる",
+    "kanji": "祈る",
+    "meaning": "기도하다",
+    "meanings": [
+      "기도하다",
+      "은혜를 말하다",
+      "소망하다",
+      "희망하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1379750",
+    "kana": "さかん",
+    "kanji": "盛ん",
+    "meaning": "번영하다",
+    "meanings": [
+      "번영하다",
+      "성공하다",
+      "인기가 많다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1019420",
+    "kana": "アルバイト",
+    "kanji": "アルバイト",
+    "meaning": "아르바이트",
+    "meanings": [
+      "아르바이트",
+      "부업"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1223660",
+    "kana": "おこす",
+    "kanji": "起こす",
+    "meaning": "일으키다",
+    "meanings": [
+      "일으키다",
+      "세우다",
+      "깨우다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421900",
+    "kana": "いたす",
+    "kanji": "致す",
+    "meaning": "할 일",
+    "meanings": [
+      "할 일"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1209240",
+    "kana": "かむ",
+    "kanji": "噛む",
+    "meaning": "물다",
+    "meanings": [
+      "물다",
+      "씹다",
+      "갉아먹다",
+      "말을 더듬다 (특히 연극이나 방송 등에서)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1383260",
+    "kana": "あかちゃん",
+    "kanji": "赤ちゃん",
+    "meaning": "아기",
+    "meanings": [
+      "아기",
+      "유아"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1390800",
+    "kana": "あさい",
+    "kanji": "浅い",
+    "meaning": "얕음",
+    "meanings": [
+      "얕음",
+      "표면적",
+      "경미한 (상처)",
+      "가벼운 (수면)",
+      "창백한 (색상)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-110",
+    "kana": "嘘",
+    "kanji": "うそ",
+    "meaning": "lie",
+    "meanings": [
+      "lie"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1348430",
+    "kana": "しょうせつ",
+    "kanji": "小説",
+    "meaning": "소설",
+    "meanings": [
+      "소설",
+      "이야기",
+      "(작품) 소설"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1365040",
+    "kana": "おや",
+    "kanji": "親",
+    "meaning": "부모",
+    "meanings": [
+      "부모",
+      "어머니와 아버지",
+      "딜러",
+      "은행가"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1007040",
+    "kana": "それに",
+    "kanji": "それに",
+    "meaning": "게다가",
+    "meanings": [
+      "게다가",
+      "또한",
+      "더욱이"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1381100",
+    "kana": "せいよう",
+    "kanji": "西洋",
+    "meaning": "서양",
+    "meanings": [
+      "서양",
+      "서양 국가"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589350",
+    "kana": "おもう",
+    "kanji": "思う",
+    "meaning": "생각하다",
+    "meanings": [
+      "생각하다",
+      "고려하다",
+      "믿다",
+      "생각하다 (행하는 것)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-116",
+    "kana": "パート (タイム)",
+    "kanji": "パート (タイム)",
+    "meaning": "part time (esp. female part time employees)",
+    "meanings": [
+      "part time (esp. female part time employees)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1316300",
+    "kana": "じだい",
+    "kanji": "時代",
+    "meaning": "시대",
+    "meanings": [
+      "시대",
+      "연대"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1362950",
+    "kana": "もうしあげる",
+    "kanji": "申し上げる",
+    "meaning": "말하다",
+    "meanings": [
+      "말하다",
+      "진술하다",
+      "표현하다",
+      "제안하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-119",
+    "kana": "～しき",
+    "kanji": "～式",
+    "meaning": "~ ceremony; ~ style",
+    "meanings": [
+      "~ ceremony; ~ style"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1339460",
+    "kana": "しゅっせきする",
+    "kanji": "出席",
+    "meaning": "출석",
+    "meanings": [
+      "출석",
+      "외모"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-121",
+    "kana": "～か",
+    "kanji": "～家",
+    "meaning": "person who is specialized in ~",
+    "meanings": [
+      "person who is specialized in ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1253190",
+    "kana": "むかえる",
+    "kanji": "迎える",
+    "meaning": "만나러 나가다",
+    "meanings": [
+      "만나러 나가다",
+      "영접하다",
+      "환영하다",
+      "인사하다",
+      "경의를 표하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1357980",
+    "kana": "さわる",
+    "kanji": "触る",
+    "meaning": "만지다",
+    "meanings": [
+      "만지다",
+      "느끼다",
+      "다루다",
+      "관여하다",
+      "접근하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-2609780",
+    "kana": "～だて",
+    "kanji": "建て",
+    "meaning": "건물에 사용되는 층, 구조물 또는 재료를 나타냅니다.",
+    "meanings": [
+      "건물에 사용되는 층, 구조물 또는 재료를 나타냅니다.",
+      "명칭을 나타냅니다."
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1322920",
+    "kana": "しゃちょう",
+    "kanji": "社長",
+    "meaning": "회사 사장",
+    "meanings": [
+      "회사 사장",
+      "관리자",
+      "이사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1451490",
+    "kana": "どうぶつえん",
+    "kanji": "動物園",
+    "meaning": "동물원",
+    "meanings": [
+      "동물원"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1597780",
+    "kana": "つかまえる",
+    "kanji": "捕まえる",
+    "meaning": "붙잡다",
+    "meanings": [
+      "붙잡다",
+      "체포하다",
+      "제지하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1222840",
+    "kana": "きせつ",
+    "kanji": "季節",
+    "meaning": "계절",
+    "meanings": [
+      "계절",
+      "연중 시간"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1219680",
+    "kana": "よる",
+    "kanji": "寄る",
+    "meaning": "다가가다",
+    "meanings": [
+      "다가가다",
+      "가까워지다",
+      "(한곳에) 모이다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1591420",
+    "kana": "きまる",
+    "kanji": "決まる",
+    "meaning": "결정되다",
+    "meanings": [
+      "결정되다",
+      "해결되다",
+      "고정되다",
+      "배열되다",
+      "변하지 않다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1202440",
+    "kana": "ひらく",
+    "kanji": "開く",
+    "meaning": "to open",
+    "meanings": [
+      "to open",
+      "to undo",
+      "to unseal",
+      "to unpack",
+      "to bloom"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1450330",
+    "kana": "にげる",
+    "kanji": "逃げる",
+    "meaning": "도망가다",
+    "meanings": [
+      "도망가다",
+      "도망치다",
+      "도망치다 (예: 위험으로부터)",
+      "탈출하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1007310",
+    "kana": "だから",
+    "kanji": "だから",
+    "meaning": "그래서",
+    "meanings": [
+      "그래서",
+      "그러므로",
+      "따라서",
+      "결과적으로",
+      "그런 근거로"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1304680",
+    "kana": "ざんねん",
+    "kanji": "残念",
+    "meaning": "안타깝다",
+    "meanings": [
+      "안타깝다",
+      "실망스럽다",
+      "속상하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1356750",
+    "kana": "たたみ",
+    "kanji": "畳",
+    "meaning": "다다미",
+    "meanings": [
+      "다다미",
+      "일본식 짚바닥재"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1427360",
+    "kana": "ていねい",
+    "kanji": "丁寧",
+    "meaning": "공손한",
+    "meanings": [
+      "공손한",
+      "정중한",
+      "신중한",
+      "친밀한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421540",
+    "kana": "ちり",
+    "kanji": "地理",
+    "meaning": "지리학",
+    "meanings": [
+      "지리학"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1005180",
+    "kana": "さっき",
+    "kanji": "さっき",
+    "meaning": "a short while ago",
+    "meanings": [
+      "a short while ago",
+      "a moment ago",
+      "just now",
+      "some time ago"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1593480",
+    "kana": "こわい",
+    "kanji": "怖い",
+    "meaning": "무섭다",
+    "meanings": [
+      "무섭다",
+      "으스스하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584060",
+    "kana": "つつむ",
+    "kanji": "包む",
+    "meaning": "포장하다",
+    "meanings": [
+      "포장하다",
+      "묶다",
+      "정리하다",
+      "덮다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1375620",
+    "kana": "なるべく",
+    "kanji": "なるべく",
+    "meaning": "가능한 한 (많이)",
+    "meanings": [
+      "가능한 한 (많이)",
+      "실행 가능한 곳에서는",
+      "가능하다면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1530970",
+    "kana": "むり",
+    "kanji": "無理",
+    "meaning": "불합리한",
+    "meanings": [
+      "불합리한",
+      "부자연스러운",
+      "정당화할 수 없는",
+      "불가능한",
+      "강제적인"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1058580",
+    "kana": "サンドイッチ",
+    "kanji": "サンドイッチ",
+    "meaning": "샌드위치",
+    "meanings": [
+      "샌드위치"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1198380",
+    "kana": "かいぎしつ",
+    "kanji": "会議室",
+    "meaning": "회의실",
+    "meanings": [
+      "회의실"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1490670",
+    "kana": "しなもの",
+    "kanji": "品物",
+    "meaning": "물건",
+    "meanings": [
+      "물건",
+      "아이템",
+      "상품"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1367120",
+    "kana": "にんぎょう",
+    "kanji": "人形",
+    "meaning": "인형",
+    "meanings": [
+      "인형",
+      "마리오네트",
+      "인형(타인의 조종을 받는 사람)",
+      "밀짚맨"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1549660",
+    "kana": "りよう",
+    "kanji": "利用",
+    "meaning": "사용",
+    "meanings": [
+      "사용",
+      "활용",
+      "적용"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1357210",
+    "kana": "かざる",
+    "kanji": "飾る",
+    "meaning": "장식하다",
+    "meanings": [
+      "장식하다",
+      "전시하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310670",
+    "kana": "とめる",
+    "kanji": "止める",
+    "meaning": "멈추다",
+    "meanings": [
+      "멈추다",
+      "끄다",
+      "주차하다",
+      "예방하다",
+      "억제하다 (기침)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421630",
+    "kana": "はずかしい",
+    "kanji": "恥ずかしい",
+    "meaning": "창피하다",
+    "meanings": [
+      "창피하다",
+      "부끄럽다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-151",
+    "kana": "いくら～ても",
+    "kanji": "いくら～ても",
+    "meaning": "however much one may ~",
+    "meanings": [
+      "however much one may ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546300",
+    "kana": "ようじ",
+    "kanji": "用事",
+    "meaning": "사업",
+    "meanings": [
+      "사업",
+      "할 일",
+      "약혼",
+      "심부름",
+      "사무"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1106010",
+    "kana": "ビル",
+    "kanji": "ビル",
+    "meaning": "다층 건물",
+    "meanings": [
+      "다층 건물"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-154",
+    "kana": "けんかする",
+    "kanji": "けんかする",
+    "meaning": "quarrel",
+    "meanings": [
+      "quarrel"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1217700",
+    "kana": "がんばる",
+    "kanji": "頑張る",
+    "meaning": "인내하다",
+    "meanings": [
+      "인내하다",
+      "지속하다",
+      "계속하다",
+      "버티다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1447000",
+    "kana": "なげる",
+    "kanji": "投げる",
+    "meaning": "던지다",
+    "meanings": [
+      "던지다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1267180",
+    "kana": "こしょうする",
+    "kanji": "故障",
+    "meaning": "결함",
+    "meanings": [
+      "결함",
+      "문제",
+      "고장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1554820",
+    "kana": "ちから",
+    "kanji": "力",
+    "meaning": "힘",
+    "meanings": [
+      "힘",
+      "활력"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1329590",
+    "kana": "うける",
+    "kanji": "受ける",
+    "meaning": "받다",
+    "meanings": [
+      "받다",
+      "얻다",
+      "붙잡다 (예: 공)",
+      "부딪히다 (바람, 파도, 햇빛 등)",
+      "유지하다 (손상)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1222590",
+    "kana": "きぶん",
+    "kanji": "気分",
+    "meaning": "기분",
+    "meanings": [
+      "기분"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1215330",
+    "kana": "まちがえる",
+    "kanji": "間違える",
+    "meaning": "실수하다",
+    "meanings": [
+      "실수하다",
+      "잘못하다",
+      "실수하다 (한 가지를 다른 것으로)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1007130",
+    "kana": "そんな",
+    "kanji": "そんな",
+    "meaning": "그런",
+    "meanings": [
+      "그런",
+      "절대 안돼!"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1376310",
+    "kana": "ほし",
+    "kanji": "星",
+    "meaning": "별(보통 태양 제외)",
+    "meanings": [
+      "별(보통 태양 제외)",
+      "행성(보통 지구 제외)",
+      "천체",
+      "별(상형 문자, 기호, 모양)",
+      "별표"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1355810",
+    "kana": "ばあい",
+    "kanji": "場合",
+    "meaning": "사건",
+    "meanings": [
+      "사건",
+      "경우",
+      "상황"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1012800",
+    "kana": "やっと",
+    "kanji": "やっと",
+    "meaning": "마침내",
+    "meanings": [
+      "마침내",
+      "간신히",
+      "겨우"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1404740",
+    "kana": "たりる",
+    "kanji": "足りる",
+    "meaning": "충분하다",
+    "meanings": [
+      "충분하다",
+      "할 가치가 있다",
+      "가치가 있다",
+      "자격이 있다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589060",
+    "kana": "おこなう",
+    "kanji": "行う",
+    "meaning": "수행하다",
+    "meanings": [
+      "수행하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1498880",
+    "kana": "ぶどう",
+    "kanji": "ぶどう",
+    "meaning": "무술",
+    "meanings": [
+      "무술",
+      "무사도"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1529550",
+    "kana": "なくなる",
+    "kanji": "無くなる",
+    "meaning": "잃어버리다 (예: 짐)",
+    "meanings": [
+      "잃어버리다 (예: 짐)",
+      "실종되다",
+      "다 써버리다",
+      "다 써 버리다",
+      "지치다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1341670",
+    "kana": "じゅんびする",
+    "kanji": "準備",
+    "meaning": "준비",
+    "meanings": [
+      "준비",
+      "제공",
+      "설정"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1373860",
+    "kana": "せかい",
+    "kanji": "世界",
+    "meaning": "세계",
+    "meanings": [
+      "세계",
+      "사회",
+      "우주",
+      "구체",
+      "원"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1334080",
+    "kana": "じゅうしょ",
+    "kanji": "住所",
+    "meaning": "주소(집, 회사 등)",
+    "meanings": [
+      "주소(집, 회사 등)",
+      "거주지"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1293640",
+    "kana": "さらいげつ",
+    "kanji": "再来月",
+    "meaning": "다음 달 이후",
+    "meanings": [
+      "다음 달 이후"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1555440",
+    "kana": "はやし",
+    "kanji": "林",
+    "meaning": "나무",
+    "meanings": [
+      "나무",
+      "숲",
+      "작은 숲",
+      "잡목림"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1473230",
+    "kana": "ばい",
+    "kanji": "倍",
+    "meaning": "두 배",
+    "meanings": [
+      "두 배",
+      "두 배(만큼)",
+      "배(만큼)",
+      "-접기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1605510",
+    "kana": "やせる",
+    "kanji": "痩せる",
+    "meaning": "마르다",
+    "meanings": [
+      "마르다",
+      "살이 빠지다",
+      "날씬해지다",
+      "(토양이) 가난해지다",
+      "불임이 되다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1391780",
+    "kana": "せん",
+    "kanji": "線",
+    "meaning": "선",
+    "meanings": [
+      "선",
+      "줄무늬",
+      "선(예: 전화선)",
+      "전선"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1390360",
+    "kana": "せんそう",
+    "kanji": "戦争",
+    "meaning": "전쟁",
+    "meanings": [
+      "전쟁",
+      "싸움",
+      "치열한 경쟁"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1254180",
+    "kana": "きめる",
+    "kanji": "決める",
+    "meaning": "결정하다",
+    "meanings": [
+      "결정하다",
+      "선택하다",
+      "마음을 결정하다",
+      "해결하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1429060",
+    "kana": "しらべる",
+    "kanji": "調べる",
+    "meaning": "조사하다",
+    "meanings": [
+      "조사하다",
+      "찾다",
+      "확인하다",
+      "감지하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1360320",
+    "kana": "ねぼう",
+    "kanji": "寝坊",
+    "meaning": "늦게 자다",
+    "meanings": [
+      "늦게 자다",
+      "늦잠을 자다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1102140",
+    "kana": "パパ",
+    "kanji": "パパ",
+    "meaning": "아빠",
+    "meanings": [
+      "아빠",
+      "설탕 아빠"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1272820",
+    "kana": "ひかる",
+    "kanji": "光る",
+    "meaning": "빛나다",
+    "meanings": [
+      "빛나다",
+      "반짝거리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1496480",
+    "kana": "おっと",
+    "kanji": "夫",
+    "meaning": "남편",
+    "meanings": [
+      "남편"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1173100",
+    "kana": "くも",
+    "kanji": "雲",
+    "meaning": "구름",
+    "meanings": [
+      "구름"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1297110",
+    "kana": "さか",
+    "kanji": "坂",
+    "meaning": "경사면",
+    "meanings": [
+      "경사면",
+      "언덕",
+      "이정표",
+      "(연령) 표시"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-187",
+    "kana": "～(て) しまう",
+    "kanji": "～(て) しまう",
+    "meaning": "to end up ~",
+    "meanings": [
+      "to end up ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1485520",
+    "kana": "ひこうじょう",
+    "kanji": "飛行場",
+    "meaning": "비행장",
+    "meanings": [
+      "비행장",
+      "공항"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1335440",
+    "kana": "じゅうどう",
+    "kanji": "柔道",
+    "meaning": "유도",
+    "meanings": [
+      "유도"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1254130",
+    "kana": "けっして",
+    "kanji": "決して",
+    "meaning": "(아님) 전혀",
+    "meanings": [
+      "(아님) 전혀",
+      "(아님) 어떤 수단으로도",
+      "(아님) 최소한으로",
+      "(아님) 어떤 식으로든"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1314400",
+    "kana": "じむしょ",
+    "kanji": "事務所",
+    "meaning": "사무실",
+    "meanings": [
+      "사무실"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1559900",
+    "kana": "れんらく",
+    "kanji": "連絡",
+    "meaning": "연락하다",
+    "meanings": [
+      "연락하다",
+      "(만들다) 연락하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1347870",
+    "kana": "しょうがっこう",
+    "kanji": "小学校",
+    "meaning": "초등학교",
+    "meanings": [
+      "초등학교"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1226630",
+    "kana": "きゃく",
+    "kanji": "客",
+    "meaning": "손님",
+    "meanings": [
+      "손님",
+      "방문자",
+      "고객",
+      "클라이언트",
+      "쇼핑객"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1382370",
+    "kana": "むかし",
+    "kanji": "昔",
+    "meaning": "옛날",
+    "meanings": [
+      "옛날",
+      "아주 오래 전",
+      "지난 10년"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1486360",
+    "kana": "うつくしい",
+    "kanji": "美しい",
+    "meaning": "아름답다",
+    "meanings": [
+      "아름답다",
+      "예쁘다",
+      "사랑스럽다",
+      "달콤하다",
+      "순수하다(마음, 우정 등)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1322320",
+    "kana": "すてる",
+    "kanji": "捨てる",
+    "meaning": "버리다",
+    "meanings": [
+      "버리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1157090",
+    "kana": "なさる",
+    "kanji": "なさる",
+    "meaning": "할 일",
+    "meanings": [
+      "할 일"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1313580",
+    "kana": "こと",
+    "kanji": "事",
+    "meaning": "사물",
+    "meanings": [
+      "사물",
+      "문제",
+      "사건",
+      "발생"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1009320",
+    "kana": "どんどん",
+    "kanji": "どんどん",
+    "meaning": "북을 치는 것(소음)",
+    "meanings": [
+      "북을 치는 것(소음)",
+      "두드리는 것",
+      "펑하는 것"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1312420",
+    "kana": "しあい",
+    "kanji": "試合",
+    "meaning": "시합",
+    "meanings": [
+      "시합",
+      "게임"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1437450",
+    "kana": "てきとう",
+    "kanji": "適当",
+    "meaning": "적합하다",
+    "meanings": [
+      "적합하다",
+      "적절하다",
+      "맞다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1397300",
+    "kana": "すばらしい",
+    "kanji": "素晴らしい",
+    "meaning": "훌륭하다",
+    "meanings": [
+      "훌륭하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1486460",
+    "kana": "びじゅつかん",
+    "kanji": "美術館",
+    "meaning": "미술관",
+    "meanings": [
+      "미술관"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1505600",
+    "kana": "ぶんぽう",
+    "kanji": "文法",
+    "meaning": "문법",
+    "meanings": [
+      "문법"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589590",
+    "kana": "おわり",
+    "kanji": "終わり",
+    "meaning": "끝",
+    "meanings": [
+      "끝",
+      "끝나다",
+      "닫히다",
+      "결론",
+      "(사람의) 삶의 끝"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1509290",
+    "kana": "かべ",
+    "kanji": "壁",
+    "meaning": "벽",
+    "meanings": [
+      "벽",
+      "칸막이",
+      "장벽",
+      "장애물",
+      "장애"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576250",
+    "kana": "いちど",
+    "kanji": "一度",
+    "meaning": "한 번",
+    "meanings": [
+      "한 번",
+      "한 번에",
+      "일시적으로",
+      "잠시 동안"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1270810",
+    "kana": "おれい",
+    "kanji": "お礼",
+    "meaning": "감사",
+    "meanings": [
+      "감사",
+      "예절",
+      "에티켓",
+      "인사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1365250",
+    "kana": "しんせつ",
+    "kanji": "親切",
+    "meaning": "친절하다",
+    "meanings": [
+      "친절하다",
+      "온화하다",
+      "배려심이 깊다",
+      "관대하다",
+      "우호적이다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1420410",
+    "kana": "しらせる",
+    "kanji": "知らせる",
+    "meaning": "알리다",
+    "meanings": [
+      "알리다",
+      "조언하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1313080",
+    "kana": "はいしゃ",
+    "kanji": "歯医者",
+    "meaning": "치과 의사",
+    "meanings": [
+      "치과 의사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1467910",
+    "kana": "ねっしん",
+    "kanji": "熱心",
+    "meaning": "열정적이다",
+    "meanings": [
+      "열정적이다",
+      "열성적이다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1307550",
+    "kana": "はじめる",
+    "kanji": "始める",
+    "meaning": "시작하다",
+    "meanings": [
+      "시작하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1535910",
+    "kana": "もらう",
+    "kanji": "もらう",
+    "meaning": "받다",
+    "meanings": [
+      "받다",
+      "받아들이다",
+      "누군가에게 어떤 일을 하게 하다",
+      "주머니에 넣다 (싸움, 시합)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1229840",
+    "kana": "なく",
+    "kanji": "泣く",
+    "meaning": "울다",
+    "meanings": [
+      "울다",
+      "눈물을 흘리다",
+      "흐느끼다",
+      "괴로워하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1599400",
+    "kana": "なおる",
+    "kanji": "治る",
+    "meaning": "낫다",
+    "meanings": [
+      "낫다",
+      "(병에서) 회복하다",
+      "치료되다",
+      "회복되다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1467710",
+    "kana": "ねつ",
+    "kanji": "熱",
+    "meaning": "열",
+    "meanings": [
+      "열",
+      "발열",
+      "온도",
+      "열정"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1604135",
+    "kana": "おまつり",
+    "kanji": "お祭り",
+    "meaning": "축제",
+    "meanings": [
+      "축제",
+      "잔치",
+      "카니발",
+      "마츠리"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1371920",
+    "kana": "すいどう",
+    "kanji": "水道",
+    "meaning": "상수도",
+    "meanings": [
+      "상수도",
+      "수도",
+      "수돗물",
+      "수로"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1599760",
+    "kana": "におい",
+    "kanji": "匂い",
+    "meaning": "냄새",
+    "meanings": [
+      "냄새",
+      "악취"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1120010",
+    "kana": "ベル",
+    "kanji": "ベル",
+    "meaning": "벨",
+    "meanings": [
+      "벨"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1383310",
+    "kana": "あかんぼう",
+    "kanji": "赤ん坊",
+    "meaning": "아기",
+    "meanings": [
+      "아기",
+      "유아"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1190860",
+    "kana": "おかしい",
+    "kanji": "おかしい",
+    "meaning": "재미있다",
+    "meanings": [
+      "재미있다",
+      "우스꽝스럽다",
+      "웃기다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1313850",
+    "kana": "じこ",
+    "kanji": "事故",
+    "meaning": "사고",
+    "meanings": [
+      "사고",
+      "사건",
+      "문제",
+      "상황",
+      "이유"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1510640",
+    "kana": "へん",
+    "kanji": "変",
+    "meaning": "이상한",
+    "meanings": [
+      "이상한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1595270",
+    "kana": "じてん",
+    "kanji": "辞典",
+    "meaning": "사전",
+    "meanings": [
+      "사전",
+      "어휘집"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1304510",
+    "kana": "のこる",
+    "kanji": "残る",
+    "meaning": "남다",
+    "meanings": [
+      "남다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1551530",
+    "kana": "たてる",
+    "kanji": "立てる",
+    "meaning": "세우다",
+    "meanings": [
+      "세우다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1269130",
+    "kana": "くれる",
+    "kanji": "くれる",
+    "meaning": "주다",
+    "meanings": [
+      "주다",
+      "(한 사람이) 갖게 하다",
+      "한 사람을 위해 하게 하다",
+      "수고를 하게 하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-231",
+    "kana": "～いん",
+    "kanji": "～員",
+    "meaning": "member of ~",
+    "meanings": [
+      "member of ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1261190",
+    "kana": "げんいん",
+    "kanji": "原因",
+    "meaning": "원인",
+    "meanings": [
+      "원인",
+      "원산지",
+      "출처"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1238680",
+    "kana": "おどろく",
+    "kanji": "驚く",
+    "meaning": "놀라다",
+    "meanings": [
+      "놀라다",
+      "깜짝 놀라다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-234",
+    "kana": "頂く",
+    "kanji": "いただく",
+    "meaning": "-- extra-modest expression for たべる and のむ; humble expression for もらう --",
+    "meanings": [
+      "-- extra-modest expression for たべる and のむ; humble expression for もらう --"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1396860",
+    "kana": "そぼ",
+    "kanji": "祖母",
+    "meaning": "할머니",
+    "meanings": [
+      "할머니"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1355850",
+    "kana": "ばしょ",
+    "kanji": "場所",
+    "meaning": "장소",
+    "meanings": [
+      "장소",
+      "위치",
+      "지점",
+      "지역"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1449530",
+    "kana": "こたえ",
+    "kanji": "答",
+    "meaning": "답변",
+    "meanings": [
+      "답변",
+      "회신",
+      "응답",
+      "해결책"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1535780",
+    "kana": "もちろん",
+    "kanji": "もちろん",
+    "meaning": "물론이야",
+    "meanings": [
+      "물론이야",
+      "확실히",
+      "당연히"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1433680",
+    "kana": "つける",
+    "kanji": "漬ける",
+    "meaning": "(에) 담그다",
+    "meanings": [
+      "(에) 담그다",
+      "담그다",
+      "피클하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1588060",
+    "kana": "うけつけ",
+    "kanji": "受付",
+    "meaning": "접수(데스크)",
+    "meanings": [
+      "접수(데스크)",
+      "안내데스크",
+      "접수원",
+      "안내직원",
+      "영수증"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1457730",
+    "kana": "うち",
+    "kanji": "内",
+    "meaning": "내부",
+    "meanings": [
+      "내부",
+      "이내",
+      "도중",
+      "이내(예: 하루)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1068550",
+    "kana": "スクリーン",
+    "kanji": "スクリーン",
+    "meaning": "스크린",
+    "meanings": [
+      "스크린"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1602440",
+    "kana": "ふえる",
+    "kanji": "増える",
+    "meaning": "늘리다",
+    "meanings": [
+      "늘리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1524990",
+    "kana": "または",
+    "kanji": "または",
+    "meaning": "또는",
+    "meanings": [
+      "또는",
+      "... 또는 ..."
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-245",
+    "kana": "けがする",
+    "kanji": "けがする",
+    "meaning": "injury (to animate object), hurt",
+    "meanings": [
+      "injury (to animate object), hurt"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1155060",
+    "kana": "いか",
+    "kanji": "以下",
+    "meaning": "...를 초과하지 않음",
+    "meanings": [
+      "...를 초과하지 않음",
+      "...보다 많지 않음",
+      "... 이하"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1588730",
+    "kana": "えらぶ",
+    "kanji": "選ぶ",
+    "meaning": "선택하다",
+    "meanings": [
+      "선택하다",
+      "선택하다 (선택하다)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-248",
+    "kana": "～ばかり",
+    "kanji": "～ばかり",
+    "meaning": "just did ~, only",
+    "meanings": [
+      "just did ~, only"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1360480",
+    "kana": "こころ",
+    "kanji": "心",
+    "meaning": "마음",
+    "meanings": [
+      "마음",
+      "정신",
+      "문구의 의미 (수수께끼 등)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-250",
+    "kana": "～だす",
+    "kanji": "～だす",
+    "meaning": "to start doing ~",
+    "meanings": [
+      "to start doing ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1057850",
+    "kana": "サラダ",
+    "kanji": "サラダ",
+    "meaning": "샐러드",
+    "meanings": [
+      "샐러드"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1457210",
+    "kana": "とどける",
+    "kanji": "届ける",
+    "meaning": "전달하다",
+    "meanings": [
+      "전달하다",
+      "보내다",
+      "보고하다",
+      "통지하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-253",
+    "kana": "挨拶",
+    "kanji": "あいさつする",
+    "meaning": "greet(ing)",
+    "meanings": [
+      "greet(ing)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1250870",
+    "kana": "けしき",
+    "kanji": "景色",
+    "meaning": "풍경",
+    "meanings": [
+      "풍경",
+      "장면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1596930",
+    "kana": "たしか",
+    "kanji": "確か",
+    "meaning": "확실하다",
+    "meanings": [
+      "확실하다",
+      "긍정적이다",
+      "신뢰할 수 있다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1070280",
+    "kana": "ステーキ",
+    "kanji": "ステーキ",
+    "meaning": "스테이크",
+    "meanings": [
+      "스테이크"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1358680",
+    "kana": "しょくりょうひん",
+    "kanji": "食料品",
+    "meaning": "식료품",
+    "meanings": [
+      "식료품"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1362490",
+    "kana": "もり",
+    "kanji": "森",
+    "meaning": "숲",
+    "meanings": [
+      "숲",
+      "신사 숲"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1155180",
+    "kana": "いない",
+    "kanji": "以内",
+    "meaning": "이내",
+    "meanings": [
+      "이내",
+      "내부",
+      "미만"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1543240",
+    "kana": "よてい",
+    "kanji": "予定",
+    "meaning": "계획",
+    "meanings": [
+      "계획",
+      "배정",
+      "일정",
+      "프로그램"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1032390",
+    "kana": "オーバー",
+    "kanji": "オーバー",
+    "meaning": "오버코트",
+    "meanings": [
+      "오버코트",
+      "초과하다",
+      "넘다",
+      "넘어서다",
+      "과장하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1209650",
+    "kana": "かわく",
+    "kanji": "乾く",
+    "meaning": "건조해지다",
+    "meanings": [
+      "건조해지다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1382440",
+    "kana": "いし",
+    "kanji": "石",
+    "meaning": "돌",
+    "meanings": [
+      "돌",
+      "바위",
+      "조약돌",
+      "보석"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1309260",
+    "kana": "おもいだす",
+    "kanji": "思い出す",
+    "meaning": "기억하다",
+    "meanings": [
+      "기억하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1538440",
+    "kana": "おどる",
+    "kanji": "踊る",
+    "meaning": "춤추다 (원래 호핑 댄스)",
+    "meanings": [
+      "춤추다 (원래 호핑 댄스)",
+      "조종당하다",
+      "누군가의 곡조에 맞춰 춤추다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1295530",
+    "kana": "こまかい",
+    "kanji": "細かい",
+    "meaning": "작다",
+    "meanings": [
+      "작다",
+      "미세하다",
+      "미미하다",
+      "사소하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1444270",
+    "kana": "ぬる",
+    "kanji": "塗る",
+    "meaning": "칠하다",
+    "meanings": [
+      "칠하다",
+      "바르다",
+      "바르다 (크림, 로션)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1270390",
+    "kana": "ごしゅじん",
+    "kanji": "ご主人",
+    "meaning": "당신의 남편",
+    "meanings": [
+      "당신의 남편",
+      "그녀의 남편"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1431850",
+    "kana": "めずらしい",
+    "kanji": "珍しい",
+    "meaning": "희귀한",
+    "meanings": [
+      "희귀한",
+      "흔하지 않은",
+      "특이한",
+      "호기심이 많은",
+      "새로운"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546200",
+    "kana": "よう",
+    "kanji": "用",
+    "meaning": "업무",
+    "meanings": [
+      "업무",
+      "심부름",
+      "약속",
+      "사용"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1274820",
+    "kana": "こうむいん",
+    "kanji": "公務員",
+    "meaning": "공무원",
+    "meanings": [
+      "공무원"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002170",
+    "kana": "おじょうさん",
+    "kanji": "お嬢さん",
+    "meaning": "(다른 사람의) 딸",
+    "meanings": [
+      "(다른 사람의) 딸",
+      "아가씨"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546220",
+    "kana": "ようい",
+    "kanji": "用意",
+    "meaning": "준비",
+    "meanings": [
+      "준비",
+      "제공",
+      "레이아웃 (예: 식사)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1593670",
+    "kana": "さがす",
+    "kanji": "探す",
+    "meaning": "검색하다",
+    "meanings": [
+      "검색하다",
+      "찾다",
+      "사냥하다",
+      "수색하다 (집, 주머니 등)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1250220",
+    "kana": "かたち",
+    "kanji": "形",
+    "meaning": "(신체적) 형태",
+    "meanings": [
+      "(신체적) 형태",
+      "모양",
+      "체형",
+      "얼굴",
+      "(얼굴) 특징"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1172830",
+    "kana": "うんてんする",
+    "kanji": "運転",
+    "meaning": "작동(기계의)",
+    "meanings": [
+      "작동(기계의)",
+      "달리는",
+      "작업",
+      "운전(차량)",
+      "사용(자본, 자금 등의)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006110",
+    "kana": "すっかり",
+    "kanji": "すっかり",
+    "meaning": "전부",
+    "meanings": [
+      "전부",
+      "완전히"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1017330",
+    "kana": "アナウンサー",
+    "kanji": "アナウンサー",
+    "meaning": "아나운서",
+    "meanings": [
+      "아나운서",
+      "진행자",
+      "방송인",
+      "리포터",
+      "예능 현장에서 솜씨 좋은 솜씨를 발휘하는 사내 방송인"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002500",
+    "kana": "おみやげ",
+    "kanji": "お土産",
+    "meaning": "여행 중에 선물로 산 특산품이나 기념품(여행 중)",
+    "meanings": [
+      "여행 중에 선물로 산 특산품이나 기념품(여행 중)",
+      "방문객이 가져온 선물",
+      "불쾌한 물건(예: 휴가 중 질병)",
+      "달갑지 않은 선물",
+      "불친절"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1350080",
+    "kana": "けしゴム",
+    "kanji": "消しゴム",
+    "meaning": "지우개",
+    "meanings": [
+      "지우개",
+      "고무"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1553130",
+    "kana": "りょかん",
+    "kanji": "旅館",
+    "meaning": "료칸",
+    "meanings": [
+      "료칸",
+      "일본 전통 여관"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1201280",
+    "kana": "かいがん",
+    "kanji": "海岸",
+    "meaning": "seashore",
+    "meanings": [
+      "해안",
+      "해변",
+      "해안가"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579720",
+    "kana": "さびしい",
+    "kanji": "寂しい",
+    "meaning": "외로운",
+    "meanings": [
+      "외로운",
+      "고독한",
+      "황량한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1193610",
+    "kana": "ひ",
+    "kanji": "火",
+    "meaning": "불",
+    "meanings": [
+      "불",
+      "화염",
+      "불꽃"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1160570",
+    "kana": "そだてる",
+    "kanji": "育てる",
+    "meaning": "키우다",
+    "meanings": [
+      "키우다",
+      "기르다",
+      "훈련시키다",
+      "가르치다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1527040",
+    "kana": "みそ",
+    "kanji": "味噌",
+    "meaning": "된장",
+    "meanings": [
+      "된장",
+      "발효조미료 우스. 된장을 닮은 콩",
+      "내장 (게, 새우 등)으로 만든 것",
+      "포인트"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1612770",
+    "kana": "おいわい",
+    "kanji": "お祝い",
+    "meaning": "축하합니다",
+    "meanings": [
+      "축하합니다",
+      "명절",
+      "축하선물"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600530",
+    "kana": "のりもの",
+    "kanji": "乗り物",
+    "meaning": "차량",
+    "meanings": [
+      "차량",
+      "운송 수단",
+      "(수단) 운송",
+      "타기 (박람회, 놀이 공원 등에서)",
+      "명소"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1154860",
+    "kana": "あんないする",
+    "kanji": "案内",
+    "meaning": "안내",
+    "meanings": [
+      "안내",
+      "인도(길)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1432850",
+    "kana": "かよう",
+    "kanji": "通う",
+    "meaning": "(장소)로 가다",
+    "meanings": [
+      "(장소)로 가다",
+      "사이를 오가다",
+      "사이를 달리다 (예: 버스, 기차 등)",
+      "사이를 이동하다",
+      "(학교, 직장 등)으로 가다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1559290",
+    "kana": "つれる",
+    "kanji": "連れる",
+    "meaning": "(누군가를) 데리고 가다",
+    "meanings": [
+      "(누군가를) 데리고 가다",
+      "데리고 가다",
+      "같이 가다",
+      "동행하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1225130",
+    "kana": "ぎじゅつ",
+    "kanji": "技術",
+    "meaning": "기술",
+    "meanings": [
+      "기술",
+      "공학",
+      "예술"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1348530",
+    "kana": "ことり",
+    "kanji": "小鳥",
+    "meaning": "작은 새",
+    "meanings": [
+      "작은 새"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1185290",
+    "kana": "げしゅく",
+    "kanji": "下宿",
+    "meaning": "기숙사",
+    "meanings": [
+      "기숙사",
+      "숙소",
+      "하숙집"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1065680",
+    "kana": "ジャム",
+    "kanji": "ジャム",
+    "meaning": "잼",
+    "meanings": [
+      "잼"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1349610",
+    "kana": "しょうたいする",
+    "kanji": "招待",
+    "meaning": "초대",
+    "meanings": [
+      "초대"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1238550",
+    "kana": "かがみ",
+    "kanji": "鏡",
+    "meaning": "거울",
+    "meanings": [
+      "거울",
+      "통머리",
+      "문서의 시작 부분에 문서의 목적, 날짜, 작성자 등을 언급하는 페이지 추가",
+      "거울 모양의 떡"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1476430",
+    "kana": "はず",
+    "kanji": "はず",
+    "meaning": "해야 한다(되어야 한다)",
+    "meanings": [
+      "해야 한다(되어야 한다)",
+      "묶여 있다(된다)",
+      "예상된다(된다)",
+      "반드시(되어야 한다)",
+      "노크(활의)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1517480",
+    "kana": "ほうりつ",
+    "kanji": "法律",
+    "meaning": "법률",
+    "meanings": [
+      "법률",
+      "입법"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1365980",
+    "kana": "すすむ",
+    "kanji": "進む",
+    "meaning": "전진하다",
+    "meanings": [
+      "전진하다",
+      "앞으로 나아가다",
+      "앞서다",
+      "진전시키다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1207270",
+    "kana": "たのしむ",
+    "kanji": "楽む",
+    "meaning": "즐기다",
+    "meanings": [
+      "즐기다",
+      "즐겁게 지내다",
+      "즐거운 시간을 보내다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1520120",
+    "kana": "ぼうえき",
+    "kanji": "貿易",
+    "meaning": "(외국) 무역",
+    "meanings": [
+      "(외국) 무역",
+      "(국제) 상업",
+      "수입 및 수출"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1480670",
+    "kana": "はんたい",
+    "kanji": "反対",
+    "meaning": "반대",
+    "meanings": [
+      "반대",
+      "저항",
+      "적대"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1357420",
+    "kana": "おる",
+    "kanji": "おる",
+    "meaning": "to weave",
+    "meanings": [
+      "to weave"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1363090",
+    "kana": "もうす",
+    "kanji": "申す",
+    "meaning": "말하다",
+    "meanings": [
+      "말하다",
+      "부르다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1312350",
+    "kana": "しけん",
+    "kanji": "試験",
+    "meaning": "시험",
+    "meanings": [
+      "시험",
+      "시련",
+      "실험"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1364360",
+    "kana": "まじめ",
+    "kanji": "真面目",
+    "meaning": "진지한",
+    "meanings": [
+      "진지한",
+      "정직한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-308",
+    "kana": "",
+    "kanji": "ごらんになる",
+    "meaning": "-- honorific expression for みる --",
+    "meanings": [
+      "-- honorific expression for みる --"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1440670",
+    "kana": "てんいん",
+    "kanji": "店員",
+    "meaning": "직원(매장)",
+    "meanings": [
+      "직원(매장)",
+      "점원",
+      "판매원"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1474850",
+    "kana": "とまる",
+    "kanji": "泊まる",
+    "meaning": "(예: 호텔)에 머물다",
+    "meanings": [
+      "(예: 호텔)에 머물다",
+      "정박하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1224880",
+    "kana": "よろしい",
+    "kanji": "よろしい",
+    "meaning": "좋다",
+    "meanings": [
+      "좋다",
+      "괜찮아",
+      "아주 좋아"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1289520",
+    "kana": "こんや",
+    "kanji": "今夜",
+    "meaning": "오늘 저녁",
+    "meanings": [
+      "오늘 저녁",
+      "오늘 밤"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1270550",
+    "kana": "おつり",
+    "kanji": "おつり",
+    "meaning": "변화(구매용)",
+    "meanings": [
+      "변화(구매용)",
+      "화장실 물튀김"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-314",
+    "kana": "チェックする",
+    "kanji": "チェックする",
+    "meaning": "check",
+    "meanings": [
+      "check"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1198880",
+    "kana": "かいわ",
+    "kanji": "会話",
+    "meaning": "대화",
+    "meanings": [
+      "대화",
+      "채팅"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1245470",
+    "kana": "くうき",
+    "kanji": "空気",
+    "meaning": "공기",
+    "meanings": [
+      "공기",
+      "분위기",
+      "기분",
+      "상황",
+      "존재감 없는 사람"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1272280",
+    "kana": "こうつう",
+    "kanji": "交通",
+    "meaning": "교통",
+    "meanings": [
+      "교통",
+      "의사소통",
+      "(아이디어 등의) 교환",
+      "성교"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1148520",
+    "kana": "ワープロ",
+    "kanji": "ワープロ",
+    "meaning": "워드 프로세서",
+    "meanings": [
+      "워드 프로세서"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1218760",
+    "kana": "よろこぶ",
+    "kanji": "喜ぶ",
+    "meaning": "기뻐하다",
+    "meanings": [
+      "기뻐하다",
+      "축하하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1228690",
+    "kana": "きゅうこう",
+    "kanji": "急行",
+    "meaning": "(어디로) 서두르다",
+    "meanings": [
+      "(어디로) 서두르다",
+      "서두르다",
+      "급행 (기차)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1202150",
+    "kana": "みな",
+    "kanji": "皆",
+    "meaning": "모두",
+    "meanings": [
+      "모두",
+      "모든 것"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1526960",
+    "kana": "あじ",
+    "kanji": "味",
+    "meaning": "풍미",
+    "meanings": [
+      "풍미",
+      "맛",
+      "매력"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1245570",
+    "kana": "くうこう",
+    "kanji": "空港",
+    "meaning": "공항",
+    "meanings": [
+      "공항"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1328090",
+    "kana": "てぶくろ",
+    "kanji": "手袋",
+    "meaning": "장갑",
+    "meanings": [
+      "장갑",
+      "벙어리 장갑",
+      "미트"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1279590",
+    "kana": "こうちょう",
+    "kanji": "校長",
+    "meaning": "교장",
+    "meanings": [
+      "교장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1593590",
+    "kana": "ごちそう",
+    "kanji": "ごちそう",
+    "meaning": "대하다 (특히 음식과 음료)",
+    "meanings": [
+      "대하다 (특히 음식과 음료)",
+      "오락",
+      "누군가를 대접하다 (식사에)",
+      "누군가를 저녁 식사에 데려가다",
+      "멋진 저녁 식사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546880",
+    "kana": "おどり",
+    "kanji": "踊り",
+    "meaning": "댄스",
+    "meanings": [
+      "댄스"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1238410",
+    "kana": "きょうみ",
+    "kanji": "興味",
+    "meaning": "관심(무언가)",
+    "meanings": [
+      "관심(무언가)",
+      "호기심(무언가에 대한)",
+      "열정(~에 대한)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1169340",
+    "kana": "ひっこす",
+    "kanji": "引っ越す",
+    "meaning": "이사하다 (집)",
+    "meanings": [
+      "이사하다 (집)",
+      "거주지를 바꾸다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1557290",
+    "kana": "れいぼう",
+    "kanji": "冷房",
+    "meaning": "에어컨",
+    "meanings": [
+      "에어컨",
+      "공기 냉각"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1444980",
+    "kana": "つごう",
+    "kanji": "都合",
+    "meaning": "상황",
+    "meanings": [
+      "상황",
+      "조건",
+      "편의성",
+      "정리",
+      "관리"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1178450",
+    "kana": "えんりょする",
+    "kanji": "遠慮",
+    "meaning": "예비",
+    "meanings": [
+      "예비",
+      "제약",
+      "제한",
+      "겸허",
+      "무관심"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1518540",
+    "kana": "なくなる",
+    "kanji": "亡くなる",
+    "meaning": "죽다",
+    "meanings": [
+      "죽다",
+      "사망하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1192700",
+    "kana": "かがく",
+    "kanji": "科学",
+    "meaning": "과학",
+    "meanings": [
+      "과학",
+      "과학적으로 생각하다",
+      "과학의 관점에서 생각하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1010150",
+    "kana": "はっきり",
+    "kanji": "はっきり",
+    "meaning": "명백히",
+    "meanings": [
+      "명백히",
+      "분명하게",
+      "명확하게",
+      "확실하게"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1291270",
+    "kana": "さしあげる",
+    "kanji": "差し上げる",
+    "meaning": "들어 올리다",
+    "meanings": [
+      "들어 올리다",
+      "받쳐 주다",
+      "올리다",
+      "주다",
+      "제시하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1591430",
+    "kana": "きもち",
+    "kanji": "気持ち",
+    "meaning": "느낌",
+    "meanings": [
+      "느낌",
+      "감각",
+      "기분",
+      "마음 상태",
+      "준비"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1396840",
+    "kana": "そふ",
+    "kanji": "祖父",
+    "meaning": "할아버지",
+    "meanings": [
+      "할아버지",
+      "노인",
+      "노인 역할에 사용되는 교겐 가면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1279990",
+    "kana": "みなと",
+    "kanji": "港",
+    "meaning": "항구",
+    "meanings": [
+      "항구"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1543750",
+    "kana": "よやく",
+    "kanji": "予約",
+    "meaning": "예약",
+    "meanings": [
+      "예약",
+      "약속",
+      "사전주문",
+      "계약"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1374550",
+    "kana": "すごい",
+    "kanji": "凄い",
+    "meaning": "끔찍하다",
+    "meanings": [
+      "끔찍하다",
+      "놀랍다(예: 힘)",
+      "훌륭하다(예: 기술)",
+      "훌륭하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1465850",
+    "kana": "にゅうがくする",
+    "kanji": "入学",
+    "meaning": "입학 (학교 또는 대학)",
+    "meanings": [
+      "입학 (학교 또는 대학)",
+      "입학",
+      "등록"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1511790",
+    "kana": "かたづける",
+    "kanji": "片付ける",
+    "meaning": "정리하다",
+    "meanings": [
+      "정리하다",
+      "청소하다",
+      "치우다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1588320",
+    "kana": "うつす",
+    "kanji": "写す",
+    "meaning": "복사하다",
+    "meanings": [
+      "복사하다",
+      "복제하다",
+      "재현하다",
+      "추적하다",
+      "전사하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1101570",
+    "kana": "パソコン",
+    "kanji": "パソコン",
+    "meaning": "개인용 컴퓨터",
+    "meanings": [
+      "개인용 컴퓨터"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1499460",
+    "kana": "ぶちょう",
+    "kanji": "部長",
+    "meaning": "과장, 부서장",
+    "meanings": [
+      "과장, 부서장",
+      "(학교) 동아리장",
+      "(학교) 팀장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1193950",
+    "kana": "かじ",
+    "kanji": "火事",
+    "meaning": "화재",
+    "meanings": [
+      "화재",
+      "큰 화재"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1404700",
+    "kana": "たす",
+    "kanji": "足す",
+    "meaning": "(숫자)를 추가하다",
+    "meanings": [
+      "(숫자)를 추가하다",
+      "(무언가) 추가하다",
+      "(무언가로) 충전하다",
+      "돌보다(예: 사업)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1237030",
+    "kana": "きょうかい",
+    "kanji": "教会",
+    "meaning": "교회",
+    "meanings": [
+      "교회",
+      "회중"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483090",
+    "kana": "かれら",
+    "kanji": "彼ら",
+    "meaning": "그들",
+    "meanings": [
+      "그들"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-351",
+    "kana": "一杯",
+    "kanji": "いっぱい",
+    "meaning": "full, to the utmost",
+    "meanings": [
+      "full, to the utmost"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1149830",
+    "kana": "アメリカ",
+    "kanji": "アメリカ",
+    "meaning": "(United States of) 미국",
+    "meanings": [
+      "미국",
+      "미국 (육지)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1420160",
+    "kana": "だんせい",
+    "kanji": "男性",
+    "meaning": "남자",
+    "meanings": [
+      "남자",
+      "남성",
+      "남성 성별"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1550140",
+    "kana": "りゆう",
+    "kanji": "理由",
+    "meaning": "이유",
+    "meanings": [
+      "이유",
+      "근거",
+      "구실",
+      "변명",
+      "동기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1378990",
+    "kana": "せいさんする",
+    "kanji": "生産",
+    "meaning": "생산",
+    "meanings": [
+      "생산",
+      "제조"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1423240",
+    "kana": "きもの",
+    "kanji": "着物",
+    "meaning": "기모노",
+    "meanings": [
+      "기모노",
+      "일본 전통 의상 (특히 전신)",
+      "의류"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1217070",
+    "kana": "おもちゃ",
+    "kanji": "おもちゃ",
+    "meaning": "toy",
+    "meanings": [
+      "toy",
+      "(person or thing treated as a) plaything"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1514960",
+    "kana": "くれる",
+    "kanji": "暮れる",
+    "meaning": "어두워지다",
+    "meanings": [
+      "어두워지다",
+      "끝나다 (하루, 연도, 계절 등의)",
+      "끝나다",
+      "닫히다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1434120",
+    "kana": "つる",
+    "kanji": "釣る",
+    "meaning": "낚시하다",
+    "meanings": [
+      "낚시하다",
+      "잡다",
+      "유인하다",
+      "유혹하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-360",
+    "kana": "～ちゃん",
+    "kanji": "～ちゃん",
+    "meaning": "suffix for familiar (female) person",
+    "meanings": [
+      "suffix for familiar (female) person"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1408810",
+    "kana": "うつ",
+    "kanji": "打つ",
+    "meaning": "때리다",
+    "meanings": [
+      "때리다",
+      "두드리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1000590",
+    "kana": "あんな",
+    "kanji": "あんな",
+    "meaning": "그런 것",
+    "meanings": [
+      "그런 것",
+      "그래서"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1323010",
+    "kana": "あやまる",
+    "kanji": "謝る",
+    "meaning": "사과하다 (사과하다)",
+    "meanings": [
+      "사과하다 (사과하다)",
+      "거절하다",
+      "견디지 못하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1581710",
+    "kana": "ひるま",
+    "kanji": "昼間",
+    "meaning": "낮",
+    "meanings": [
+      "낮",
+      "일출부터 일몰까지의 시간",
+      "일주기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1236950",
+    "kana": "きょういく",
+    "kanji": "教育",
+    "meaning": "교육",
+    "meanings": [
+      "교육",
+      "학교 교육",
+      "훈련",
+      "지도",
+      "가르치기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1345250",
+    "kana": "じょせい",
+    "kanji": "女性",
+    "meaning": "여성",
+    "meanings": [
+      "여성",
+      "여성 성별"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1508750",
+    "kana": "こめ",
+    "kanji": "米",
+    "meaning": "(껍질을 벗긴) 쌀",
+    "meanings": [
+      "(껍질을 벗긴) 쌀",
+      "주식(제품 등)",
+      "필수품",
+      "(온라인) 코멘트"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1323500",
+    "kana": "じゃま",
+    "kanji": "邪魔",
+    "meaning": "방해하다",
+    "meanings": [
+      "방해하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1286400",
+    "kana": "こくさい",
+    "kanji": "国際",
+    "meaning": "국제",
+    "meanings": [
+      "국제",
+      "외교교류"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1246440",
+    "kana": "すみ",
+    "kanji": "隅",
+    "meaning": "모퉁이",
+    "meanings": [
+      "모퉁이",
+      "구석",
+      "휴게실",
+      "무대 아래 오른쪽 (노 무대)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1305700",
+    "kana": "うかがう",
+    "kanji": "伺う",
+    "meaning": "누군가를 부르다",
+    "meanings": [
+      "누군가를 부르다",
+      "어떤 장소에 전화하다",
+      "방문하다",
+      "누군가를 기다리다",
+      "묻다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1293650",
+    "kana": "さらいしゅう",
+    "kanji": "再来週",
+    "meaning": "다음 주 이후",
+    "meanings": [
+      "다음 주 이후"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1529410",
+    "kana": "ゆめ",
+    "kanji": "夢",
+    "meaning": "꿈",
+    "meanings": [
+      "꿈",
+      "희망",
+      "소원",
+      "동경"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600280",
+    "kana": "のど",
+    "kanji": "喉",
+    "meaning": "목구멍",
+    "meanings": [
+      "목구멍",
+      "노랫소리",
+      "홈통 (책의 안쪽 여백)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1293780",
+    "kana": "さいきん",
+    "kanji": "最近",
+    "meaning": "최근에",
+    "meanings": [
+      "최근에",
+      "요즘",
+      "바로 지금"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1604290",
+    "kana": "まわり",
+    "kanji": "周り",
+    "meaning": "둘레",
+    "meanings": [
+      "둘레",
+      "주변",
+      "동네"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1558050",
+    "kana": "れきし",
+    "kanji": "歴史",
+    "meaning": "역사",
+    "meanings": [
+      "역사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1494860",
+    "kana": "ふべん",
+    "kanji": "不便",
+    "meaning": "불편함",
+    "meanings": [
+      "불편함"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1255060",
+    "kana": "ち",
+    "kanji": "血",
+    "meaning": "혈통",
+    "meanings": [
+      "혈통",
+      "조상"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-380",
+    "kana": "～つづける",
+    "kanji": "～続ける",
+    "meaning": "to continue doing ~",
+    "meanings": [
+      "to continue doing ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1533820",
+    "kana": "け",
+    "kanji": "毛",
+    "meaning": "머리카락",
+    "meanings": [
+      "머리카락",
+      "모피",
+      "양털",
+      "솜털",
+      "깃털"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1602060",
+    "kana": "ひどい",
+    "kanji": "ひどい",
+    "meaning": "잔인한",
+    "meanings": [
+      "잔인한",
+      "무자비한",
+      "단단한",
+      "가혹한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1556370",
+    "kana": "たとえば",
+    "kanji": "例えば",
+    "meaning": "예를 들어",
+    "meanings": [
+      "예를 들어"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1599420",
+    "kana": "なかなか",
+    "kanji": "中々",
+    "meaning": "매우",
+    "meanings": [
+      "매우",
+      "상당히",
+      "쉽게"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1372800",
+    "kana": "ずいぶん",
+    "kanji": "随分",
+    "meaning": "매우",
+    "meanings": [
+      "매우",
+      "놀랍게도",
+      "상당히",
+      "아주"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-386",
+    "kana": "～やすい",
+    "kanji": "～やすい",
+    "meaning": "easy to do ~",
+    "meanings": [
+      "easy to do ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589110",
+    "kana": "おしいれ",
+    "kanji": "押し入れ",
+    "meaning": "옷장(벽에 내장되어 있으며 일반적으로 미닫이문이 있음)",
+    "meanings": [
+      "옷장(벽에 내장되어 있으며 일반적으로 미닫이문이 있음)",
+      "(내장형) 옷장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1443660",
+    "kana": "でんとう",
+    "kanji": "電灯",
+    "meaning": "전등",
+    "meanings": [
+      "전등"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1319580",
+    "kana": "しかる",
+    "kanji": "叱る",
+    "meaning": "꾸짖다",
+    "meanings": [
+      "꾸짖다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1058480",
+    "kana": "サンダル",
+    "kanji": "サンダル",
+    "meaning": "샌들",
+    "meanings": [
+      "샌들"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-391",
+    "kana": "びっくりする",
+    "kanji": "びっくりする",
+    "meaning": "to be surprised",
+    "meanings": [
+      "to be surprised"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310460",
+    "kana": "うまい",
+    "kanji": "うまい",
+    "meaning": "능숙한",
+    "meanings": [
+      "능숙한",
+      "숙련된",
+      "좋은",
+      "전문가"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1510650",
+    "kana": "かえる",
+    "kanji": "変える",
+    "meaning": "바꾸다",
+    "meanings": [
+      "바꾸다",
+      "변경하다",
+      "변환하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1282340",
+    "kana": "こうどう",
+    "kanji": "講堂",
+    "meaning": "강당",
+    "meanings": [
+      "강당",
+      "강의실"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1307770",
+    "kana": "こ",
+    "kanji": "子",
+    "meaning": "어린이",
+    "meanings": [
+      "어린이",
+      "청소년",
+      "청소년 (비성인) 사람"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1501660",
+    "kana": "わかす",
+    "kanji": "沸かす",
+    "meaning": "끓이다",
+    "meanings": [
+      "끓이다",
+      "가열하다 (액체)",
+      "준비하다 (목욕, 뜨거운 음료)",
+      "흥분시키다",
+      "깨우다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1145130",
+    "kana": "レジ",
+    "kanji": "レジ",
+    "meaning": "(현금) 계산대",
+    "meanings": [
+      "(현금) 계산대",
+      "계산대 (카운터)",
+      "계산원"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1304420",
+    "kana": "しばらく",
+    "kanji": "しばらく",
+    "meaning": "잠시 동안",
+    "meanings": [
+      "잠시 동안",
+      "한동안"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1454670",
+    "kana": "とくに",
+    "kanji": "特に",
+    "meaning": "특히",
+    "meanings": [
+      "특히",
+      "특별히",
+      "명시적으로"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1586270",
+    "kana": "あく",
+    "kanji": "空く",
+    "meaning": "to open (e.g. doors)",
+    "meanings": [
+      "to open (e.g. doors)",
+      "to open (e.g. business, etc.)",
+      "to be empty",
+      "to be vacant",
+      "to be available"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1252090",
+    "kana": "けいかくする",
+    "kanji": "計画",
+    "meaning": "계획",
+    "meanings": [
+      "계획",
+      "프로젝트",
+      "일정",
+      "안",
+      "프로그램"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1432920",
+    "kana": "とおり",
+    "kanji": "通り",
+    "meaning": "거리",
+    "meanings": [
+      "거리",
+      "도로",
+      "주요 도로",
+      "교통"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1185930",
+    "kana": "したぎ",
+    "kanji": "下着",
+    "meaning": "속옷",
+    "meanings": [
+      "속옷",
+      "란제리"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1251320",
+    "kana": "けいざい",
+    "kanji": "経済",
+    "meaning": "경제",
+    "meanings": [
+      "경제",
+      "금융",
+      "(자신의) 재정",
+      "재정 상황"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1004310",
+    "kana": "こう",
+    "kanji": "こう",
+    "meaning": "이런 식으로",
+    "meanings": [
+      "이런 식으로",
+      "이렇게",
+      "그래서",
+      "그리하여",
+      "이것 (많이)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1374530",
+    "kana": "ぜひ",
+    "kanji": "是非",
+    "meaning": "확실히",
+    "meanings": [
+      "확실히",
+      "어김없이",
+      "옳고 그름",
+      "장점과 단점"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1550190",
+    "kana": "うら",
+    "kanji": "裏",
+    "meaning": "반대편",
+    "meanings": [
+      "반대편",
+      "바닥",
+      "반대쪽",
+      "시야에 가려진 면",
+      "밑면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1157080",
+    "kana": "ため",
+    "kanji": "為",
+    "meaning": "좋은",
+    "meanings": [
+      "좋은",
+      "장점",
+      "혜택",
+      "복지",
+      "술"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001180",
+    "kana": "おいでになる",
+    "kanji": "おいでになる",
+    "meaning": "되다",
+    "meanings": [
+      "되다",
+      "오다",
+      "가다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1510790",
+    "kana": "かわる",
+    "kanji": "変わる",
+    "meaning": "바꾸다",
+    "meanings": [
+      "바꾸다",
+      "변형되다",
+      "변경되다",
+      "변화시키다",
+      "이동하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1155090",
+    "kana": "いがい",
+    "kanji": "以外",
+    "meaning": "제외하다",
+    "meanings": [
+      "제외하다",
+      "제외하다(~을 제외하고)",
+      "별개로",
+      "게다가"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1295070",
+    "kana": "すむ",
+    "kanji": "済む",
+    "meaning": "끝내다",
+    "meanings": [
+      "끝내다",
+      "완료하다",
+      "해결되다",
+      "예상보다 덜 심각한 결과를 얻다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1096870",
+    "kana": "ハンバーグ",
+    "kanji": "ハンバーグ",
+    "meaning": "함박스테이크",
+    "meanings": [
+      "함박스테이크"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1308090",
+    "kana": "し",
+    "kanji": "市",
+    "meaning": "도시",
+    "meanings": [
+      "도시"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1601650",
+    "kana": "ひきだし",
+    "kanji": "引き出し",
+    "meaning": "서랍",
+    "meanings": [
+      "서랍",
+      "인출 (계좌에서 돈을)",
+      "즉석에서 일을 처리하는 데 유용한 다양한 지식과 경험"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1542070",
+    "kana": "あそび",
+    "kanji": "遊び",
+    "meaning": "놀다",
+    "meanings": [
+      "놀다",
+      "게임",
+      "즐거움"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310260",
+    "kana": "したくする",
+    "kanji": "支度",
+    "meaning": "준비",
+    "meanings": [
+      "준비"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-418",
+    "kana": "～はじめる",
+    "kanji": "～始める",
+    "meaning": "to start doing ~",
+    "meanings": [
+      "to start doing ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1259140",
+    "kana": "みえる",
+    "kanji": "見える",
+    "meaning": "보이다",
+    "meanings": [
+      "보이다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1335080",
+    "kana": "じゅうぶん",
+    "kanji": "十分",
+    "meaning": "충분하다",
+    "meanings": [
+      "충분하다",
+      "만족스럽다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576900",
+    "kana": "おと",
+    "kanji": "音",
+    "meaning": "소리",
+    "meanings": [
+      "소리",
+      "소음",
+      "(음악) 음표",
+      "명성"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1003430",
+    "kana": "きっと",
+    "kanji": "きっと",
+    "meaning": "확실히",
+    "meanings": [
+      "확실히",
+      "의심의 여지없이",
+      "거의 확실히",
+      "아마도 (예: 90%)",
+      "엄격하게"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1387240",
+    "kana": "まず",
+    "kanji": "まず",
+    "meaning": "처음으로 (모두의)",
+    "meanings": [
+      "처음으로 (모두의)",
+      "먼저",
+      "시작하다",
+      "다른 것보다 먼저",
+      "아마"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1177820",
+    "kana": "とおく",
+    "kanji": "遠く",
+    "meaning": "멀리",
+    "meanings": [
+      "멀리",
+      "먼 곳",
+      "(아주) 거리",
+      "아주 먼 곳"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1414470",
+    "kana": "だいたい",
+    "kanji": "大体",
+    "meaning": "일반적으로",
+    "meanings": [
+      "일반적으로",
+      "전체적으로",
+      "대부분",
+      "거의"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1385920",
+    "kana": "おれる",
+    "kanji": "折れる",
+    "meaning": "부러지다",
+    "meanings": [
+      "부러지다",
+      "부서지다",
+      "접히다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1376600",
+    "kana": "ただしい",
+    "kanji": "正しい",
+    "meaning": "옳다",
+    "meanings": [
+      "옳다",
+      "의롭다",
+      "정당하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1538870",
+    "kana": "ゆにゅう",
+    "kanji": "輸入",
+    "meaning": "수입",
+    "meanings": [
+      "수입",
+      "소개",
+      "구 심성"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1512220",
+    "kana": "へんじ",
+    "kanji": "返事",
+    "meaning": "대답하다",
+    "meanings": [
+      "대답하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1621470",
+    "kana": "と",
+    "kanji": "都",
+    "meaning": "대도시(도쿄)",
+    "meanings": [
+      "대도시(도쿄)",
+      "(도쿄) 수도권",
+      "수도권",
+      "시읍면 창구",
+      "수도"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1303770",
+    "kana": "さんぎょう",
+    "kanji": "産業",
+    "meaning": "산업",
+    "meanings": [
+      "산업",
+      "생계",
+      "직업"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1441870",
+    "kana": "つたえる",
+    "kanji": "伝える",
+    "meaning": "전달하다",
+    "meanings": [
+      "전달하다",
+      "보고하다",
+      "말하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-2429350",
+    "kana": "かねもち; おかねもち",
+    "kanji": "お金持ち",
+    "meaning": "부자",
+    "meanings": [
+      "부자"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1386460",
+    "kana": "せつめい",
+    "kanji": "説明",
+    "meaning": "설명",
+    "meanings": [
+      "설명",
+      "계정",
+      "캡션"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1446760",
+    "kana": "しま",
+    "kanji": "島",
+    "meaning": "섬",
+    "meanings": [
+      "섬",
+      "자신의 영역(성노동자, 조직폭력단 등의)",
+      "자신의 영역"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1454180",
+    "kana": "どうぐ",
+    "kanji": "道具",
+    "meaning": "도구",
+    "meanings": [
+      "도구",
+      "장치"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1208640",
+    "kana": "すべる",
+    "kanji": "滑る",
+    "meaning": "미끄러지다",
+    "meanings": [
+      "미끄러지다",
+      "스케이트를 타다",
+      "스키를 타다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1007060",
+    "kana": "それほど",
+    "kanji": "それほど",
+    "meaning": "그 정도",
+    "meanings": [
+      "그 정도",
+      "그 정도로"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1155120",
+    "kana": "いじょう",
+    "kanji": "以上",
+    "meaning": "... 이상",
+    "meanings": [
+      "... 이상"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-440",
+    "kana": "～まま",
+    "kanji": "～まま",
+    "meaning": "as it is",
+    "meanings": [
+      "as it is"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1454750",
+    "kana": "とっきゅう",
+    "kanji": "特急",
+    "meaning": "특급(특급권이 필요한 열차)",
+    "meanings": [
+      "특급(특급권이 필요한 열차)",
+      "특급(정차 횟수가 제한된 열차)",
+      "급행"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1116840",
+    "kana": "プレゼント",
+    "kanji": "プレゼント",
+    "meaning": "선물",
+    "meanings": [
+      "선물"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-443",
+    "kana": "～(に) よると",
+    "kanji": "～(に) よると",
+    "meaning": "according to ~",
+    "meanings": [
+      "according to ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1294330",
+    "kana": "つま",
+    "kanji": "妻",
+    "meaning": "아내",
+    "meanings": [
+      "아내",
+      "고명 (특히 생선회와 함께 제공되는 것)",
+      "트리밍",
+      "반주",
+      "사이드 (비고)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1221250",
+    "kana": "かえり",
+    "kanji": "帰り",
+    "meaning": "돌아오다",
+    "meanings": [
+      "돌아오다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1592500",
+    "kana": "ぐあい",
+    "kanji": "具合",
+    "meaning": "상태",
+    "meanings": [
+      "상태",
+      "건강",
+      "상태 (건강의)",
+      "방식"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1196240",
+    "kana": "かたい",
+    "kanji": "堅; 硬; 固い",
+    "meaning": "과실",
+    "meanings": [
+      "과실",
+      "부주의",
+      "실수"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1426920",
+    "kana": "ちゅうしゃじょう",
+    "kanji": "駐車場",
+    "meaning": "주차장",
+    "meanings": [
+      "주차장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1066680",
+    "kana": "スーツ",
+    "kanji": "スーツ",
+    "meaning": "정장 (의류)",
+    "meanings": [
+      "정장 (의류)",
+      "정장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1218560",
+    "kana": "きけん",
+    "kanji": "危険",
+    "meaning": "위험",
+    "meanings": [
+      "위험"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1477950",
+    "kana": "かみ",
+    "kanji": "髪",
+    "meaning": "머리카락 (머리에)",
+    "meanings": [
+      "머리카락 (머리에)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1438770",
+    "kana": "てんきよほう",
+    "kanji": "天気予報",
+    "meaning": "일기 예보",
+    "meanings": [
+      "일기 예보"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483150",
+    "kana": "かのじょ",
+    "kanji": "彼女",
+    "meaning": "그",
+    "meanings": [
+      "그",
+      "그녀의",
+      "여자 친구"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1215230",
+    "kana": "あいだ",
+    "kanji": "間",
+    "meaning": "공간 (사이)",
+    "meanings": [
+      "공간 (사이)",
+      "간격",
+      "거리",
+      "늘이기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1405890",
+    "kana": "そつぎょう",
+    "kanji": "卒業",
+    "meaning": "졸업",
+    "meanings": [
+      "졸업",
+      "수료(과정)",
+      "전진(에서)",
+      "성장(어떤 것)",
+      "떠나기(그룹, 회사 등)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1007000",
+    "kana": "それで",
+    "kanji": "それで",
+    "meaning": "그래서",
+    "meanings": [
+      "그래서",
+      "그러므로",
+      "그리고",
+      "(그리고) 그러면"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310530",
+    "kana": "えだ",
+    "kanji": "枝",
+    "meaning": "가지",
+    "meanings": [
+      "가지",
+      "잔가지"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1389880",
+    "kana": "せんもん",
+    "kanji": "専門",
+    "meaning": "전문분야",
+    "meanings": [
+      "전문분야",
+      "특정학과",
+      "(자신의) 분야"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1345605",
+    "kana": "そろそろ",
+    "kanji": "そろそろ",
+    "meaning": "곧",
+    "meanings": [
+      "곧",
+      "머지않아",
+      "지금 언제든지",
+      "잠시",
+      "천천히"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1402730",
+    "kana": "おくる",
+    "kanji": "送る",
+    "meaning": "보내다",
+    "meanings": [
+      "보내다",
+      "파견하다",
+      "전달하다",
+      "발송하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1352320",
+    "kana": "あげる",
+    "kanji": "あげる",
+    "meaning": "to raise",
+    "meanings": [
+      "to raise",
+      "to elevate",
+      "to move something (to a higher place)",
+      "to put onto (e.g. a shelf)",
+      "to increase (price, quality, status, etc.)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1403040",
+    "kana": "さわぐ",
+    "kanji": "騒ぐ",
+    "meaning": "소리를 내다",
+    "meanings": [
+      "소리를 내다",
+      "시끄럽게 굴다",
+      "시끄럽게 하다",
+      "바스락거리다",
+      "쉭쉭"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1369940",
+    "kana": "たずねる",
+    "kanji": "尋ねる",
+    "meaning": "묻다",
+    "meanings": [
+      "묻다",
+      "문의하다",
+      "검색하다",
+      "찾다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1516750",
+    "kana": "ほうそうする",
+    "kanji": "放送",
+    "meaning": "방송",
+    "meanings": [
+      "방송",
+      "프로그램",
+      "공지사항"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1375970",
+    "kana": "せいじ",
+    "kanji": "政治",
+    "meaning": "정치",
+    "meanings": [
+      "정치",
+      "정부"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1308690",
+    "kana": "しみん",
+    "kanji": "市民",
+    "meaning": "시민(국가)",
+    "meanings": [
+      "시민(국가)",
+      "시민권",
+      "시민(도시)",
+      "거주자",
+      "주민"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1108180",
+    "kana": "ファックス",
+    "kanji": "ファックス",
+    "meaning": "팩스",
+    "meanings": [
+      "팩스",
+      "팩스 기계"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1497980",
+    "kana": "まける",
+    "kanji": "負ける",
+    "meaning": "지다",
+    "meanings": [
+      "지다",
+      "패배하다",
+      "굴복하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310050",
+    "kana": "ゆびわ",
+    "kanji": "指輪",
+    "meaning": "(손가락) 반지",
+    "meanings": [
+      "(손가락) 반지"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1442750",
+    "kana": "いなか",
+    "kanji": "田舎",
+    "meaning": "시골 지역",
+    "meanings": [
+      "시골 지역",
+      "시골",
+      "막대기",
+      "고향"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1604570",
+    "kana": "みつける",
+    "kanji": "見つける",
+    "meaning": "찾다",
+    "meanings": [
+      "찾다",
+      "발견하다",
+      "우연히 발견하다",
+      "붙잡다 (누군가 하고 있는)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1283510",
+    "kana": "こうこうせい",
+    "kanji": "高校生",
+    "meaning": "고등학생",
+    "meanings": [
+      "고등학생"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1282260",
+    "kana": "こうぎ",
+    "kanji": "講義",
+    "meaning": "강의",
+    "meanings": [
+      "강의"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-2008740",
+    "kana": "そんなに",
+    "kanji": "そんなに",
+    "meaning": "너무",
+    "meanings": [
+      "너무",
+      "그런"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1426290",
+    "kana": "ひるやすみ",
+    "kanji": "昼休み",
+    "meaning": "점심시간",
+    "meanings": [
+      "점심시간"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1519230",
+    "kana": "わすれもの",
+    "kanji": "忘れ物",
+    "meaning": "잃어버린 물건",
+    "meanings": [
+      "잃어버린 물건",
+      "두고 온 것",
+      "무엇인가 남기고",
+      "무엇인가 잊어버리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589500",
+    "kana": "おりる",
+    "kanji": "下りる",
+    "meaning": "to descend (e.g. a mountain)",
+    "meanings": [
+      "to descend (e.g. a mountain)",
+      "to go down",
+      "to come down",
+      "to alight (e.g. from bus)",
+      "to get off"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1562850",
+    "kana": "うで",
+    "kanji": "腕",
+    "meaning": "팔",
+    "meanings": [
+      "팔",
+      "능력",
+      "기술",
+      "재능"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1538330",
+    "kana": "わけ",
+    "kanji": "訳",
+    "meaning": "이유",
+    "meanings": [
+      "이유",
+      "원인",
+      "근거",
+      "의미"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1349480",
+    "kana": "しょうちする",
+    "kanji": "承知",
+    "meaning": "지식",
+    "meanings": [
+      "지식",
+      "인식",
+      "수용",
+      "동의"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1463930",
+    "kana": "にっき",
+    "kanji": "日記",
+    "meaning": "일기",
+    "meanings": [
+      "일기",
+      "일지"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-482",
+    "kana": "こうこう; こうとうがっこう",
+    "kanji": "高校; 高等学校",
+    "meaning": "high school; senior high school",
+    "meanings": [
+      "high school; senior high school"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1314600",
+    "kana": "にる",
+    "kanji": "似る",
+    "meaning": "닮다",
+    "meanings": [
+      "닮다",
+      "비슷하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-484",
+    "kana": "～おわる",
+    "kanji": "～おわる",
+    "meaning": "to finish doing ~",
+    "meanings": [
+      "to finish doing ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1419860",
+    "kana": "だんぼう",
+    "kanji": "暖房",
+    "meaning": "(실내)난방",
+    "meanings": [
+      "(실내)난방"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1552760",
+    "kana": "るす",
+    "kanji": "留守",
+    "meaning": "부재",
+    "meanings": [
+      "부재",
+      "집을 떠나 있는 것",
+      "집에 있는 것",
+      "하우스 시터",
+      "방치 (예: 공부)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1606810",
+    "kana": "わりあい",
+    "kanji": "割合",
+    "meaning": "비율",
+    "meanings": [
+      "비율",
+      "백분율",
+      "비교적"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1315240",
+    "kana": "てら",
+    "kanji": "寺",
+    "meaning": "사원 (불교)",
+    "meanings": [
+      "사원 (불교)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1212670",
+    "kana": "なれる",
+    "kanji": "慣れる",
+    "meaning": "익숙해지다",
+    "meanings": [
+      "익숙해지다",
+      "능숙해지다",
+      "경험하게 되다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1497190",
+    "kana": "ふつう",
+    "kanji": "普通",
+    "meaning": "보통",
+    "meanings": [
+      "보통"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1328190",
+    "kana": "てつだう",
+    "kanji": "手伝う",
+    "meaning": "돕다",
+    "meanings": [
+      "돕다",
+      "기여하다",
+      "요인이 되다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1375820",
+    "kana": "なるほど",
+    "kanji": "なるほど",
+    "meaning": "나는 본다",
+    "meanings": [
+      "나는 본다",
+      "맞아요",
+      "정말로"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1184280",
+    "kana": "くださる",
+    "kanji": "くださる",
+    "meaning": "주다",
+    "meanings": [
+      "주다",
+      "수여하다",
+      "친절하게 베풀다",
+      "의무를 다하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1404390",
+    "kana": "むすこ",
+    "kanji": "息子",
+    "meaning": "아들",
+    "meanings": [
+      "아들",
+      "성기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002000",
+    "kana": "おこさん",
+    "kanji": "お子さん",
+    "meaning": "아이",
+    "meanings": [
+      "아이"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1198660",
+    "kana": "かいじょう",
+    "kanji": "会場",
+    "meaning": "집회장",
+    "meanings": [
+      "집회장",
+      "모임 장소",
+      "행사장",
+      "현장",
+      "운동장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1351360",
+    "kana": "わらう",
+    "kanji": "笑う",
+    "meaning": "웃다",
+    "meanings": [
+      "웃다",
+      "비웃다",
+      "멍하니 있다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1172660",
+    "kana": "はこぶ",
+    "kanji": "運ぶ",
+    "meaning": "운반하다",
+    "meanings": [
+      "운반하다",
+      "이동하다",
+      "오다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1505190",
+    "kana": "ぶんがく",
+    "kanji": "文学",
+    "meaning": "문학",
+    "meanings": [
+      "문학"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1272780",
+    "kana": "ひかり",
+    "kanji": "光",
+    "meaning": "빛",
+    "meanings": [
+      "빛",
+      "조명",
+      "광선",
+      "빛남"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001870",
+    "kana": "おみまい",
+    "kanji": "お見舞い",
+    "meaning": "방문 (질병이나 불행을 겪고 있는 사람에게)",
+    "meanings": [
+      "방문 (질병이나 불행을 겪고 있는 사람에게)",
+      "전화",
+      "문의 (누군가의 건강에 대해)",
+      "동정의 표현",
+      "문의 편지"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1382250",
+    "kana": "せき",
+    "kanji": "席",
+    "meaning": "좌석",
+    "meanings": [
+      "좌석",
+      "위치(모임 등)",
+      "장소",
+      "위치",
+      "게시물"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-503",
+    "kana": "～さま",
+    "kanji": "～様",
+    "meaning": "Mr., Mrs., Ms.",
+    "meanings": [
+      "Mr., Mrs., Ms."
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1593570",
+    "kana": "ごぞんじ",
+    "kanji": "ご存じ",
+    "meaning": "아는 것",
+    "meanings": [
+      "아는 것",
+      "알고 있는 것"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1184160",
+    "kana": "さがる",
+    "kanji": "下る",
+    "meaning": "내리다",
+    "meanings": [
+      "내리다",
+      "가라앉다",
+      "넘어지다",
+      "떨어지다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1315130",
+    "kana": "じ",
+    "kanji": "字",
+    "meaning": "문자(특히 한자)",
+    "meanings": [
+      "문자(특히 한자)",
+      "문자",
+      "필기체",
+      "손글씨",
+      "습자"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1015840",
+    "kana": "アジア",
+    "kanji": "アジア",
+    "meaning": "아시아",
+    "meanings": [
+      "아시아"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1603550",
+    "kana": "ほめる",
+    "kanji": "褒める",
+    "meaning": "칭찬하다",
+    "meanings": [
+      "칭찬하다",
+      "좋게 말하다",
+      "높이 평가하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1586265",
+    "kana": "すく",
+    "kanji": "空く",
+    "meaning": "덜 붐비다",
+    "meanings": [
+      "덜 붐비다",
+      "살이 빠지다",
+      "텅 비다",
+      "배가 고프다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1149990",
+    "kana": "あ",
+    "kanji": "あ",
+    "meaning": "muteness",
+    "meanings": [
+      "muteness",
+      "speech impairment",
+      "mute",
+      "deaf-mute"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1293700",
+    "kana": "もっとも",
+    "kanji": "最も",
+    "meaning": "대부분",
+    "meanings": [
+      "대부분",
+      "극도로"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1284430",
+    "kana": "あう",
+    "kanji": "合う",
+    "meaning": "함께 가다",
+    "meanings": [
+      "함께 가다",
+      "합쳐지다",
+      "연합하다",
+      "만나다",
+      "어울리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-513",
+    "kana": "～だい",
+    "kanji": "～代",
+    "meaning": "~ age; period",
+    "meanings": [
+      "~ age; period"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1293810",
+    "kana": "さいご",
+    "kanji": "最後",
+    "meaning": "끝",
+    "meanings": [
+      "끝",
+      "결론",
+      "마지막",
+      "최근"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600160",
+    "kana": "ねだん",
+    "kanji": "値段",
+    "meaning": "가격",
+    "meanings": [
+      "가격",
+      "비용"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1411300",
+    "kana": "たいいんする",
+    "kanji": "退院",
+    "meaning": "퇴원",
+    "meanings": [
+      "퇴원"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1440660",
+    "kana": "てんらんかい",
+    "kanji": "展覧会",
+    "meaning": "전시회",
+    "meanings": [
+      "전시회"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1227370",
+    "kana": "ひさしぶり",
+    "kanji": "久しぶり",
+    "meaning": "오랜만이야 (지난번부터)",
+    "meanings": [
+      "오랜만이야 (지난번부터)",
+      "오랜만에 처음으로",
+      "오랜만이야"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1036290",
+    "kana": "カーテン",
+    "kanji": "カーテン",
+    "meaning": "커튼",
+    "meanings": [
+      "커튼"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1222700",
+    "kana": "きしゃ",
+    "kanji": "汽車",
+    "meaning": "기차 (특히 장거리 열차)",
+    "meanings": [
+      "기차 (특히 장거리 열차)",
+      "증기 기관차"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589040",
+    "kana": "おくれる",
+    "kanji": "遅れる",
+    "meaning": "늦다",
+    "meanings": [
+      "늦다",
+      "지체하다",
+      "일정에 뒤처지다",
+      "기한을 넘기다",
+      "뒤처지다 (시합이나 학업 등에서)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1604550",
+    "kana": "みつかる",
+    "kanji": "見つかる",
+    "meaning": "발견되다",
+    "meanings": [
+      "발견되다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1346370",
+    "kana": "めしあがる",
+    "kanji": "召し上がる",
+    "meaning": "먹다",
+    "meanings": [
+      "먹다",
+      "마시다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1408220",
+    "kana": "ふとる",
+    "kanji": "太る",
+    "meaning": "살이 찌다",
+    "meanings": [
+      "살이 찌다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1426590",
+    "kana": "ちゅうしゃ",
+    "kanji": "注射",
+    "meaning": "주사",
+    "meanings": [
+      "주사",
+      "잽",
+      "샷"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1605840",
+    "kana": "よう",
+    "kanji": "様",
+    "meaning": "나타나는 ...",
+    "meanings": [
+      "나타나는 ...",
+      "바라보는 ...",
+      "...으로 가는 길",
+      "...하는 방법",
+      "형태"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-527",
+    "kana": "～おき",
+    "kanji": "～おき",
+    "meaning": "after every ~",
+    "meanings": [
+      "after every ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1293990",
+    "kana": "さいしょ",
+    "kanji": "最初",
+    "meaning": "시작",
+    "meanings": [
+      "시작",
+      "처음"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-529",
+    "kana": "ご～",
+    "kanji": "御～",
+    "meaning": "honorable ~",
+    "meanings": [
+      "honorable ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1153890",
+    "kana": "あんしん",
+    "kanji": "安心",
+    "meaning": "마음의 평화",
+    "meanings": [
+      "마음의 평화",
+      "안도감",
+      "(감각) 안전",
+      "안전",
+      "확신"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-2846390",
+    "kana": "なおる",
+    "kanji": "直る",
+    "meaning": "고치다",
+    "meanings": [
+      "고치다",
+      "정상으로 돌아가다",
+      "회복하다 (예: 화를 내다)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1333560",
+    "kana": "あつめる",
+    "kanji": "集める",
+    "meaning": "모으다",
+    "meanings": [
+      "모으다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1599390",
+    "kana": "なおす",
+    "kanji": "直す",
+    "meaning": "고치다",
+    "meanings": [
+      "고치다",
+      "수선하다",
+      "바로잡다 (실수, 나쁜 습관 등)",
+      "바로잡다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1405790",
+    "kana": "つづく",
+    "kanji": "続く",
+    "meaning": "계속하다",
+    "meanings": [
+      "계속하다",
+      "지속하다",
+      "(휴식 없이) 계속하다",
+      "깨지지 않다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1388410",
+    "kana": "せんぱい",
+    "kanji": "先輩",
+    "meaning": "선배(직장이나 학교)",
+    "meanings": [
+      "선배(직장이나 학교)",
+      "상사",
+      "선배",
+      "선배 졸업생",
+      "조상"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1538130",
+    "kana": "やくそく",
+    "kanji": "約束",
+    "meaning": "약속",
+    "meanings": [
+      "약속",
+      "합의",
+      "약정",
+      "한 마디",
+      "계약"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1374300",
+    "kana": "せわする",
+    "kanji": "世話",
+    "meaning": "배려",
+    "meanings": [
+      "배려",
+      "보살핌",
+      "도움",
+      "지원",
+      "원조"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1242350",
+    "kana": "きんじょ",
+    "kanji": "近所",
+    "meaning": "동네",
+    "meanings": [
+      "동네",
+      "근처"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1347710",
+    "kana": "しょうらい",
+    "kanji": "将来",
+    "meaning": "미래",
+    "meanings": [
+      "미래",
+      "(미래) 전망",
+      "(해외, 다른 지역 등에서) 가져오다",
+      "가져오다",
+      "~을 일으키다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1182620",
+    "kana": "おく",
+    "kanji": "億",
+    "meaning": "억",
+    "meanings": [
+      "억",
+      "100,000,000",
+      "10^8"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1372980",
+    "kana": "すうがく",
+    "kanji": "数学",
+    "meaning": "수학",
+    "meanings": [
+      "수학"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1505120",
+    "kana": "ぶんか",
+    "kanji": "文化",
+    "meaning": "문화",
+    "meanings": [
+      "문화",
+      "문명",
+      "문화시대(1804.2.11~1818.4.22)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1501620",
+    "kana": "はらう",
+    "kanji": "払う",
+    "meaning": "지불하다 (예: 돈, 청구서)",
+    "meanings": [
+      "지불하다 (예: 돈, 청구서)",
+      "닦다",
+      "닦아내다",
+      "치우다",
+      "먼지를 털어내다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1333090",
+    "kana": "しゅうかん",
+    "kanji": "習慣",
+    "meaning": "습관",
+    "meanings": [
+      "습관",
+      "(사회적) 관습",
+      "관행",
+      "관례",
+      "전통"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1350610",
+    "kana": "やける",
+    "kanji": "焼ける",
+    "meaning": "태우다",
+    "meanings": [
+      "태우다",
+      "불에 타다",
+      "굽다",
+      "완전히 익히다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1247250",
+    "kana": "きみ",
+    "kanji": "君",
+    "meaning": "당신",
+    "meanings": [
+      "당신",
+      "친구",
+      "군주",
+      "통치자"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1556630",
+    "kana": "ひえる",
+    "kanji": "冷える",
+    "meaning": "추워지다",
+    "meanings": [
+      "추워지다",
+      "차가워지다",
+      "식다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1441400",
+    "kana": "つく",
+    "kanji": "点く",
+    "meaning": "(램프, 버너 등의) 불이 붙다",
+    "meanings": [
+      "(램프, 버너 등의) 불이 붙다",
+      "불이 붙다",
+      "점화하다",
+      "타기 시작하다",
+      "(전등, 기구 등의) 켜다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1004690",
+    "kana": "このあいだ",
+    "kanji": "この間",
+    "meaning": "저번에",
+    "meanings": [
+      "저번에",
+      "최근에",
+      "이 기간 동안",
+      "그동안"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-550",
+    "kana": "格好",
+    "kanji": "かっこう",
+    "meaning": "appearance, manner, shape, form, posture",
+    "meanings": [
+      "appearance, manner, shape, form, posture"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-551",
+    "kana": "",
+    "kanji": "かまう",
+    "meaning": "to mind, to care about, to be concerned about",
+    "meanings": [
+      "to mind, to care about, to be concerned about"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1405800",
+    "kana": "つづける",
+    "kanji": "続ける",
+    "meaning": "계속하다",
+    "meanings": [
+      "계속하다",
+      "계속하다 ..."
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589260",
+    "kana": "おとす",
+    "kanji": "落す",
+    "meaning": "떨어뜨리다",
+    "meanings": [
+      "떨어뜨리다",
+      "잃다",
+      "떨어지게 하다",
+      "흘리다 ( 빛 )",
+      "던지다 ( 시선 )"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584660",
+    "kana": "あす",
+    "kanji": "明日",
+    "meaning": "tomorrow",
+    "meanings": [
+      "tomorrow",
+      "near future"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1340000",
+    "kana": "しゅっぱつする",
+    "kanji": "出発",
+    "meaning": "출발",
+    "meanings": [
+      "출발"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1472270",
+    "kana": "はいけんする",
+    "kanji": "拝見",
+    "meaning": "보다",
+    "meanings": [
+      "보다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1208020",
+    "kana": "われる",
+    "kanji": "割れる",
+    "meaning": "부수다",
+    "meanings": [
+      "부수다",
+      "박살내다",
+      "쪼개지다",
+      "깨지다",
+      "갈라지다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1472800",
+    "kana": "せなか",
+    "kanji": "背中",
+    "meaning": "(몸의) 뒤",
+    "meanings": [
+      "(몸의) 뒤"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1362400",
+    "kana": "しんぶんしゃ",
+    "kanji": "新聞社",
+    "meaning": "신문사",
+    "meanings": [
+      "신문사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1195140",
+    "kana": "いじめる",
+    "kanji": "いじめる",
+    "meaning": "괴롭히다",
+    "meanings": [
+      "괴롭히다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-561",
+    "kana": "まわる、まわす",
+    "kanji": "回る、回す",
+    "meaning": "to go around, to revolve",
+    "meanings": [
+      "to go around, to revolve"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-562",
+    "kana": "～くん",
+    "kanji": "～君",
+    "meaning": "Mr. (junior) ~, master ~",
+    "meanings": [
+      "Mr. (junior) ~, master ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1238840",
+    "kana": "おっしゃる",
+    "kanji": "おっしゃる",
+    "meaning": "말하다",
+    "meanings": [
+      "말하다",
+      "부르다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1529330",
+    "kana": "ねむい",
+    "kanji": "眠い",
+    "meaning": "졸리다",
+    "meanings": [
+      "졸리다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1467620",
+    "kana": "ぬれる",
+    "kanji": "濡れる",
+    "meaning": "젖다",
+    "meanings": [
+      "젖다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1445790",
+    "kana": "たおれる",
+    "kanji": "倒れる",
+    "meaning": "넘어지다 (위로, 아래로)",
+    "meanings": [
+      "넘어지다 (위로, 아래로)",
+      "무너지다",
+      "넘어지다",
+      "쓰러지다",
+      "파괴되다 (붕괴에서)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-567",
+    "kana": "スーパー (マーケット)",
+    "kanji": "スーパー (マーケット)",
+    "meaning": "supermarket",
+    "meanings": [
+      "supermarket"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1015220",
+    "kana": "アクセサリー",
+    "kanji": "アクセサリー",
+    "meaning": "액세서리(패션)",
+    "meanings": [
+      "액세서리(패션)",
+      "주얼리",
+      "액세서리(오디오, 자동차, 카메라 등)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1281020",
+    "kana": "かんがえる",
+    "kanji": "考える",
+    "meaning": "생각하다 (에 대해)",
+    "meanings": [
+      "생각하다 (에 대해)",
+      "생각하다",
+      "숙고하다",
+      "반영하다 (에)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1604800",
+    "kana": "むかう",
+    "kanji": "向かう",
+    "meaning": "향하다",
+    "meanings": [
+      "향하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1318720",
+    "kana": "じゆう",
+    "kanji": "自由",
+    "meaning": "자유",
+    "meanings": [
+      "자유"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1594110",
+    "kana": "しかた",
+    "kanji": "仕方",
+    "meaning": "방식",
+    "meanings": [
+      "방식",
+      "방법",
+      "수단",
+      "자원",
+      "과정"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1592270",
+    "kana": "くび",
+    "kanji": "首",
+    "meaning": "목",
+    "meanings": [
+      "목",
+      "머리",
+      "해고 (직장에서)",
+      "해고",
+      "약탈"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1436510",
+    "kana": "ほど",
+    "kanji": "程",
+    "meaning": "정도",
+    "meanings": [
+      "정도",
+      "척도",
+      "한계",
+      "범위"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1590770",
+    "kana": "かわり",
+    "kanji": "代わり",
+    "meaning": "대체하다",
+    "meanings": [
+      "대체하다",
+      "교체하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1320140",
+    "kana": "しっぱい",
+    "kanji": "失敗",
+    "meaning": "실패",
+    "meanings": [
+      "실패",
+      "실수"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1278040",
+    "kana": "こうぎょう",
+    "kanji": "工業",
+    "meaning": "(제조)산업",
+    "meanings": [
+      "(제조)산업"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1158210",
+    "kana": "うつる",
+    "kanji": "移る",
+    "meaning": "이사하다(집)",
+    "meanings": [
+      "이사하다(집)",
+      "옮기다(부서)",
+      "관심이나 관심의 대상을 바꾸다",
+      "경과하다(시간의 흐름)",
+      "색이나 향기에 스며들다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1066690",
+    "kana": "スーツケース",
+    "kanji": "スーツケース",
+    "meaning": "여행 가방",
+    "meanings": [
+      "여행 가방"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1482700",
+    "kana": "ひげ",
+    "kanji": "ひげ",
+    "meaning": "자기비하",
+    "meanings": [
+      "자기비하",
+      "겸손"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1258570",
+    "kana": "けんきゅうしつ",
+    "kanji": "研究室",
+    "meaning": "연구실",
+    "meanings": [
+      "연구실",
+      "세미나실",
+      "교수 연구실"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1578700",
+    "kana": "こうじょう",
+    "kanji": "工場",
+    "meaning": "공장",
+    "meanings": [
+      "공장",
+      "작업장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1351430",
+    "kana": "しょうかい",
+    "kanji": "紹介",
+    "meaning": "소개",
+    "meanings": [
+      "소개",
+      "발표",
+      "추천",
+      "쇼케이스(제품)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-584",
+    "kana": "けれど; けれども",
+    "kanji": "けれど; けれども",
+    "meaning": "but, although",
+    "meanings": [
+      "but, although"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1602800",
+    "kana": "ふね",
+    "kanji": "舟",
+    "meaning": "선박",
+    "meanings": [
+      "선박",
+      "보트",
+      "수상 비행기"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1451210",
+    "kana": "うごく",
+    "kanji": "動く",
+    "meaning": "움직이다",
+    "meanings": [
+      "움직이다",
+      "휘젓다",
+      "흔들다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-587",
+    "kana": "～(に) ついて",
+    "kanji": "～(に) ついて",
+    "meaning": "about, concerning",
+    "meanings": [
+      "about, concerning"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1051970",
+    "kana": "コンサート",
+    "kanji": "コンサート",
+    "meaning": "콘서트",
+    "meanings": [
+      "콘서트"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1426680",
+    "kana": "むし",
+    "kanji": "虫",
+    "meaning": "곤충",
+    "meanings": [
+      "곤충",
+      "벌레",
+      "귀뚜라미",
+      "나방"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1539040",
+    "kana": "やさしい",
+    "kanji": "優しい",
+    "meaning": "부드러움",
+    "meanings": [
+      "부드러움",
+      "친절함",
+      "온화함",
+      "우아함",
+      "다정함"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-591",
+    "kana": "コンピュータ; コンピューター",
+    "kanji": "コンピュータ; コンピューター",
+    "meaning": "computer",
+    "meanings": [
+      "computer"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1357250",
+    "kana": "うえる",
+    "kanji": "植える",
+    "meaning": "심다",
+    "meanings": [
+      "심다",
+      "자라다",
+      "키우다",
+      "삽입하다",
+      "이식하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1554010",
+    "kana": "りょうほう",
+    "kanji": "両方",
+    "meaning": "양측",
+    "meanings": [
+      "양측"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1179005",
+    "kana": "よごれる",
+    "kanji": "汚れる",
+    "meaning": "더러워지다",
+    "meanings": [
+      "더러워지다",
+      "타락하다",
+      "순결을 잃다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1371320",
+    "kana": "すいえい",
+    "kanji": "水泳",
+    "meaning": "수영",
+    "meanings": [
+      "수영"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1251270",
+    "kana": "けいけんする",
+    "kanji": "経験",
+    "meaning": "경험",
+    "meanings": [
+      "경험"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1346150",
+    "kana": "かつ",
+    "kanji": "勝つ",
+    "meaning": "승리하다",
+    "meanings": [
+      "승리하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1291500",
+    "kana": "すな",
+    "kanji": "砂",
+    "meaning": "모래",
+    "meanings": [
+      "모래",
+      "고운 자갈"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1252390",
+    "kana": "けいさつ",
+    "kanji": "警察",
+    "meaning": "경찰",
+    "meanings": [
+      "경찰",
+      "경찰관",
+      "경찰서",
+      "자칭 집행자(규칙, 표준 등의)",
+      "바쁜 사람"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1326830",
+    "kana": "とりかえる",
+    "kanji": "取り替える",
+    "meaning": "교환하다",
+    "meanings": [
+      "교환하다",
+      "물물교환하다",
+      "대체하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1228650",
+    "kana": "いそぐ",
+    "kanji": "急ぐ",
+    "meaning": "서두르다",
+    "meanings": [
+      "서두르다",
+      "어떤 일이 더 빨리 일어나게 하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1214330",
+    "kana": "かんたん",
+    "kanji": "簡単",
+    "meaning": "간단하다",
+    "meanings": [
+      "간단하다",
+      "쉽다",
+      "복잡하지 않다",
+      "빠르다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1302070",
+    "kana": "まいる",
+    "kanji": "参る",
+    "meaning": "가다",
+    "meanings": [
+      "가다",
+      "오다",
+      "부르다",
+      "패배하다",
+      "무너지다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1395620",
+    "kana": "ぜんぜん",
+    "kanji": "全然",
+    "meaning": "(아님) 전혀",
+    "meanings": [
+      "(아님) 전혀",
+      "(아님) 조금도",
+      "전적으로",
+      "완전히"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1455280",
+    "kana": "とくべつ",
+    "kanji": "特別",
+    "meaning": "특별한",
+    "meanings": [
+      "특별한",
+      "예외적인"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1500800",
+    "kana": "ふくしゅう",
+    "kanji": "復習",
+    "meaning": "(학습한 자료의) 검토",
+    "meanings": [
+      "(학습한 자료의) 검토",
+      "수정"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1215260",
+    "kana": "まにあう",
+    "kanji": "間に合う",
+    "meaning": "시간에 맞추다(for)",
+    "meanings": [
+      "충분하다",
+      "관리하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1537980",
+    "kana": "やくにたつ",
+    "kanji": "役に立つ",
+    "meaning": "도움이 되다",
+    "meanings": [
+      "도움이 되다",
+      "유용하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-2015610",
+    "kana": "もうすぐ",
+    "kanji": "もうすぐ",
+    "meaning": "곧",
+    "meanings": [
+      "곧",
+      "머지않아",
+      "거의"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-2838012",
+    "kana": "まんなか",
+    "kanji": "真中",
+    "meaning": "중간",
+    "meanings": [
+      "중간",
+      "중심",
+      "중간점",
+      "심장"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1535880",
+    "kana": "もどる",
+    "kanji": "戻る",
+    "meaning": "돌아오다 (예: 반쯤)",
+    "meanings": [
+      "돌아오다 (예: 반쯤)",
+      "돌아오다",
+      "돌아가다",
+      "회복하다 (예: 잃어버린 것)",
+      "돌려받다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1258520",
+    "kana": "けんきゅう",
+    "kanji": "研究",
+    "meaning": "연구",
+    "meanings": [
+      "연구",
+      "조사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1047860",
+    "kana": "ケーキ",
+    "kanji": "ケーキ",
+    "meaning": "케이크",
+    "meanings": [
+      "케이크"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1401910",
+    "kana": "くさ",
+    "kanji": "草",
+    "meaning": "풀",
+    "meanings": [
+      "풀",
+      "잡초",
+      "허브",
+      "초가",
+      "닌자"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1593410",
+    "kana": "こむ",
+    "kanji": "込む",
+    "meaning": "혼잡하다",
+    "meanings": [
+      "혼잡하다",
+      "꽉 차다",
+      "복잡하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1004710",
+    "kana": "このごろ",
+    "kanji": "この頃",
+    "meaning": "요즘",
+    "meanings": [
+      "요즘",
+      "지금",
+      "현재",
+      "최근에"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1518070",
+    "kana": "たずねる",
+    "kanji": "訪ねる",
+    "meaning": "방문하다",
+    "meanings": [
+      "방문하다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1184170",
+    "kana": "さげる",
+    "kanji": "下げる",
+    "meaning": "걸다",
+    "meanings": [
+      "걸다",
+      "입다 (예: 장식)",
+      "낮추다",
+      "줄이다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1194660",
+    "kana": "はなみ",
+    "kanji": "花見",
+    "meaning": "꽃놀이",
+    "meanings": [
+      "꽃놀이"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1582200",
+    "kana": "とちゅう",
+    "kanji": "途中",
+    "meaning": "도중에",
+    "meanings": [
+      "도중에",
+      "중간에"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1465720",
+    "kana": "にゅういんする",
+    "kanji": "入院",
+    "meaning": "입원",
+    "meanings": [
+      "입원"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600470",
+    "kana": "のりかえる",
+    "kanji": "乗り換える",
+    "meaning": "환승하다 (기차)",
+    "meanings": [
+      "환승하다 (기차)",
+      "바꾸다 (버스, 기차)",
+      "바꾸다 (다른 이념, 정당, 회사 등으로)",
+      "전환하다 (다른 시스템, 방법 등으로)",
+      "나아가다 (예: 새로운 사랑에 대한 관심)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1606590",
+    "kana": "わかれる",
+    "kanji": "別れる",
+    "meaning": "(보통 사람들의) 헤어지다",
+    "meanings": [
+      "(보통 사람들의) 헤어지다",
+      "헤어지다",
+      "헤어지다 (부부)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-624",
+    "kana": "～ちょう",
+    "kanji": "～町",
+    "meaning": "the town of ~",
+    "meanings": [
+      "the town of ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1153930",
+    "kana": "あんぜん",
+    "kanji": "安全",
+    "meaning": "안전",
+    "meanings": [
+      "안전",
+      "보안"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1213870",
+    "kana": "かんごふ",
+    "kanji": "看護婦",
+    "meaning": "(여자) 간호사",
+    "meanings": [
+      "(여자) 간호사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1260000",
+    "kana": "けんぶつ",
+    "kanji": "見物",
+    "meaning": "관광하다",
+    "meanings": [
+      "관광하다",
+      "구경하다",
+      "관광객",
+      "구경꾼"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1401210",
+    "kana": "そうだんする",
+    "kanji": "相談",
+    "meaning": "상담",
+    "meanings": [
+      "상담",
+      "토론",
+      "(누군가에게) 조언을 요청"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1040260",
+    "kana": "ガソリンスタンド",
+    "kanji": "ガソリンスタンド",
+    "meaning": "주유소",
+    "meanings": [
+      "주유소"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1080000",
+    "kana": "テニス",
+    "kanji": "テニス",
+    "meaning": "테니스",
+    "meanings": [
+      "테니스"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1529390",
+    "kana": "ねむる",
+    "kanji": "眠る",
+    "meaning": "잠을 자다",
+    "meanings": [
+      "잠을 자다",
+      "죽다",
+      "쉬다 (평화롭게)",
+      "누워있다 (묻히다)",
+      "잠을 자다 (무덤에)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1352290",
+    "kana": "あがる",
+    "kanji": "上がる",
+    "meaning": "오르다",
+    "meanings": [
+      "오르다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1523400",
+    "kana": "ほんやく",
+    "kanji": "翻訳",
+    "meaning": "번역",
+    "meanings": [
+      "번역",
+      "해독"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1358490",
+    "kana": "しょくじする",
+    "kanji": "食事",
+    "meaning": "식사(예: 점심, 저녁)",
+    "meanings": [
+      "식사(예: 점심, 저녁)",
+      "다이어트"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-635",
+    "kana": "お陰",
+    "kanji": "おかげ",
+    "meaning": "thanks or owing to",
+    "meanings": [
+      "thanks or owing to"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1531190",
+    "kana": "むすめ",
+    "kanji": "娘",
+    "meaning": "딸",
+    "meanings": [
+      "딸",
+      "소녀(예: 젊은 미혼 여성)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1448580",
+    "kana": "ゆ",
+    "kanji": "湯",
+    "meaning": "뜨거운 물",
+    "meanings": [
+      "뜨거운 물",
+      "뜨거운 목욕",
+      "온천",
+      "용철"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1234140",
+    "kana": "きょうそう",
+    "kanji": "競争",
+    "meaning": "경쟁",
+    "meanings": [
+      "경쟁",
+      "인종",
+      "경쟁(유기체 또는 종 간)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1198360",
+    "kana": "かいぎ",
+    "kanji": "会議",
+    "meaning": "회의",
+    "meanings": [
+      "회의",
+      "컨퍼런스",
+      "세션",
+      "총회",
+      "협의회"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1267280",
+    "kana": "みずうみ",
+    "kanji": "湖",
+    "meaning": "호수",
+    "meanings": [
+      "호수"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1333550",
+    "kana": "あつまる",
+    "kanji": "集まる",
+    "meaning": "모으다",
+    "meanings": [
+      "모으다"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-642",
+    "kana": "～にくい",
+    "kanji": "～にくい",
+    "meaning": "difficult to do ~",
+    "meanings": [
+      "difficult to do ~"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1378860",
+    "kana": "せいかつする",
+    "kanji": "生活",
+    "meaning": "생활",
+    "meanings": [
+      "생활",
+      "생계",
+      "(자신의) 생활"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1311450",
+    "kana": "いと",
+    "kanji": "糸",
+    "meaning": "실",
+    "meanings": [
+      "실",
+      "끈"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1215810",
+    "kana": "かんけい",
+    "kanji": "関係",
+    "meaning": "관계",
+    "meanings": [
+      "관계",
+      "연결",
+      "참여"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1106400",
+    "kana": "ピアノ",
+    "kanji": "ピアノ",
+    "meaning": "피아노(악기)",
+    "meanings": [
+      "피아노(악기)",
+      "피아노(다이나믹)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-647",
+    "kana": "～め",
+    "kanji": "～目",
+    "meaning": "number ~ sequence, ~nd; ~th",
+    "meanings": [
+      "number ~ sequence, ~nd; ~th"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1482340",
+    "kana": "ばんぐみ",
+    "kanji": "番組",
+    "meaning": "프로그램(예: TV)",
+    "meanings": [
+      "프로그램"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1228560",
+    "kana": "きゅう",
+    "kanji": "急",
+    "meaning": "갑작스러운",
+    "meanings": [
+      "갑작스러운",
+      "예상치 못한",
+      "긴급한"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1416700",
+    "kana": "たな",
+    "kanji": "棚",
+    "meaning": "선반",
+    "meanings": [
+      "선반",
+      "랙",
+      "격자"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1534870",
+    "kana": "もめん",
+    "kanji": "木綿",
+    "meaning": "면(소재)",
+    "meanings": [
+      "면(소재)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1538820",
+    "kana": "ゆしゅつする",
+    "kanji": "輸出",
+    "meaning": "수출",
+    "meanings": [
+      "수출",
+      "원심"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1075940",
+    "kana": "タイプ",
+    "kanji": "タイプ",
+    "meaning": "유형",
+    "meanings": [
+      "유형",
+      "종류",
+      "정렬",
+      "스타일",
+      "유형 (사람의)"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1332400",
+    "kana": "すり",
+    "kanji": "すり",
+    "meaning": "repair",
+    "meanings": [
+      "repair",
+      "mending",
+      "fixing",
+      "servicing"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N4-655",
+    "kana": "嬉しい",
+    "kanji": "うれしい",
+    "meaning": "to be happy; to be glad",
+    "meanings": [
+      "to be happy; to be glad"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1019280",
+    "kana": "アルコール",
+    "kanji": "アルコール",
+    "meaning": "알코올",
+    "meanings": [
+      "알코올",
+      "주류",
+      "(알코올 기반) 손 소독제"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1075500",
+    "kana": "ソフト",
+    "kanji": "ソフト",
+    "meaning": "소프트",
+    "meanings": [
+      "소프트",
+      "소프트 모자",
+      "펠트 모자",
+      "소프트 아이스크림"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1364670",
+    "kana": "じんじゃ",
+    "kanji": "神社",
+    "meaning": "신사",
+    "meanings": [
+      "신사"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1414920",
+    "kana": "だいぶ",
+    "kanji": "大分",
+    "meaning": "상당히",
+    "meanings": [
+      "상당히",
+      "크게",
+      "많이"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1207250",
+    "kana": "たのしみ",
+    "kanji": "楽しみ",
+    "meaning": "즐거움",
+    "meanings": [
+      "즐거움"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1329000",
+    "kana": "しゅみ",
+    "kanji": "趣味",
+    "meaning": "취미",
+    "meanings": [
+      "취미",
+      "취향",
+      "좋아하는 것"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1443760",
+    "kana": "でんぽう",
+    "kanji": "電報",
+    "meaning": "전보",
+    "meanings": [
+      "전보"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1192420",
+    "kana": "かない",
+    "kanji": "家内",
+    "meaning": "(나의) 아내",
+    "meanings": [
+      "(나의) 아내",
+      "집 안의",
+      "가족"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1309650",
+    "kana": "ゆび",
+    "kanji": "指",
+    "meaning": "손가락",
+    "meanings": [
+      "손가락",
+      "발가락"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1004790",
+    "kana": "これから",
+    "kanji": "これから",
+    "meaning": "지금부터",
+    "meanings": [
+      "지금부터",
+      "이후에",
+      "앞으로",
+      "여기부터"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1634500",
+    "kana": "たまに",
+    "kanji": "たまに",
+    "meaning": "가끔",
+    "meanings": [
+      "가끔",
+      "가끔씩"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  },
+  {
+    "id": "jm-1322700",
+    "kana": "しゃかい",
+    "kanji": "社会",
+    "meaning": "사회",
+    "meanings": [
+      "사회",
+      "공공",
+      "공동체",
+      "세계"
+    ],
+    "jlptLevel": "N4",
+    "source": "default"
+  }
+]

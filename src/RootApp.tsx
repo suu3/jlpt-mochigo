@@ -31,6 +31,8 @@ export function RootApp() {
     })
   }, [initialize])
 
+  const shouldShowOverlay = !isReady || (isWordDataLoading === true && screen !== "words" && screen !== "review")
+
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.appShell}>
@@ -47,7 +49,7 @@ export function RootApp() {
           {isReady && screen === "bookmarks" ? <BookmarksScreen /> : null}
           {isReady && screen === "settings" ? <SettingsScreen /> : null}
 
-          {!isReady || isWordDataLoading ? (
+          {shouldShowOverlay ? (
             <View style={styles.loadingOverlay}>
               <View style={styles.loadingCard}>
                 <ActivityIndicator color={colors.primary} size="large" />

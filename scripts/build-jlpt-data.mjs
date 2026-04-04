@@ -16,23 +16,16 @@ const localizationDir = resolve(projectRoot, "data/localizations")
 
 const levelNames = ["N1", "N2", "N3", "N4", "N5"]
 
+// --- JMdict Parsing Utilities ---
 function ensureArray(value) {
-  if (Array.isArray(value)) {
-    return value
-  }
-  if (value === undefined || value === null) {
-    return []
-  }
+  if (Array.isArray(value)) return value
+  if (value === undefined || value === null) return []
   return [value]
 }
 
 function toText(value) {
-  if (typeof value === "string") {
-    return value
-  }
-  if (value && typeof value === "object" && "#text" in value) {
-    return value["#text"]
-  }
+  if (typeof value === "string") return value
+  if (value && typeof value === "object" && "#text" in value) return value["#text"]
   return ""
 }
 
@@ -43,192 +36,171 @@ function normalizeGlosses(sense) {
     .filter(Boolean)
 }
 
-function normalizeWordListRecord(record) {
-  const entries = Object.fromEntries(Object.entries(record).map(([key, value]) => [key.trim(), `${value}`.trim()]))
-  const expression = entries.kanji || entries.expression || entries.word || entries.vocabulary || entries.japanese || ""
-  const reading = entries.kana || entries.reading || entries.yomikata || ""
-
-  return {
-    expression,
-    reading
-  }
+function getKanjiList(entry) {
+  return ensureArray(entry.k_ele).map((item) => item.keb).filter(Boolean)
 }
 
-function loadJlptMaps(rowsByLevel) {
-  const lookup = new Map()
+function getKanaList(entry) {
+  return ensureArray(entry.r_ele).map((item) => item.reb).filter(Boolean)
+}
 
-  for (const [level, rows] of rowsByLevel.entries()) {
-    for (const row of rows) {
-      const normalized = normalizeWordListRecord(row)
-      const keys = [
-        normalized.expression,
-        normalized.reading,
-        `${normalized.expression}::${normalized.reading}`
-      ].filter(Boolean)
+// --- CSV Record Normalization ---
+function normalizeRecord(record) {
+  const expression = (record.expression || record.kanji || record.word || "").trim()
+  const reading = (record.reading || record.kana || "").trim()
+  const meaning = (record.meaning || "").trim()
+  return { expression, reading, meaning }
+}
 
-      for (const key of keys) {
-        lookup.set(key, level)
+async function main() {
+  console.log("Starting build-jlpt-data.mjs (CSV-centric mode)...")
+
+  const parser = new XMLParser({
+    ignoreAttributes: false,
+    attributeNamePrefix: "",
+    parseTagValue: false,
+    trimValues: true,
+    processEntities: false
+  })
+
+  // 1. Load JMdict and build lookup maps
+  console.log("Loading JMdict...")
+  const jmDictCompressed = await readFile(resolve(rawDir, "JMdict_e.gz"))
+  const jmDictXml = gunzipSync(jmDictCompressed).toString("utf8")
+  const jmDict = parser.parse(jmDictXml)
+  const entryList = ensureArray(jmDict.JMdict?.entry)
+
+  const jmLookup = new Map() // kanji::reading -> entry
+  const jmKanjiLookup = new Map() // kanji -> entry[]
+  const jmReadingLookup = new Map() // reading -> entry[]
+
+  for (const entry of entryList) {
+    const kanjis = getKanjiList(entry)
+    const readings = getKanaList(entry)
+    const id = `jm-${entry.ent_seq}`
+    
+    const entryData = {
+      id,
+      kanjis,
+      readings,
+      meanings: normalizeGlosses(entry.sense)
+    }
+
+    for (const k of kanjis) {
+      if (!jmKanjiLookup.has(k)) jmKanjiLookup.set(k, [])
+      jmKanjiLookup.get(k).push(entryData)
+      for (const r of readings) {
+        const key = `${k}::${r}`
+        if (!jmLookup.has(key)) jmLookup.set(key, entryData)
       }
     }
-  }
-
-  return lookup
-}
-
-function choosePrimaryKanji(entry) {
-  const kanji = ensureArray(entry.k_ele).map((item) => item.keb).filter(Boolean)
-  return kanji[0] ?? ""
-}
-
-function choosePrimaryKana(entry) {
-  const kana = ensureArray(entry.r_ele).map((item) => item.reb).filter(Boolean)
-  return kana[0] ?? ""
-}
-
-function flattenKeys(kanji, kana) {
-  const kanjiVariants = kanji ? [kanji] : []
-  const kanaVariants = kana ? [kana] : []
-  return [
-    ...kanjiVariants,
-    ...kanaVariants,
-    ...kanjiVariants.flatMap((item) => kanaVariants.map((reading) => `${item}::${reading}`))
-  ]
-}
-
-function pickLevel(keys, lookup) {
-  for (const key of keys) {
-    const hit = lookup.get(key)
-    if (hit) {
-      return hit
+    for (const r of readings) {
+      if (!jmReadingLookup.has(r)) jmReadingLookup.set(r, [])
+      jmReadingLookup.get(r).push(entryData)
     }
   }
-  return null
-}
 
-function dedupeById(entries) {
-  const seen = new Set()
-  return entries.filter((item) => {
-    if (seen.has(item.id)) {
-      return false
+  console.log(`Indexed ${jmLookup.size} primary combinations and ${jmReadingLookup.size} readings.`)
+
+  // 2. Prepare output directories
+  const langs = ["en", "ko"]
+  for (const lang of langs) {
+    await mkdir(resolve(derivedDir, lang), { recursive: true })
+    await mkdir(resolve(generatedDir, lang), { recursive: true })
+  }
+
+  const metadata = {
+    generatedAt: new Date().toISOString(),
+    sources: {
+      jmDict: "https://www.edrdg.org/jmdict/j_jmdict.html",
+      jlptWordList: "https://github.com/elzup/jlpt-word-list"
+    },
+    counts: {}
+  }
+
+  // 3. Process each level's CSV
+  for (const level of levelNames) {
+    console.log(`Processing ${level}...`)
+    const csvPath = resolve(rawDir, `${level.toLowerCase()}.csv`)
+    const csvRaw = await readFile(csvPath, "utf8")
+    const records = parse(csvRaw, { columns: true, skip_empty_lines: true })
+    
+    // Load localizations for this level
+    const localizationPath = resolve(localizationDir, "ko", `${level.toLowerCase()}.json`)
+    let localizationMap = {}
+    try {
+      localizationMap = JSON.parse(await readFile(localizationPath, "utf8"))
+    } catch (e) {}
+
+    const enEntries = []
+    const koEntries = []
+
+    for (let i = 0; i < records.length; i++) {
+      const normalized = normalizeRecord(records[i])
+      const { expression, reading, meaning: csvMeaning } = normalized
+
+      // Find best match in JMdict
+      let match = null
+      if (expression && reading) {
+        match = jmLookup.get(`${expression}::${reading}`)
+      }
+      if (!match && expression) {
+        const candidates = jmKanjiLookup.get(expression)
+        if (candidates) {
+          // If many, try to match reading
+          match = candidates.find(c => reading ? c.readings.includes(reading) : true) || candidates[0]
+        }
+      }
+      if (!match && reading) {
+        const candidates = jmReadingLookup.get(reading)
+        if (candidates) {
+          match = candidates[0] // Pick first
+        }
+      }
+
+      const id = match ? match.id : `jlpt-${level}-${i}`
+      const finalKanji = expression || (match ? (match.kanjis[0] || match.readings[0]) : reading)
+      const finalReading = reading || (match ? match.readings[0] : "")
+
+      // English Entry
+      const entryEn = {
+        id,
+        kana: finalReading,
+        kanji: finalKanji,
+        meaning: match ? match.meanings[0] : csvMeaning,
+        meanings: match ? match.meanings.slice(0, 5) : [csvMeaning],
+        jlptLevel: level,
+        source: "default"
+      }
+      enEntries.push(entryEn)
+
+      // Korean Entry
+      const localized = localizationMap[id]
+      const entryKo = {
+        id,
+        kana: finalReading,
+        kanji: finalKanji,
+        meaning: localized?.meaningKo || entryEn.meaning, // Fallback to English if no Korean available
+        meanings: localized?.meaningsKo || entryEn.meanings,
+        jlptLevel: level,
+        source: "default"
+      }
+      koEntries.push(entryKo)
     }
-    seen.add(item.id)
-    return true
-  })
-}
 
-async function readJsonIfExists(path, fallback) {
-  try {
-    const raw = await readFile(path, "utf8")
-    return JSON.parse(raw)
-  } catch {
-    return fallback
-  }
-}
+    // Write files
+    await writeFile(resolve(derivedDir, "en", `${level.toLowerCase()}.json`), JSON.stringify(enEntries, null, 2))
+    await writeFile(resolve(derivedDir, "ko", `${level.toLowerCase()}.json`), JSON.stringify(koEntries, null, 2))
+    await writeFile(resolve(generatedDir, "en", `${level.toLowerCase()}.json`), JSON.stringify(enEntries, null, 2))
+    await writeFile(resolve(generatedDir, "ko", `${level.toLowerCase()}.json`), JSON.stringify(koEntries, null, 2))
 
-function applyKoLocalizations(level, entries, localizationMap) {
-  return entries.map((item) => {
-    const localized = localizationMap[item.id]
-    if (!localized) {
-      return item
-    }
-
-    return {
-      ...item,
-      meaningKo: localized.meaningKo,
-      meaningsKo: localized.meaningsKo ?? (localized.meaningKo ? [localized.meaningKo] : undefined)
-    }
-  })
-}
-
-const parser = new XMLParser({
-  ignoreAttributes: false,
-  attributeNamePrefix: "",
-  parseTagValue: false,
-  trimValues: true,
-  processEntities: false
-})
-
-const jmDictCompressed = await readFile(resolve(rawDir, "JMdict_e.gz"))
-const jmDictXml = gunzipSync(jmDictCompressed).toString("utf8")
-const jmDict = parser.parse(jmDictXml)
-
-const rowsByLevel = new Map()
-for (const level of levelNames) {
-  const csvRaw = await readFile(resolve(rawDir, `${level.toLowerCase()}.csv`), "utf8")
-  const records = parse(csvRaw, {
-    columns: true,
-    skip_empty_lines: true
-  })
-  rowsByLevel.set(level, records)
-}
-
-const jlptLookup = loadJlptMaps(rowsByLevel)
-
-const entryList = ensureArray(jmDict.JMdict?.entry)
-const derivedByLevel = new Map(levelNames.map((level) => [level, []]))
-
-for (const entry of entryList) {
-  const kanji = choosePrimaryKanji(entry)
-  const kana = choosePrimaryKana(entry)
-  const keys = flattenKeys(kanji, kana)
-  const level = pickLevel(keys, jlptLookup)
-
-  if (!level) {
-    continue
+    metadata.counts[level] = enEntries.length
   }
 
-  const glosses = normalizeGlosses(entry.sense)
-  if (!kana || glosses.length === 0) {
-    continue
-  }
+  await writeFile(resolve(derivedDir, "metadata.json"), JSON.stringify(metadata, null, 2))
+  await writeFile(resolve(generatedDir, "metadata.json"), JSON.stringify(metadata, null, 2))
 
-  const item = {
-    id: `jm-${entry.ent_seq}`,
-    kana,
-    kanji: kanji || kana,
-    meaning: glosses[0],
-    meanings: glosses.slice(0, 5),
-    jlptLevel: level
-  }
-
-  derivedByLevel.get(level).push(item)
+  console.log("Build complete. Counts:", metadata.counts)
 }
 
-await mkdir(derivedDir, { recursive: true })
-await mkdir(generatedDir, { recursive: true })
-await mkdir(resolve(localizationDir, "ko"), { recursive: true })
-
-const metadata = {
-  generatedAt: new Date().toISOString(),
-  sources: {
-    jmDict: "https://www.edrdg.org/jmdict/j_jmdict.html",
-    jlptWordList: "https://github.com/elzup/jlpt-word-list"
-  },
-  counts: {}
-}
-
-for (const level of levelNames) {
-  const localizationMap = await readJsonIfExists(resolve(localizationDir, "ko", `${level.toLowerCase()}.json`), {})
-  const deduped = applyKoLocalizations(
-    level,
-    dedupeById(derivedByLevel.get(level)).sort((left, right) =>
-      left.kana.localeCompare(right.kana, "ja")
-    ),
-    localizationMap
-  )
-  metadata.counts[level] = deduped.length
-
-  await writeFile(
-    resolve(derivedDir, `${level.toLowerCase()}.json`),
-    JSON.stringify(deduped, null, 2)
-  )
-  await writeFile(
-    resolve(generatedDir, `${level.toLowerCase()}.json`),
-    JSON.stringify(deduped, null, 2)
-  )
-}
-
-await writeFile(resolve(derivedDir, "metadata.json"), JSON.stringify(metadata, null, 2))
-await writeFile(resolve(generatedDir, "metadata.json"), JSON.stringify(metadata, null, 2))
-
-console.log("generated counts", metadata.counts)
+main().catch(console.error)

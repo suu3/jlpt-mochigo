@@ -1,11 +1,5 @@
-import { HomeDensitySetting, QuizQuestion, QuizType, WordEntry, WrongAnswerRecord } from "../types/app"
+import { QuizQuestion, QuizType, WordEntry, WrongAnswerRecord } from "../types/app"
 import { AppLanguage, resolveLanguage } from "./i18n"
-
-const WORD_POOL_RATIO: Record<HomeDensitySetting, number> = {
-  rich: 1,
-  balanced: 0.6,
-  simple: 0.3
-}
 
 function shuffle<T>(items: T[]) {
   const clone = [...items]
@@ -64,18 +58,8 @@ export function rankWordsForStudy(words: WordEntry[]) {
   })
 }
 
-export function getStudyWords(words: WordEntry[], range: HomeDensitySetting) {
-  const ratio = WORD_POOL_RATIO[range]
-
-  if (ratio >= 1) {
-    return words
-  }
-
-  const rankedWords = rankWordsForStudy(words)
-  const targetCount = Math.max(12, Math.ceil(words.length * ratio))
-  const candidateCount = Math.min(words.length, Math.max(targetCount, Math.ceil(targetCount * 1.8)))
-
-  return shuffle(rankedWords.slice(0, candidateCount)).slice(0, targetCount)
+export function getStudyWords(words: WordEntry[]) {
+  return words
 }
 
 function buildQuestion(word: WordEntry, words: WordEntry[], type: QuizType, language: AppLanguage): QuizQuestion {

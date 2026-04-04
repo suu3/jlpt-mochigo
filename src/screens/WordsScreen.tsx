@@ -1,6 +1,6 @@
 import * as Speech from "expo-speech"
 import React, { useEffect, useMemo, useState } from "react"
-import { Pressable, StyleSheet, TextInput, View, useWindowDimensions } from "react-native"
+import { ActivityIndicator, Pressable, StyleSheet, TextInput, View, useWindowDimensions } from "react-native"
 import { AppIcon } from "../components/AppIcon"
 import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
@@ -9,6 +9,7 @@ import { resolveLanguage, t, tf } from "../lib/i18n"
 import { getLocalizedMeaning, getStudyWords } from "../lib/quiz"
 import { getSpeechOptions } from "../lib/speech"
 import { useAppStore } from "../store/useAppStore"
+import { WordEntry } from "../types/app"
 
 const PAGE_SIZE = 24
 type MemorizedFilter = "all" | "hidden" | "only"
@@ -212,12 +213,10 @@ export function WordsScreen() {
     memorizedWordIds,
     toggleWordBookmark,
     toggleWordMemorized,
-    speakEnabled
+    speakEnabled,
+    isWordDataLoading
   } = useAppStore()
-  const jlptWords = useMemo(
-    () => getStudyWords(wordsByLevel[settings.level] ?? [], settings.homeDensity),
-    [settings.homeDensity, settings.level, wordsByLevel]
-  )
+
   const [activeTab, setActiveTab] = useState<WordTab>("jlpt")
   const [selectedLength, setSelectedLength] = useState<number | null>(null)
   const [selectedKanaRow, setSelectedKanaRow] = useState<KanaRowFilter | null>(
@@ -233,19 +232,23 @@ export function WordsScreen() {
   const [newKanji, setNewKanji] = useState("")
   const [newMeaning, setNewMeaning] = useState("")
   const [showValidation, setShowValidation] = useState(false)
+  
+  // Performance optimization: Deferred filtering
+  const [filteredWords, setFilteredWords] = useState<WordEntry[]>([])
+  const [isFiltering, setIsFiltering] = useState(false)
+  const [lengthOptions, setLengthOptions] = useState<number[]>([])
+
   const resolvedLanguage = resolveLanguage(settings.language)
 
-  const lengthOptions = useMemo(
-    () =>
-      Array.from(new Set(jlptWords.map((word) => getWordLength(word.kana)))).sort(
-        (left, right) => left - right
-      ),
-    [jlptWords]
-  )
+  useEffect(() => {
+    let isMounted = true
+    setIsFiltering(true)
 
-  const filteredWords = useMemo(
-    () =>
-      jlptWords.filter((word) => {
+    const timer = setTimeout(() => {
+      const sourceWords = wordsByLevel[settings.level] ?? []
+      const studyWords = getStudyWords(sourceWords)
+      
+      const filtered = studyWords.filter((word) => {
         const matchesLength =
           selectedLength === null ||
           getWordLength(word.kana) === selectedLength
@@ -266,9 +269,31 @@ export function WordsScreen() {
         }
 
         return true
-      }),
-    [selectedKanaRow, selectedLength, jlptWords, memorizedFilter, memorizedWordIds]
-  )
+      })
+
+      if (isMounted) {
+        setFilteredWords(filtered)
+        setLengthOptions(
+          Array.from(new Set(studyWords.map((word) => getWordLength(word.kana)))).sort(
+            (left, right) => left - right
+          )
+        )
+        setIsFiltering(false)
+      }
+    }, 10)
+
+    return () => {
+      isMounted = false
+      clearTimeout(timer)
+    }
+  }, [
+    settings.level,
+    wordsByLevel,
+    selectedLength,
+    selectedKanaRow,
+    memorizedFilter,
+    memorizedWordIds
+  ])
 
   const totalPages = Math.max(1, Math.ceil(filteredWords.length / PAGE_SIZE))
   const safePage = Math.min(page, totalPages)
@@ -782,14 +807,21 @@ export function WordsScreen() {
 
       {activeTab === "jlpt" ? (
       <View style={styles.list}>
-        {visibleWords.length === 0 ? (
+        {isFiltering || isWordDataLoading === true ? (
+          <View style={styles.inlineLoading}>
+            <ActivityIndicator size="large" color={colors.primary} />
+            <Text style={styles.loadingText}>
+              {t(settings.language, "loading")}
+            </Text>
+          </View>
+        ) : filteredWords.length === 0 ? (
           <Card style={styles.emptyCard}>
             <Text style={styles.emptyText}>
               {t(settings.language, "emptyFilteredWords")}
             </Text>
           </Card>
         ) : null}
-        {visibleWords.map((word, index) => {
+        {!isFiltering && isWordDataLoading !== true && visibleWords.map((word, index) => {
           const isBookmarked = bookmarkWordIds.includes(word.id)
           const isMemorized = memorizedWordIds.includes(word.id)
 
@@ -906,7 +938,7 @@ export function WordsScreen() {
       </View>
       ) : null}
 
-      {activeTab === "jlpt" ? (
+      {activeTab === "jlpt" && !isFiltering && isWordDataLoading !== true ? (
       <View style={styles.pagination}>
         <Text style={styles.pageSummary}>
           {tf(settings.language, "showingWordsSummary", {
@@ -1466,6 +1498,17 @@ const styles = StyleSheet.create({
     color: colors.textMuted,
     fontSize: 14,
     fontWeight: "700"
+  },
+  inlineLoading: {
+    padding: spacing.xl,
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.md
+  },
+  loadingText: {
+    color: colors.textMuted,
+    fontSize: 14,
+    fontWeight: "800"
   },
   pressed: {
     transform: [{ translateX: 1 }, { translateY: 1 }]

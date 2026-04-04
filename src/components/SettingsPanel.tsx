@@ -6,13 +6,13 @@ import { AppText as Text } from "./AppText"
 import { getLevelTheme } from "../constants/levelTheme"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { AppLanguage, t } from "../lib/i18n"
-import { HomeDensitySetting, JLPTLevel, SpeechPitchSetting, SpeechRateSetting } from "../types/app"
+import { JLPTLevel, SpeechPitchSetting, SpeechRateSetting } from "../types/app"
 
 const selectableLevels: JLPTLevel[] = ["N5", "N4", "N3", "N2", "N1"]
 const selectableLanguages: AppLanguage[] = ["system", "ko", "en"]
 const speechRateOptions: SpeechRateSetting[] = ["slow", "normal", "fast"]
 const speechPitchOptions: SpeechPitchSetting[] = ["low", "normal", "high"]
-const homeDensityOptions: HomeDensitySetting[] = ["rich", "balanced", "simple"]
+
 
 function SelectionLabel({
   label,
@@ -48,15 +48,12 @@ type Props = {
   ttsEnabled?: boolean;
   speechRate?: SpeechRateSetting;
   speechPitch?: SpeechPitchSetting;
-  homeDensity?: HomeDensitySetting;
   showAdvanced?: boolean;
-  showWordDensity?: boolean;
   onSelectLevel: (level: JLPTLevel) => void;
   onSelectLanguage: (language: AppLanguage) => void;
   onSelectTtsEnabled?: (enabled: boolean) => void;
   onSelectSpeechRate?: (rate: SpeechRateSetting) => void;
   onSelectSpeechPitch?: (pitch: SpeechPitchSetting) => void;
-  onSelectHomeDensity?: (density: HomeDensitySetting) => void;
 }
 
 export function SettingsPanel({
@@ -65,15 +62,12 @@ export function SettingsPanel({
   ttsEnabled = true,
   speechRate = "normal",
   speechPitch = "normal",
-  homeDensity = "balanced",
   showAdvanced = false,
-  showWordDensity = false,
   onSelectLevel,
   onSelectLanguage,
   onSelectTtsEnabled,
   onSelectSpeechRate,
-  onSelectSpeechPitch,
-  onSelectHomeDensity
+  onSelectSpeechPitch
 }: Props) {
   return (
     <View style={styles.container}>
@@ -256,83 +250,11 @@ export function SettingsPanel({
             </View>
           </Card>
 
-          <Card style={styles.section}>
-            <Text style={styles.eyebrow}>{t(language, "homeDensity")}</Text>
-            <Text style={styles.helper}>{t(language, "homeDensityHelper")}</Text>
-            <View style={styles.chipRow}>
-              {homeDensityOptions.map((option) => {
-                const isActive = homeDensity === option
-                const labelKey =
-                  option === "rich"
-                    ? "densityRich"
-                    : option === "simple"
-                      ? "densitySimple"
-                      : "densityBalanced"
 
-                return (
-                  <Pressable
-                    key={option}
-                    onPress={() => onSelectHomeDensity?.(option)}
-                    style={({ pressed }) => [
-                      styles.optionChip,
-                      styles.optionChipWide,
-                      isActive && styles.optionChipActive,
-                      pressed && styles.pressed
-                    ]}
-                  >
-                    <SelectionLabel
-                      label={t(language, labelKey)}
-                      isActive={isActive}
-                      textStyle={styles.optionChipText}
-                      activeTextStyle={styles.optionChipTextActive}
-                      activeIconColor={colors.text}
-                    />
-                  </Pressable>
-                )
-              })}
-            </View>
-          </Card>
         </>
       ) : null}
 
-      {!showAdvanced && showWordDensity ? (
-        <Card style={styles.section}>
-          <Text style={styles.eyebrow}>{t(language, "homeDensity")}</Text>
-          <Text style={styles.helper}>{t(language, "homeDensityHelper")}</Text>
-          <View style={styles.chipRow}>
-            {homeDensityOptions.map((option) => {
-              const isActive = homeDensity === option
-              const labelKey =
-                option === "rich"
-                  ? "densityRich"
-                  : option === "simple"
-                    ? "densitySimple"
-                    : "densityBalanced"
 
-              return (
-                <Pressable
-                  key={option}
-                  onPress={() => onSelectHomeDensity?.(option)}
-                  style={({ pressed }) => [
-                    styles.optionChip,
-                    styles.optionChipWide,
-                    isActive && styles.optionChipActive,
-                    pressed && styles.pressed
-                  ]}
-                >
-                  <SelectionLabel
-                    label={t(language, labelKey)}
-                    isActive={isActive}
-                    textStyle={styles.optionChipText}
-                    activeTextStyle={styles.optionChipTextActive}
-                    activeIconColor={colors.text}
-                  />
-                </Pressable>
-              )
-            })}
-          </View>
-        </Card>
-      ) : null}
     </View>
   )
 }

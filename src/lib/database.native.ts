@@ -1,5 +1,6 @@
 import * as SQLite from "expo-sqlite"
 import { storage } from "./storage"
+import { AppLanguage } from "./i18n"
 import { JLPTLevel, SessionHistory, WordEntry, WrongAnswerRecord } from "../types/app"
 import { loadBundledLevelWords } from "../data/levelLoader"
 
@@ -155,13 +156,13 @@ export const quizDatabase = {
       .filter((word): word is WordEntry => word !== null)
   },
 
-  async getLevelWords(level: JLPTLevel) {
+  async getLevelWords(level: JLPTLevel, language: AppLanguage) {
     const cachedWords = await this.getCachedLevelWords(level)
     if (cachedWords.length > 0) {
       return cachedWords
     }
 
-    const bundledWords = await loadBundledLevelWords(level)
+    const bundledWords = await loadBundledLevelWords(level, language)
     const db = await getDatabase()
     const cachedAt = new Date().toISOString()
 

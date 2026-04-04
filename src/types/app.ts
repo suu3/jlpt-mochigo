@@ -51,14 +51,13 @@ export type SpeechRateSetting = "slow" | "normal" | "fast"
 
 export type SpeechPitchSetting = "low" | "normal" | "high"
 
-export type HomeDensitySetting = "rich" | "balanced" | "simple"
+
 
 export type AppSettings = {
   level: JLPTLevel;
   ttsEnabled: boolean;
   speechRate: SpeechRateSetting;
   speechPitch: SpeechPitchSetting;
-  homeDensity: HomeDensitySetting;
   language: "system" | "ko" | "en";
 }
 

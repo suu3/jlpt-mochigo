@@ -1,0 +1,9642 @@
+[
+  {
+    "id": "jm-1565440",
+    "kana": "ああ",
+    "kanji": "ああ",
+    "meaning": "ah!",
+    "meanings": [
+      "ah!",
+      "oh!",
+      "alas!",
+      "yes",
+      "indeed"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1198180",
+    "kana": "あう",
+    "kanji": "会う",
+    "meaning": "to meet",
+    "meanings": [
+      "to meet",
+      "to encounter",
+      "to see",
+      "to have an accident",
+      "to have a bad experience"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1381380",
+    "kana": "あお",
+    "kanji": "青",
+    "meaning": "blue",
+    "meanings": [
+      "blue",
+      "azure",
+      "green",
+      "green light (traffic)",
+      "black (horse coat color)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1381390",
+    "kana": "あおい",
+    "kanji": "青い",
+    "meaning": "blue",
+    "meanings": [
+      "blue",
+      "azure",
+      "green",
+      "pale (facial color)",
+      "gray"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2013900",
+    "kana": "あか",
+    "kanji": "赤",
+    "meaning": "red",
+    "meanings": [
+      "red",
+      "crimson",
+      "scarlet",
+      "red-containing colour (e.g. brown, pink, orange)",
+      "Red (i.e. communist)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1383240",
+    "kana": "あかい",
+    "kanji": "赤い",
+    "meaning": "red",
+    "meanings": [
+      "red",
+      "crimson",
+      "scarlet",
+      "vermilion",
+      "Red"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1532350",
+    "kana": "あかるい",
+    "kanji": "明るい",
+    "meaning": "light",
+    "meanings": [
+      "light",
+      "bright",
+      "well-lit",
+      "well-lighted",
+      "bright (colour)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1332650",
+    "kana": "あき",
+    "kanji": "秋",
+    "meaning": "autumn",
+    "meanings": [
+      "autumn",
+      "fall"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1586270",
+    "kana": "あく",
+    "kanji": "開く",
+    "meaning": "to open (e.g. doors)",
+    "meanings": [
+      "to open (e.g. doors)",
+      "to open (e.g. business, etc.)",
+      "to be empty",
+      "to be vacant",
+      "to be available"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1202450",
+    "kana": "あける",
+    "kanji": "開ける",
+    "meaning": "to open (a door, etc.)",
+    "meanings": [
+      "to open (a door, etc.)",
+      "to unwrap (e.g. parcel, package)",
+      "to unlock",
+      "to open (for business, etc.)",
+      "to empty"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1352320",
+    "kana": "あげる",
+    "kanji": "上げる",
+    "meaning": "to raise",
+    "meanings": [
+      "to raise",
+      "to elevate",
+      "to move something (to a higher place)",
+      "to put onto (e.g. a shelf)",
+      "to increase (price, quality, status, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1428280",
+    "kana": "あさ",
+    "kanji": "朝",
+    "meaning": "morning",
+    "meanings": [
+      "morning",
+      "breakfast"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1586330",
+    "kana": "あさごはん",
+    "kanji": "朝御飯",
+    "meaning": "breakfast",
+    "meanings": [
+      "breakfast"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584640",
+    "kana": "あさって",
+    "kanji": "明後日",
+    "meaning": "day after tomorrow",
+    "meanings": [
+      "day after tomorrow",
+      "wrong (e.g. direction)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1151290",
+    "kana": "あし",
+    "kanji": "足; 脚",
+    "meaning": "bad",
+    "meanings": [
+      "bad",
+      "evil"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584660",
+    "kana": "あした",
+    "kanji": "明日",
+    "meaning": "tomorrow",
+    "meanings": [
+      "tomorrow",
+      "near future"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1000320",
+    "kana": "あそこ",
+    "kanji": "あそこ",
+    "meaning": "there",
+    "meanings": [
+      "there",
+      "over there",
+      "that place",
+      "yonder",
+      "you-know-where"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1542160",
+    "kana": "あそぶ",
+    "kanji": "遊ぶ",
+    "meaning": "to play (games, sports)",
+    "meanings": [
+      "to play (games, sports)",
+      "to enjoy oneself",
+      "to have a good time",
+      "to mess about (with alcohol, gambling, philandery, etc.)",
+      "to be idle"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1586420",
+    "kana": "あたたかい",
+    "kanji": "暖かい",
+    "meaning": "warm",
+    "meanings": [
+      "warm",
+      "mild",
+      "(pleasantly) hot",
+      "considerate",
+      "kind"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1582310",
+    "kana": "あたま",
+    "kanji": "頭",
+    "meaning": "head",
+    "meanings": [
+      "head",
+      "hair (on one's head)",
+      "mind",
+      "brains",
+      "intellect"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1361490",
+    "kana": "あたらしい",
+    "kanji": "新しい",
+    "meaning": "new",
+    "meanings": [
+      "new",
+      "novel",
+      "fresh",
+      "recent",
+      "latest"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483185",
+    "kana": "あちら",
+    "kanji": "あちら",
+    "meaning": "that way",
+    "meanings": [
+      "that way",
+      "that direction",
+      "over there",
+      "yonder",
+      "that (one)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1343460",
+    "kana": "あつい",
+    "kanji": "暑い",
+    "meaning": "hot",
+    "meanings": [
+      "hot",
+      "warm",
+      "sultry",
+      "heated",
+      "passionate"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1467720",
+    "kana": "あつい",
+    "kanji": "熱い",
+    "meaning": "hot (to the touch)",
+    "meanings": [
+      "hot (to the touch)",
+      "passionate (feelings, etc.)",
+      "ardent",
+      "hot (e.g. gaze)",
+      "hot (e.g. temper)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1275320",
+    "kana": "あつい",
+    "kanji": "厚い",
+    "meaning": "thick",
+    "meanings": [
+      "thick",
+      "deep",
+      "heavy",
+      "kind",
+      "cordial"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483185",
+    "kana": "あっち",
+    "kanji": "あっち",
+    "meaning": "that way",
+    "meanings": [
+      "that way",
+      "that direction",
+      "over there",
+      "yonder",
+      "that (one)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1269320",
+    "kana": "あと",
+    "kanji": "後",
+    "meaning": "behind",
+    "meanings": [
+      "behind",
+      "rear",
+      "after",
+      "later",
+      "remainder"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1223615",
+    "kana": "あなた",
+    "kanji": "あなた",
+    "meaning": "you",
+    "meanings": [
+      "you",
+      "dear",
+      "honey"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1249900",
+    "kana": "あに",
+    "kanji": "兄",
+    "meaning": "older brother",
+    "meanings": [
+      "older brother",
+      "elder brother",
+      "brother-in-law (spouse's older brother or older sister's husband)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1307630",
+    "kana": "あね",
+    "kanji": "姉",
+    "meaning": "older sister",
+    "meanings": [
+      "older sister",
+      "elder sister"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1017760",
+    "kana": "アパート",
+    "kanji": "アパート",
+    "meaning": "apartment building",
+    "meanings": [
+      "apartment building",
+      "apartment block",
+      "apartment house",
+      "apartment"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1000420",
+    "kana": "あの",
+    "kanji": "あの",
+    "meaning": "that",
+    "meanings": [
+      "that",
+      "those",
+      "the"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1547450",
+    "kana": "あびる",
+    "kanji": "浴びる",
+    "meaning": "to dash over oneself (e.g. water)",
+    "meanings": [
+      "to dash over oneself (e.g. water)",
+      "to take (e.g. shower)",
+      "to bask in (e.g. the sun)",
+      "to bathe in",
+      "to be flooded with (e.g. light)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1218380",
+    "kana": "あぶない",
+    "kanji": "危ない",
+    "meaning": "dangerous",
+    "meanings": [
+      "dangerous",
+      "risky",
+      "hazardous",
+      "perilous",
+      "precarious"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1213400",
+    "kana": "あまい",
+    "kanji": "甘い",
+    "meaning": "sweet-tasting",
+    "meanings": [
+      "sweet-tasting",
+      "sweet",
+      "sugary",
+      "sugared",
+      "fragrant (smelling)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584930",
+    "kana": "あまり",
+    "kanji": "余り",
+    "meaning": "remainder",
+    "meanings": [
+      "remainder",
+      "remnant",
+      "rest",
+      "balance",
+      "surplus"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1171900",
+    "kana": "あめ",
+    "kanji": "雨",
+    "meaning": "rain",
+    "meanings": [
+      "rain",
+      "rainy day",
+      "rainy weather",
+      "the November suit (in hanafuda)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1153520",
+    "kana": "あめ",
+    "kanji": "飴",
+    "meaning": "(hard) candy",
+    "meanings": [
+      "(hard) candy",
+      "toffee",
+      "rice-sugar",
+      "sugar made from the starch of rice, potatoes, etc.",
+      "amber"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1390930",
+    "kana": "あらう",
+    "kanji": "洗う",
+    "meaning": "to wash",
+    "meanings": [
+      "to wash",
+      "to cleanse",
+      "to rinse",
+      "to inquire into",
+      "to investigate"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1296400",
+    "kana": "ある",
+    "kanji": "在る",
+    "meaning": "to be",
+    "meanings": [
+      "to be",
+      "to exist",
+      "to live",
+      "to have",
+      "to be located"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1296400",
+    "kana": "ある",
+    "kanji": "有る",
+    "meaning": "to be",
+    "meanings": [
+      "to be",
+      "to exist",
+      "to live",
+      "to have",
+      "to be located"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1514320",
+    "kana": "あるく",
+    "kanji": "歩く",
+    "meaning": "to walk",
+    "meanings": [
+      "to walk"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1000580",
+    "kana": "あれ",
+    "kanji": "あれ",
+    "meaning": "that",
+    "meanings": [
+      "that",
+      "that thing",
+      "that person",
+      "then",
+      "that time"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-43",
+    "kana": "いい; よい",
+    "kanji": "いい; よい",
+    "meaning": "good",
+    "meanings": [
+      "good"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1583250",
+    "kana": "いいえ",
+    "kanji": "いいえ",
+    "meaning": "no",
+    "meanings": [
+      "no",
+      "you're welcome",
+      "not at all",
+      "don't mention it"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1587040",
+    "kana": "いう",
+    "kanji": "言う",
+    "meaning": "to say",
+    "meanings": [
+      "to say",
+      "to utter",
+      "to declare",
+      "to name",
+      "to call"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1191730",
+    "kana": "いえ",
+    "kanji": "家",
+    "meaning": "house",
+    "meanings": [
+      "house",
+      "residence",
+      "dwelling",
+      "home",
+      "family"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2845606",
+    "kana": "いかが",
+    "kanji": "いかが",
+    "meaning": "how",
+    "meanings": [
+      "how",
+      "in what way",
+      "how about",
+      "questionable"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1578850",
+    "kana": "いく; ゆく",
+    "kanji": "行く",
+    "meaning": "to go",
+    "meanings": [
+      "to go",
+      "to move (towards)",
+      "to head (towards)",
+      "to leave (for)",
+      "to move through"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1219960",
+    "kana": "いくつ",
+    "kanji": "いくつ",
+    "meaning": "how many",
+    "meanings": [
+      "how many",
+      "how old"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1021180",
+    "kana": "いくら",
+    "kanji": "いくら",
+    "meaning": "salted salmon roe",
+    "meanings": [
+      "salted salmon roe"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421700",
+    "kana": "いけ",
+    "kanji": "池",
+    "meaning": "pond",
+    "meanings": [
+      "pond"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1159980",
+    "kana": "いしゃ",
+    "kanji": "医者",
+    "meaning": "doctor",
+    "meanings": [
+      "doctor",
+      "physician"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1157070",
+    "kana": "いす",
+    "kanji": "椅子",
+    "meaning": "chair",
+    "meanings": [
+      "chair",
+      "seat",
+      "stool",
+      "bench",
+      "post"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1519290",
+    "kana": "いそがしい",
+    "kanji": "忙しい",
+    "meaning": "busy",
+    "meanings": [
+      "busy",
+      "occupied",
+      "hectic",
+      "restless",
+      "hurried"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1432680",
+    "kana": "いたい",
+    "kanji": "痛い",
+    "meaning": "painful",
+    "meanings": [
+      "painful",
+      "sore",
+      "cringy",
+      "embarrassing"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1160790",
+    "kana": "いち",
+    "kanji": "一",
+    "meaning": "one",
+    "meanings": [
+      "one",
+      "1",
+      "best",
+      "first",
+      "foremost"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576260",
+    "kana": "いちにち",
+    "kanji": "一日",
+    "meaning": "one day",
+    "meanings": [
+      "one day",
+      "all day (long)",
+      "the whole day",
+      "from morning till night",
+      "first day of the month"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1165970",
+    "kana": "いちばん",
+    "kanji": "一番",
+    "meaning": "number one",
+    "meanings": [
+      "number one",
+      "first",
+      "first place",
+      "best",
+      "most"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1188760",
+    "kana": "いつ",
+    "kanji": "いつ",
+    "meaning": "when",
+    "meanings": [
+      "when",
+      "at what time",
+      "how soon",
+      "normal times",
+      "ordinary days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1268570",
+    "kana": "いつか",
+    "kanji": "五日",
+    "meaning": "5th day of the month",
+    "meanings": [
+      "5th day of the month",
+      "five days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1163400",
+    "kana": "いっしょ",
+    "kanji": "一緒",
+    "meaning": "(doing) together",
+    "meanings": [
+      "(doing) together",
+      "one lump",
+      "one mixture",
+      "the same category",
+      "the same"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1268070",
+    "kana": "いつつ",
+    "kanji": "五つ",
+    "meaning": "five",
+    "meanings": [
+      "five",
+      "five years of age",
+      "eight o'clock (old time system)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1188890",
+    "kana": "いつも",
+    "kanji": "いつも",
+    "meaning": "always",
+    "meanings": [
+      "always",
+      "all the time",
+      "at all times",
+      "never",
+      "usual"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1258330",
+    "kana": "いぬ",
+    "kanji": "犬",
+    "meaning": "dog (Canis (lupus) familiaris)",
+    "meanings": [
+      "dog (Canis (lupus) familiaris)",
+      "canine",
+      "squealer",
+      "rat",
+      "snitch"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1288850",
+    "kana": "いま",
+    "kanji": "今",
+    "meaning": "now",
+    "meanings": [
+      "now",
+      "the present time",
+      "just now",
+      "soon",
+      "immediately"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1156800",
+    "kana": "いみ",
+    "kanji": "意味",
+    "meaning": "meaning",
+    "meanings": [
+      "meaning",
+      "significance",
+      "sense"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1524590",
+    "kana": "いもうと",
+    "kanji": "妹",
+    "meaning": "younger sister",
+    "meanings": [
+      "younger sister"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1587610",
+    "kana": "いや",
+    "kanji": "嫌",
+    "meaning": "disliking",
+    "meanings": [
+      "disliking",
+      "not wanting",
+      "unwilling (to do)",
+      "reluctant",
+      "unpleasant"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1582820",
+    "kana": "いりぐち",
+    "kanji": "入口",
+    "meaning": "entrance",
+    "meanings": [
+      "entrance",
+      "entry",
+      "gate",
+      "approach",
+      "mouth"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1577980",
+    "kana": "いる",
+    "kanji": "居る",
+    "meaning": "to be (of animate objects)",
+    "meanings": [
+      "to be (of animate objects)",
+      "to exist",
+      "to stay",
+      "to be ...-ing",
+      "to have ...-ed"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546640",
+    "kana": "いる",
+    "kanji": "要る",
+    "meaning": "to be needed",
+    "meanings": [
+      "to be needed",
+      "to be necessary",
+      "to be required",
+      "to be wanted",
+      "to need"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1465610",
+    "kana": "いれる",
+    "kanji": "入れる",
+    "meaning": "to put in",
+    "meanings": [
+      "to put in",
+      "to let in",
+      "to take in",
+      "to bring in",
+      "to insert"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1357600",
+    "kana": "いろ",
+    "kanji": "色",
+    "meaning": "colour",
+    "meanings": [
+      "colour",
+      "color",
+      "hue",
+      "tint",
+      "tinge"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1587850",
+    "kana": "いろいろ",
+    "kanji": "色々",
+    "meaning": "various",
+    "meanings": [
+      "various",
+      "a variety of",
+      "all sorts of",
+      "many (different)",
+      "variously"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1352130",
+    "kana": "うえ",
+    "kanji": "上",
+    "meaning": "above",
+    "meanings": [
+      "above",
+      "over",
+      "up",
+      "top",
+      "summit"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1269410",
+    "kana": "うしろ",
+    "kanji": "後ろ",
+    "meaning": "back",
+    "meanings": [
+      "back",
+      "behind",
+      "rear"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1475480",
+    "kana": "うすい",
+    "kanji": "薄い",
+    "meaning": "thin (of an object)",
+    "meanings": [
+      "thin (of an object)",
+      "pale",
+      "light",
+      "faint",
+      "watery"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1193180",
+    "kana": "うた",
+    "kanji": "歌",
+    "meaning": "song",
+    "meanings": [
+      "song",
+      "singing",
+      "classical Japanese poem (esp. tanka)",
+      "modern poetry"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1588120",
+    "kana": "うたう",
+    "kanji": "歌う",
+    "meaning": "to sing",
+    "meanings": [
+      "to sing",
+      "to sing of (love, beauty, etc.) in a poem",
+      "to express in the form of a poem",
+      "to recite (a poem)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1191740",
+    "kana": "うち",
+    "kanji": "うち",
+    "meaning": "one's house",
+    "meanings": [
+      "one's house",
+      "one's home",
+      "one's family",
+      "one's household",
+      "house"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1378690",
+    "kana": "うまれる",
+    "kanji": "生まれる",
+    "meaning": "to be born",
+    "meanings": [
+      "to be born"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1201190",
+    "kana": "うみ",
+    "kanji": "海",
+    "meaning": "sea",
+    "meanings": [
+      "sea",
+      "ocean",
+      "waters"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1473950",
+    "kana": "うる",
+    "kanji": "売る",
+    "meaning": "to sell",
+    "meanings": [
+      "to sell",
+      "to betray",
+      "to sell out (one's friend, country, etc.)",
+      "to make (oneself) known",
+      "to establish (a reputation) for oneself"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1481920",
+    "kana": "うるさい",
+    "kanji": "うるさい",
+    "meaning": "noisy",
+    "meanings": [
+      "noisy",
+      "loud",
+      "annoying",
+      "troublesome",
+      "tiresome"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1580340",
+    "kana": "うわぎ",
+    "kanji": "上着",
+    "meaning": "coat",
+    "meanings": [
+      "coat",
+      "jacket",
+      "outerwear",
+      "top",
+      "upper-body garment"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1202270",
+    "kana": "え",
+    "kanji": "絵",
+    "meaning": "picture",
+    "meanings": [
+      "picture",
+      "drawing",
+      "painting",
+      "sketch",
+      "image (TV, film, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1173720",
+    "kana": "えいが",
+    "kanji": "映画",
+    "meaning": "movie",
+    "meanings": [
+      "movie",
+      "film",
+      "motion picture"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1173750",
+    "kana": "えいがかん",
+    "kanji": "映画館",
+    "meaning": "movie theatre",
+    "meanings": [
+      "movie theatre",
+      "movie theater",
+      "cinema"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1174420",
+    "kana": "えいご",
+    "kanji": "英語",
+    "meaning": "English (language)",
+    "meanings": [
+      "English (language)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001140",
+    "kana": "ええ",
+    "kanji": "ええ",
+    "meaning": "yes",
+    "meanings": [
+      "yes",
+      "that is correct",
+      "right",
+      "um",
+      "errr"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1175140",
+    "kana": "えき",
+    "kanji": "駅",
+    "meaning": "railway station",
+    "meanings": [
+      "railway station",
+      "train station",
+      "staging post on a highway (in pre-modern Japan)",
+      "counter for railway stations and bus stations"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1030630",
+    "kana": "エレベーター",
+    "kanji": "エレベーター",
+    "meaning": "elevator",
+    "meanings": [
+      "elevator",
+      "lift",
+      "elevator"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-93",
+    "kana": "～えん",
+    "kanji": "～円",
+    "meaning": "Yen",
+    "meanings": [
+      "Yen"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1178590",
+    "kana": "えんぴつ",
+    "kanji": "鉛筆",
+    "meaning": "(wooden) pencil",
+    "meanings": [
+      "(wooden) pencil"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-95",
+    "kana": "お～",
+    "kanji": "お～",
+    "meaning": "honorable ~ (honorific)",
+    "meanings": [
+      "honorable ~ (honorific)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1486650",
+    "kana": "おいしい",
+    "kanji": "美味しい",
+    "meaning": "good(-tasting)",
+    "meanings": [
+      "good(-tasting)",
+      "nice",
+      "delicious",
+      "tasty",
+      "attractive (offer, opportunity, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1407460",
+    "kana": "おおい",
+    "kanji": "多い",
+    "meaning": "many",
+    "meanings": [
+      "many",
+      "numerous",
+      "a lot",
+      "large amount of",
+      "large quantity of"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1588880",
+    "kana": "おおきい",
+    "kanji": "大きい",
+    "meaning": "big",
+    "meanings": [
+      "big",
+      "large",
+      "great",
+      "loud",
+      "extensive"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1412890",
+    "kana": "おおきな",
+    "kanji": "大きな",
+    "meaning": "big",
+    "meanings": [
+      "big",
+      "large",
+      "great"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1414220",
+    "kana": "おおぜい",
+    "kanji": "大勢",
+    "meaning": "crowd of people",
+    "meanings": [
+      "crowd of people",
+      "great number of people",
+      "in great numbers"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002650",
+    "kana": "おかあさん",
+    "kanji": "お母さん",
+    "meaning": "mother",
+    "meanings": [
+      "mother",
+      "mom",
+      "mum",
+      "ma",
+      "wife"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001710",
+    "kana": "おかし",
+    "kanji": "お菓子",
+    "meaning": "confections",
+    "meanings": [
+      "confections",
+      "sweets",
+      "candy",
+      "cake"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001820",
+    "kana": "おかね",
+    "kanji": "お金",
+    "meaning": "money",
+    "meanings": [
+      "money"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1223640",
+    "kana": "おきる",
+    "kanji": "起きる",
+    "meaning": "to get up",
+    "meanings": [
+      "to get up",
+      "to rise",
+      "to blaze up (fire)",
+      "to wake up",
+      "to be awake"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421850",
+    "kana": "おく",
+    "kanji": "置く",
+    "meaning": "to put",
+    "meanings": [
+      "to put",
+      "to place",
+      "to leave (behind)",
+      "to establish (an organization, a facility, a position, etc.)",
+      "to set up"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1179330",
+    "kana": "おくさん",
+    "kanji": "奥さん",
+    "meaning": "wife",
+    "meanings": [
+      "wife",
+      "your wife",
+      "his wife",
+      "married lady",
+      "madam"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1329015",
+    "kana": "おさけ",
+    "kanji": "お酒",
+    "meaning": "alcohol",
+    "meanings": [
+      "alcohol",
+      "sake"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1299685",
+    "kana": "おさら",
+    "kanji": "お皿",
+    "meaning": "plate",
+    "meanings": [
+      "plate",
+      "dish"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2261490",
+    "kana": "おじさん",
+    "kanji": "伯父; 叔父さん",
+    "meaning": "uncle",
+    "meanings": [
+      "uncle",
+      "old man",
+      "mister",
+      "manybar goatfish (Parupeneus multifasciatus)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002320",
+    "kana": "おじいさん",
+    "kanji": "おじいさん",
+    "meaning": "grandfather",
+    "meanings": [
+      "grandfather",
+      "male senior-citizen",
+      "old man"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1236900",
+    "kana": "おしえる",
+    "kanji": "教える",
+    "meaning": "to teach",
+    "meanings": [
+      "to teach",
+      "to instruct",
+      "to tell",
+      "to inform",
+      "to show"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1180470",
+    "kana": "おす",
+    "kanji": "押す",
+    "meaning": "to push",
+    "meanings": [
+      "to push",
+      "to thrust",
+      "to shove",
+      "to press (down)",
+      "to push (e.g. a button)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421970",
+    "kana": "おそい",
+    "kanji": "遅い",
+    "meaning": "slow",
+    "meanings": [
+      "slow",
+      "late",
+      "too late"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002430",
+    "kana": "おちゃ",
+    "kanji": "お茶",
+    "meaning": "tea (esp. green or barley)",
+    "meanings": [
+      "tea (esp. green or barley)",
+      "tea break",
+      "teatime",
+      "tea ceremony"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002100",
+    "kana": "おてあらい",
+    "kanji": "お手洗い",
+    "meaning": "toilet",
+    "meanings": [
+      "toilet",
+      "restroom",
+      "lavatory",
+      "bathroom"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002590",
+    "kana": "おとうさん",
+    "kanji": "お父さん",
+    "meaning": "father",
+    "meanings": [
+      "father",
+      "dad",
+      "papa",
+      "pa",
+      "pop"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1581930",
+    "kana": "おとうと",
+    "kanji": "弟",
+    "meaning": "younger brother",
+    "meanings": [
+      "younger brother",
+      "little brother",
+      "kid brother",
+      "brother-in-law (spouse's younger brother or younger sister's husband)",
+      "pupil"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1419990",
+    "kana": "おとこ",
+    "kanji": "男",
+    "meaning": "man",
+    "meanings": [
+      "man",
+      "male",
+      "fellow",
+      "guy",
+      "chap"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1420010",
+    "kana": "おとこのこ",
+    "kanji": "男の子",
+    "meaning": "boy",
+    "meanings": [
+      "boy",
+      "son",
+      "baby boy",
+      "young man"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576050",
+    "kana": "おととい",
+    "kanji": "一昨日",
+    "meaning": "day before yesterday",
+    "meanings": [
+      "day before yesterday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576060",
+    "kana": "おととし",
+    "kanji": "おととし",
+    "meaning": "year before last",
+    "meanings": [
+      "year before last"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1414170",
+    "kana": "おとな",
+    "kanji": "大人",
+    "meaning": "adult",
+    "meanings": [
+      "adult",
+      "grown-up"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002610",
+    "kana": "おなか",
+    "kanji": "お腹",
+    "meaning": "belly",
+    "meanings": [
+      "belly",
+      "abdomen",
+      "stomach"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1451750",
+    "kana": "おなじ",
+    "kanji": "同じ",
+    "meaning": "same",
+    "meanings": [
+      "same",
+      "identical",
+      "equal",
+      "alike",
+      "equivalent"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001830",
+    "kana": "おにいさん",
+    "kanji": "お兄さん",
+    "meaning": "older brother",
+    "meanings": [
+      "older brother",
+      "elder brother",
+      "young man",
+      "buddy",
+      "fella"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1001990",
+    "kana": "おねえさん",
+    "kanji": "お姉さん",
+    "meaning": "older sister",
+    "meanings": [
+      "older sister",
+      "elder sister",
+      "young lady",
+      "miss",
+      "ma'am"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2261500",
+    "kana": "おばさん",
+    "kanji": "伯母さん; 叔母さん",
+    "meaning": "aunt",
+    "meanings": [
+      "aunt"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002330",
+    "kana": "おばあさん",
+    "kanji": "おばあさん",
+    "meaning": "grandmother",
+    "meanings": [
+      "grandmother",
+      "old woman",
+      "female senior citizen"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2220600",
+    "kana": "おふろ",
+    "kanji": "お風呂",
+    "meaning": "bath",
+    "meanings": [
+      "bath"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1513065",
+    "kana": "おべんとう",
+    "kanji": "お弁当",
+    "meaning": "bento",
+    "meanings": [
+      "bento",
+      "Japanese box lunch"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1206050",
+    "kana": "おぼえる",
+    "kanji": "覚える",
+    "meaning": "to memorize",
+    "meanings": [
+      "to memorize",
+      "to memorise",
+      "to commit to memory",
+      "to learn by heart",
+      "to bear in mind"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1002120",
+    "kana": "おまわりさん",
+    "kanji": "おまわりさん",
+    "meaning": "police officer",
+    "meanings": [
+      "police officer"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1335750",
+    "kana": "おもい",
+    "kanji": "重い",
+    "meaning": "heavy",
+    "meanings": [
+      "heavy",
+      "weighty",
+      "heavy (feeling)",
+      "depressed",
+      "gloomy"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1533580",
+    "kana": "おもしろい",
+    "kanji": "面白い",
+    "meaning": "interesting",
+    "meanings": [
+      "interesting",
+      "fascinating",
+      "intriguing",
+      "enthralling",
+      "amusing"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1174340",
+    "kana": "およぐ",
+    "kanji": "泳ぐ",
+    "meaning": "to swim",
+    "meanings": [
+      "to swim",
+      "to struggle through (a crowd)",
+      "to make one's way through the world",
+      "to get along (in life)",
+      "to totter"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589500",
+    "kana": "おりる",
+    "kanji": "降りる",
+    "meaning": "to descend (e.g. a mountain)",
+    "meanings": [
+      "to descend (e.g. a mountain)",
+      "to go down",
+      "to come down",
+      "to alight (e.g. from bus)",
+      "to get off"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589600",
+    "kana": "おわる",
+    "kanji": "終る",
+    "meaning": "to end",
+    "meanings": [
+      "to end",
+      "to come to an end",
+      "to finish",
+      "to close",
+      "to be over"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1183720",
+    "kana": "おんがく",
+    "kanji": "音楽",
+    "meaning": "music",
+    "meanings": [
+      "music"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1344930",
+    "kana": "おんな",
+    "kanji": "女",
+    "meaning": "woman",
+    "meanings": [
+      "woman",
+      "female",
+      "female lover",
+      "girlfriend",
+      "mistress"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1344970",
+    "kana": "おんなのこ",
+    "kanji": "女の子",
+    "meaning": "girl",
+    "meanings": [
+      "girl",
+      "daughter",
+      "baby girl",
+      "young woman"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-141",
+    "kana": "～かい",
+    "kanji": "～回",
+    "meaning": "counter for occurrences (~ times)",
+    "meanings": [
+      "counter for occurrences (~ times)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-142",
+    "kana": "～かい",
+    "kanji": "～階",
+    "meaning": "counter for stories (floors) of a building",
+    "meanings": [
+      "counter for stories (floors) of a building"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1203620",
+    "kana": "がいこく",
+    "kanji": "外国",
+    "meaning": "foreign country",
+    "meanings": [
+      "foreign country"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1203650",
+    "kana": "がいこくじん",
+    "kanji": "外国人",
+    "meaning": "foreigner",
+    "meanings": [
+      "foreigner",
+      "foreign citizen",
+      "foreign national",
+      "alien",
+      "non-Japanese"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1198550",
+    "kana": "かいしゃ",
+    "kanji": "会社",
+    "meaning": "company",
+    "meanings": [
+      "company",
+      "corporation",
+      "firm",
+      "one's workplace"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1203090",
+    "kana": "かいだん",
+    "kanji": "階段",
+    "meaning": "stairs",
+    "meanings": [
+      "stairs",
+      "stairway",
+      "staircase"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1589730",
+    "kana": "かいもの",
+    "kanji": "買い物",
+    "meaning": "shopping",
+    "meanings": [
+      "shopping",
+      "purchased goods"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1473740",
+    "kana": "かう",
+    "kanji": "買う",
+    "meaning": "to buy",
+    "meanings": [
+      "to buy",
+      "to purchase",
+      "to value (highly)",
+      "to think highly of",
+      "to have a high opinion of"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1512130",
+    "kana": "かえす",
+    "kanji": "返す",
+    "meaning": "to return (something)",
+    "meanings": [
+      "to return (something)",
+      "to restore",
+      "to put back",
+      "to turn over",
+      "to turn upside down"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1221270",
+    "kana": "かえる",
+    "kanji": "帰る",
+    "meaning": "to return",
+    "meanings": [
+      "to return",
+      "to come home",
+      "to go home",
+      "to go back",
+      "to leave (of a guest, customer, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1217730",
+    "kana": "かお",
+    "kanji": "顔",
+    "meaning": "face",
+    "meanings": [
+      "face",
+      "visage",
+      "looks",
+      "(facial) features",
+      "look"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1193110",
+    "kana": "かかる",
+    "kanji": "かかる",
+    "meaning": "to span",
+    "meanings": [
+      "to span",
+      "to bridge",
+      "to cross",
+      "to straddle"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1260490",
+    "kana": "かぎ",
+    "kanji": "鍵",
+    "meaning": "key",
+    "meanings": [
+      "key",
+      "lock",
+      "key (to a problem, success, etc.)",
+      "clue"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1343950",
+    "kana": "かく",
+    "kanji": "書く",
+    "meaning": "to write",
+    "meanings": [
+      "to write",
+      "to compose",
+      "to pen",
+      "to draw",
+      "to paint"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1206900",
+    "kana": "がくせい",
+    "kanji": "学生",
+    "meaning": "student (esp. a university student)",
+    "meanings": [
+      "student (esp. a university student)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-156",
+    "kana": "～かげつ",
+    "kanji": "～か月",
+    "meaning": "(number of) months",
+    "meanings": [
+      "(number of) months"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1207610",
+    "kana": "かける",
+    "kanji": "掛ける",
+    "meaning": "to hang up (e.g. a coat, a picture on the wall)",
+    "meanings": [
+      "to hang up (e.g. a coat, a picture on the wall)",
+      "to let hang",
+      "to suspend (from)",
+      "to hoist (e.g. sail)",
+      "to raise (e.g. flag)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1207610",
+    "kana": "かける",
+    "kanji": "かける",
+    "meaning": "to hang up (e.g. a coat, a picture on the wall)",
+    "meanings": [
+      "to hang up (e.g. a coat, a picture on the wall)",
+      "to let hang",
+      "to suspend (from)",
+      "to hoist (e.g. sail)",
+      "to raise (e.g. flag)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1301940",
+    "kana": "かさ",
+    "kanji": "傘",
+    "meaning": "umbrella",
+    "meanings": [
+      "umbrella",
+      "parasol",
+      "something shaped like an umbrella or a conical hat",
+      "shade (of a lamp)",
+      "mushroom cap"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1411160",
+    "kana": "かす",
+    "kanji": "貸す",
+    "meaning": "to lend",
+    "meanings": [
+      "to lend",
+      "to loan",
+      "to rent out",
+      "to hire out",
+      "to hand (over)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1499720",
+    "kana": "かぜ",
+    "kanji": "風",
+    "meaning": "wind",
+    "meanings": [
+      "wind",
+      "breeze",
+      "draught",
+      "draft",
+      "manner"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1583720",
+    "kana": "かぜ",
+    "kanji": "風邪",
+    "meaning": "(common) cold",
+    "meanings": [
+      "(common) cold",
+      "influenza",
+      "flu",
+      "ague",
+      "inflammatory respiratory system illness (in general)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1516925",
+    "kana": "かた",
+    "kanji": "方",
+    "meaning": "direction",
+    "meanings": [
+      "direction",
+      "way",
+      "person",
+      "lady",
+      "gentleman"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1192150",
+    "kana": "かぞく",
+    "kanji": "家族",
+    "meaning": "family",
+    "meanings": [
+      "family"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1511600",
+    "kana": "かたかな",
+    "kanji": "片仮名",
+    "meaning": "katakana",
+    "meanings": [
+      "katakana",
+      "angular Japanese syllabary used primarily for loanwords"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-166",
+    "kana": "～がつ",
+    "kanji": "～月",
+    "meaning": "month of year",
+    "meanings": [
+      "month of year"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1206730",
+    "kana": "がっこう",
+    "kanji": "学校",
+    "meaning": "school",
+    "meanings": [
+      "school"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1037670",
+    "kana": "カップ",
+    "kanji": "カップ",
+    "meaning": "cup (drinking vessel, measure, brassiere, prize, etc.)",
+    "meanings": [
+      "cup (drinking vessel, measure, brassiere, prize, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1192280",
+    "kana": "かてい",
+    "kanji": "家庭",
+    "meaning": "home",
+    "meanings": [
+      "home",
+      "household",
+      "family",
+      "hearth"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1206110",
+    "kana": "かど",
+    "kanji": "角",
+    "meaning": "corner",
+    "meanings": [
+      "corner",
+      "edge",
+      "(street) corner",
+      "turning",
+      "rough edges (of one's character, words, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1186150",
+    "kana": "かばん",
+    "kanji": "かばん",
+    "meaning": "going off duty",
+    "meanings": [
+      "going off duty"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1194870",
+    "kana": "かびん",
+    "kanji": "花瓶",
+    "meaning": "(flower) vase",
+    "meanings": [
+      "(flower) vase"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1484330",
+    "kana": "かぶる",
+    "kanji": "かぶる",
+    "meaning": "to put on (one's head)",
+    "meanings": [
+      "to put on (one's head)",
+      "to wear",
+      "to have on",
+      "to pull over (one's head)",
+      "to crown (oneself)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1311530",
+    "kana": "かみ",
+    "kanji": "紙",
+    "meaning": "paper",
+    "meanings": [
+      "paper"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1038350",
+    "kana": "カメラ",
+    "kanji": "カメラ",
+    "meaning": "camera",
+    "meanings": [
+      "camera"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1194290",
+    "kana": "かようび",
+    "kanji": "火曜日",
+    "meaning": "Tuesday",
+    "meanings": [
+      "Tuesday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1365850",
+    "kana": "からい",
+    "kanji": "辛い",
+    "meaning": "spicy",
+    "meanings": [
+      "spicy",
+      "hot",
+      "salty",
+      "harsh (criticism)",
+      "severe (punishment)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1409140",
+    "kana": "からだ",
+    "kanji": "体",
+    "meaning": "body",
+    "meanings": [
+      "body",
+      "torso",
+      "trunk",
+      "build",
+      "physique"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1323560",
+    "kana": "かりる",
+    "kanji": "借りる",
+    "meaning": "to borrow",
+    "meanings": [
+      "to borrow",
+      "to rent",
+      "to hire",
+      "to make use of (another's help, wisdom, etc.)",
+      "to obtain"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-180",
+    "kana": "～がる",
+    "kanji": "～がる",
+    "meaning": "feel",
+    "meanings": [
+      "feel"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1252560",
+    "kana": "かるい",
+    "kanji": "軽い",
+    "meaning": "light (i.e. not heavy)",
+    "meanings": [
+      "light (i.e. not heavy)",
+      "feeling light (i.e. offering little resistance, moving easily)",
+      "light (i.e. of foot)",
+      "effortless",
+      "nimble"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1039140",
+    "kana": "カレー",
+    "kanji": "カレー",
+    "meaning": "curry (esp. Japanese curry)",
+    "meanings": [
+      "curry (esp. Japanese curry)",
+      "rice and curry"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1039220",
+    "kana": "カレンダー",
+    "kanji": "カレンダー",
+    "meaning": "calendar",
+    "meanings": [
+      "calendar",
+      "calender (machine for flattening things)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1189930",
+    "kana": "かわ",
+    "kanji": "川; 河",
+    "meaning": "good story",
+    "meanings": [
+      "good story",
+      "beautiful story",
+      "heartwarming story"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-185",
+    "kana": "～がわ",
+    "kanji": "～側",
+    "meaning": "~ side",
+    "meanings": [
+      "~ side"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1577200",
+    "kana": "かわいい",
+    "kanji": "可愛い",
+    "meaning": "cute",
+    "meanings": [
+      "cute",
+      "adorable",
+      "charming",
+      "lovely",
+      "pretty"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1213170",
+    "kana": "かんじ",
+    "kanji": "漢字",
+    "meaning": "kanji",
+    "meanings": [
+      "kanji",
+      "Chinese character"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1534520",
+    "kana": "き",
+    "kanji": "木",
+    "meaning": "tree",
+    "meanings": [
+      "tree",
+      "shrub",
+      "bush",
+      "wood",
+      "timber"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576760",
+    "kana": "きいろ",
+    "kanji": "黄色",
+    "meaning": "yellow",
+    "meanings": [
+      "yellow",
+      "amber"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1182030",
+    "kana": "きいろい",
+    "kanji": "黄色い",
+    "meaning": "yellow",
+    "meanings": [
+      "yellow",
+      "high-pitched (voice)",
+      "shrill"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1350040",
+    "kana": "きえる",
+    "kanji": "消える",
+    "meaning": "to disappear",
+    "meanings": [
+      "to disappear",
+      "to vanish",
+      "to go out of sight",
+      "to go away",
+      "to become lost"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1591110",
+    "kana": "きく",
+    "kanji": "聞く",
+    "meaning": "to hear",
+    "meanings": [
+      "to hear",
+      "to listen (e.g. to music)",
+      "to ask",
+      "to enquire",
+      "to query"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1520670",
+    "kana": "きた",
+    "kanji": "北",
+    "meaning": "north",
+    "meanings": [
+      "north",
+      "the North",
+      "northern territories",
+      "North Korea",
+      "north wind"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1042820",
+    "kana": "ギター",
+    "kanji": "ギター",
+    "meaning": "guitar",
+    "meanings": [
+      "guitar"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1178940",
+    "kana": "きたない",
+    "kanji": "汚い",
+    "meaning": "dirty",
+    "meanings": [
+      "dirty",
+      "filthy",
+      "foul",
+      "unclean",
+      "disordered"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1226440",
+    "kana": "きっさてん",
+    "kanji": "喫茶店",
+    "meaning": "coffee shop",
+    "meanings": [
+      "coffee shop",
+      "tearoom",
+      "coffee lounge",
+      "coffeehouse",
+      "cafe"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1385070",
+    "kana": "きって",
+    "kanji": "切手",
+    "meaning": "stamp (postage)",
+    "meanings": [
+      "stamp (postage)",
+      "merchandise certificate"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1385170",
+    "kana": "きっぷ",
+    "kanji": "切符",
+    "meaning": "ticket",
+    "meanings": [
+      "ticket"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579260",
+    "kana": "きのう",
+    "kanji": "昨日",
+    "meaning": "yesterday",
+    "meanings": [
+      "yesterday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1578150",
+    "kana": "きゅう",
+    "kanji": "九",
+    "meaning": "nine",
+    "meanings": [
+      "nine",
+      "9"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1231580",
+    "kana": "ぎゅうにく",
+    "kanji": "牛肉",
+    "meaning": "beef",
+    "meanings": [
+      "beef"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1231590",
+    "kana": "ぎゅうにゅう",
+    "kanji": "牛乳",
+    "meaning": "(cow's) milk",
+    "meanings": [
+      "(cow's) milk"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579110",
+    "kana": "きょう",
+    "kanji": "今日",
+    "meaning": "today",
+    "meanings": [
+      "today",
+      "this day",
+      "these days",
+      "recently",
+      "nowadays"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1237150",
+    "kana": "きょうしつ",
+    "kanji": "教室",
+    "meaning": "classroom",
+    "meanings": [
+      "classroom",
+      "lecture room",
+      "department (in a university)",
+      "class",
+      "lessons"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1249960",
+    "kana": "きょうだい",
+    "kanji": "兄弟",
+    "meaning": "siblings",
+    "meanings": [
+      "siblings",
+      "brothers and sisters",
+      "brothers",
+      "siblings-in-law",
+      "brothers-in-law"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1231690",
+    "kana": "きょねん",
+    "kanji": "去年",
+    "meaning": "last year",
+    "meanings": [
+      "last year"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1257240",
+    "kana": "きらい",
+    "kanji": "嫌い",
+    "meaning": "disliked",
+    "meanings": [
+      "disliked",
+      "hated",
+      "disagreeable",
+      "tendency",
+      "smack (of)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1384830",
+    "kana": "きる",
+    "kanji": "切る",
+    "meaning": "to cut",
+    "meanings": [
+      "to cut",
+      "to cut through",
+      "to perform (surgery)",
+      "to sever (connections, ties)",
+      "to turn off (e.g. the light)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1423000",
+    "kana": "きる",
+    "kanji": "着る",
+    "meaning": "to wear (from the shoulders down)",
+    "meanings": [
+      "to wear (from the shoulders down)",
+      "to put on",
+      "to take (the blame, responsibility)",
+      "to bear"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1591900",
+    "kana": "きれい",
+    "kanji": "綺麗",
+    "meaning": "pretty",
+    "meanings": [
+      "pretty",
+      "lovely",
+      "beautiful",
+      "fair",
+      "clean"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-211",
+    "kana": "キロ; キログラム",
+    "kanji": "キロ; キログラム",
+    "meaning": "(abbr.) kilo (kilogram)",
+    "meanings": [
+      "(abbr.) kilo (kilogram)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-212",
+    "kana": "キロ; キロメートル",
+    "kanji": "キロ; キロメートル",
+    "meaning": "(abbr.) kilo (kilometer)",
+    "meanings": [
+      "(abbr.) kilo (kilometer)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1243490",
+    "kana": "ぎんこう",
+    "kanji": "銀行",
+    "meaning": "bank",
+    "meanings": [
+      "bank",
+      "banking institution"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1243320",
+    "kana": "きんようび",
+    "kanji": "金曜日",
+    "meaning": "Friday",
+    "meanings": [
+      "Friday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1578150",
+    "kana": "く",
+    "kanji": "九",
+    "meaning": "nine",
+    "meanings": [
+      "nine",
+      "9"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1538160",
+    "kana": "くすり",
+    "kanji": "薬",
+    "meaning": "medicine",
+    "meanings": [
+      "medicine",
+      "pharmaceuticals",
+      "(legal) drugs",
+      "pill",
+      "ointment"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1184270",
+    "kana": "ください",
+    "kanji": "下さい",
+    "meaning": "please (give me)",
+    "meanings": [
+      "please (give me)",
+      "please (do for me)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1193060",
+    "kana": "くだもの",
+    "kanji": "果物",
+    "meaning": "fruit",
+    "meanings": [
+      "fruit"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1275640",
+    "kana": "くち",
+    "kanji": "口",
+    "meaning": "mouth",
+    "meanings": [
+      "mouth",
+      "opening",
+      "hole",
+      "gap",
+      "orifice"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1246700",
+    "kana": "くつ",
+    "kanji": "靴",
+    "meaning": "shoe",
+    "meanings": [
+      "shoe",
+      "shoes",
+      "boots",
+      "footwear",
+      "footgear"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1246740",
+    "kana": "くつした",
+    "kanji": "靴下",
+    "meaning": "socks",
+    "meanings": [
+      "socks",
+      "sock",
+      "stockings",
+      "stocking"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1592250",
+    "kana": "くに",
+    "kanji": "国",
+    "meaning": "country",
+    "meanings": [
+      "country",
+      "state",
+      "region",
+      "national government",
+      "central government"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1592340",
+    "kana": "くもり",
+    "kanji": "曇り",
+    "meaning": "cloudiness",
+    "meanings": [
+      "cloudiness",
+      "cloudy weather",
+      "fog (on a mirror, glasses, etc.)",
+      "cloud (e.g. in marble)",
+      "blur"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1457560",
+    "kana": "くもる",
+    "kanji": "曇る",
+    "meaning": "to get cloudy",
+    "meanings": [
+      "to get cloudy",
+      "to cloud over",
+      "to become overcast",
+      "to cloud up",
+      "to fog up"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1154330",
+    "kana": "くらい",
+    "kanji": "暗い",
+    "meaning": "dark",
+    "meanings": [
+      "dark",
+      "gloomy",
+      "murky",
+      "depressed",
+      "dispirited"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-226",
+    "kana": "～くらい; ぐらい",
+    "kanji": "～くらい; ぐらい",
+    "meaning": "approximate (quantity)",
+    "meanings": [
+      "approximate (quantity)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1044070",
+    "kana": "クラス",
+    "kanji": "クラス",
+    "meaning": "class",
+    "meanings": [
+      "class"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1046810",
+    "kana": "グラム",
+    "kanji": "グラム",
+    "meaning": "gram",
+    "meanings": [
+      "gram",
+      "gramme"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1547720",
+    "kana": "くる",
+    "kanji": "来る",
+    "meaning": "to come (spatially or temporally)",
+    "meanings": [
+      "to come (spatially or temporally)",
+      "to approach",
+      "to arrive",
+      "to come back",
+      "to do ... and come back"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1323080",
+    "kana": "くるま",
+    "kanji": "車",
+    "meaning": "car",
+    "meanings": [
+      "car",
+      "automobile",
+      "vehicle",
+      "wheel",
+      "castor"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1287410",
+    "kana": "くろ",
+    "kanji": "黒",
+    "meaning": "black",
+    "meanings": [
+      "black",
+      "black stone",
+      "guilt",
+      "guilty person"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1287420",
+    "kana": "くろい",
+    "kanji": "黒い",
+    "meaning": "black",
+    "meanings": [
+      "black",
+      "dark",
+      "blackish",
+      "sun-tanned (skin)",
+      "suspicious"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1252330",
+    "kana": "けいかん",
+    "kanji": "警官",
+    "meaning": "police officer",
+    "meanings": [
+      "police officer",
+      "policeman",
+      "constable"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579100",
+    "kana": "けさ",
+    "kanji": "今朝",
+    "meaning": "this morning",
+    "meanings": [
+      "this morning"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1350110",
+    "kana": "けす",
+    "kanji": "消す",
+    "meaning": "to erase",
+    "meanings": [
+      "to erase",
+      "to rub out",
+      "to rub off",
+      "to cross out",
+      "to delete"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1254760",
+    "kana": "けっこう",
+    "kanji": "結構",
+    "meaning": "splendid",
+    "meanings": [
+      "splendid",
+      "nice",
+      "wonderful",
+      "delightful",
+      "lovely"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1254790",
+    "kana": "けっこん (する)",
+    "kanji": "結婚",
+    "meaning": "marriage",
+    "meanings": [
+      "marriage"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1255890",
+    "kana": "げつようび",
+    "kanji": "月曜日",
+    "meaning": "Monday",
+    "meanings": [
+      "Monday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1263400",
+    "kana": "げんかん",
+    "kanji": "玄関",
+    "meaning": "entrance",
+    "meanings": [
+      "entrance",
+      "front door",
+      "entryway",
+      "entranceway",
+      "entry hall"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1260720",
+    "kana": "げんき",
+    "kanji": "元気",
+    "meaning": "lively",
+    "meanings": [
+      "lively",
+      "full of spirit",
+      "energetic",
+      "vigorous",
+      "vital"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-241",
+    "kana": "～こ",
+    "kanji": "～個",
+    "meaning": "counter for small items (e.g., fruits, cups)",
+    "meanings": [
+      "counter for small items (e.g., fruits, cups)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1268060",
+    "kana": "ご",
+    "kanji": "五",
+    "meaning": "five",
+    "meanings": [
+      "five",
+      "5"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-243",
+    "kana": "～ご",
+    "kanji": "～語",
+    "meaning": "word, language",
+    "meanings": [
+      "word, language"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1273270",
+    "kana": "こうえん",
+    "kanji": "公園",
+    "meaning": "(public) park",
+    "meanings": [
+      "(public) park"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1592970",
+    "kana": "こうさてん",
+    "kanji": "交差点",
+    "meaning": "crossing",
+    "meanings": [
+      "crossing",
+      "intersection"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1280770",
+    "kana": "こうちゃ",
+    "kanji": "紅茶",
+    "meaning": "black tea",
+    "meanings": [
+      "black tea"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1272500",
+    "kana": "こうばん",
+    "kanji": "交番",
+    "meaning": "police box",
+    "meanings": [
+      "police box",
+      "koban",
+      "small neighborhood police station",
+      "alternation",
+      "alternating (current, stress, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1380440",
+    "kana": "こえ",
+    "kanji": "声",
+    "meaning": "voice",
+    "meanings": [
+      "voice",
+      "singing (of a bird)",
+      "chirping (of an insect)",
+      "hoot",
+      "voice"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1049000",
+    "kana": "コート",
+    "kanji": "コート",
+    "meaning": "coat",
+    "meanings": [
+      "coat",
+      "coating"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1049180",
+    "kana": "コーヒー",
+    "kanji": "コーヒー",
+    "meaning": "coffee",
+    "meanings": [
+      "coffee"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1288810",
+    "kana": "ここ",
+    "kanji": "ここ",
+    "meaning": "here",
+    "meanings": [
+      "here",
+      "this place",
+      "this point",
+      "here",
+      "now"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1268990",
+    "kana": "ごご",
+    "kanji": "午後",
+    "meaning": "afternoon",
+    "meanings": [
+      "afternoon",
+      "p.m."
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1243850",
+    "kana": "ここのか",
+    "kanji": "九日",
+    "meaning": "9th day of the month",
+    "meanings": [
+      "9th day of the month",
+      "nine days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1243600",
+    "kana": "ここのつ",
+    "kanji": "九つ",
+    "meaning": "nine",
+    "meanings": [
+      "nine",
+      "nine years of age",
+      "twelve o'clock (old time system)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1269060",
+    "kana": "ごぜん",
+    "kanji": "午前",
+    "meaning": "morning",
+    "meanings": [
+      "morning",
+      "a.m."
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1449540",
+    "kana": "こたえる",
+    "kanji": "答える",
+    "meaning": "to answer",
+    "meanings": [
+      "to answer",
+      "to reply"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1004500",
+    "kana": "こちら",
+    "kanji": "こちら",
+    "meaning": "this way",
+    "meanings": [
+      "this way",
+      "this direction",
+      "here",
+      "this (one)",
+      "I"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1004500",
+    "kana": "こっち",
+    "kanji": "こっち",
+    "meaning": "this way",
+    "meanings": [
+      "this way",
+      "this direction",
+      "here",
+      "this (one)",
+      "I"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1050390",
+    "kana": "コップ",
+    "kanji": "コップ",
+    "meaning": "glass (drinking vessel)",
+    "meanings": [
+      "glass (drinking vessel)",
+      "tumbler",
+      "cups (suit)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579130",
+    "kana": "ことし",
+    "kanji": "今年",
+    "meaning": "this year",
+    "meanings": [
+      "this year"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1264540",
+    "kana": "ことば",
+    "kanji": "言葉",
+    "meaning": "language",
+    "meanings": [
+      "language",
+      "dialect",
+      "word",
+      "phrase",
+      "expression"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1307850",
+    "kana": "こども",
+    "kanji": "子供",
+    "meaning": "child",
+    "meanings": [
+      "child",
+      "children"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1578150",
+    "kana": "この",
+    "kanji": "この",
+    "meaning": "nine",
+    "meanings": [
+      "nine",
+      "9"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1270590",
+    "kana": "ごはん",
+    "kanji": "御飯",
+    "meaning": "cooked rice",
+    "meanings": [
+      "cooked rice",
+      "meal"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-265",
+    "kana": "コピーする",
+    "kanji": "コピーする",
+    "meaning": "to copy",
+    "meanings": [
+      "to copy"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1289590",
+    "kana": "こまる",
+    "kanji": "困る",
+    "meaning": "to be troubled",
+    "meanings": [
+      "to be troubled",
+      "to have difficulty",
+      "to be in a fix",
+      "to be at a loss",
+      "to be stumped"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1628530",
+    "kana": "これ",
+    "kanji": "これ",
+    "meaning": "this",
+    "meanings": [
+      "this",
+      "this one",
+      "this person",
+      "now",
+      "this point (in time)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-268",
+    "kana": "～ころ; ～ごろ",
+    "kanji": "～ころ; ～ごろ",
+    "meaning": "about, toward, approximately (time)",
+    "meanings": [
+      "about, toward, approximately (time)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1289100",
+    "kana": "こんげつ",
+    "kanji": "今月",
+    "meaning": "this month",
+    "meanings": [
+      "this month"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1289220",
+    "kana": "こんしゅう",
+    "kanji": "今週",
+    "meaning": "this week",
+    "meanings": [
+      "this week"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1004880",
+    "kana": "こんな",
+    "kanji": "こんな",
+    "meaning": "this sort of",
+    "meanings": [
+      "this sort of",
+      "this kind of",
+      "like this",
+      "such"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1289470",
+    "kana": "こんばん",
+    "kanji": "今晩",
+    "meaning": "tonight",
+    "meanings": [
+      "tonight",
+      "this evening"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1005110",
+    "kana": "さあ",
+    "kanji": "さあ",
+    "meaning": "come (on)",
+    "meanings": [
+      "come (on)",
+      "come now",
+      "come along",
+      "here",
+      "all right"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-274",
+    "kana": "～さい",
+    "kanji": "～歳",
+    "meaning": "~ years old",
+    "meanings": [
+      "~ years old"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1296970",
+    "kana": "さいふ",
+    "kanji": "財布",
+    "meaning": "wallet",
+    "meanings": [
+      "wallet",
+      "purse",
+      "coin purse",
+      "billfold",
+      "pocketbook"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1578010",
+    "kana": "さかな",
+    "kanji": "魚",
+    "meaning": "fish",
+    "meanings": [
+      "fish"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1387210",
+    "kana": "さき",
+    "kanji": "先",
+    "meaning": "point",
+    "meanings": [
+      "point",
+      "tip",
+      "end",
+      "nozzle",
+      "head (of a line)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1297210",
+    "kana": "さく",
+    "kanji": "咲く",
+    "meaning": "to bloom",
+    "meanings": [
+      "to bloom",
+      "to flower",
+      "to blossom",
+      "to open",
+      "to rise up (of breaking waves)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1297960",
+    "kana": "さくぶん",
+    "kanji": "作文",
+    "meaning": "writing (an essay, prose, etc.)",
+    "meanings": [
+      "writing (an essay, prose, etc.)",
+      "composition",
+      "formal writing with little real meaning"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1291330",
+    "kana": "さす",
+    "kanji": "差す",
+    "meaning": "to shine",
+    "meanings": [
+      "to shine",
+      "to be visible",
+      "to be tinged with",
+      "to rise (of water levels)",
+      "to flow in"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-281",
+    "kana": "～さつ",
+    "kanji": "～冊",
+    "meaning": "counter for books",
+    "meanings": [
+      "counter for books"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1299400",
+    "kana": "ざっし",
+    "kanji": "雑誌",
+    "meaning": "magazine",
+    "meanings": [
+      "magazine",
+      "journal",
+      "periodical"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1291600",
+    "kana": "さとう",
+    "kanji": "砂糖",
+    "meaning": "sugar",
+    "meanings": [
+      "sugar"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1210360",
+    "kana": "さむい",
+    "kanji": "寒い",
+    "meaning": "cold (e.g. weather)",
+    "meanings": [
+      "cold (e.g. weather)",
+      "uninteresting (esp. joke)",
+      "lame",
+      "dull",
+      "weak"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1293660",
+    "kana": "さらいねん",
+    "kanji": "さ来年",
+    "meaning": "year after next",
+    "meanings": [
+      "year after next"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-286",
+    "kana": "～さん",
+    "kanji": "～さん",
+    "meaning": "Mr. ~, Ms. ~",
+    "meanings": [
+      "Mr. ~, Ms. ~"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579350",
+    "kana": "さん",
+    "kanji": "三",
+    "meaning": "three",
+    "meanings": [
+      "three",
+      "3"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1303620",
+    "kana": "さんぽ (する)",
+    "kanji": "散歩",
+    "meaning": "walk",
+    "meanings": [
+      "walk",
+      "stroll"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579470",
+    "kana": "し",
+    "kanji": "四",
+    "meaning": "four",
+    "meanings": [
+      "four",
+      "4"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-290",
+    "kana": "～じ",
+    "kanji": "～時",
+    "meaning": "~ o'clock (time)",
+    "meanings": [
+      "~ o'clock (time)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576630",
+    "kana": "しお",
+    "kanji": "塩",
+    "meaning": "salt",
+    "meanings": [
+      "salt",
+      "common salt",
+      "table salt",
+      "sodium chloride",
+      "hardship"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1505990",
+    "kana": "しかし",
+    "kanji": "しかし",
+    "meaning": "however",
+    "meanings": [
+      "however",
+      "but"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1315920",
+    "kana": "じかん",
+    "kanji": "時間",
+    "meaning": "time",
+    "meanings": [
+      "time",
+      "hour",
+      "period",
+      "class",
+      "lesson"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-294",
+    "kana": "～じかん",
+    "kanji": "～時間",
+    "meaning": "~ hours",
+    "meanings": [
+      "~ hours"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1304970",
+    "kana": "しごと",
+    "kanji": "仕事",
+    "meaning": "work",
+    "meanings": [
+      "work",
+      "job",
+      "labor",
+      "labour",
+      "business"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1318970",
+    "kana": "じしょ",
+    "kanji": "辞書",
+    "meaning": "dictionary",
+    "meanings": [
+      "dictionary",
+      "lexicon",
+      "letter of resignation"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1381820",
+    "kana": "しずか",
+    "kanji": "静か",
+    "meaning": "quiet",
+    "meanings": [
+      "quiet",
+      "silent",
+      "slow",
+      "unhurried",
+      "calm"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1184140",
+    "kana": "した",
+    "kanji": "下",
+    "meaning": "below",
+    "meanings": [
+      "below",
+      "down",
+      "under",
+      "younger (e.g. daughter)",
+      "bottom"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1319210",
+    "kana": "しち",
+    "kanji": "七",
+    "meaning": "seven",
+    "meanings": [
+      "seven"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1320760",
+    "kana": "しつもん",
+    "kanji": "質問",
+    "meaning": "question",
+    "meanings": [
+      "question",
+      "inquiry",
+      "enquiry"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1318290",
+    "kana": "じてんしゃ",
+    "kanji": "自転車",
+    "meaning": "bicycle",
+    "meanings": [
+      "bicycle",
+      "bike"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1318400",
+    "kana": "じどうしゃ",
+    "kanji": "自動車",
+    "meaning": "car",
+    "meanings": [
+      "car",
+      "automobile",
+      "motorcar",
+      "motor vehicle",
+      "auto"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310730",
+    "kana": "しぬ",
+    "kanji": "死ぬ",
+    "meaning": "to die",
+    "meanings": [
+      "to die",
+      "to pass away",
+      "to lose spirit",
+      "to lose vigor",
+      "to look dead"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1315140",
+    "kana": "じびき",
+    "kanji": "字引",
+    "meaning": "dictionary",
+    "meanings": [
+      "dictionary"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1318610",
+    "kana": "じぶん",
+    "kanji": "自分",
+    "meaning": "myself",
+    "meanings": [
+      "myself",
+      "yourself",
+      "oneself",
+      "himself",
+      "herself"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1436560",
+    "kana": "しまる",
+    "kanji": "閉まる",
+    "meaning": "to be shut",
+    "meanings": [
+      "to be shut",
+      "to close",
+      "to be closed",
+      "to be firm (of a body, face, etc.)",
+      "to be well-knit"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1508590",
+    "kana": "しめる",
+    "kanji": "閉める",
+    "meaning": "to close",
+    "meanings": [
+      "to close",
+      "to shut"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1436570",
+    "kana": "しめる",
+    "kanji": "締める",
+    "meaning": "to tie",
+    "meanings": [
+      "to tie",
+      "to fasten",
+      "to tighten",
+      "to wear (necktie, belt)",
+      "to put on"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-309",
+    "kana": "じゃ; じゃあ",
+    "kanji": "じゃ; じゃあ",
+    "meaning": "well, well then",
+    "meanings": [
+      "well, well then"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1321900",
+    "kana": "しゃしん",
+    "kanji": "写真",
+    "meaning": "photograph",
+    "meanings": [
+      "photograph",
+      "photo",
+      "picture",
+      "photography",
+      "moving picture"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1061520",
+    "kana": "シャツ",
+    "kanji": "シャツ",
+    "meaning": "shirt (undergarment)",
+    "meanings": [
+      "shirt (undergarment)",
+      "undershirt",
+      "singlet",
+      "shirt (outerwear; usu. with collar and buttons)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1061820",
+    "kana": "シャワー",
+    "kanji": "シャワー",
+    "meaning": "shower",
+    "meanings": [
+      "shower"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579840",
+    "kana": "じゅう",
+    "kanji": "十",
+    "meaning": "ten",
+    "meanings": [
+      "ten",
+      "10",
+      "ten years of age",
+      "book containing a collection of poems"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-314",
+    "kana": "～じゅう",
+    "kanji": "～中",
+    "meaning": "during, while",
+    "meanings": [
+      "during, while"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-315",
+    "kana": "～しゅうかん",
+    "kanji": "～週間",
+    "meaning": "~ weeks",
+    "meanings": [
+      "~ weeks"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1330290",
+    "kana": "じゅぎょう",
+    "kanji": "授業",
+    "meaning": "lesson",
+    "meanings": [
+      "lesson",
+      "class",
+      "teaching",
+      "instruction",
+      "classwork"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1337270",
+    "kana": "しゅくだい",
+    "kanji": "宿題",
+    "meaning": "homework",
+    "meanings": [
+      "homework",
+      "assignment",
+      "pending issue",
+      "unresolved problem",
+      "open question"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1353320",
+    "kana": "じょうず",
+    "kanji": "上手",
+    "meaning": "skillful",
+    "meanings": [
+      "skillful",
+      "skilled",
+      "proficient",
+      "good (at)",
+      "adept"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1580480",
+    "kana": "じょうぶ",
+    "kanji": "丈夫",
+    "meaning": "healthy",
+    "meanings": [
+      "healthy",
+      "robust",
+      "strong",
+      "solid",
+      "durable"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1595020",
+    "kana": "しょうゆ",
+    "kanji": "醤油",
+    "meaning": "soy sauce",
+    "meanings": [
+      "soy sauce",
+      "soya sauce",
+      "shoyu"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1358550",
+    "kana": "しょくどう",
+    "kanji": "食堂",
+    "meaning": "dining room",
+    "meanings": [
+      "dining room",
+      "dining hall",
+      "cafeteria",
+      "canteen",
+      "messroom"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1420470",
+    "kana": "しる",
+    "kanji": "知る",
+    "meaning": "to know",
+    "meanings": [
+      "to know",
+      "to be aware (of)",
+      "to be conscious (of)",
+      "to learn (of)",
+      "to find out"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1474900",
+    "kana": "しろ",
+    "kanji": "白",
+    "meaning": "white",
+    "meanings": [
+      "white",
+      "innocence",
+      "innocent person",
+      "blank space",
+      "white stone"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1474910",
+    "kana": "しろい",
+    "kanji": "白い",
+    "meaning": "white",
+    "meanings": [
+      "white"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-325",
+    "kana": "～じん",
+    "kanji": "～人",
+    "meaning": "counter for people",
+    "meanings": [
+      "counter for people"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1362360",
+    "kana": "しんぶん",
+    "kanji": "新聞",
+    "meaning": "newspaper",
+    "meanings": [
+      "newspaper"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1372190",
+    "kana": "すいようび",
+    "kanji": "水曜日",
+    "meaning": "Wednesday",
+    "meanings": [
+      "Wednesday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1228260",
+    "kana": "すう",
+    "kanji": "吸う",
+    "meaning": "to breathe in",
+    "meanings": [
+      "to breathe in",
+      "to inhale",
+      "to smoke (a cigarette, etc.)",
+      "to suck",
+      "to sip"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1067470",
+    "kana": "スカート",
+    "kanji": "スカート",
+    "meaning": "skirt",
+    "meanings": [
+      "skirt"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1277450",
+    "kana": "すき",
+    "kanji": "好き",
+    "meaning": "liking",
+    "meanings": [
+      "liking",
+      "being fond of",
+      "to one's liking",
+      "to one's taste",
+      "preferred"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-331",
+    "kana": "～すぎ",
+    "kanji": "～すぎ",
+    "meaning": "past; to exceed, ~ too much",
+    "meanings": [
+      "past; to exceed, ~ too much"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1348910",
+    "kana": "すくない",
+    "kanji": "少ない",
+    "meaning": "few",
+    "meanings": [
+      "few",
+      "little",
+      "small (amount)",
+      "low",
+      "scarce"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1430620",
+    "kana": "すぐに",
+    "kanji": "すぐに",
+    "meaning": "immediately",
+    "meanings": [
+      "immediately",
+      "right away",
+      "at once",
+      "instantly"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1348870",
+    "kana": "すこし",
+    "kanji": "少し",
+    "meaning": "a little",
+    "meanings": [
+      "a little",
+      "a bit",
+      "a small amount",
+      "a few",
+      "some"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1554370",
+    "kana": "すずしい",
+    "kanji": "涼しい",
+    "meaning": "cool",
+    "meanings": [
+      "cool",
+      "refreshing",
+      "clear (e.g. eyes)",
+      "bright",
+      "clear"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-336",
+    "kana": "～ずつ",
+    "kanji": "～ずつ",
+    "meaning": "at a time",
+    "meanings": [
+      "at a time"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1070790",
+    "kana": "ストーブ",
+    "kanji": "ストーブ",
+    "meaning": "(room) heater",
+    "meanings": [
+      "(room) heater",
+      "stove"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1072590",
+    "kana": "スプーン",
+    "kanji": "スプーン",
+    "meaning": "spoon",
+    "meanings": [
+      "spoon",
+      "spoon lure"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1073210",
+    "kana": "スポーツ",
+    "kanji": "スポーツ",
+    "meaning": "sport",
+    "meanings": [
+      "sport",
+      "sports"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1074260",
+    "kana": "ズボン",
+    "kanji": "ズボン",
+    "meaning": "trousers",
+    "meanings": [
+      "trousers",
+      "pants"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1334040",
+    "kana": "すむ",
+    "kanji": "住む",
+    "meaning": "to live (of humans)",
+    "meanings": [
+      "to live (of humans)",
+      "to reside",
+      "to inhabit",
+      "to dwell",
+      "to abide"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1157170",
+    "kana": "する",
+    "kanji": "する",
+    "meaning": "to do",
+    "meanings": [
+      "to do",
+      "to carry out",
+      "to perform",
+      "to cause to become",
+      "to make (into)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1291800",
+    "kana": "すわる",
+    "kanji": "座る",
+    "meaning": "to sit (down)",
+    "meanings": [
+      "to sit (down)",
+      "to have a seat",
+      "to be seated",
+      "to kneel (on the floor)",
+      "to assume (a position)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1472650",
+    "kana": "せい",
+    "kanji": "背",
+    "meaning": "height",
+    "meanings": [
+      "height",
+      "stature"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1379380",
+    "kana": "せいと",
+    "kanji": "生徒",
+    "meaning": "pupil",
+    "meanings": [
+      "pupil",
+      "student",
+      "schoolchild"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1074270",
+    "kana": "セーター",
+    "kanji": "セーター",
+    "meaning": "sweater",
+    "meanings": [
+      "sweater",
+      "jumper"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1382590",
+    "kana": "せっけん",
+    "kanji": "石鹸",
+    "meaning": "soap",
+    "meanings": [
+      "soap"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1472740",
+    "kana": "せびろ",
+    "kanji": "背広",
+    "meaning": "business suit",
+    "meanings": [
+      "business suit"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1237680",
+    "kana": "せまい",
+    "kanji": "狭い",
+    "meaning": "narrow",
+    "meanings": [
+      "narrow",
+      "confined",
+      "small",
+      "cramped",
+      "limited"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2839962",
+    "kana": "ゼロ",
+    "kanji": "ゼロ",
+    "meaning": "zero",
+    "meanings": [
+      "zero",
+      "0",
+      "nought",
+      "nil",
+      "nothing"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1388740",
+    "kana": "せん",
+    "kanji": "千",
+    "meaning": "thousand",
+    "meanings": [
+      "thousand",
+      "1,000"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1387500",
+    "kana": "せんげつ",
+    "kanji": "先月",
+    "meaning": "last month",
+    "meanings": [
+      "last month"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1387870",
+    "kana": "せんしゅう",
+    "kanji": "先週",
+    "meaning": "last week",
+    "meanings": [
+      "last week",
+      "the week before"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1387990",
+    "kana": "せんせい",
+    "kanji": "先生",
+    "meaning": "teacher",
+    "meanings": [
+      "teacher",
+      "instructor",
+      "master",
+      "sensei",
+      "title or form of address for a teacher, master, doctor, lawyer, etc."
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1390980",
+    "kana": "せんたく",
+    "kanji": "洗濯",
+    "meaning": "washing",
+    "meanings": [
+      "washing",
+      "laundry",
+      "relaxation",
+      "rejuvenation",
+      "melting away (of worries, fatigue, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1396130",
+    "kana": "ぜんぶ",
+    "kanji": "全部",
+    "meaning": "all",
+    "meanings": [
+      "all",
+      "entire",
+      "whole",
+      "altogether"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-357",
+    "kana": "そう; そうです",
+    "kanji": "そう; そうです",
+    "meaning": "yes; appears, to be the case",
+    "meanings": [
+      "yes; appears, to be the case"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1399790",
+    "kana": "そうじ (する)",
+    "kanji": "掃除",
+    "meaning": "cleaning",
+    "meanings": [
+      "cleaning",
+      "sweeping",
+      "dusting",
+      "scrubbing"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-359",
+    "kana": "そうして; そして",
+    "kanji": "そうして; そして",
+    "meaning": "and, like that",
+    "meanings": [
+      "and, like that"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006670",
+    "kana": "そこ",
+    "kanji": "そこ",
+    "meaning": "there (place relatively near listener)",
+    "meanings": [
+      "there (place relatively near listener)",
+      "there (place just mentioned)",
+      "that place",
+      "then (of some incident just spoken of)",
+      "that (of point just raised)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006780",
+    "kana": "そちら",
+    "kanji": "そちら",
+    "meaning": "that way",
+    "meanings": [
+      "that way",
+      "that direction",
+      "there",
+      "that (one)",
+      "you"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006780",
+    "kana": "そっち",
+    "kanji": "そっち",
+    "meaning": "that way",
+    "meanings": [
+      "that way",
+      "that direction",
+      "there",
+      "that (one)",
+      "you"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1203250",
+    "kana": "そと",
+    "kanji": "外",
+    "meaning": "outside",
+    "meanings": [
+      "outside",
+      "exterior",
+      "the open (air)",
+      "other place",
+      "somewhere else"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006830",
+    "kana": "その",
+    "kanji": "その",
+    "meaning": "that",
+    "meanings": [
+      "that",
+      "the",
+      "part (as in \"part two\")",
+      "um ...",
+      "er ..."
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1238460",
+    "kana": "そば",
+    "kanji": "そば",
+    "meaning": "buckwheat (Fagopyrum esculentum)",
+    "meanings": [
+      "buckwheat (Fagopyrum esculentum)",
+      "soba",
+      "Japanese buckwheat noodles",
+      "Chinese-style wheat noodles"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1245290",
+    "kana": "そら",
+    "kanji": "空",
+    "meaning": "sky",
+    "meanings": [
+      "sky",
+      "the air",
+      "the heavens",
+      "weather",
+      "far-off place"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006970",
+    "kana": "それ",
+    "kanji": "それ",
+    "meaning": "that",
+    "meanings": [
+      "that",
+      "it",
+      "then",
+      "that point (in time)",
+      "that time"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1006980",
+    "kana": "それから",
+    "kanji": "それから",
+    "meaning": "and then",
+    "meanings": [
+      "and then",
+      "after that"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1406050",
+    "kana": "それでは",
+    "kanji": "それでは",
+    "meaning": "well, ...",
+    "meanings": [
+      "well, ...",
+      "right, ...",
+      "now, ...",
+      "so",
+      "then"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-370",
+    "kana": "～だい",
+    "kanji": "～台",
+    "meaning": "counter for vehicles; machines",
+    "meanings": [
+      "counter for vehicles; machines"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1413240",
+    "kana": "だいがく",
+    "kanji": "大学",
+    "meaning": "university",
+    "meanings": [
+      "university",
+      "college",
+      "former imperial university of Japan (established under the ritsuryō system for the training of government administrators)",
+      "the Great Learning (one of the Four Books)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1413890",
+    "kana": "たいしかん",
+    "kanji": "大使館",
+    "meaning": "embassy",
+    "meanings": [
+      "embassy"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1414150",
+    "kana": "だいじょうぶ",
+    "kanji": "大丈夫",
+    "meaning": "safe",
+    "meanings": [
+      "safe",
+      "secure",
+      "sound",
+      "problem-free",
+      "without fear"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1413660",
+    "kana": "だいすき",
+    "kanji": "大好き",
+    "meaning": "liking very much",
+    "meanings": [
+      "liking very much",
+      "loving (something or someone)",
+      "adoring",
+      "being very fond of"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1414340",
+    "kana": "たいせつ",
+    "kanji": "大切",
+    "meaning": "important",
+    "meanings": [
+      "important",
+      "significant",
+      "serious",
+      "crucial",
+      "precious"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1412640",
+    "kana": "だいどころ",
+    "kanji": "台所",
+    "meaning": "kitchen",
+    "meanings": [
+      "kitchen",
+      "financial situation",
+      "finances"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1415000",
+    "kana": "たいへん",
+    "kanji": "大変",
+    "meaning": "very",
+    "meanings": [
+      "very",
+      "greatly",
+      "terribly",
+      "awfully",
+      "immense"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1283190",
+    "kana": "たかい",
+    "kanji": "高い",
+    "meaning": "high",
+    "meanings": [
+      "high",
+      "tall",
+      "expensive",
+      "high-priced",
+      "high (level)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-379",
+    "kana": "～だけ",
+    "kanji": "～だけ",
+    "meaning": "only ~, just ~, as ~",
+    "meanings": [
+      "only ~, just ~, as ~"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1415870",
+    "kana": "たくさん",
+    "kanji": "沢山",
+    "meaning": "a lot",
+    "meanings": [
+      "a lot",
+      "lots",
+      "plenty",
+      "many",
+      "a large number"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1076190",
+    "kana": "タクシー",
+    "kanji": "タクシー",
+    "meaning": "taxi",
+    "meanings": [
+      "taxi"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1338180",
+    "kana": "だす",
+    "kanji": "出す",
+    "meaning": "to take out",
+    "meanings": [
+      "to take out",
+      "to get out",
+      "to put out",
+      "to reveal",
+      "to show"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-383",
+    "kana": "～たち",
+    "kanji": "～たち",
+    "meaning": "plural suffix",
+    "meanings": [
+      "plural suffix"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1597040",
+    "kana": "たつ",
+    "kanji": "立つ",
+    "meaning": "to stand (up)",
+    "meanings": [
+      "to stand (up)",
+      "to rise",
+      "to get to one's feet",
+      "to stand on end (e.g. of hairs)",
+      "to stick up"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1299150",
+    "kana": "たて",
+    "kanji": "たて",
+    "meaning": "sword fight (in a film, play, etc.)",
+    "meanings": [
+      "sword fight (in a film, play, etc.)",
+      "stage combat",
+      "fight scene"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1257540",
+    "kana": "たてもの",
+    "kanji": "建物",
+    "meaning": "building",
+    "meanings": [
+      "building"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1207240",
+    "kana": "たのしい",
+    "kanji": "楽しい",
+    "meaning": "enjoyable",
+    "meanings": [
+      "enjoyable",
+      "fun",
+      "pleasant",
+      "happy",
+      "delightful"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1548370",
+    "kana": "たのむ",
+    "kanji": "頼む",
+    "meaning": "to request",
+    "meanings": [
+      "to request",
+      "to beg",
+      "to ask",
+      "to call",
+      "to order"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1597150",
+    "kana": "たばこ",
+    "kanji": "たばこ",
+    "meaning": "tobacco",
+    "meanings": [
+      "tobacco",
+      "cigarette",
+      "cigar",
+      "tobacco plant (Nicotiana tabacum)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1407980",
+    "kana": "たぶん",
+    "kanji": "多分",
+    "meaning": "probably",
+    "meanings": [
+      "probably",
+      "likely",
+      "perhaps",
+      "maybe",
+      "a lot of"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1358340",
+    "kana": "たべもの",
+    "kanji": "食べ物",
+    "meaning": "food",
+    "meanings": [
+      "food"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1358280",
+    "kana": "たべる",
+    "kanji": "食べる",
+    "meaning": "to eat",
+    "meanings": [
+      "to eat",
+      "to live on (e.g. a salary)",
+      "to live off",
+      "to subsist on"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1549140",
+    "kana": "たまご",
+    "kanji": "卵",
+    "meaning": "eggs",
+    "meanings": [
+      "eggs",
+      "egg",
+      "spawn",
+      "roe",
+      "(hen's) egg"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1416830",
+    "kana": "だれ",
+    "kanji": "誰",
+    "meaning": "who",
+    "meanings": [
+      "who"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1416840",
+    "kana": "だれか",
+    "kanji": "誰か",
+    "meaning": "someone",
+    "meanings": [
+      "someone",
+      "somebody"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1419110",
+    "kana": "たんじょうび",
+    "kanji": "誕生日",
+    "meaning": "birthday",
+    "meanings": [
+      "birthday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1597350",
+    "kana": "だんだん",
+    "kanji": "段々",
+    "meaning": "gradually",
+    "meanings": [
+      "gradually",
+      "by degrees",
+      "little by little",
+      "more and more",
+      "increasingly"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1347750",
+    "kana": "ちいさい",
+    "kanji": "小さい",
+    "meaning": "small",
+    "meanings": [
+      "small",
+      "little",
+      "tiny",
+      "slight",
+      "below average (in degree, amount, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2136180",
+    "kana": "ちいさな",
+    "kanji": "小さな",
+    "meaning": "small",
+    "meanings": [
+      "small",
+      "little",
+      "tiny"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1242130",
+    "kana": "ちかい",
+    "kanji": "近い",
+    "meaning": "near",
+    "meanings": [
+      "near",
+      "close",
+      "short (distance)",
+      "close (in time)",
+      "soon"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1158880",
+    "kana": "ちがう",
+    "kanji": "違う",
+    "meaning": "to differ (from)",
+    "meanings": [
+      "to differ (from)",
+      "to be different",
+      "to be distinct",
+      "to be unlike",
+      "to vary"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1242160",
+    "kana": "ちかく",
+    "kanji": "近く",
+    "meaning": "near",
+    "meanings": [
+      "near",
+      "neighbourhood",
+      "neighborhood",
+      "vicinity",
+      "nearly (e.g. \"it took nearly one year\")"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1420900",
+    "kana": "ちかてつ",
+    "kanji": "地下鉄",
+    "meaning": "subway",
+    "meanings": [
+      "subway",
+      "metro",
+      "underground (railway)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1421290",
+    "kana": "ちず",
+    "kanji": "地図",
+    "meaning": "map",
+    "meanings": [
+      "map",
+      "atlas",
+      "chart",
+      "plan"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1497610",
+    "kana": "ちち",
+    "kanji": "父",
+    "meaning": "father",
+    "meanings": [
+      "father"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1422720",
+    "kana": "ちゃいろ",
+    "kanji": "茶色",
+    "meaning": "brown",
+    "meanings": [
+      "brown",
+      "light brown",
+      "tawny"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1597530",
+    "kana": "ちゃわん",
+    "kanji": "茶碗",
+    "meaning": "rice bowl",
+    "meanings": [
+      "rice bowl",
+      "tea cup",
+      "teacup"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-408",
+    "kana": "～ちゅう",
+    "kanji": "～中",
+    "meaning": "during, while ~ing",
+    "meanings": [
+      "during, while ~ing"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1427340",
+    "kana": "ちょうど",
+    "kanji": "丁度",
+    "meaning": "exactly",
+    "meanings": [
+      "exactly",
+      "precisely",
+      "just",
+      "right",
+      "opportunely"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1163940",
+    "kana": "ちょっと",
+    "kanji": "ちょっと",
+    "meaning": "a little",
+    "meanings": [
+      "a little",
+      "a bit",
+      "slightly",
+      "just a minute",
+      "for a moment"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2225040",
+    "kana": "ついたち",
+    "kanji": "一日",
+    "meaning": "first day of the month",
+    "meanings": [
+      "first day of the month",
+      "the first of the month"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1305990",
+    "kana": "つかう",
+    "kanji": "使う",
+    "meaning": "to use (a tool, method, etc.)",
+    "meanings": [
+      "to use (a tool, method, etc.)",
+      "to make use of",
+      "to put to use",
+      "to use (a person, animal, puppet, etc.)",
+      "to employ"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1483740",
+    "kana": "つかれる",
+    "kanji": "疲れる",
+    "meaning": "to get tired",
+    "meanings": [
+      "to get tired",
+      "to tire",
+      "to get fatigued",
+      "to become exhausted",
+      "to grow weary"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1316380",
+    "kana": "つぎ",
+    "kanji": "次",
+    "meaning": "next",
+    "meanings": [
+      "next",
+      "following",
+      "subsequent",
+      "stage",
+      "station"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1422970",
+    "kana": "つく",
+    "kanji": "着く",
+    "meaning": "to arrive at",
+    "meanings": [
+      "to arrive at",
+      "to reach",
+      "to sit on",
+      "to sit at (e.g. the table)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1220210",
+    "kana": "つくえ",
+    "kanji": "机",
+    "meaning": "desk",
+    "meanings": [
+      "desk"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1597890",
+    "kana": "つくる",
+    "kanji": "作る",
+    "meaning": "to make",
+    "meanings": [
+      "to make",
+      "to produce",
+      "to manufacture",
+      "to build",
+      "to construct"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1331540",
+    "kana": "つける",
+    "kanji": "つける",
+    "meaning": "to install (a king, emperor, etc.)",
+    "meanings": [
+      "to install (a king, emperor, etc.)",
+      "to appoint (to a post)",
+      "to promote",
+      "to assign (to study under)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1240825",
+    "kana": "つとめる",
+    "kanji": "勤める",
+    "meaning": "to work (for)",
+    "meanings": [
+      "to work (for)",
+      "to be employed (at)",
+      "to serve (in)",
+      "to serve (as)",
+      "to act (as)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1008190",
+    "kana": "つまらない",
+    "kanji": "つまらない",
+    "meaning": "dull",
+    "meanings": [
+      "dull",
+      "uninteresting",
+      "boring",
+      "tedious",
+      "insignificant"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1556730",
+    "kana": "つめたい",
+    "kanji": "冷たい",
+    "meaning": "cold (to the touch)",
+    "meanings": [
+      "cold (to the touch)",
+      "chilly",
+      "icy",
+      "freezing",
+      "(emotionally) cold"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1236070",
+    "kana": "つよい",
+    "kanji": "強い",
+    "meaning": "strong",
+    "meanings": [
+      "strong",
+      "potent",
+      "competent",
+      "domineering",
+      "tough"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1327190",
+    "kana": "て",
+    "kanji": "手",
+    "meaning": "hand",
+    "meanings": [
+      "hand",
+      "arm",
+      "forepaw",
+      "foreleg",
+      "handle"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1078750",
+    "kana": "テープ",
+    "kanji": "テープ",
+    "meaning": "tape",
+    "meanings": [
+      "tape"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1078810",
+    "kana": "テープレコーダー",
+    "kanji": "テープレコーダー",
+    "meaning": "tape recorder",
+    "meanings": [
+      "tape recorder"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1078630",
+    "kana": "テーブル",
+    "kanji": "テーブル",
+    "meaning": "table",
+    "meanings": [
+      "table"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1598550",
+    "kana": "でかける",
+    "kanji": "出かける",
+    "meaning": "to go out (e.g. on an excursion or outing)",
+    "meanings": [
+      "to go out (e.g. on an excursion or outing)",
+      "to leave",
+      "to depart",
+      "to start",
+      "to set out"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1327720",
+    "kana": "てがみ",
+    "kanji": "手紙",
+    "meaning": "letter",
+    "meanings": [
+      "letter",
+      "note"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1339500",
+    "kana": "できる",
+    "kanji": "できる",
+    "meaning": "to be out of",
+    "meanings": [
+      "to be out of",
+      "to have no more at hand"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1338850",
+    "kana": "でぐち",
+    "kanji": "出口",
+    "meaning": "exit",
+    "meanings": [
+      "exit",
+      "way out",
+      "outlet",
+      "vent"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1079760",
+    "kana": "テスト",
+    "kanji": "テスト",
+    "meaning": "test (of ability, knowledge, etc.)",
+    "meanings": [
+      "test (of ability, knowledge, etc.)",
+      "exam",
+      "examination",
+      "quiz",
+      "test (of performance, quality, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1008450",
+    "kana": "では",
+    "kanji": "では",
+    "meaning": "then",
+    "meanings": [
+      "then",
+      "well",
+      "so",
+      "well then",
+      "bye then"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1083590",
+    "kana": "デパート",
+    "kanji": "デパート",
+    "meaning": "department store",
+    "meanings": [
+      "department store",
+      "department"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1008460",
+    "kana": "でも",
+    "kanji": "でも",
+    "meaning": "but",
+    "meanings": [
+      "but",
+      "however",
+      "though",
+      "nevertheless",
+      "still"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1338240",
+    "kana": "でる",
+    "kanji": "出る",
+    "meaning": "to leave",
+    "meanings": [
+      "to leave",
+      "to exit",
+      "to go out",
+      "to come out",
+      "to get out"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1080510",
+    "kana": "テレビ",
+    "kanji": "テレビ",
+    "meaning": "television",
+    "meanings": [
+      "television",
+      "TV",
+      "TV program",
+      "TV programme",
+      "TV broadcast"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1438690",
+    "kana": "てんき",
+    "kanji": "天気",
+    "meaning": "weather",
+    "meanings": [
+      "weather",
+      "fair weather",
+      "fine weather"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1443000",
+    "kana": "でんき",
+    "kanji": "電気",
+    "meaning": "electricity",
+    "meanings": [
+      "electricity",
+      "(electric) light"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1443530",
+    "kana": "でんしゃ",
+    "kanji": "電車",
+    "meaning": "train",
+    "meanings": [
+      "train",
+      "electric train"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1443840",
+    "kana": "でんわ",
+    "kanji": "電話",
+    "meaning": "telephone call",
+    "meanings": [
+      "telephone call",
+      "phone call",
+      "telephone (device)",
+      "phone"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1266970",
+    "kana": "と",
+    "kanji": "戸",
+    "meaning": "door (esp. Japanese-style)",
+    "meanings": [
+      "door (esp. Japanese-style)",
+      "shutter",
+      "window shutter",
+      "entrance (to a home)",
+      "narrows"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-442",
+    "kana": "～ど",
+    "kanji": "～度",
+    "meaning": "counter for occurrences; ~ degree; ~ point",
+    "meanings": [
+      "counter for occurrences; ~ degree; ~ point"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1087820",
+    "kana": "ドア",
+    "kanji": "ドア",
+    "meaning": "door",
+    "meanings": [
+      "door"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1084810",
+    "kana": "トイレ",
+    "kanji": "トイレ",
+    "meaning": "toilet",
+    "meanings": [
+      "toilet",
+      "restroom",
+      "bathroom",
+      "lavatory",
+      "going to the toilet"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1000050",
+    "kana": "どう",
+    "kanji": "どう",
+    "meaning": "\"as above\" mark",
+    "meanings": [
+      "\"as above\" mark"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1466940",
+    "kana": "どうして",
+    "kanji": "どうして",
+    "meaning": "how",
+    "meanings": [
+      "how",
+      "in what way",
+      "by what means",
+      "why",
+      "for what reason"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1189130",
+    "kana": "どうぞ",
+    "kanji": "どうぞ",
+    "meaning": "please",
+    "meanings": [
+      "please",
+      "kindly",
+      "pray",
+      "I beg (of you)",
+      "by all means"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1451470",
+    "kana": "どうぶつ",
+    "kanji": "動物",
+    "meaning": "animal",
+    "meanings": [
+      "animal"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1009000",
+    "kana": "どうも",
+    "kanji": "どうも",
+    "meaning": "thank you",
+    "meanings": [
+      "thank you",
+      "thanks",
+      "much (thanks)",
+      "very (sorry)",
+      "quite (regret)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579840",
+    "kana": "(〜を) とお",
+    "kanji": "十",
+    "meaning": "ten",
+    "meanings": [
+      "ten",
+      "10",
+      "ten years of age",
+      "book containing a collection of poems"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1177800",
+    "kana": "とおい",
+    "kanji": "遠い",
+    "meaning": "far",
+    "meanings": [
+      "far",
+      "distant",
+      "far away",
+      "a long way off",
+      "in the distance"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1335000",
+    "kana": "とおか",
+    "kanji": "十日",
+    "meaning": "10th day of the month",
+    "meanings": [
+      "10th day of the month",
+      "ten days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-453",
+    "kana": "～とき",
+    "kanji": "～時",
+    "meaning": "at the time of ~",
+    "meanings": [
+      "at the time of ~"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1598680",
+    "kana": "ときどき",
+    "kanji": "時々",
+    "meaning": "sometimes",
+    "meanings": [
+      "sometimes",
+      "occasionally",
+      "at times",
+      "from time to time",
+      "now and then"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1316140",
+    "kana": "とけい",
+    "kanji": "時計",
+    "meaning": "clock",
+    "meanings": [
+      "clock",
+      "watch",
+      "timepiece"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1577140",
+    "kana": "どこ",
+    "kanji": "どこ",
+    "meaning": "where",
+    "meanings": [
+      "where",
+      "what place",
+      "how much (long, far)",
+      "what extent"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1343100",
+    "kana": "ところ",
+    "kanji": "所",
+    "meaning": "place",
+    "meanings": [
+      "place",
+      "spot",
+      "scene",
+      "site",
+      "address"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1468060",
+    "kana": "とし",
+    "kanji": "年",
+    "meaning": "year",
+    "meanings": [
+      "year",
+      "age",
+      "years",
+      "past one's prime",
+      "old age"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1370420",
+    "kana": "としょかん",
+    "kanji": "図書館",
+    "meaning": "library",
+    "meanings": [
+      "library"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1189360",
+    "kana": "どちら",
+    "kanji": "どちら",
+    "meaning": "which way",
+    "meanings": [
+      "which way",
+      "which direction",
+      "where",
+      "which one (esp. of two alternatives)",
+      "who"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1189360",
+    "kana": "どっち",
+    "kanji": "どっち",
+    "meaning": "which way",
+    "meanings": [
+      "which way",
+      "which direction",
+      "where",
+      "which one (esp. of two alternatives)",
+      "who"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1008630",
+    "kana": "とても",
+    "kanji": "とても",
+    "meaning": "very",
+    "meanings": [
+      "very",
+      "awfully",
+      "exceedingly",
+      "(not) at all",
+      "by no means"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1189370",
+    "kana": "どなた",
+    "kanji": "どなた",
+    "meaning": "who",
+    "meanings": [
+      "who"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1555830",
+    "kana": "となり",
+    "kanji": "隣",
+    "meaning": "next (to)",
+    "meanings": [
+      "next (to)",
+      "adjoining",
+      "adjacent",
+      "house next door",
+      "neighbouring house"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1442500",
+    "kana": "どの",
+    "kanji": "どの",
+    "meaning": "Mr.",
+    "meanings": [
+      "Mr.",
+      "Mrs.",
+      "Miss",
+      "Ms."
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1429700",
+    "kana": "とぶ",
+    "kanji": "飛ぶ",
+    "meaning": "to fly",
+    "meanings": [
+      "to fly",
+      "to soar",
+      "to jump",
+      "to leap",
+      "to spring"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1310620",
+    "kana": "とまる",
+    "kanji": "止まる",
+    "meaning": "to stop (moving)",
+    "meanings": [
+      "to stop (moving)",
+      "to come to a stop",
+      "to stop (doing, working, being supplied)",
+      "to come to a halt",
+      "to cease"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1540170",
+    "kana": "ともだち",
+    "kanji": "友達",
+    "meaning": "friend",
+    "meanings": [
+      "friend",
+      "companion"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1445590",
+    "kana": "どようび",
+    "kanji": "土曜日",
+    "meaning": "Saturday",
+    "meanings": [
+      "Saturday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1430250",
+    "kana": "とり",
+    "kanji": "鳥",
+    "meaning": "bird",
+    "meanings": [
+      "bird",
+      "bird meat (esp. chicken meat)",
+      "fowl",
+      "poultry"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1253020",
+    "kana": "とりにく",
+    "kanji": "鶏肉",
+    "meaning": "chicken meat",
+    "meanings": [
+      "chicken meat",
+      "fowl",
+      "poultry",
+      "bird meat"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1326980",
+    "kana": "とる",
+    "kanji": "取る",
+    "meaning": "to take",
+    "meanings": [
+      "to take",
+      "to pick up",
+      "to grab",
+      "to catch",
+      "to hold"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1298790",
+    "kana": "とる",
+    "kanji": "撮る",
+    "meaning": "to take (a photograph)",
+    "meanings": [
+      "to take (a photograph)",
+      "to record (audio or video)",
+      "to film",
+      "to shoot"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1009290",
+    "kana": "どれ",
+    "kanji": "どれ",
+    "meaning": "which (of three or more)",
+    "meanings": [
+      "which (of three or more)",
+      "well",
+      "now",
+      "c'mon"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1009330",
+    "kana": "どんな",
+    "kanji": "どんな",
+    "meaning": "what kind of",
+    "meanings": [
+      "what kind of",
+      "what sort of",
+      "what",
+      "no matter what (kind of)",
+      "whatever"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1518450",
+    "kana": "ない",
+    "kanji": "ない",
+    "meaning": "dead",
+    "meanings": [
+      "dead"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1089890",
+    "kana": "ナイフ",
+    "kanji": "ナイフ",
+    "meaning": "knife",
+    "meanings": [
+      "knife"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1423310",
+    "kana": "なか",
+    "kanji": "中",
+    "meaning": "inside",
+    "meanings": [
+      "inside",
+      "interior",
+      "among",
+      "within",
+      "middle"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1429750",
+    "kana": "ながい",
+    "kanji": "長い",
+    "meaning": "long (distance, length)",
+    "meanings": [
+      "long (distance, length)",
+      "long (time)",
+      "protracted",
+      "prolonged"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1532870",
+    "kana": "なく",
+    "kanji": "鳴く",
+    "meaning": "to make sound (of an animal)",
+    "meanings": [
+      "to make sound (of an animal)",
+      "to call",
+      "to cry",
+      "to whine",
+      "to sing"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1529530",
+    "kana": "なくす",
+    "kanji": "無くす",
+    "meaning": "to lose (something)",
+    "meanings": [
+      "to lose (something)",
+      "to get rid of",
+      "to eliminate",
+      "to remove",
+      "to eradicate"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1577120",
+    "kana": "なぜ",
+    "kanji": "なぜ",
+    "meaning": "why",
+    "meanings": [
+      "why",
+      "how",
+      "for what reason"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1191320",
+    "kana": "なつ",
+    "kanji": "夏",
+    "meaning": "summer",
+    "meanings": [
+      "summer"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1191420",
+    "kana": "なつやすみ",
+    "kanji": "夏休み",
+    "meaning": "summer vacation",
+    "meanings": [
+      "summer vacation",
+      "summer holiday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-485",
+    "kana": "～など",
+    "kanji": "～など",
+    "meaning": "et cetera",
+    "meanings": [
+      "et cetera"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1319220",
+    "kana": "ななつ",
+    "kanji": "七つ",
+    "meaning": "seven",
+    "meanings": [
+      "seven",
+      "seven years of age",
+      "four o'clock (old time system)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1577100",
+    "kana": "なん; なに",
+    "kanji": "何",
+    "meaning": "what",
+    "meanings": [
+      "what",
+      "you-know-what",
+      "that thing",
+      "whatsit",
+      "whachamacallit"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1579630",
+    "kana": "なのか",
+    "kanji": "七日",
+    "meaning": "7th day of the month",
+    "meanings": [
+      "7th day of the month",
+      "seven days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1531710",
+    "kana": "なまえ",
+    "kanji": "名前",
+    "meaning": "name",
+    "meanings": [
+      "name",
+      "given name",
+      "first name"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1333070",
+    "kana": "ならう",
+    "kanji": "習う",
+    "meaning": "to take lessons in",
+    "meanings": [
+      "to take lessons in",
+      "to be taught",
+      "to learn (from a teacher)",
+      "to study (under a teacher)",
+      "to get training in"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1508380",
+    "kana": "ならぶ",
+    "kanji": "並ぶ",
+    "meaning": "to line up",
+    "meanings": [
+      "to line up",
+      "to stand in a line",
+      "to rival",
+      "to match",
+      "to equal"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1508390",
+    "kana": "ならべる",
+    "kanji": "並べる",
+    "meaning": "to line up",
+    "meanings": [
+      "to line up",
+      "to set up",
+      "to arrange in a line",
+      "to enumerate",
+      "to itemize"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1375610",
+    "kana": "なる",
+    "kanji": "なる",
+    "meaning": "to become",
+    "meanings": [
+      "to become",
+      "to get",
+      "to grow",
+      "to turn",
+      "to reach"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-494",
+    "kana": "なん～",
+    "kanji": "何～",
+    "meaning": "what sort of ~",
+    "meanings": [
+      "what sort of ~"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1461140",
+    "kana": "に",
+    "kanji": "二",
+    "meaning": "two",
+    "meanings": [
+      "two",
+      "2"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1463480",
+    "kana": "にぎやか",
+    "kanji": "にぎやか",
+    "meaning": "bustling",
+    "meanings": [
+      "bustling",
+      "busy",
+      "crowded",
+      "lively",
+      "prosperous"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1463520",
+    "kana": "にく",
+    "kanji": "肉",
+    "meaning": "flesh",
+    "meanings": [
+      "flesh",
+      "meat",
+      "flesh (of a fruit)",
+      "pulp",
+      "the physical body (as opposed to the spirit)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1380840",
+    "kana": "にし",
+    "kanji": "西",
+    "meaning": "west",
+    "meanings": [
+      "west"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-499",
+    "kana": "～にち",
+    "kanji": "～日",
+    "meaning": "~ day of the month, for ~ days",
+    "meanings": [
+      "~ day of the month, for ~ days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1464900",
+    "kana": "にちようび",
+    "kanji": "日曜日",
+    "meaning": "Sunday",
+    "meanings": [
+      "Sunday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1195430",
+    "kana": "にもつ",
+    "kanji": "荷物",
+    "meaning": "luggage",
+    "meanings": [
+      "luggage",
+      "baggage",
+      "package",
+      "burden",
+      "payload (of a packet, cell, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1091500",
+    "kana": "ニュース",
+    "kanji": "ニュース",
+    "meaning": "news",
+    "meanings": [
+      "news"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1436130",
+    "kana": "にわ",
+    "kanji": "庭",
+    "meaning": "garden",
+    "meanings": [
+      "garden",
+      "yard",
+      "courtyard",
+      "field (of action)",
+      "area"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-504",
+    "kana": "～にん",
+    "kanji": "～人",
+    "meaning": "counter for people",
+    "meanings": [
+      "counter for people"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1416400",
+    "kana": "ぬぐ",
+    "kanji": "脱ぐ",
+    "meaning": "to take off (clothes, shoes, etc.)",
+    "meanings": [
+      "to take off (clothes, shoes, etc.)",
+      "to undress"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1183300",
+    "kana": "ぬるい",
+    "kanji": "温い",
+    "meaning": "lukewarm",
+    "meanings": [
+      "lukewarm",
+      "tepid",
+      "lenient"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1092820",
+    "kana": "ネクタイ",
+    "kanji": "ネクタイ",
+    "meaning": "tie",
+    "meanings": [
+      "tie",
+      "necktie"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1467640",
+    "kana": "ねこ",
+    "kanji": "猫",
+    "meaning": "cat (esp. the domestic cat, Felis catus)",
+    "meanings": [
+      "cat (esp. the domestic cat, Felis catus)",
+      "feline",
+      "shamisen",
+      "geisha",
+      "wheelbarrow"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1360010",
+    "kana": "ねる",
+    "kanji": "寝る",
+    "meaning": "to sleep (lying down)",
+    "meanings": [
+      "to sleep (lying down)",
+      "to go to bed",
+      "to lie in bed",
+      "to lie down",
+      "to sleep (with someone, i.e. have intercourse)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-510",
+    "kana": "～ねん",
+    "kanji": "～年",
+    "meaning": "~ years",
+    "meanings": [
+      "~ years"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1093450",
+    "kana": "ノート",
+    "kanji": "ノート",
+    "meaning": "notebook",
+    "meanings": [
+      "notebook",
+      "copy-book",
+      "exercise book",
+      "note",
+      "noting down"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1352570",
+    "kana": "のぼる",
+    "kanji": "登る",
+    "meaning": "to ascend",
+    "meanings": [
+      "to ascend",
+      "to go up",
+      "to climb",
+      "to ascend (as a natural process, e.g. the Sun)",
+      "to rise"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600430",
+    "kana": "のみもの",
+    "kanji": "飲み物",
+    "meaning": "drink",
+    "meanings": [
+      "drink",
+      "beverage"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1169870",
+    "kana": "のむ",
+    "kanji": "飲む",
+    "meaning": "to drink",
+    "meanings": [
+      "to drink",
+      "to swallow",
+      "to take (medicine)",
+      "to smoke (tobacco)",
+      "to swallow up"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1355120",
+    "kana": "のる",
+    "kanji": "乗る",
+    "meaning": "to get on (train, plane, bus, ship, etc.)",
+    "meanings": [
+      "to get on (train, plane, bus, ship, etc.)",
+      "to get in",
+      "to board",
+      "to take",
+      "to embark"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1313000",
+    "kana": "は",
+    "kanji": "歯",
+    "meaning": "tooth",
+    "meanings": [
+      "tooth",
+      "teeth",
+      "tooth (of a comb, saw, etc.)",
+      "cog",
+      "support (of a geta)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1100760",
+    "kana": "パーティー",
+    "kanji": "パーティー",
+    "meaning": "party (social gathering)",
+    "meanings": [
+      "party (social gathering)",
+      "party (group of people participating in an activity, esp. mountain climbing)",
+      "(political) party"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1010080",
+    "kana": "はい",
+    "kanji": "はい",
+    "meaning": "yes",
+    "meanings": [
+      "yes",
+      "that is correct",
+      "understood",
+      "I see",
+      "OK"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-519",
+    "kana": "～はい",
+    "kanji": "～杯",
+    "meaning": "counter for cupfuls",
+    "meanings": [
+      "counter for cupfuls"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1201940",
+    "kana": "はいざら",
+    "kanji": "灰皿",
+    "meaning": "ashtray",
+    "meanings": [
+      "ashtray"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1465590",
+    "kana": "はいる",
+    "kanji": "入る",
+    "meaning": "to enter",
+    "meanings": [
+      "to enter",
+      "to come in",
+      "to go in",
+      "to get in",
+      "to arrive"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546590",
+    "kana": "はがき",
+    "kanji": "葉書",
+    "meaning": "postcard",
+    "meanings": [
+      "postcard",
+      "memo",
+      "note",
+      "card"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1399760",
+    "kana": "はく",
+    "kanji": "はく",
+    "meaning": "to sweep",
+    "meanings": [
+      "to sweep",
+      "to brush",
+      "to clean",
+      "to gather silkworms"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1585650",
+    "kana": "はこ",
+    "kanji": "箱",
+    "meaning": "box",
+    "meanings": [
+      "box",
+      "case",
+      "chest",
+      "package",
+      "pack"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1237410",
+    "kana": "はし",
+    "kanji": "橋",
+    "meaning": "bridge",
+    "meanings": [
+      "bridge"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1476410",
+    "kana": "はし",
+    "kanji": "箸",
+    "meaning": "chopsticks",
+    "meanings": [
+      "chopsticks"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1307500",
+    "kana": "はじまる",
+    "kanji": "始まる",
+    "meaning": "to begin",
+    "meanings": [
+      "to begin",
+      "to start",
+      "to commence",
+      "to happen (again)",
+      "to begin (anew)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1342540",
+    "kana": "はじめ",
+    "kanji": "初め; 始め",
+    "meaning": "beginning",
+    "meanings": [
+      "beginning",
+      "start",
+      "outset",
+      "opening",
+      "first (in line, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1342550",
+    "kana": "はじめて",
+    "kanji": "初めて",
+    "meaning": "for the first time",
+    "meanings": [
+      "for the first time",
+      "only after ... is it ...",
+      "only when ... do you ...",
+      "not until ... do you ...",
+      "first time"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1402540",
+    "kana": "はしる",
+    "kanji": "走る",
+    "meaning": "to run",
+    "meanings": [
+      "to run",
+      "to run (of a vehicle)",
+      "to drive",
+      "to travel",
+      "to move"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1098390",
+    "kana": "バス",
+    "kanji": "バス",
+    "meaning": "bus",
+    "meanings": [
+      "bus",
+      "bus"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1098620",
+    "kana": "バター",
+    "kanji": "バター",
+    "meaning": "butter",
+    "meanings": [
+      "butter"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600790",
+    "kana": "はたち",
+    "kanji": "二十歳",
+    "meaning": "20 years old",
+    "meanings": [
+      "20 years old",
+      "twenty"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1451150",
+    "kana": "はたらく",
+    "kanji": "働く",
+    "meaning": "to work",
+    "meanings": [
+      "to work",
+      "to labor",
+      "to labour",
+      "to function",
+      "to operate"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1583090",
+    "kana": "はち",
+    "kanji": "八",
+    "meaning": "eight",
+    "meanings": [
+      "eight",
+      "8"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600850",
+    "kana": "はつか",
+    "kanji": "二十日",
+    "meaning": "20th day of the month",
+    "meanings": [
+      "20th day of the month",
+      "20 days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1194500",
+    "kana": "はな",
+    "kanji": "花",
+    "meaning": "flower",
+    "meanings": [
+      "flower",
+      "blossom",
+      "bloom",
+      "petal",
+      "cherry blossom"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1486720",
+    "kana": "はな",
+    "kanji": "鼻",
+    "meaning": "nose",
+    "meanings": [
+      "nose"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1600900",
+    "kana": "はなし",
+    "kanji": "話",
+    "meaning": "talk",
+    "meanings": [
+      "talk",
+      "speech",
+      "chat",
+      "conversation",
+      "topic"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1562350",
+    "kana": "はなす",
+    "kanji": "話す",
+    "meaning": "to talk",
+    "meanings": [
+      "to talk",
+      "to speak",
+      "to converse",
+      "to chat",
+      "to tell"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1514990",
+    "kana": "はは",
+    "kanji": "母",
+    "meaning": "mother",
+    "meanings": [
+      "mother"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1404975",
+    "kana": "はやい",
+    "kanji": "早い",
+    "meaning": "fast",
+    "meanings": [
+      "fast",
+      "quick",
+      "rapid",
+      "swift",
+      "speedy"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1404975",
+    "kana": "はやい",
+    "kanji": "速い",
+    "meaning": "fast",
+    "meanings": [
+      "fast",
+      "quick",
+      "rapid",
+      "swift",
+      "speedy"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1341000",
+    "kana": "はる",
+    "kanji": "春",
+    "meaning": "spring",
+    "meanings": [
+      "spring",
+      "springtime",
+      "New Year",
+      "prime (of life)",
+      "height (of one's prosperity)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1427900",
+    "kana": "はる",
+    "kanji": "貼る",
+    "meaning": "to stick",
+    "meanings": [
+      "to stick",
+      "to paste",
+      "to affix",
+      "to stretch",
+      "to spread"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1376460",
+    "kana": "はれ",
+    "kanji": "晴れ",
+    "meaning": "clear weather",
+    "meanings": [
+      "clear weather",
+      "fine weather",
+      "formal",
+      "ceremonial",
+      "public"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1376470",
+    "kana": "はれる",
+    "kanji": "晴れる",
+    "meaning": "to clear up",
+    "meanings": [
+      "to clear up",
+      "to clear away",
+      "to be sunny",
+      "to stop raining",
+      "to refresh (e.g. spirits)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1478750",
+    "kana": "はん",
+    "kanji": "半",
+    "meaning": "half",
+    "meanings": [
+      "half",
+      "semi-",
+      "partial",
+      "half-past",
+      "odd number"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1482110",
+    "kana": "ばん",
+    "kanji": "晩",
+    "meaning": "evening",
+    "meanings": [
+      "evening",
+      "night",
+      "dinner",
+      "evening meal",
+      "counter for nights"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-550",
+    "kana": "～ばん",
+    "kanji": "～番",
+    "meaning": "~st; ~th best",
+    "meanings": [
+      "~st; ~th best"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1103090",
+    "kana": "パン",
+    "kanji": "パン",
+    "meaning": "bread",
+    "meanings": [
+      "bread",
+      "(sweet) pastry",
+      "staff of life",
+      "one's bread"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1096420",
+    "kana": "ハンカチ",
+    "kanji": "ハンカチ",
+    "meaning": "handkerchief",
+    "meanings": [
+      "handkerchief"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1482290",
+    "kana": "ばんごう",
+    "kanji": "番号",
+    "meaning": "number",
+    "meanings": [
+      "number",
+      "series of digits"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1601340",
+    "kana": "ばんごはん",
+    "kanji": "晩御飯",
+    "meaning": "dinner",
+    "meanings": [
+      "dinner",
+      "evening meal"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1479890",
+    "kana": "はんぶん",
+    "kanji": "半分",
+    "meaning": "half",
+    "meanings": [
+      "half"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1447440",
+    "kana": "ひがし",
+    "kanji": "東",
+    "meaning": "east",
+    "meanings": [
+      "east"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-557",
+    "kana": "～ひき",
+    "kanji": "～匹",
+    "meaning": "counter for small animals",
+    "meanings": [
+      "counter for small animals"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1169250",
+    "kana": "ひく",
+    "kanji": "引く",
+    "meaning": "to pull",
+    "meanings": [
+      "to pull",
+      "to tug",
+      "to lead (e.g. a horse)",
+      "to draw (attention, sympathy, etc.)",
+      "to attract (e.g. interest)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1419370",
+    "kana": "ひく",
+    "kanji": "弾く",
+    "meaning": "to play (a stringed or keyboard instrument)",
+    "meanings": [
+      "to play (a stringed or keyboard instrument)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1434180",
+    "kana": "ひくい",
+    "kanji": "低い",
+    "meaning": "low (rank, degree, value, content, quality, etc.)",
+    "meanings": [
+      "low (rank, degree, value, content, quality, etc.)",
+      "low (position)",
+      "close to the ground",
+      "short (height)",
+      "deep (voice)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1485470",
+    "kana": "ひこうき",
+    "kanji": "飛行機",
+    "meaning": "airplane",
+    "meanings": [
+      "airplane",
+      "aeroplane",
+      "plane",
+      "aircraft"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1290800",
+    "kana": "ひだり",
+    "kanji": "左",
+    "meaning": "left",
+    "meanings": [
+      "left",
+      "left-hand side",
+      "left hand",
+      "the left (wing)",
+      "leftist"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1580640",
+    "kana": "ひと",
+    "kanji": "人",
+    "meaning": "person",
+    "meanings": [
+      "person",
+      "someone",
+      "somebody",
+      "human beings",
+      "mankind"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1160820",
+    "kana": "ひとつ",
+    "kanji": "一つ",
+    "meaning": "one",
+    "meanings": [
+      "one",
+      "for one thing",
+      "only",
+      "(not) even",
+      "just (e.g. \"just try it\")"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1162130",
+    "kana": "ひとつき",
+    "kanji": "一月",
+    "meaning": "one month",
+    "meanings": [
+      "one month"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1576150",
+    "kana": "ひとり",
+    "kanji": "一人",
+    "meaning": "one person",
+    "meanings": [
+      "one person",
+      "being alone",
+      "being by oneself",
+      "being single",
+      "being unmarried"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1577280",
+    "kana": "ひま",
+    "kanji": "暇",
+    "meaning": "spare time",
+    "meanings": [
+      "spare time",
+      "free time",
+      "leisure",
+      "time (it takes to do something)",
+      "time required"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1488000",
+    "kana": "ひゃく",
+    "kanji": "百",
+    "meaning": "hundred",
+    "meanings": [
+      "hundred",
+      "100"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1490220",
+    "kana": "びょういん",
+    "kanji": "病院",
+    "meaning": "hospital",
+    "meanings": [
+      "hospital",
+      "clinic",
+      "doctor's office",
+      "doctor's surgery",
+      "infirmary"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1490230",
+    "kana": "びょうき",
+    "kanji": "病気",
+    "meaning": "illness (usu. excluding minor ailments, e.g. common cold)",
+    "meanings": [
+      "illness (usu. excluding minor ailments, e.g. common cold)",
+      "disease",
+      "sickness",
+      "bad habit",
+      "bad behaviour"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1507090",
+    "kana": "ひらがな",
+    "kanji": "平仮名",
+    "meaning": "hiragana",
+    "meanings": [
+      "hiragana",
+      "cursive Japanese syllabary used primarily for native Japanese words (esp. function words, inflections, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1426250",
+    "kana": "ひる",
+    "kanji": "昼",
+    "meaning": "noon",
+    "meanings": [
+      "noon",
+      "midday",
+      "daytime",
+      "lunch"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1602340",
+    "kana": "ひるごはん",
+    "kanji": "昼御飯",
+    "meaning": "lunch",
+    "meanings": [
+      "lunch",
+      "midday meal"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1278410",
+    "kana": "ひろい",
+    "kanji": "広い",
+    "meaning": "spacious",
+    "meanings": [
+      "spacious",
+      "vast",
+      "wide"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1109380",
+    "kana": "フィルム",
+    "kanji": "フィルム",
+    "meaning": "film",
+    "meanings": [
+      "film"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1499690",
+    "kana": "ふうとう",
+    "kanji": "封筒",
+    "meaning": "envelope",
+    "meanings": [
+      "envelope"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1115150",
+    "kana": "プール",
+    "kanji": "プール",
+    "meaning": "(swimming) pool",
+    "meanings": [
+      "(swimming) pool",
+      "pool (cue sport)",
+      "pooling (money, resources, etc.)",
+      "pool (price ring)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1110110",
+    "kana": "フォーク",
+    "kanji": "フォーク",
+    "meaning": "fork",
+    "meanings": [
+      "fork",
+      "forkball"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1370760",
+    "kana": "ふく",
+    "kanji": "吹く",
+    "meaning": "to blow (of the wind)",
+    "meanings": [
+      "to blow (of the wind)",
+      "to blow (one's breath)",
+      "to breathe out",
+      "to blow on (hot tea, candles, etc.)",
+      "to puff"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1500940",
+    "kana": "ふく",
+    "kanji": "服",
+    "meaning": "clothes (esp. Western clothes)",
+    "meanings": [
+      "clothes (esp. Western clothes)",
+      "clothing",
+      "dress",
+      "costume",
+      "suit"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1461160",
+    "kana": "ふたつ",
+    "kanji": "二つ",
+    "meaning": "two",
+    "meanings": [
+      "two"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1457440",
+    "kana": "ぶたにく",
+    "kanji": "豚肉",
+    "meaning": "pork",
+    "meanings": [
+      "pork"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1582670",
+    "kana": "ふたり",
+    "kanji": "二人",
+    "meaning": "two persons",
+    "meanings": [
+      "two persons",
+      "two people",
+      "pair",
+      "couple"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1462900",
+    "kana": "ふつか",
+    "kanji": "二日",
+    "meaning": "2nd day of the month",
+    "meanings": [
+      "2nd day of the month",
+      "two days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1408180",
+    "kana": "ふとい",
+    "kanji": "太い",
+    "meaning": "fat",
+    "meanings": [
+      "fat",
+      "thick",
+      "deep (of a voice)",
+      "thick",
+      "sonorous"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1446070",
+    "kana": "ふゆ",
+    "kanji": "冬",
+    "meaning": "winter",
+    "meanings": [
+      "winter"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1282790",
+    "kana": "ふる",
+    "kanji": "降る",
+    "meaning": "to fall (of rain, snow, ash, etc.)",
+    "meanings": [
+      "to fall (of rain, snow, ash, etc.)",
+      "to come down",
+      "to form (of frost)",
+      "to beam down (of sunlight or moonlight)",
+      "to pour in"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1265070",
+    "kana": "ふるい",
+    "kanji": "古い",
+    "meaning": "old",
+    "meanings": [
+      "old",
+      "aged",
+      "ancient",
+      "antiquated",
+      "antique"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-589",
+    "kana": "～ふん",
+    "kanji": "～分",
+    "meaning": "~ minutes",
+    "meanings": [
+      "~ minutes"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1505470",
+    "kana": "ぶんしょう",
+    "kanji": "文章",
+    "meaning": "writing",
+    "meanings": [
+      "writing",
+      "composition",
+      "essay",
+      "article",
+      "passage"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1120410",
+    "kana": "ページ",
+    "kanji": "ページ",
+    "meaning": "page",
+    "meanings": [
+      "page",
+      "nth page",
+      "page ..."
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1185200",
+    "kana": "へた",
+    "kanji": "下手",
+    "meaning": "unskillful",
+    "meanings": [
+      "unskillful",
+      "poor",
+      "awkward",
+      "imprudent",
+      "untactful"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1119650",
+    "kana": "ベッド",
+    "kanji": "ベッド",
+    "meaning": "bed",
+    "meanings": [
+      "bed"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1120990",
+    "kana": "ペット",
+    "kanji": "ペット",
+    "meaning": "pet",
+    "meanings": [
+      "pet",
+      "trumpet"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1499320",
+    "kana": "へや",
+    "kanji": "部屋",
+    "meaning": "room",
+    "meanings": [
+      "room",
+      "chamber",
+      "apartment",
+      "flat",
+      "pad"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1512070",
+    "kana": "へん",
+    "kanji": "辺",
+    "meaning": "area",
+    "meanings": [
+      "area",
+      "vicinity",
+      "region",
+      "side",
+      "edge"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1121380",
+    "kana": "ペン",
+    "kanji": "ペン",
+    "meaning": "pen",
+    "meanings": [
+      "pen"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1512670",
+    "kana": "べんきょう (する)",
+    "kanji": "勉強",
+    "meaning": "study",
+    "meanings": [
+      "study",
+      "diligence",
+      "working hard",
+      "experience",
+      "knowledge"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1512610",
+    "kana": "べんり",
+    "kanji": "便利",
+    "meaning": "convenient",
+    "meanings": [
+      "convenient",
+      "handy",
+      "useful"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1519170",
+    "kana": "ぼうし",
+    "kanji": "帽子",
+    "meaning": "hat",
+    "meanings": [
+      "hat",
+      "cap",
+      "cap (move)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1123590",
+    "kana": "ボールペン",
+    "kanji": "ボールペン",
+    "meaning": "ball-point pen",
+    "meanings": [
+      "ball-point pen"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1203260",
+    "kana": "ほか",
+    "kanji": "外",
+    "meaning": "another place",
+    "meanings": [
+      "another place",
+      "some other place",
+      "somewhere else",
+      "outside",
+      "another (person or thing)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1124970",
+    "kana": "ポケット",
+    "kanji": "ポケット",
+    "meaning": "pocket",
+    "meanings": [
+      "pocket"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1547330",
+    "kana": "ほしい",
+    "kanji": "欲しい",
+    "meaning": "wanting (to have)",
+    "meanings": [
+      "wanting (to have)",
+      "desiring",
+      "wishing for",
+      "I want (you, them, etc.) to (do)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1125150",
+    "kana": "ポスト",
+    "kanji": "ポスト",
+    "meaning": "postbox",
+    "meanings": [
+      "postbox",
+      "mailbox",
+      "mail box",
+      "pillar box",
+      "post"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1295510",
+    "kana": "ほそい",
+    "kanji": "細い",
+    "meaning": "thin",
+    "meanings": [
+      "thin",
+      "slender",
+      "fine",
+      "unlucky"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1123880",
+    "kana": "ボタン",
+    "kanji": "ボタン",
+    "meaning": "button (clothing)",
+    "meanings": [
+      "button (clothing)",
+      "push-button",
+      "button"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1122650",
+    "kana": "ホテル",
+    "kanji": "ホテル",
+    "meaning": "hotel",
+    "meanings": [
+      "hotel"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1522150",
+    "kana": "ほん",
+    "kanji": "本",
+    "meaning": "book",
+    "meanings": [
+      "book",
+      "volume",
+      "script",
+      "this",
+      "present"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-610",
+    "kana": "～ほん",
+    "kanji": "～本",
+    "meaning": "counter for long cylindrical things",
+    "meanings": [
+      "counter for long cylindrical things"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1522980",
+    "kana": "ほんだな",
+    "kanji": "本棚",
+    "meaning": "bookshelves",
+    "meanings": [
+      "bookshelves",
+      "bookshelf",
+      "bookcase"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1523060",
+    "kana": "ほんとう",
+    "kanji": "本当",
+    "meaning": "truth",
+    "meanings": [
+      "truth",
+      "reality",
+      "actuality",
+      "fact",
+      "proper"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-613",
+    "kana": "～まい",
+    "kanji": "～枚",
+    "meaning": "counter for flat things",
+    "meanings": [
+      "counter for flat things"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1524700",
+    "kana": "まいあさ",
+    "kanji": "毎朝",
+    "meaning": "every morning",
+    "meanings": [
+      "every morning"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584350",
+    "kana": "まいげつ; まいつき",
+    "kanji": "毎月",
+    "meaning": "every month",
+    "meanings": [
+      "every month",
+      "each month",
+      "monthly"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1524690",
+    "kana": "まいしゅう",
+    "kanji": "毎週",
+    "meaning": "every week",
+    "meanings": [
+      "every week"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1524720",
+    "kana": "まいにち",
+    "kanji": "毎日",
+    "meaning": "every day",
+    "meanings": [
+      "every day",
+      "daily"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584360",
+    "kana": "まいねん; まいとし",
+    "kanji": "毎年",
+    "meaning": "every year",
+    "meanings": [
+      "every year",
+      "yearly",
+      "annually"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1524730",
+    "kana": "まいばん",
+    "kanji": "毎晩",
+    "meaning": "every night",
+    "meanings": [
+      "every night"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1392580",
+    "kana": "まえ",
+    "kanji": "前",
+    "meaning": "in front (of)",
+    "meanings": [
+      "in front (of)",
+      "before (e.g. a building)",
+      "before",
+      "earlier",
+      "previously"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-621",
+    "kana": "～まえ",
+    "kanji": "～前",
+    "meaning": "in front of ~",
+    "meanings": [
+      "in front of ~"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1239730",
+    "kana": "まがる",
+    "kanji": "曲る",
+    "meaning": "to bend",
+    "meanings": [
+      "to bend",
+      "to curve",
+      "to warp",
+      "to wind",
+      "to twist"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1495000",
+    "kana": "まずい",
+    "kanji": "まずい",
+    "meaning": "bad(-tasting)",
+    "meanings": [
+      "bad(-tasting)",
+      "unpalatable",
+      "unsavoury",
+      "unsavory",
+      "awful"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1267460",
+    "kana": "また",
+    "kanji": "また",
+    "meaning": "groin",
+    "meanings": [
+      "groin",
+      "thigh",
+      "crotch",
+      "crutch",
+      "fork (in a tree, road, river, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1527110",
+    "kana": "まだ",
+    "kanji": "まだ",
+    "meaning": "still",
+    "meanings": [
+      "still",
+      "as yet",
+      "only",
+      "(not) yet",
+      "more"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1603990",
+    "kana": "まち",
+    "kanji": "町",
+    "meaning": "town",
+    "meanings": [
+      "town",
+      "block",
+      "neighbourhood",
+      "neighborhood",
+      "downtown"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1410590",
+    "kana": "まつ",
+    "kanji": "待つ",
+    "meaning": "to wait",
+    "meanings": [
+      "to wait",
+      "to await",
+      "to look forward to",
+      "to anticipate",
+      "to depend on"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1580600",
+    "kana": "まっすぐ",
+    "kanji": "まっすぐ",
+    "meaning": "straight (ahead)",
+    "meanings": [
+      "straight (ahead)",
+      "direct",
+      "upright",
+      "erect",
+      "straightforward"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1128430",
+    "kana": "マッチ",
+    "kanji": "マッチ",
+    "meaning": "match (for lighting a fire)",
+    "meanings": [
+      "match (for lighting a fire)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1401400",
+    "kana": "まど",
+    "kanji": "窓",
+    "meaning": "window",
+    "meanings": [
+      "window"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1604230",
+    "kana": "まるい",
+    "kanji": "丸い; 円い",
+    "meaning": "round",
+    "meanings": [
+      "round",
+      "circular",
+      "spherical",
+      "curved",
+      "smooth"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584460",
+    "kana": "まん",
+    "kanji": "万",
+    "meaning": "10,000",
+    "meanings": [
+      "10,000",
+      "ten thousand",
+      "myriad",
+      "everything",
+      "all"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1526360",
+    "kana": "まんねんひつ",
+    "kanji": "万年筆",
+    "meaning": "fountain pen",
+    "meanings": [
+      "fountain pen"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1523940",
+    "kana": "みがく",
+    "kanji": "磨く",
+    "meaning": "to polish",
+    "meanings": [
+      "to polish",
+      "to shine",
+      "to burnish",
+      "to scour",
+      "to scrub"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1171010",
+    "kana": "みぎ",
+    "kanji": "右",
+    "meaning": "right",
+    "meanings": [
+      "right",
+      "right-hand side",
+      "right hand",
+      "the above (in a piece of vertical writing)",
+      "above-mentioned"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1418620",
+    "kana": "みじかい",
+    "kanji": "短い",
+    "meaning": "short",
+    "meanings": [
+      "short",
+      "brief"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1371260",
+    "kana": "みず",
+    "kanji": "水",
+    "meaning": "water (esp. cool or cold)",
+    "meanings": [
+      "water (esp. cool or cold)",
+      "fluid (esp. in an animal tissue)",
+      "liquid",
+      "flood",
+      "floodwaters"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1582120",
+    "kana": "みせ",
+    "kanji": "店",
+    "meaning": "store",
+    "meanings": [
+      "store",
+      "shop",
+      "establishment",
+      "restaurant"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1259210",
+    "kana": "みせる",
+    "kanji": "見せる",
+    "meaning": "to show",
+    "meanings": [
+      "to show",
+      "to display",
+      "to make (something or someone) look ...",
+      "to present an appearance of ...",
+      "to make (something) worth watching"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1454080",
+    "kana": "みち",
+    "kanji": "道",
+    "meaning": "road",
+    "meanings": [
+      "road",
+      "path",
+      "street",
+      "lane",
+      "passage"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1301330",
+    "kana": "みっか",
+    "kanji": "三日",
+    "meaning": "3rd day of the month",
+    "meanings": [
+      "3rd day of the month",
+      "three days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1299740",
+    "kana": "みっつ",
+    "kanji": "三つ",
+    "meaning": "three",
+    "meanings": [
+      "three",
+      "three years of age"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1555300",
+    "kana": "みどり",
+    "kanji": "緑",
+    "meaning": "green",
+    "meanings": [
+      "green",
+      "greenery",
+      "verdure"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1202170",
+    "kana": "みなさん",
+    "kanji": "皆さん",
+    "meaning": "all",
+    "meanings": [
+      "all",
+      "everyone",
+      "everybody"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1459870",
+    "kana": "みなみ",
+    "kanji": "南",
+    "meaning": "south",
+    "meanings": [
+      "south"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1317170",
+    "kana": "みみ",
+    "kanji": "耳",
+    "meaning": "ear",
+    "meanings": [
+      "ear",
+      "hearing",
+      "ear (for music, etc.)",
+      "edge",
+      "crust"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1259290",
+    "kana": "みる",
+    "kanji": "見る",
+    "meaning": "to see",
+    "meanings": [
+      "to see",
+      "to look",
+      "to watch",
+      "to view",
+      "to observe"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1202150",
+    "kana": "みんな",
+    "kanji": "みんな",
+    "meaning": "everyone",
+    "meanings": [
+      "everyone",
+      "everybody",
+      "all",
+      "everything",
+      "all"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1561470",
+    "kana": "むいか",
+    "kanji": "六日",
+    "meaning": "6th day of the month",
+    "meanings": [
+      "6th day of the month",
+      "six days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1277140",
+    "kana": "むこう",
+    "kanji": "向こう",
+    "meaning": "opposite side",
+    "meanings": [
+      "opposite side",
+      "other side",
+      "over there",
+      "ahead",
+      "beyond"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1460850",
+    "kana": "むずかしい",
+    "kanji": "難しい",
+    "meaning": "difficult",
+    "meanings": [
+      "difficult",
+      "hard",
+      "troublesome",
+      "complicated",
+      "serious (disease, problem, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1585315",
+    "kana": "むっつ",
+    "kanji": "六つ",
+    "meaning": "six",
+    "meanings": [
+      "six",
+      "six years of age",
+      "six o'clock (old time system)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1406820",
+    "kana": "むら",
+    "kanji": "村",
+    "meaning": "village",
+    "meanings": [
+      "village"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1604890",
+    "kana": "め",
+    "kanji": "目",
+    "meaning": "eye",
+    "meanings": [
+      "eye",
+      "eyeball",
+      "eyesight",
+      "sight",
+      "vision"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1132570",
+    "kana": "メートル",
+    "kanji": "メートル",
+    "meaning": "metre (unit of length)",
+    "meanings": [
+      "metre (unit of length)",
+      "meter",
+      "meter",
+      "gauge"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1577670",
+    "kana": "めがね",
+    "kanji": "眼鏡",
+    "meaning": "glasses",
+    "meanings": [
+      "glasses",
+      "eyeglasses",
+      "spectacles",
+      "judgment",
+      "judgement"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1012480",
+    "kana": "もう",
+    "kanji": "もう",
+    "meaning": "already",
+    "meanings": [
+      "already",
+      "yet",
+      "by now",
+      "now",
+      "(not) any more"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1534890",
+    "kana": "もくようび",
+    "kanji": "木曜日",
+    "meaning": "Thursday",
+    "meanings": [
+      "Thursday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1012550",
+    "kana": "もしもし",
+    "kanji": "もしもし",
+    "meaning": "hello (e.g. on phone)",
+    "meanings": [
+      "hello (e.g. on phone)",
+      "excuse me! (when calling out to someone)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1315720",
+    "kana": "もつ",
+    "kanji": "持つ",
+    "meaning": "to hold (in one's hand)",
+    "meanings": [
+      "to hold (in one's hand)",
+      "to take",
+      "to carry",
+      "to possess",
+      "to have"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1012620",
+    "kana": "もっと",
+    "kanji": "もっと",
+    "meaning": "(some) more",
+    "meanings": [
+      "(some) more",
+      "even more",
+      "longer",
+      "further"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1502390",
+    "kana": "もの",
+    "kanji": "物",
+    "meaning": "thing",
+    "meanings": [
+      "thing",
+      "object",
+      "article",
+      "stuff",
+      "substance"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584800",
+    "kana": "もん",
+    "kanji": "門",
+    "meaning": "gate",
+    "meanings": [
+      "gate",
+      "branch of learning based on the teachings of a single master",
+      "school",
+      "phylum",
+      "division"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1536010",
+    "kana": "もんだい",
+    "kanji": "問題",
+    "meaning": "question (e.g. on a test)",
+    "meanings": [
+      "question (e.g. on a test)",
+      "problem",
+      "problem (e.g. societal, political)",
+      "question",
+      "issue"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-665",
+    "kana": "～や",
+    "kanji": "～屋",
+    "meaning": "~ shop",
+    "meanings": [
+      "~ shop"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1476960",
+    "kana": "やおや",
+    "kanji": "八百屋",
+    "meaning": "greengrocer",
+    "meanings": [
+      "greengrocer",
+      "fruit and vegetable shop",
+      "jack of all trades"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1537370",
+    "kana": "やさい",
+    "kanji": "野菜",
+    "meaning": "vegetable",
+    "meanings": [
+      "vegetable",
+      "marijuana",
+      "cannabis"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1157000",
+    "kana": "やさしい",
+    "kanji": "易しい",
+    "meaning": "easy",
+    "meanings": [
+      "easy",
+      "plain",
+      "simple"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1153670",
+    "kana": "やすい",
+    "kanji": "安い",
+    "meaning": "cheap",
+    "meanings": [
+      "cheap",
+      "inexpensive",
+      "calm",
+      "peaceful",
+      "quiet"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1227500",
+    "kana": "やすみ",
+    "kanji": "休み",
+    "meaning": "rest",
+    "meanings": [
+      "rest",
+      "recess",
+      "respite",
+      "vacation",
+      "holiday"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1227560",
+    "kana": "やすむ",
+    "kanji": "休む",
+    "meaning": "to be absent",
+    "meanings": [
+      "to be absent",
+      "to take a day off",
+      "to rest",
+      "to have a break",
+      "to go to bed"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1583095",
+    "kana": "やっつ",
+    "kanji": "八つ",
+    "meaning": "eight",
+    "meanings": [
+      "eight",
+      "eight years of age",
+      "two o'clock (old time system)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1302680",
+    "kana": "やま",
+    "kanji": "山",
+    "meaning": "mountain",
+    "meanings": [
+      "mountain",
+      "hill",
+      "mine",
+      "(mountain) forest",
+      "heap"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1012980",
+    "kana": "やる",
+    "kanji": "やる",
+    "meaning": "to do",
+    "meanings": [
+      "to do",
+      "to undertake",
+      "to perform",
+      "to play (a game)",
+      "to study"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1542790",
+    "kana": "ゆうがた",
+    "kanji": "夕方",
+    "meaning": "early evening (usu. from 3pm to 6pm)",
+    "meanings": [
+      "early evening (usu. from 3pm to 6pm)",
+      "dusk"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1584910",
+    "kana": "ゆうはん",
+    "kanji": "夕飯",
+    "meaning": "evening meal",
+    "meanings": [
+      "evening meal",
+      "dinner",
+      "supper"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1542430",
+    "kana": "ゆうびんきょく",
+    "kanji": "郵便局",
+    "meaning": "post office",
+    "meanings": [
+      "post office"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1542640",
+    "kana": "ゆうべ",
+    "kanji": "昨夜",
+    "meaning": "last night",
+    "meanings": [
+      "last night",
+      "yesterday evening"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1541620",
+    "kana": "ゆうめい",
+    "kanji": "有名",
+    "meaning": "famous",
+    "meanings": [
+      "famous",
+      "well-known"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1386500",
+    "kana": "ゆき",
+    "kanji": "雪",
+    "meaning": "snow",
+    "meanings": [
+      "snow",
+      "snowfall"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-681",
+    "kana": "ゆっくりと",
+    "kanji": "ゆっくりと",
+    "meaning": "slowly, at ease",
+    "meanings": [
+      "slowly, at ease"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1476920",
+    "kana": "ようか",
+    "kanji": "八日",
+    "meaning": "8th day of the month",
+    "meanings": [
+      "8th day of the month",
+      "eight days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1546020",
+    "kana": "ようふく",
+    "kanji": "洋服",
+    "meaning": "Western-style clothes (cf. traditional Japanese clothes)",
+    "meanings": [
+      "Western-style clothes (cf. traditional Japanese clothes)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1547320",
+    "kana": "よく",
+    "kanji": "よく",
+    "meaning": "greed",
+    "meanings": [
+      "greed",
+      "craving",
+      "desire",
+      "appetite",
+      "hunger"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1180570",
+    "kana": "よこ",
+    "kanji": "横",
+    "meaning": "horizontal (as opposed to vertical)",
+    "meanings": [
+      "horizontal (as opposed to vertical)",
+      "side-to-side (as opposed to front-to-back)",
+      "width",
+      "breadth",
+      "side (of a box, etc.)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1307320",
+    "kana": "よっか",
+    "kanji": "四日",
+    "meaning": "4th day of the month",
+    "meanings": [
+      "4th day of the month",
+      "four days"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1307040",
+    "kana": "よっつ",
+    "kanji": "四つ",
+    "meaning": "four",
+    "meanings": [
+      "four",
+      "4",
+      "four years of age",
+      "ten o'clock (in the old time system)",
+      "burakumin"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1266440",
+    "kana": "よぶ",
+    "kanji": "呼ぶ",
+    "meaning": "to call out (to)",
+    "meanings": [
+      "to call out (to)",
+      "to call",
+      "to invoke",
+      "to summon (a doctor, etc.)",
+      "to invite"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1456360",
+    "kana": "よむ",
+    "kanji": "読む",
+    "meaning": "to read",
+    "meanings": [
+      "to read",
+      "to recite (e.g. a sutra)",
+      "to chant",
+      "to predict",
+      "to guess"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1536350",
+    "kana": "よる",
+    "kanji": "夜",
+    "meaning": "night",
+    "meanings": [
+      "night",
+      "evening",
+      "dinner"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1324520",
+    "kana": "よわい",
+    "kanji": "弱い",
+    "meaning": "weak",
+    "meanings": [
+      "weak",
+      "frail",
+      "delicate",
+      "tender",
+      "unskilled"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1547900",
+    "kana": "らいげつ",
+    "kanji": "来月",
+    "meaning": "next month",
+    "meanings": [
+      "next month"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1548010",
+    "kana": "らいしゅう",
+    "kanji": "来週",
+    "meaning": "next week",
+    "meanings": [
+      "next week"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1548220",
+    "kana": "らいねん",
+    "kanji": "来年",
+    "meaning": "next year",
+    "meanings": [
+      "next year"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1138860",
+    "kana": "ラジオ",
+    "kanji": "ラジオ",
+    "meaning": "radio",
+    "meanings": [
+      "radio"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jlpt-N5-696",
+    "kana": "ラジオカセ",
+    "kanji": "ラジオカセ",
+    "meaning": "radio cassette player",
+    "meanings": [
+      "radio cassette player"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1551790",
+    "kana": "りっぱ",
+    "kanji": "りっぱ",
+    "meaning": "splendid",
+    "meanings": [
+      "splendid",
+      "fine",
+      "handsome",
+      "elegant",
+      "imposing"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1552750",
+    "kana": "りゅうがくせい",
+    "kanji": "留学生",
+    "meaning": "overseas student",
+    "meanings": [
+      "overseas student",
+      "exchange student"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1602710",
+    "kana": "りょうしん",
+    "kanji": "両親",
+    "meaning": "parents",
+    "meanings": [
+      "parents",
+      "both parents"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1554310",
+    "kana": "りょうり",
+    "kanji": "料理",
+    "meaning": "cooking",
+    "meanings": [
+      "cooking",
+      "cookery",
+      "cuisine",
+      "food",
+      "dish"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1553170",
+    "kana": "りょこう",
+    "kanji": "旅行",
+    "meaning": "travel",
+    "meanings": [
+      "travel",
+      "trip",
+      "journey",
+      "excursion",
+      "tour"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1557630",
+    "kana": "れい",
+    "kanji": "零",
+    "meaning": "zero",
+    "meanings": [
+      "zero",
+      "nought"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1557110",
+    "kana": "れいぞうこ",
+    "kanji": "冷蔵庫",
+    "meaning": "refrigerator",
+    "meanings": [
+      "refrigerator",
+      "fridge"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1144940",
+    "kana": "レコード",
+    "kanji": "レコード",
+    "meaning": "(phonograph) record",
+    "meanings": [
+      "(phonograph) record",
+      "record (esp. in sports)",
+      "record (data structure)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1145310",
+    "kana": "レストラン",
+    "kanji": "レストラン",
+    "meaning": "restaurant (esp. Western-style)",
+    "meanings": [
+      "restaurant (esp. Western-style)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1559160",
+    "kana": "れんしゅう (する)",
+    "kanji": "練習",
+    "meaning": "practice",
+    "meanings": [
+      "practice",
+      "training",
+      "drill",
+      "(an) exercise",
+      "workout"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1560670",
+    "kana": "ろうか",
+    "kanji": "廊下",
+    "meaning": "corridor",
+    "meanings": [
+      "corridor",
+      "hallway",
+      "passageway"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1585310",
+    "kana": "ろく",
+    "kanji": "六",
+    "meaning": "six",
+    "meanings": [
+      "six",
+      "6"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1148640",
+    "kana": "ワイシャツ",
+    "kanji": "ワイシャツ",
+    "meaning": "(formal) shirt",
+    "meanings": [
+      "(formal) shirt",
+      "dress shirt",
+      "business shirt",
+      "button-up shirt"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1324300",
+    "kana": "わかい",
+    "kanji": "若い",
+    "meaning": "young",
+    "meanings": [
+      "young",
+      "youthful",
+      "immature",
+      "green",
+      "low (number)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1606560",
+    "kana": "わかる",
+    "kanji": "分かる",
+    "meaning": "to understand",
+    "meanings": [
+      "to understand",
+      "to comprehend",
+      "to grasp",
+      "to see",
+      "to get"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1519210",
+    "kana": "わすれる",
+    "kanji": "忘れる",
+    "meaning": "to forget",
+    "meanings": [
+      "to forget",
+      "to leave carelessly",
+      "to be forgetful of",
+      "to forget about",
+      "to forget (an article)"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1311110",
+    "kana": "わたし",
+    "kanji": "私",
+    "meaning": "I",
+    "meanings": [
+      "I",
+      "me"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-2842390",
+    "kana": "わたくし",
+    "kanji": "私",
+    "meaning": "I",
+    "meanings": [
+      "I",
+      "me",
+      "personal (affairs, etc.)",
+      "private",
+      "selfishness"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1444610",
+    "kana": "わたす",
+    "kanji": "渡す",
+    "meaning": "to ferry across (e.g. a river)",
+    "meanings": [
+      "to ferry across (e.g. a river)",
+      "to carry across",
+      "to traverse",
+      "to lay across",
+      "to build across"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1444680",
+    "kana": "わたる",
+    "kanji": "渡る",
+    "meaning": "to cross over",
+    "meanings": [
+      "to cross over",
+      "to go across",
+      "to extend",
+      "to cover",
+      "to range"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  },
+  {
+    "id": "jm-1151260",
+    "kana": "わるい",
+    "kanji": "悪い",
+    "meaning": "bad",
+    "meanings": [
+      "bad",
+      "poor",
+      "undesirable",
+      "poor (quality)",
+      "inferior"
+    ],
+    "jlptLevel": "N5",
+    "source": "default"
+  }
+]

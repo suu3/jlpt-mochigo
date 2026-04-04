@@ -17,7 +17,6 @@ export function SettingsScreen() {
     setTtsEnabled,
     setSpeechRate,
     setSpeechPitch,
-    setHomeDensity,
     resetStudyData
   } = useAppStore()
   const [isResetting, setIsResetting] = React.useState(false)
@@ -90,7 +89,6 @@ export function SettingsScreen() {
         ttsEnabled={settings.ttsEnabled}
         speechRate={settings.speechRate}
         speechPitch={settings.speechPitch}
-        homeDensity={settings.homeDensity}
         showAdvanced
         onSelectLevel={async (level) => {
           await setLevel(level)
@@ -107,9 +105,7 @@ export function SettingsScreen() {
         onSelectSpeechPitch={async (pitch) => {
           await setSpeechPitch(pitch)
         }}
-        onSelectHomeDensity={async (density) => {
-          await setHomeDensity(density)
-        }}
+
       />
 
       <Card style={styles.sourcesCard}>
