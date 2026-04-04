@@ -154,6 +154,7 @@ export const useAppStore = create<AppState>((set, get) => {
       const fallbackProgress = defaultProgress()
 
       await quizDatabase.migrateLegacyDataIfNeeded()
+      await quizDatabase.clearWordCache() // Clear cache on every run as requested
 
       const [
         storedSettings,

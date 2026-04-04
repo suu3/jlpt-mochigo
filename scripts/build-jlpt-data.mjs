@@ -1,10 +1,14 @@
 import { gunzipSync } from "node:zlib"
 import { mkdir, readFile, writeFile } from "node:fs/promises"
 import { resolve } from "node:path"
+import { fileURLToPath } from "node:url"
 import { XMLParser } from "fast-xml-parser"
 import { parse } from "csv-parse/sync"
 
-const projectRoot = resolve(new URL("..", import.meta.url).pathname)
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = resolve(__filename, "..")
+const projectRoot = resolve(__dirname, "..")
+
 const rawDir = resolve(projectRoot, "data/raw")
 const derivedDir = resolve(projectRoot, "data/derived")
 const generatedDir = resolve(projectRoot, "src/data/generated")

@@ -766,6 +766,11 @@ export function WordsScreen() {
                     </View>
                     <Text style={styles.customWordMeaning}>
                       {getLocalizedMeaning(word, settings.language)}
+                      {word.meaningsKo && word.meaningsKo.length > 1 && (
+                        <Text style={styles.additionalMeanings}>
+                          {"  "}{word.meaningsKo.slice(1).join(", ")}
+                        </Text>
+                      )}
                     </Text>
                   </Card>
                 ))}
@@ -877,9 +882,22 @@ export function WordsScreen() {
                     !showMeanings && styles.meaningHidden
                   ]}
                 >
-                  {showMeanings
-                    ? getLocalizedMeaning(word, settings.language)
-                    : t(settings.language, "meaningHidden")}
+                  {showMeanings ? (
+                    <>
+                      {getLocalizedMeaning(word, settings.language)}
+                      {(() => {
+                        const additionalMeanings = (resolvedLanguage === "ko" ? word.meaningsKo : word.meanings)?.slice(1) ?? []
+                        if (additionalMeanings.length === 0) return null
+                        return (
+                          <Text style={styles.additionalMeanings}>
+                            {"  "}{additionalMeanings.join(", ")}
+                          </Text>
+                        )
+                      })()}
+                    </>
+                  ) : (
+                    t(settings.language, "meaningHidden")
+                  )}
                 </Text>
               </View>
             </Card>
@@ -1381,6 +1399,11 @@ const styles = StyleSheet.create({
     color: colors.text,
     fontSize: 16,
     lineHeight: 24
+  },
+  additionalMeanings: {
+    color: colors.textMuted,
+    fontSize: 13,
+    fontWeight: "500"
   },
   meaningHidden: {
     letterSpacing: 1.6

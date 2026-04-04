@@ -10,4 +10,5 @@ export declare const quizDatabase: {
   getHistory(limit?: number): Promise<SessionHistory[]>;
   insertHistory(entry: SessionHistory, limit?: number): Promise<void>;
   clearStudyData(): Promise<void>;
+  clearWordCache(): Promise<void>;
 }

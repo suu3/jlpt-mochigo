@@ -4,7 +4,7 @@ import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { PrimaryButton } from "../components/PrimaryButton"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { getStudyWords } from "../lib/quiz"
+import { getLocalizedMeaning } from "../lib/quiz"
 import { t, tf } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
 
@@ -13,17 +13,14 @@ const reviewEmptyImage = require("../assets/review_empty.png")
 export function ReviewScreen() {
   const { settings, wrongAnswers, customWords, wordsByLevel, startSession, goHome } = useAppStore()
   const copy = settings.language
-  const words = getStudyWords(
-    [
-      ...(wordsByLevel[settings.level] ?? []),
-      ...customWords
-    ],
-    settings.homeDensity
-  )
+  const fullWordPool = [
+    ...(wordsByLevel[settings.level] ?? []),
+    ...customWords
+  ]
   const reviewItems = [...wrongAnswers]
     .sort((left, right) => right.lastWrongAt.localeCompare(left.lastWrongAt))
     .flatMap((record) => {
-      const word = words.find((entry) => entry.id === record.wordId)
+      const word = fullWordPool.find((entry) => entry.id === record.wordId)
       return word ? [{ ...record, word }] : []
     })
   const topItem = reviewItems[0]
@@ -49,7 +46,7 @@ export function ReviewScreen() {
                 <View style={styles.wordWrap}>
                   <Text style={styles.word}>{item.word.kana}</Text>
                   <Text style={styles.meaning}>
-                    {item.word.kanji} ({item.word.meaning})
+                    {item.word.kanji} ({getLocalizedMeaning(item.word, settings.language)})
                   </Text>
                 </View>
                 <View style={[styles.badge, item.wrongCount >= 5 ? styles.badgeCritical : styles.badgeNormal]}>

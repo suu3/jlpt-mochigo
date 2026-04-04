@@ -63,5 +63,9 @@ export const quizDatabase = {
       storage.legacy.clearWrongAnswers(),
       storage.legacy.clearHistory()
     ])
+  },
+
+  async clearWordCache() {
+    wordCache.clear()
   }
 }

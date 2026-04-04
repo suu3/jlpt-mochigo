@@ -63,22 +63,39 @@ async function processLevel(level) {
   for (let i = 0; i < untranslated.length; i += BATCH_SIZE) {
     const batch = untranslated.slice(i, i + BATCH_SIZE)
     
-    // Combine with a delimiter that Google Translate preserves
+    // Combine with a more robust delimiter
     const textsToTranslate = batch.map(w => w.meanings.join(" / "))
-    const comboText = textsToTranslate.join("\n\n")
+    const comboText = textsToTranslate.join("\n|||\n")
     
     process.stdout.write(`  translating ${i + 1}~${Math.min(i + BATCH_SIZE, untranslated.length)}... `)
     
-    const translatedCombo = await translateText(comboText)
-    const translatedBlocks = translatedCombo.split(/\n\s*\n/).map(s => s.trim())
+    let translatedCombo = ""
+    try {
+      translatedCombo = await translateText(comboText)
+    } catch (e) {
+      console.error(`\n    ❌ Error in batch ${i+1}: ${e.message}`)
+      continue
+    }
+
+    const translatedBlocks = translatedCombo.split(/[\n\s]*\|\|\|[\n\s]*/).map(s => s.trim())
 
     for (let j = 0; j < batch.length; j++) {
       const w = batch[j]
-      // fallback if blocks misaligned
-      const blockTrans = translatedBlocks[j] || w.meanings.join(" / ")
+      let blockTrans = translatedBlocks[j]
       
-      let transArr = Array.from(new Set(blockTrans.split("/").map(x => x.trim()).filter(Boolean)))
-      if (transArr.length === 0) transArr = [w.meaning]
+      // Validation: if block is missing or identical to English source, something went wrong with this block
+      const sourceText = w.meanings.join(" / ")
+      if (!blockTrans || blockTrans.toLowerCase() === sourceText.toLowerCase()) {
+        // Try individual translation if batch failed for this block
+        blockTrans = await translateText(sourceText)
+      }
+      
+      let transArr = Array.from(new Set(blockTrans.split(/[\/,\n]/).map(x => x.trim()).filter(Boolean)))
+      
+      // Final fallback: if still no Korean, keep it untranslated for next run
+      if (transArr.length === 0 || transArr[0].toLowerCase() === sourceText.toLowerCase()) {
+        continue
+      }
 
       result[w.id] = {
         meaningKo: transArr[0],
@@ -88,7 +105,6 @@ async function processLevel(level) {
     }
     console.log(`OK (총 ${cnt}개)`)
 
-    // Save progressively
     fs.writeFileSync(koPath, JSON.stringify(result, null, 2), "utf-8")
     await sleep(DELAY_MS)
   }

@@ -275,5 +275,11 @@ export const quizDatabase = {
       storage.legacy.clearWrongAnswers(),
       storage.legacy.clearHistory()
     ])
+  },
+
+  async clearWordCache() {
+    await this.initialize()
+    const db = await getDatabase()
+    await db.runAsync("DELETE FROM word_entries")
   }
 }

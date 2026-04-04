@@ -38,13 +38,6 @@ export function RootApp() {
           style={styles.scrollView}
           contentContainerStyle={[styles.container, isCompact && styles.containerCompact]}
         >
-          {!isReady || isWordDataLoading ? (
-            <View style={styles.loading}>
-              <ActivityIndicator color={colors.primary} />
-              <Text style={styles.loadingText}>{t(settings.language, "loading")}</Text>
-            </View>
-          ) : null}
-
           {isReady && screen === "setup" ? <SetupScreen /> : null}
           {isReady && screen === "home" ? <HomeScreen /> : null}
           {isReady && screen === "quiz" ? <QuizScreen /> : null}
@@ -53,6 +46,15 @@ export function RootApp() {
           {isReady && screen === "words" ? <WordsScreen /> : null}
           {isReady && screen === "bookmarks" ? <BookmarksScreen /> : null}
           {isReady && screen === "settings" ? <SettingsScreen /> : null}
+
+          {!isReady || isWordDataLoading ? (
+            <View style={styles.loadingOverlay}>
+              <View style={styles.loadingCard}>
+                <ActivityIndicator color={colors.primary} size="large" />
+                <Text style={styles.loadingText}>{t(settings.language, "loading")}</Text>
+              </View>
+            </View>
+          ) : null}
         </ScrollView>
 
         {isReady && screen !== "setup" ? <BottomNav /> : null}
@@ -84,14 +86,27 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.md,
     paddingTop: spacing.lg
   },
-  loading: {
-    flex: 1,
+  loadingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
     alignItems: "center",
     justifyContent: "center",
-    paddingVertical: 120,
-    gap: spacing.md
+    zIndex: 1000
+  },
+  loadingCard: {
+    backgroundColor: colors.surface,
+    padding: spacing.xl,
+    borderRadius: 24,
+    alignItems: "center",
+    gap: spacing.md,
+    shadowColor: "#000",
+    shadowOpacity: 0.1,
+    shadowRadius: 10,
+    elevation: 5
   },
   loadingText: {
-    color: colors.textMuted
+    color: colors.text,
+    fontWeight: "800",
+    fontSize: 16
   }
 })

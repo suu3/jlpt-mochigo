@@ -11,6 +11,10 @@ export type CopyKey =
   | "heroTitle"
   | "homeGoalCompleteTitle"
   | "homeGoalCompleteBody"
+  | "refreshing"
+  | "refreshWordDataTitle"
+  | "refreshWordDataHelper"
+  | "refreshWordDataButton"
   | "dailyGoal"
   | "dailyProgressHint"
   | "dailyProgressCompleteHint"
@@ -198,6 +202,10 @@ const dictionary = {
     heroTitle: "가볍게 한 세션, 바로 시작해볼까요?",
     homeGoalCompleteTitle: "오늘 정원이 다 채워졌어요.",
     homeGoalCompleteBody: "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 세션 더 이어가도 좋아요.",
+    refreshing: "새로고침 중...",
+    refreshWordDataTitle: "단어 데이터 새로고침",
+    refreshWordDataHelper: "번역된 최신 단어 정보를 다시 불러옵니다. 기존 학습 기록은 유지돼요.",
+    refreshWordDataButton: "데이터 동기화",
     dailyGoal: "오늘 분량",
     dailyProgressHint: "오늘 목표까지 {count}세션 남았어요.",
     dailyProgressCompleteHint: "오늘 목표는 다 채웠어요. 다해도 더 공부해볼까요?",
@@ -395,6 +403,10 @@ const dictionary = {
     heroTitle: "You're finding your flow.",
     homeGoalCompleteTitle: "Your garden is glowing today.",
     homeGoalCompleteBody: "You've finished today's goal. Rest here for a moment, or keep the calm going with one more round.",
+    refreshing: "Refreshing...",
+    refreshWordDataTitle: "Refresh Word Data",
+    refreshWordDataHelper: "Reload latest translated word info from the app bundle. Your history will be kept.",
+    refreshWordDataButton: "Sync Data",
     dailyGoal: "Daily Goal",
     dailyProgressHint: "{count} more sessions to reach today's calm finish.",
     dailyProgressCompleteHint: "Today's goal is complete. Want to keep going for one more calm round?",
