@@ -15,16 +15,31 @@ function hasInstalledGoogleMobileAdsPlugin() {
   }
 }
 
+function isGoogleMobileAdsPlugin(plugin) {
+  if (typeof plugin === "string") {
+    return plugin === "react-native-google-mobile-ads";
+  }
+
+  return Array.isArray(plugin) && plugin[0] === "react-native-google-mobile-ads";
+}
+
 module.exports = ({ config }) => {
   const baseConfig = config ?? appJson.expo;
-  const plugins = [...(baseConfig.plugins ?? [])];
+  const existingPlugins = baseConfig.plugins ?? [];
+  const plugins = existingPlugins.filter((plugin) => !isGoogleMobileAdsPlugin(plugin));
+  const existingGoogleMobileAdsPlugin = existingPlugins.find(isGoogleMobileAdsPlugin);
+  const existingGoogleMobileAdsOptions =
+    Array.isArray(existingGoogleMobileAdsPlugin) && typeof existingGoogleMobileAdsPlugin[1] === "object"
+      ? existingGoogleMobileAdsPlugin[1]
+      : null;
 
-  if ((androidAppId || iosAppId) && hasInstalledGoogleMobileAdsPlugin()) {
+  if (hasInstalledGoogleMobileAdsPlugin()) {
     plugins.push([
       "react-native-google-mobile-ads",
       {
-        androidAppId,
-        iosAppId,
+        ...existingGoogleMobileAdsOptions,
+        ...(androidAppId ? { androidAppId } : {}),
+        ...(iosAppId ? { iosAppId } : {}),
         userTrackingUsageDescription
       }
     ]);
