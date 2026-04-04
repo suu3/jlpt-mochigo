@@ -155,64 +155,69 @@ export const useAppStore = create<AppState>((set, get) => {
       const fallbackSettings = defaultSettings();
       const fallbackProgress = defaultProgress();
 
-      await quizDatabase.migrateLegacyDataIfNeeded();
-      // Removed: quizDatabase.clearWordCache() - Should not clear on every run
+      try {
+        await quizDatabase.migrateLegacyDataIfNeeded();
+        // Removed: quizDatabase.clearWordCache() - Should not clear on every run
 
-      const [
-        storedSettings,
-        onboardingCompleted,
-        progress,
-        streak,
-        wrongAnswers,
-        history,
-        customWords,
-        bookmarkWordIds,
-        memorizedWordIds
-      ] = await Promise.all([
-        storage.readSettings(fallbackSettings),
-        storage.readOnboardingCompleted(),
-        storage.readProgress(fallbackProgress),
-        storage.readStreak(0),
-        quizDatabase.getWrongAnswers(),
-        quizDatabase.getHistory(),
-        storage.readCustomWords([]),
-        storage.readBookmarkWordIds(),
-        storage.readMemorizedWordIds()
-      ]);
+        const [
+          storedSettings,
+          onboardingCompleted,
+          progress,
+          streak,
+          wrongAnswers,
+          history,
+          customWords,
+          bookmarkWordIds,
+          memorizedWordIds
+        ] = await Promise.all([
+          storage.readSettings(fallbackSettings),
+          storage.readOnboardingCompleted(),
+          storage.readProgress(fallbackProgress),
+          storage.readStreak(0),
+          quizDatabase.getWrongAnswers(),
+          quizDatabase.getHistory(),
+          storage.readCustomWords([]),
+          storage.readBookmarkWordIds(),
+          storage.readMemorizedWordIds()
+        ]);
 
-      const settings = {
-        ...fallbackSettings,
-        ...storedSettings
-      };
+        const settings = {
+          ...fallbackSettings,
+          ...storedSettings
+        };
 
-      // Optimization: Only load the words for the current selected level at startup
-      set({ isWordDataLoading: true });
-      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
-      const currentLevelWords = await quizDatabase.getLevelWords(settings.level, settings.language);
-      wordsByLevel[settings.level] = currentLevelWords;
+        // Optimization: Only load the words for the current selected level at startup
+        set({ isWordDataLoading: true });
+        const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
+        const currentLevelWords = await quizDatabase.getLevelWords(settings.level, settings.language);
+        wordsByLevel[settings.level] = currentLevelWords;
 
-      const totalStudyCount = history.reduce((sum, entry) => sum + entry.total, 0);
-      const normalizedProgress =
-        progress.date === todayKey()
-          ? progress
-          : { ...fallbackProgress, goal: progress.goal };
+        const totalStudyCount = history.reduce((sum, entry) => sum + entry.total, 0);
+        const normalizedProgress =
+          progress.date === todayKey()
+            ? progress
+            : { ...fallbackProgress, goal: progress.goal };
 
-      set({
-        isReady: true,
-        screen: onboardingCompleted ? "home" : "setup",
-        hasCompletedOnboarding: onboardingCompleted,
-        settings,
-        dailyProgress: normalizedProgress,
-        streak,
-        wrongAnswers,
-        history,
-        customWords,
-        wordsByLevel,
-        bookmarkWordIds,
-        memorizedWordIds,
-        isWordDataLoading: false,
-        totalStudyCount
-      });
+        set({
+          isReady: true,
+          screen: onboardingCompleted ? "home" : "setup",
+          hasCompletedOnboarding: onboardingCompleted,
+          settings,
+          dailyProgress: normalizedProgress,
+          streak,
+          wrongAnswers,
+          history,
+          customWords,
+          wordsByLevel,
+          bookmarkWordIds,
+          memorizedWordIds,
+          isWordDataLoading: false,
+          totalStudyCount
+        });
+      } catch (error) {
+        console.error("Critical failure during initialization", error);
+        set({ isReady: true, isWordDataLoading: false }); // Show UI even if partial failure
+      }
     },
 
     async refreshWordData() {
@@ -252,35 +257,46 @@ export const useAppStore = create<AppState>((set, get) => {
     },
 
     async setLanguage(language) {
-      const nextSettings = { ...get().settings, language };
+      const { settings } = get();
+      const nextSettings = { ...settings, language };
+      
       set({ 
         settings: nextSettings,
-        wordsByLevel: {}, // Clear memory cache
+        wordsByLevel: {}, 
         isWordDataLoading: true 
       });
-      await storage.writeSettings(nextSettings);
-      
-      // Clear SQLite cache for new language to ensure fresh translations
-      await quizDatabase.clearWordCache();
-      
-      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
-      // Load current level immediately
-      const words = await quizDatabase.getLevelWords(nextSettings.level, nextSettings.language);
-      wordsByLevel[nextSettings.level] = words;
 
-      set({ wordsByLevel, isWordDataLoading: false });
-      
-      // Load other levels in background
-      for (const level of LEVELS_ASCENDING) {
-        if (level !== nextSettings.level) {
-          quizDatabase.getLevelWords(level, nextSettings.language)
-            .then(words => {
-              set(state => ({
-                wordsByLevel: { ...state.wordsByLevel, [level]: words }
-              }));
-            })
-            .catch(error => console.error(`Failed to preload level ${level}`, error));
-        }
+      try {
+        await storage.writeSettings(nextSettings);
+        
+        // Clear SQLite cache for new language to ensure fresh translations
+        await quizDatabase.clearWordCache();
+        
+        const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
+        // Load current level immediately
+        const words = await quizDatabase.getLevelWords(nextSettings.level, nextSettings.language);
+        wordsByLevel[nextSettings.level] = words;
+
+        set({ wordsByLevel, isWordDataLoading: false });
+        
+        // Load other levels in background sequentially to avoid contention
+        (async () => {
+          for (const level of LEVELS_ASCENDING) {
+            if (level !== nextSettings.level) {
+              try {
+                const words = await quizDatabase.getLevelWords(level, nextSettings.language);
+                set(state => ({
+                  wordsByLevel: { ...state.wordsByLevel, [level]: words }
+                }));
+              } catch (error) {
+                console.error(`Failed to preload level ${level}`, error);
+              }
+            }
+          }
+        })().catch(error => console.error("Background preload failed", error));
+      } catch (error) {
+        console.error("Failed to set language", error);
+        set({ isWordDataLoading: false });
       }
     },
 

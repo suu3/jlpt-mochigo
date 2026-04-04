@@ -178,17 +178,25 @@ export const quizDatabase = {
     const db = await getDatabase();
     const cachedAt = new Date().toISOString();
 
+    // Use a transaction and prepared statement for much better performance
     await db.withTransactionAsync(async () => {
-      for (const word of bundledWords) {
-        await db.runAsync(
-          `INSERT OR REPLACE INTO word_entries_v2 (id, level, lang, payload, cached_at)
-           VALUES (?, ?, ?, ?, ?)`,
-          word.id,
-          level,
-          language,
-          JSON.stringify(word),
-          cachedAt
-        );
+      const statement = await db.prepareAsync(
+        `INSERT OR REPLACE INTO word_entries_v2 (id, level, lang, payload, cached_at)
+         VALUES (?, ?, ?, ?, ?)`
+      );
+      
+      try {
+        for (const word of bundledWords) {
+          await statement.executeAsync(
+            word.id,
+            level,
+            language,
+            JSON.stringify(word),
+            cachedAt
+          );
+        }
+      } finally {
+        await statement.finalizeAsync();
       }
     });
 
