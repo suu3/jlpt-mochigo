@@ -26,6 +26,10 @@ function buildMixedQuestionTypes(count: number) {
   return shuffle(questionTypes);
 }
 
+function hasReadingQuizPrompt(word: WordEntry) {
+  return word.kanji.trim().length > 0 && word.kanji !== word.kana;
+}
+
 export function getLocalizedMeaning(word: WordEntry, language: AppLanguage) {
   const resolvedLanguage = resolveLanguage(language);
   if (resolvedLanguage === "ko" && word.meaningKo) {
@@ -66,14 +70,14 @@ export function getStudyWords(words: WordEntry[]) {
 function buildQuestion(word: WordEntry, words: WordEntry[], type: QuizType, language: AppLanguage): QuizQuestion {
   const meaningPool = words.map((item) => getLocalizedMeaning(item, language));
   const readingPool = words.map((item) => item.kana);
-  const isMeaning = type === "meaning";
+  const isMeaning = type === "meaning" || !hasReadingQuizPrompt(word);
   const localizedMeaning = getLocalizedMeaning(word, language);
 
   return {
     id: `${word.id}-${type}`,
     wordId: word.id,
     type,
-    prompt: word.kanji || word.kana,
+    prompt: isMeaning ? (word.kanji || word.kana) : word.kanji,
     choices: isMeaning
       ? sampleChoices(localizedMeaning, meaningPool)
       : sampleChoices(word.kana, readingPool),
@@ -116,10 +120,14 @@ export function buildSessionQuestions(
 
   return finalWords.map((word, index) => {
     const forcedType = wrongAnswers.find((record) => record.wordId === word.id)?.questionType;
-    const type: QuizType =
+    const preferredType: QuizType =
       mode === "review" && forcedType
         ? forcedType
         : mixedQuestionTypes[index] ?? "meaning";
+    const type: QuizType =
+      preferredType === "reading" && !hasReadingQuizPrompt(word)
+        ? "meaning"
+        : preferredType;
 
     return buildQuestion(word, words, type, language);
   });

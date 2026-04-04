@@ -266,7 +266,8 @@ const dictionary = {
     playAgain: "한 번 더 풀기",
     goHome: "홈으로",
     reviewTitle: "복습 리스트",
-    emptyReview: "아직 다시 볼 단어가 없어요. 첫 학습부터 가볍게 시작해보세요.",
+    emptyReview:
+      "아직 다시 볼 단어가 없어요.\n첫 학습부터 가볍게 시작해보세요.",
     startReview: "복습 시작하기",
     question: "문제",
     of: "/",
@@ -322,7 +323,7 @@ const dictionary = {
     hideMemorizedFilter: "외운 단어 숨기기",
     memorizedOnlyFilter: "외운 단어만",
     emptyFilteredWords:
-      "지금 필터에서는 보이는 단어가 없어요. 외운 단어 숨기기를 풀거나 글자 수를 바꿔보세요.",
+      "지금 필터에서는 보이는 단어가 없어요.\n외운 단어 숨기기를 풀거나 글자 수를 바꿔보세요.",
     bookmarkAdd: "북마크 추가",
     bookmarkRemove: "북마크 해제",
     newMistakes: "새로운 오답",
@@ -399,7 +400,7 @@ const dictionary = {
     externalLinkErrorTitle: "링크를 열 수 없어요",
     externalLinkErrorBody: "잠시 후 다시 시도해 주세요.",
     dataSourceDisclaimer:
-      "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다."
+      "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다.",
   },
   en: {
     title: "Mochigo",
@@ -611,8 +612,8 @@ const dictionary = {
     externalLinkErrorTitle: "Unable to open link",
     externalLinkErrorBody: "Please try again in a moment.",
     dataSourceDisclaimer:
-      "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT)."
-  }
+      "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT).",
+  },
 } as const;
 
 export function detectLanguage(): ResolvedLanguage {
@@ -632,10 +633,10 @@ export function t(language: AppLanguage, key: CopyKey): string {
 export function tf(
   language: AppLanguage,
   key: CopyKey,
-  values: Record<string, string | number>
+  values: Record<string, string | number>,
 ): string {
   return t(language, key).replace(
     /\{(\w+)\}/g,
-    (_: string, token: string) => `${values[token] ?? ""}`
+    (_: string, token: string) => `${values[token] ?? ""}`,
   );
 }
