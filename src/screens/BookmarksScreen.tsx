@@ -1,25 +1,27 @@
-import React, { useMemo, useState } from "react"
-import { Pressable, StyleSheet, View } from "react-native"
-import { AppIcon } from "../components/AppIcon"
-import { AppText as Text } from "../components/AppText"
-import { Card } from "../components/Card"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { LEVELS_ASCENDING } from "../data/levelLoader"
-import { resolveLanguage, t } from "../lib/i18n"
-import { getLocalizedMeaning } from "../lib/quiz"
-import { useAppStore } from "../store/useAppStore"
+import React, { useMemo, useState } from "react";
+import { Pressable, StyleSheet, View } from "react-native";
+import { AppIcon } from "../components/AppIcon";
+import { AppText as Text } from "../components/AppText";
+import { BunnyBadge } from "../components/BunnyBadge";
+import { Card } from "../components/Card";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
+import { LEVELS_ASCENDING } from "../data/levelLoader";
+import { resolveLanguage, t } from "../lib/i18n";
+import { getLocalizedMeaning } from "../lib/quiz";
+import { useAppStore } from "../store/useAppStore";
 
 export function BookmarksScreen() {
-  const { settings, bookmarkWordIds, customWords, toggleWordBookmark, wordsByLevel } = useAppStore()
-  const resolvedLanguage = resolveLanguage(settings.language)
-  const [showMeanings, setShowMeanings] = useState(true)
+  const { settings, bookmarkWordIds, customWords, toggleWordBookmark, wordsByLevel, totalStudyCount } = useAppStore();
+  const resolvedLanguage = resolveLanguage(settings.language);
+  const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1;
+  const [showMeanings, setShowMeanings] = useState(true);
   const allWords = useMemo(
     () => [
       ...LEVELS_ASCENDING.flatMap((level) => wordsByLevel[level] ?? []),
       ...customWords
     ],
     [customWords, wordsByLevel]
-  )
+  );
 
   const bookmarkedWords = useMemo(
     () =>
@@ -27,7 +29,7 @@ export function BookmarksScreen() {
         bookmarkWordIds.includes(word.id)
       ),
     [allWords, bookmarkWordIds]
-  )
+  );
 
   return (
     <View style={styles.container}>
@@ -55,6 +57,9 @@ export function BookmarksScreen() {
 
       {bookmarkedWords.length === 0 ? (
         <Card style={styles.emptyCard}>
+          <View style={styles.emptyBunnyWrap}>
+            <BunnyBadge mood="soft" stage={bunnyStage} />
+          </View>
           <Text style={styles.emptyText}>{t(settings.language, "emptyBookmarks")}</Text>
         </Card>
       ) : (
@@ -71,7 +76,7 @@ export function BookmarksScreen() {
 
                 <Pressable
                   onPress={async () => {
-                    await toggleWordBookmark(word.id)
+                    await toggleWordBookmark(word.id);
                   }}
                   style={({ pressed }) => [
                     styles.bookmarkIconButton,
@@ -87,9 +92,7 @@ export function BookmarksScreen() {
               {word.kanji ? <Text style={styles.kana}>{word.kana}</Text> : null}
               <View style={styles.meaningBlock}>
                 <Text style={styles.meaningLabel}>
-                  {resolvedLanguage === "ko" && !word.meaningKo
-                    ? t(settings.language, "englishMeaningLabel")
-                    : t(settings.language, "meaningLabel")}
+                  {t(settings.language, "meaningLabel")}
                 </Text>
                 <Text style={[styles.meaning, !showMeanings && styles.meaningHidden]}>
                   {showMeanings ? getLocalizedMeaning(word, settings.language) : t(settings.language, "meaningHidden")}
@@ -100,7 +103,7 @@ export function BookmarksScreen() {
         </View>
       )}
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -152,7 +155,13 @@ const styles = StyleSheet.create({
   },
   emptyText: {
     color: colors.textMuted,
-    lineHeight: 22
+    lineHeight: 22,
+    textAlign: "center"
+  },
+  emptyBunnyWrap: {
+    alignItems: "center",
+    marginBottom: spacing.md,
+    opacity: 0.8
   },
   list: {
     gap: spacing.md,
@@ -238,4 +247,4 @@ const styles = StyleSheet.create({
   pressed: {
     transform: [{ translateX: 1 }, { translateY: 1 }]
   }
-})
+});

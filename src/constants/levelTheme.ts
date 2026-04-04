@@ -1,4 +1,4 @@
-import { JLPTLevel } from "../types/app"
+import { JLPTLevel } from "../types/app";
 
 type LevelTheme = {
   solid: string;
@@ -6,7 +6,7 @@ type LevelTheme = {
   tint: string;
   border: string;
   wash: string;
-}
+};
 
 const levelThemes: Record<JLPTLevel, LevelTheme> = {
   N5: {
@@ -44,8 +44,8 @@ const levelThemes: Record<JLPTLevel, LevelTheme> = {
     border: "#7A5C8E",
     wash: "#F6F0F8"
   }
-}
+};
 
 export function getLevelTheme(level: JLPTLevel): LevelTheme {
-  return levelThemes[level]
+  return levelThemes[level];
 }

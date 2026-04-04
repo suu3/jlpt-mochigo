@@ -1,5 +1,5 @@
-import { AppLanguage } from "./i18n"
-import { JLPTLevel, SessionHistory, WordEntry, WrongAnswerRecord } from "../types/app"
+import { AppLanguage } from "./i18n";
+import { JLPTLevel, SessionHistory, WordEntry, WrongAnswerRecord } from "../types/app";
 
 export declare const quizDatabase: {
   initialize(): Promise<void>;
@@ -12,4 +12,4 @@ export declare const quizDatabase: {
   insertHistory(entry: SessionHistory, limit?: number): Promise<void>;
   clearStudyData(): Promise<void>;
   clearWordCache(): Promise<void>;
-}
+};

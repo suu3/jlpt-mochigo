@@ -197,23 +197,23 @@ export type CopyKey =
 
 const dictionary = {
   ko: {
-    title: "JLPT Bunny",
+    title: "모찌고",
     tagline: "짧게 풀고 바로 복습하는 JLPT 단어 암기 루틴을 만들어봐요",
     loading: "학습 화면을 불러오고 있어요...",
     heroBadge: "오늘 루틴",
-    heroTitle: "가볍게 한 세션, 바로 시작해볼까요?",
-    homeGoalCompleteTitle: "오늘 세션을 다 풀었어요.",
+    heroTitle: "가볍게 하나부터, 바로 시작해볼까요?",
+    homeGoalCompleteTitle: "오늘 학습을 다 풀었어요.",
     homeGoalCompleteBody:
-      "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 세션 더 이어가도 좋아요.",
+      "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 학습 더 이어가도 좋아요.",
     refreshing: "새로고침 중...",
     refreshWordDataTitle: "단어 데이터 새로고침",
     refreshWordDataHelper:
-      "번역된 최신 단어 정보를 다시 불러옵니다. 기존 학습 기록은 유지돼요.",
+      "앱 번들에서 번역된 최신 단어 정보를 다시 불러옵니다. 학습 기록은 유지돼요.",
     refreshWordDataButton: "데이터 동기화",
     dailyGoal: "오늘 분량",
-    dailyProgressHint: "오늘 목표까지 {count}세션 남았어요.",
+    dailyProgressHint: "오늘 목표까지 {count}학습 남았어요.",
     dailyProgressCompleteHint:
-      "오늘 목표는 다 채웠어요. 다해도 더 공부해볼까요?",
+      "오늘 목표는 다 채웠어요. 그래도 더 공부해볼까요?",
     streak: "연속 학습",
     streakValue: "{count}일",
     start: "바로 시작",
@@ -221,7 +221,7 @@ const dictionary = {
     difficulty: "난이도",
     languageSettings: "언어 설정",
     languageHelper:
-      "기본값은 기기 언어를 따르고, 여기서 언제든 바꿀 수 있어요.",
+      "기본값은 기기 언어를 따라요. 언어 설정은 언제든 바꿀 수 있어요.",
     languageSystem: "시스템",
     languageSystemValue: "기기 언어 사용",
     languageKorean: "한국어",
@@ -230,20 +230,20 @@ const dictionary = {
     setupHelper:
       "레벨과 언어만 정하면 바로 풀 수 있어요. 나중에 설정에서 언제든 바꿀 수 있어요.",
     saveAndStart: "이대로 시작",
-    startKicker: "학습 세션",
+    startKicker: "학습하기",
     startBody:
       "{source} · {count}문제가 나와요. 틀린 단어는 다음 세션에 먼저 다시 나와요.",
     quizSourceLabel: "출제 범위",
     quizSourceJlpt: "JLPT만",
     quizSourceCustom: "나만의 단어장",
-    quizSourceCombined: "같이 풀기",
+    quizSourceCombined: "둘 다 풀기",
     quizSourceEmpty: "현재 범위에 출제할 단어가 없어요.",
-    reviewKicker: "복습 세션",
+    reviewKicker: "복습 학습",
     reviewBody: "다시 볼 단어가 {count}개 있어요",
     focusGarden: "학습 현황",
     currentLevel: "현재 레벨 {level}",
     dashboardHelper:
-      "오늘 학습 현황, 누적 세션, 다시 볼 단어를 한 화면에서 바로 확인할 수 있어요.",
+      "오늘 학습 현황, 누적 학습, 다시 볼 단어를 한 화면에서 바로 확인할 수 있어요.",
     settingsEyebrow: "앱 설정",
     settingsTitle: "설정",
     settingsHelper: "학습 레벨과 앱 언어를 여기서 바로 바꿀 수 있어요.",
@@ -259,31 +259,31 @@ const dictionary = {
     correct: "정답",
     wrong: "오답",
     next: "다음 문제",
-    resultTitle: "이번 세션 결과",
+    resultTitle: "이번 학습 결과",
     resultScore: "{correct} / {total} 정답",
-    resultKicker: "이번 세션 완료",
+    resultKicker: "이번 학습 완료",
     goalCompleteKicker: "오늘 루틴 완료",
-    goalCompletePrompt: "조금 더 해두면 내일이 더 가벼워져요.",
+    goalCompletePrompt: "조금 더 해두면 내일이 편해져요.",
     accuracy: "정확도",
     needsReview: "복습 필요",
     perfectRound: "복습할 단어 없음",
-    gardenGrowth: "이번 세션 기록",
+    gardenGrowth: "이번 학습 기록",
     missedWords: "다시 볼 단어",
     nothingToReview: "이번 세션은 바로 넘어가도 괜찮아요.",
     playAgain: "한 번 더 풀기",
     goHome: "홈으로",
     reviewTitle: "복습 리스트",
-    emptyReview: "아직 다시 볼 단어가 없어요. 첫 세션부터 가볍게 시작해보세요.",
+    emptyReview: "아직 다시 볼 단어가 없어요. 첫 학습부터 가볍게 시작해보세요.",
     startReview: "복습 시작하기",
     question: "문제",
     of: "/",
-    adPlaceholder: "세션 종료 후 전면 광고 위치",
+    adPlaceholder: "학습 종료 후 전면 광고 위치",
     encourageGood: "좋아요. 감이 잘 올라오고 있어요.",
     encourageRetry: "한 번만 더 보면 훨씬 익숙해질 거예요.",
     filters: "최근 틀린 순",
     sortedByRecent: "가장 최근에 헷갈린 단어부터 보여드릴게요.",
-    sessions: "세션",
-    knowledgeGrowth: "학습 흐름",
+    sessions: "학습",
+    knowledgeGrowth: "복습하기",
     mistakesCount: "{count}회 틀림",
     highPriorityFocus: "먼저 다시 보기",
     reviewNeeded: "복습 추천",
@@ -301,9 +301,9 @@ const dictionary = {
     bookmarksTab: "북마크",
     bookmarksEyebrow: "저장한 단어",
     bookmarksTitle: "북마크",
-    bookmarksHelper: "별표한 단어만 따로 모아서 볼 수 있어요.",
+    bookmarksHelper: "북마크한 단어만 따로 모아서 볼 수 있어요.",
     emptyBookmarks:
-      "아직 저장한 단어가 없어요. 단어 화면에서 별표를 눌러 담아보세요.",
+      "아직 저장한 단어가 없어요. 단어 화면에서 북마크해서 담아보세요.",
     bookmarkAdded: "저장됨",
     memorizedAdded: "외웠음",
     memorizeWord: "외웠어요",
@@ -326,7 +326,7 @@ const dictionary = {
     hideMemorizedFilter: "외운 단어 숨기기",
     memorizedOnlyFilter: "외운 단어만",
     emptyFilteredWords:
-      "지금 필터에는 보이는 단어가 없어요. 외운 단어 숨기기를 풀거나 글자 수를 바꿔보세요.",
+      "지금 필터에서는 보이는 단어가 없어요. 외운 단어 숨기기를 풀거나 글자 수를 바꿔보세요.",
     bookmarkAdd: "북마크 추가",
     bookmarkRemove: "북마크 해제",
     newMistakes: "새로운 오답",
@@ -384,7 +384,7 @@ const dictionary = {
     densitySimple: "간단 외우기",
     resetStudyDataTitle: "학습 기록 초기화",
     resetStudyDataHelper:
-      "세션 기록, 오답, 북마크, 외운 단어, 연속 학습 수치가 모두 삭제돼요. 설정은 그대로 남아요.",
+      "학습 기록, 오답, 북마크, 외운 단어, 연속 학습 수치가 모두 삭제돼요. 설정은 그대로 남아요.",
     resetStudyDataButton: "학습 기록 전체 삭제",
     resetStudyDataConfirmTitle: "학습 기록을 모두 삭제할까요?",
     resetStudyDataConfirmBody:
@@ -403,10 +403,10 @@ const dictionary = {
     externalLinkErrorTitle: "링크를 열 수 없어요",
     externalLinkErrorBody: "잠시 후 다시 시도해 주세요.",
     dataSourceDisclaimer:
-      "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다.",
+      "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다."
   },
   en: {
-    title: "JLPT Bunny",
+    title: "Mochigo",
     tagline:
       "A calm Japanese vocab app with short sessions and automatic review",
     loading: "Preparing your calm study session...",
@@ -512,9 +512,9 @@ const dictionary = {
     bookmarksTab: "Bookmarks",
     bookmarksEyebrow: "Saved Words",
     bookmarksTitle: "Bookmarks",
-    bookmarksHelper: "See only the words you've saved with the star icon.",
+    bookmarksHelper: "Browse only the words you've bookmarked.",
     emptyBookmarks:
-      "No bookmarked words yet. Tap the star in the word bank to save one.",
+      "No bookmarked words yet. Bookmark a word in the word bank to see it here.",
     bookmarkAdded: "Bookmarked",
     memorizedAdded: "Memorized",
     memorizeWord: "I know this",
@@ -617,8 +617,8 @@ const dictionary = {
     externalLinkErrorTitle: "Unable to open link",
     externalLinkErrorBody: "Please try again in a moment.",
     dataSourceDisclaimer:
-      "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT).",
-  },
+      "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT)."
+  }
 } as const;
 
 export function detectLanguage(): ResolvedLanguage {
@@ -630,17 +630,18 @@ export function resolveLanguage(language: AppLanguage): ResolvedLanguage {
   return language === "system" ? detectLanguage() : language;
 }
 
-export function t(language: AppLanguage, key: CopyKey) {
-  return dictionary[resolveLanguage(language)][key];
+export function t(language: AppLanguage, key: CopyKey): string {
+  const resolved = resolveLanguage(language);
+  return (dictionary[resolved] as Record<string, string>)[key] || "";
 }
 
 export function tf(
   language: AppLanguage,
   key: CopyKey,
-  values: Record<string, string | number>,
-) {
+  values: Record<string, string | number>
+): string {
   return t(language, key).replace(
     /\{(\w+)\}/g,
-    (_, token: string) => `${values[token] ?? ""}`,
+    (_: string, token: string) => `${values[token] ?? ""}`
   );
 }

@@ -1,8 +1,8 @@
-import js from "@eslint/js"
-import stylistic from "@stylistic/eslint-plugin"
-import globals from "globals"
-import reactHooks from "eslint-plugin-react-hooks"
-import tseslint from "typescript-eslint"
+import js from "@eslint/js";
+import stylistic from "@stylistic/eslint-plugin";
+import globals from "globals";
+import reactHooks from "eslint-plugin-react-hooks";
+import tseslint from "typescript-eslint";
 
 export default tseslint.config(
   {
@@ -25,7 +25,7 @@ export default tseslint.config(
       "@stylistic/comma-dangle": ["error", "never"],
       "@stylistic/object-curly-spacing": ["error", "always"],
       "@stylistic/quotes": ["error", "double", { avoidEscape: true }],
-      "@stylistic/semi": ["error", "never"]
+      "@stylistic/semi": ["error", "always"]
     }
   },
   {
@@ -51,7 +51,7 @@ export default tseslint.config(
       "@stylistic/comma-dangle": ["error", "never"],
       "@stylistic/object-curly-spacing": ["error", "always"],
       "@stylistic/quotes": ["error", "double", { avoidEscape: true }],
-      "@stylistic/semi": ["error", "never"],
+      "@stylistic/semi": ["error", "always"],
       "@typescript-eslint/no-floating-promises": ["error", { ignoreVoid: false }],
       "@typescript-eslint/no-misused-promises": ["error", { checksVoidReturn: false }],
       "@typescript-eslint/no-require-imports": "off",
@@ -65,4 +65,4 @@ export default tseslint.config(
       "react-hooks/rules-of-hooks": "error"
     }
   }
-)
+);

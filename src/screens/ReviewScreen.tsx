@@ -1,38 +1,42 @@
-import React from "react"
-import { Pressable, StyleSheet, View } from "react-native"
-import { AppText as Text } from "../components/AppText"
-import { Card } from "../components/Card"
-import { PrimaryButton } from "../components/PrimaryButton"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { getLocalizedMeaning } from "../lib/quiz"
-import { t, tf } from "../lib/i18n"
-import { useAppStore } from "../store/useAppStore"
-import { FoxTeacher } from "../components/FoxTeacher"
-import { WordEntry } from "../types/app"
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { AppText as Text } from "../components/AppText";
+import { Card } from "../components/Card";
+import { PrimaryButton } from "../components/PrimaryButton";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
+import { getLocalizedMeaning } from "../lib/quiz";
+import { t, tf } from "../lib/i18n";
+import { useAppStore } from "../store/useAppStore";
+import { FoxTeacher } from "../components/FoxTeacher";
+import { WordEntry } from "../types/app";
+import { AnimateEntrance } from "../components/AnimateEntrance";
+import { animations } from "../constants/theme";
 
 export function ReviewScreen() {
-  const { settings, wrongAnswers, customWords, wordsByLevel, startSession, goHome } = useAppStore()
-  const copy = settings.language
-  const allJlptWords = Object.values(wordsByLevel).flat().filter((w): w is WordEntry => !!w)
+  const { settings, wrongAnswers, customWords, wordsByLevel, startSession, goHome } = useAppStore();
+  const copy = settings.language;
+  const allJlptWords = Object.values(wordsByLevel).flat().filter((w): w is WordEntry => !!w);
   const fullWordPool = [
     ...allJlptWords,
     ...customWords
-  ]
+  ];
   const reviewItems = [...wrongAnswers]
     .sort((left, right) => right.lastWrongAt.localeCompare(left.lastWrongAt))
     .flatMap((record) => {
-      const word = fullWordPool.find((entry) => entry.id === record.wordId)
-      return word ? [{ ...record, word }] : []
-    })
-  const topItem = reviewItems[0]
+      const word = fullWordPool.find((entry) => entry.id === record.wordId);
+      return word ? [{ ...record, word }] : [];
+    });
+  const topItem = reviewItems[0];
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.eyebrow}>{t(copy, "knowledgeGrowth")}</Text>
-        <Text style={styles.title}>{t(copy, "reviewTitle")}</Text>
-        <Text style={styles.helper}>{t(copy, "sortedByRecent")}</Text>
-      </View>
+      <AnimateEntrance duration={animations.duration.long} type="lift">
+        <View style={styles.header}>
+          <Text style={styles.eyebrow}>{t(copy, "knowledgeGrowth")}</Text>
+          <Text style={styles.title}>{t(copy, "reviewTitle")}</Text>
+          <Text style={styles.helper}>{t(copy, "sortedByRecent")}</Text>
+        </View>
+      </AnimateEntrance>
 
       <View style={styles.grid}>
         {reviewItems.length === 0 ? (
@@ -43,48 +47,63 @@ export function ReviewScreen() {
             <Text style={styles.empty}>{t(copy, "emptyReview")}</Text>
           </Card>
         ) : (
-          reviewItems.map((item) => (
-            <Pressable key={`${item.wordId}-${item.questionType}`} style={styles.reviewCard}>
-              <View style={styles.row}>
-                <View style={styles.wordWrap}>
-                  <Text style={styles.word}>{item.word.kana}</Text>
-                  <Text style={styles.meaning}>
-                    {item.word.kanji} ({getLocalizedMeaning(item.word, settings.language)})
-                  </Text>
+          reviewItems.map((item, index) => (
+            <AnimateEntrance
+              key={`${item.wordId}-${item.questionType}`}
+              delay={100 + index * 50}
+              duration={animations.duration.long}
+              type="lift"
+            >
+                <View style={styles.reviewCard}>
+                  <View style={styles.row}>
+                    <View style={styles.wordWrap}>
+                      <Text style={styles.word}>{item.word.kana}</Text>
+                      <Text style={styles.meaning}>
+                        {item.word.kanji} ({getLocalizedMeaning(item.word, settings.language)})
+                      </Text>
+                    </View>
+                    <View style={[styles.badge, item.wrongCount >= 5 ? styles.badgeCritical : styles.badgeNormal]}>
+                      <Text style={styles.badgeText}>{tf(copy, "mistakesCount", { count: item.wrongCount })}</Text>
+                    </View>
+                  </View>
+                  <View style={styles.cardFooter}>
+                    <Text style={styles.footerMeta}>
+                      {item.wrongCount >= 5 ? t(copy, "highPriorityFocus") : t(copy, "reviewNeeded")}
+                    </Text>
+                    <Text style={styles.footerStatus}>
+                      {item.questionType === "meaning" ? t(copy, "meaningLabel") : t(copy, "readingLabel")}
+                    </Text>
+                  </View>
                 </View>
-                <View style={[styles.badge, item.wrongCount >= 5 ? styles.badgeCritical : styles.badgeNormal]}>
-                  <Text style={styles.badgeText}>{tf(copy, "mistakesCount", { count: item.wrongCount })}</Text>
-                </View>
-              </View>
-              <View style={styles.cardFooter}>
-                <Text style={styles.footerMeta}>
-                  {item.wrongCount >= 5 ? t(copy, "highPriorityFocus") : t(copy, "reviewNeeded")}
-                </Text>
-                <Text style={styles.footerStatus}>
-                  {item.questionType === "meaning" ? t(copy, "meaningLabel") : t(copy, "readingLabel")}
-                </Text>
-              </View>
-            </Pressable>
+            </AnimateEntrance>
           ))
         )}
       </View>
 
       {topItem ? (
-        <Card style={styles.mascotCard}>
-          <View style={styles.mascotRow}>
-            <View style={styles.mascotCopy}>
-              <Text style={styles.mascotQuote}>
-                {tf(copy, "focusNextWord", { word: topItem.word.kanji || topItem.word.kana })}
-              </Text>
-              <View style={styles.mascotBars}>
-                <View style={styles.mascotBarActive} />
-                <View style={styles.mascotBarIdle} />
-                <View style={styles.mascotBarIdleShort} />
+        <AnimateEntrance delay={300} duration={animations.duration.xl} type="lift">
+          <Card style={styles.mascotCard}>
+            <View style={styles.mascotRow}>
+              <View style={styles.mascotCopy}>
+                <Text style={styles.mascotQuote}>
+                  {tf(copy, "focusNextWord", { word: topItem.word.kanji || topItem.word.kana })}
+                </Text>
+                <View style={styles.mascotBars}>
+                  <AnimateEntrance delay={600} duration={800} type="scale">
+                    <View style={styles.mascotBarActive} />
+                  </AnimateEntrance>
+                  <AnimateEntrance delay={700} duration={800} type="scale">
+                    <View style={styles.mascotBarIdle} />
+                  </AnimateEntrance>
+                  <AnimateEntrance delay={800} duration={800} type="scale">
+                    <View style={styles.mascotBarIdleShort} />
+                  </AnimateEntrance>
+                </View>
               </View>
+              <FoxTeacher type="teaching" size={80} style={styles.mascotImg} />
             </View>
-            <FoxTeacher type="teaching" size={80} style={styles.mascotImg} />
-          </View>
-        </Card>
+          </Card>
+        </AnimateEntrance>
       ) : null}
 
       <View style={styles.actions}>
@@ -102,12 +121,15 @@ export function ReviewScreen() {
         />
       </View>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   container: {
     gap: spacing.lg
+  },
+  cardInteractive: {
+    flex: 1
   },
   actions: {
     gap: spacing.sm
@@ -262,4 +284,4 @@ const styles = StyleSheet.create({
     borderRadius: radii.pill,
     backgroundColor: colors.borderSoft
   }
-})
+});

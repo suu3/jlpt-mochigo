@@ -29,7 +29,7 @@ export const colors = {
   borderStrong: "#231D18",
   borderSoft: "#231D18",
   shadow: "#231D18"
-}
+};
 
 export const spacing = {
   xs: 8,
@@ -39,7 +39,7 @@ export const spacing = {
   xl: 24,
   xxl: 32,
   xxxl: 40
-}
+};
 
 export const radii = {
   sm: 12,
@@ -47,18 +47,28 @@ export const radii = {
   lg: 24,
   xl: 32,
   pill: 999
-}
+};
 
 export const borderWidths = {
   base: 1.2
-}
+};
 
 export const breakpoints = {
   phoneTight: 360,
   phoneCompact: 450,
   tablet: 680
-}
+};
 
 export const fonts = {
   body: "PretendardJP"
-}
+};
+
+export const animations = {
+  duration: {
+    instant: 120,
+    short: 240,
+    base: 320,
+    long: 540,
+    xl: 820
+  }
+};

@@ -1,10 +1,10 @@
-import React from "react"
-import { Pressable, StyleSheet, ViewStyle } from "react-native"
-import { AppText as Text } from "./AppText"
-import { AppIcon } from "./AppIcon"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
+import React from "react";
+import { Pressable, StyleSheet, ViewStyle } from "react-native";
+import { AppText as Text } from "./AppText";
+import { AppIcon } from "./AppIcon";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
 
-import { DecoratedIcon } from "./DecoratedIcon"
+import { DecoratedIcon } from "./DecoratedIcon";
 
 type Props = {
   label: string;
@@ -14,7 +14,7 @@ type Props = {
   style?: ViewStyle;
   icon?: React.ComponentProps<typeof AppIcon>["name"];
   decoration?: React.ComponentProps<typeof DecoratedIcon>["name"];
-}
+};
 
 export function PrimaryButton({
   label,
@@ -57,7 +57,7 @@ export function PrimaryButton({
         {label}
       </Text>
     </Pressable>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -106,4 +106,4 @@ const styles = StyleSheet.create({
   secondaryLabel: {
     color: colors.text
   }
-})
+});

@@ -1,14 +1,14 @@
-import React from "react"
-import { Alert, Linking, Pressable, StyleSheet, View } from "react-native"
-import { AppIcon } from "../components/AppIcon"
-import { AppText as Text } from "../components/AppText"
-import { Card } from "../components/Card"
-import { PrimaryButton } from "../components/PrimaryButton"
-import { SettingsPanel } from "../components/SettingsPanel"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { t } from "../lib/i18n"
-import { useAppStore } from "../store/useAppStore"
-import { DecoratedIcon } from "../components/DecoratedIcon"
+import React from "react";
+import { Alert, Linking, Pressable, StyleSheet, View } from "react-native";
+import { AppIcon } from "../components/AppIcon";
+import { AppText as Text } from "../components/AppText";
+import { Card } from "../components/Card";
+import { PrimaryButton } from "../components/PrimaryButton";
+import { SettingsPanel } from "../components/SettingsPanel";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
+import { t } from "../lib/i18n";
+import { useAppStore } from "../store/useAppStore";
+import { DecoratedIcon } from "../components/DecoratedIcon";
 
 export function SettingsScreen() {
   const {
@@ -19,9 +19,9 @@ export function SettingsScreen() {
     setSpeechRate,
     setSpeechPitch,
     resetStudyData
-  } = useAppStore()
-  const [isResetting, setIsResetting] = React.useState(false)
-  const [isSourcesExpanded, setIsSourcesExpanded] = React.useState(false)
+  } = useAppStore();
+  const [isResetting, setIsResetting] = React.useState(false);
+  const [isSourcesExpanded, setIsSourcesExpanded] = React.useState(false);
   const dataSources = [
     {
       key: "jmdict",
@@ -37,7 +37,19 @@ export function SettingsScreen() {
       linkLabel: t(settings.language, "dataSourceJlptWordListLinkLabel"),
       url: "https://github.com/elzup/jlpt-word-list"
     }
-  ] as const
+  ] as const;
+
+  const handleRefreshWordData = React.useCallback(async () => {
+    try {
+      await useAppStore.getState().refreshWordData();
+      Alert.alert(
+        t(settings.language, "refreshWordDataTitle"),
+        t(settings.language, "customWordAdded") // Using existing "Added" key for simple feedback
+      );
+    } catch (error) {
+      console.error("Manual refresh failed", error);
+    }
+  }, [settings.language]);
 
   const handleResetStudyData = React.useCallback(() => {
     Alert.alert(
@@ -52,17 +64,17 @@ export function SettingsScreen() {
           text: t(settings.language, "resetStudyDataConfirm"),
           style: "destructive",
           onPress: async () => {
-            setIsResetting(true)
+            setIsResetting(true);
             try {
-              await resetStudyData()
+              await resetStudyData();
             } finally {
-              setIsResetting(false)
+              setIsResetting(false);
             }
           }
         }
       ]
-    )
-  }, [resetStudyData, settings.language])
+    );
+  }, [resetStudyData, settings.language]);
 
   const handleOpenLink = React.useCallback(
     (url: string) => {
@@ -70,11 +82,11 @@ export function SettingsScreen() {
         Alert.alert(
           t(settings.language, "externalLinkErrorTitle"),
           t(settings.language, "externalLinkErrorBody")
-        )
-      })
+        );
+      });
     },
     [settings.language]
-  )
+  );
 
   return (
     <View style={styles.container}>
@@ -97,22 +109,37 @@ export function SettingsScreen() {
         speechPitch={settings.speechPitch}
         showAdvanced
         onSelectLevel={async (level) => {
-          await setLevel(level)
+          await setLevel(level);
         }}
         onSelectLanguage={async (language) => {
-          await setLanguage(language)
+          await setLanguage(language);
         }}
         onSelectTtsEnabled={async (enabled) => {
-          await setTtsEnabled(enabled)
+          await setTtsEnabled(enabled);
         }}
         onSelectSpeechRate={async (rate) => {
-          await setSpeechRate(rate)
+          await setSpeechRate(rate);
         }}
         onSelectSpeechPitch={async (pitch) => {
-          await setSpeechPitch(pitch)
+          await setSpeechPitch(pitch);
         }}
 
       />
+
+      <Card style={styles.refreshCard}>
+        <View style={styles.refreshContent}>
+          <View style={styles.refreshText}>
+            <Text style={styles.refreshTitle}>{t(settings.language, "refreshWordDataTitle")}</Text>
+            <Text style={styles.refreshHelper}>{t(settings.language, "refreshWordDataHelper")}</Text>
+          </View>
+          <PrimaryButton
+            label={t(settings.language, "refreshWordDataButton")}
+            onPress={handleRefreshWordData}
+            variant="ghost"
+            style={styles.refreshButton}
+          />
+        </View>
+      </Card>
 
       <Card style={styles.sourcesCard}>
         <Pressable
@@ -168,7 +195,7 @@ export function SettingsScreen() {
         />
       </View>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -285,5 +312,31 @@ const styles = StyleSheet.create({
     borderColor: colors.error,
     backgroundColor: colors.errorSoft,
     shadowOpacity: 0
+  },
+  refreshCard: {
+    backgroundColor: colors.surface
+  },
+  refreshContent: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.md
+  },
+  refreshText: {
+    flex: 1,
+    gap: 4
+  },
+  refreshTitle: {
+    color: colors.primaryDeep,
+    fontSize: 18,
+    fontWeight: "900"
+  },
+  refreshHelper: {
+    color: colors.textMuted,
+    fontSize: 14,
+    lineHeight: 20
+  },
+  refreshButton: {
+    paddingHorizontal: spacing.md,
+    height: 48
   }
-})
+});

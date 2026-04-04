@@ -1,7 +1,7 @@
-import React from "react"
-import { StyleSheet, View } from "react-native"
-import { admobConfig, hasProductionBannerUnitId } from "../config/admob"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { admobConfig, hasProductionBannerUnitId } from "../config/admob";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
 
 type MobileAdsModule = {
   BannerAd: React.ComponentType<{
@@ -15,34 +15,34 @@ type MobileAdsModule = {
     ADAPTIVE_BANNER?: string;
     BANNER: string;
   };
-}
+};
 
-import Constants, { ExecutionEnvironment } from "expo-constants"
+import Constants, { ExecutionEnvironment } from "expo-constants";
 
 function getMobileAdsModule(): MobileAdsModule | null {
   if (Constants.executionEnvironment === ExecutionEnvironment.StoreClient) {
-    return null
+    return null;
   }
   
   try {
-    return require("react-native-google-mobile-ads") as MobileAdsModule
+    return require("react-native-google-mobile-ads") as MobileAdsModule;
   } catch {
-    return null
+    return null;
   }
 }
 
 export function AdBanner() {
-  const mobileAds = getMobileAdsModule()
+  const mobileAds = getMobileAdsModule();
 
   if (!mobileAds) {
-    return null
+    return null;
   }
 
-  const { BannerAd, BannerAdSize, TestIds } = mobileAds
-  const unitId = __DEV__ ? TestIds.ADAPTIVE_BANNER ?? TestIds.BANNER : hasProductionBannerUnitId() ? admobConfig.bannerUnitId : ""
+  const { BannerAd, BannerAdSize, TestIds } = mobileAds;
+  const unitId = __DEV__ ? TestIds.ADAPTIVE_BANNER ?? TestIds.BANNER : hasProductionBannerUnitId() ? admobConfig.bannerUnitId : "";
 
   if (!unitId) {
-    return null
+    return null;
   }
 
   return (
@@ -51,7 +51,7 @@ export function AdBanner() {
         <BannerAd unitId={unitId} size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER} />
       </View>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -67,4 +67,4 @@ const styles = StyleSheet.create({
     overflow: "hidden",
     backgroundColor: colors.surface
   }
-})
+});

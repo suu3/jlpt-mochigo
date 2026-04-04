@@ -1,18 +1,18 @@
-import React from "react"
-import { Pressable, StyleSheet, View } from "react-native"
-import { AppIcon } from "./AppIcon"
-import { Card } from "./Card"
-import { AppText as Text } from "./AppText"
-import { DecoratedIcon } from "./DecoratedIcon"
-import { getLevelTheme } from "../constants/levelTheme"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { AppLanguage, t } from "../lib/i18n"
-import { JLPTLevel, SpeechPitchSetting, SpeechRateSetting } from "../types/app"
+import React from "react";
+import { Pressable, StyleSheet, View } from "react-native";
+import { AppIcon } from "./AppIcon";
+import { Card } from "./Card";
+import { AppText as Text } from "./AppText";
+import { DecoratedIcon } from "./DecoratedIcon";
+import { getLevelTheme } from "../constants/levelTheme";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
+import { AppLanguage, t } from "../lib/i18n";
+import { JLPTLevel, SpeechPitchSetting, SpeechRateSetting } from "../types/app";
 
-const selectableLevels: JLPTLevel[] = ["N5", "N4", "N3", "N2", "N1"]
-const selectableLanguages: AppLanguage[] = ["system", "ko", "en"]
-const speechRateOptions: SpeechRateSetting[] = ["slow", "normal", "fast"]
-const speechPitchOptions: SpeechPitchSetting[] = ["low", "normal", "high"]
+const selectableLevels: JLPTLevel[] = ["N5", "N4", "N3", "N2", "N1"];
+const selectableLanguages: AppLanguage[] = ["system", "ko", "en"];
+const speechRateOptions: SpeechRateSetting[] = ["slow", "normal", "fast"];
+const speechPitchOptions: SpeechPitchSetting[] = ["low", "normal", "high"];
 
 
 function SelectionLabel({
@@ -40,7 +40,7 @@ function SelectionLabel({
         />
       ) : null}
     </View>
-  )
+  );
 }
 
 type Props = {
@@ -55,7 +55,7 @@ type Props = {
   onSelectTtsEnabled?: (enabled: boolean) => void;
   onSelectSpeechRate?: (rate: SpeechRateSetting) => void;
   onSelectSpeechPitch?: (pitch: SpeechPitchSetting) => void;
-}
+};
 
 export function SettingsPanel({
   language,
@@ -79,8 +79,8 @@ export function SettingsPanel({
         </View>
         <View style={styles.levelRow}>
           {selectableLevels.map((candidateLevel) => {
-            const isActive = level === candidateLevel
-            const levelTheme = getLevelTheme(candidateLevel)
+            const isActive = level === candidateLevel;
+            const levelTheme = getLevelTheme(candidateLevel);
 
             return (
               <Pressable
@@ -103,7 +103,7 @@ export function SettingsPanel({
                   activeIconColor={colors.surface}
                 />
               </Pressable>
-            )
+            );
           })}
         </View>
       </Card>
@@ -116,13 +116,13 @@ export function SettingsPanel({
         <Text style={styles.helper}>{t(language, "languageHelper")}</Text>
         <View style={styles.languageList}>
           {selectableLanguages.map((candidateLanguage) => {
-            const isActive = language === candidateLanguage
+            const isActive = language === candidateLanguage;
             const label =
               candidateLanguage === "system"
                 ? `${t(language, "languageSystem")} · ${t(language, "languageSystemValue")}`
                 : candidateLanguage === "ko"
                   ? t(language, "languageKorean")
-                  : t(language, "languageEnglish")
+                  : t(language, "languageEnglish");
 
             return (
               <Pressable
@@ -142,7 +142,7 @@ export function SettingsPanel({
                   activeIconColor={colors.text}
                 />
               </Pressable>
-            )
+            );
           })}
         </View>
       </Card>
@@ -160,7 +160,7 @@ export function SettingsPanel({
               <Text style={styles.optionLabel}>{t(language, "ttsSettings")}</Text>
               <View style={styles.chipRow}>
                 {[true, false].map((enabled) => {
-                  const isActive = ttsEnabled === enabled
+                  const isActive = ttsEnabled === enabled;
 
                   return (
                     <Pressable
@@ -180,7 +180,7 @@ export function SettingsPanel({
                         activeIconColor={colors.text}
                       />
                     </Pressable>
-                  )
+                  );
                 })}
               </View>
             </View>
@@ -189,13 +189,13 @@ export function SettingsPanel({
               <Text style={styles.optionLabel}>{t(language, "speechRate")}</Text>
               <View style={styles.chipRow}>
                 {speechRateOptions.map((option) => {
-                  const isActive = speechRate === option
+                  const isActive = speechRate === option;
                   const labelKey =
                     option === "slow"
                       ? "speechRateSlow"
                       : option === "fast"
                         ? "speechRateFast"
-                        : "speechRateNormal"
+                        : "speechRateNormal";
 
                   return (
                     <Pressable
@@ -217,7 +217,7 @@ export function SettingsPanel({
                         activeIconColor={colors.text}
                       />
                     </Pressable>
-                  )
+                  );
                 })}
               </View>
             </View>
@@ -226,13 +226,13 @@ export function SettingsPanel({
               <Text style={styles.optionLabel}>{t(language, "speechPitch")}</Text>
               <View style={styles.chipRow}>
                 {speechPitchOptions.map((option) => {
-                  const isActive = speechPitch === option
+                  const isActive = speechPitch === option;
                   const labelKey =
                     option === "low"
                       ? "speechPitchLow"
                       : option === "high"
                         ? "speechPitchHigh"
-                        : "speechPitchNormal"
+                        : "speechPitchNormal";
 
                   return (
                     <Pressable
@@ -254,7 +254,7 @@ export function SettingsPanel({
                         activeIconColor={colors.text}
                       />
                     </Pressable>
-                  )
+                  );
                 })}
               </View>
             </View>
@@ -266,7 +266,7 @@ export function SettingsPanel({
 
 
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -394,4 +394,4 @@ const styles = StyleSheet.create({
   pressed: {
     transform: [{ translateY: 1 }]
   }
-})
+});

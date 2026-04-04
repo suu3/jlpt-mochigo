@@ -1,16 +1,16 @@
-import React from "react"
-import { Pressable, StyleSheet, View, useWindowDimensions } from "react-native"
-import { AppText as Text } from "./AppText"
-import { AppIcon } from "./AppIcon"
-import { borderWidths, breakpoints, colors, radii, spacing } from "../constants/theme"
-import { t } from "../lib/i18n"
-import { useAppStore } from "../store/useAppStore"
+import React from "react";
+import { Pressable, StyleSheet, View, useWindowDimensions } from "react-native";
+import { AppText as Text } from "./AppText";
+import { AppIcon } from "./AppIcon";
+import { borderWidths, breakpoints, colors, radii, spacing } from "../constants/theme";
+import { t } from "../lib/i18n";
+import { useAppStore } from "../store/useAppStore";
 
 export function BottomNav() {
-  const { width } = useWindowDimensions()
-  const { settings, screen, goHome, openReview, openWords, openBookmarks, openSettings } = useAppStore()
-  const copy = settings.language
-  const isCompact = width <= breakpoints.phoneCompact
+  const { width } = useWindowDimensions();
+  const { settings, screen, goHome, openReview, openWords, openBookmarks, openSettings } = useAppStore();
+  const copy = settings.language;
+  const isCompact = width <= breakpoints.phoneCompact;
 
   return (
     <View style={[styles.wrap, isCompact && styles.wrapCompact]}>
@@ -91,7 +91,7 @@ export function BottomNav() {
         </Pressable>
       </View>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -162,4 +162,4 @@ const styles = StyleSheet.create({
   labelActive: {
     color: colors.text
   }
-})
+});

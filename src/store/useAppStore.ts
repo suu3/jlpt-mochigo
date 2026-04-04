@@ -1,9 +1,9 @@
-import { create } from "zustand"
-import { LEVELS_ASCENDING } from "../data/levelLoader"
-import { quizDatabase } from "../lib/database"
-import { AppLanguage, resolveLanguage } from "../lib/i18n"
-import { buildSessionQuestions, getStudyWords } from "../lib/quiz"
-import { storage } from "../lib/storage"
+import { create } from "zustand";
+import { LEVELS_ASCENDING } from "../data/levelLoader";
+import { quizDatabase } from "../lib/database";
+import { AppLanguage, resolveLanguage } from "../lib/i18n";
+import { buildSessionQuestions, getStudyWords } from "../lib/quiz";
+import { storage } from "../lib/storage";
 import {
   AppSettings,
   DailyProgress,
@@ -16,9 +16,9 @@ import {
   SpeechRateSetting,
   WordEntry,
   WrongAnswerRecord
-} from "../types/app"
+} from "../types/app";
 
-type Screen = "setup" | "home" | "quiz" | "result" | "review" | "words" | "bookmarks" | "settings"
+type Screen = "setup" | "home" | "quiz" | "result" | "review" | "words" | "bookmarks" | "settings";
 
 type AppState = {
   isReady: boolean;
@@ -40,11 +40,14 @@ type AppState = {
   currentWrongWordIds: string[];
   lastSummary: SessionSummary | null;
   totalStudyCount: number;
+  selectedSource: QuizSource;
   initialize: () => Promise<void>;
+  refreshWordData: () => Promise<void>;
   ensureLevelWords: (level: JLPTLevel) => Promise<WordEntry[]>;
   preloadAllLevels: () => Promise<void>;
   setLevel: (level: JLPTLevel) => Promise<void>;
   setLanguage: (language: AppLanguage) => Promise<void>;
+  setSelectedSource: (source: QuizSource) => void;
   setTtsEnabled: (enabled: boolean) => Promise<void>;
   setSpeechRate: (rate: SpeechRateSetting) => Promise<void>;
   setSpeechPitch: (pitch: SpeechPitchSetting) => Promise<void>;
@@ -66,16 +69,16 @@ type AppState = {
   openBookmarks: () => Promise<void>;
   openSettings: () => void;
   speakEnabled: () => boolean;
-}
+};
 
 function todayKey() {
-  return new Date().toISOString().slice(0, 10)
+  return new Date().toISOString().slice(0, 10);
 }
 
 function yesterdayKey() {
-  const date = new Date()
-  date.setDate(date.getDate() - 1)
-  return date.toISOString().slice(0, 10)
+  const date = new Date();
+  date.setDate(date.getDate() - 1);
+  return date.toISOString().slice(0, 10);
 }
 
 function defaultSettings(): AppSettings {
@@ -85,7 +88,7 @@ function defaultSettings(): AppSettings {
     speechRate: "normal",
     speechPitch: "normal",
     language: "system"
-  }
+  };
 }
 
 function defaultProgress(): DailyProgress {
@@ -93,38 +96,38 @@ function defaultProgress(): DailyProgress {
     date: todayKey(),
     completedSessions: 0,
     goal: 3
-  }
+  };
 }
 
 export const useAppStore = create<AppState>((set, get) => {
   const ensureLevelWords = async (level: JLPTLevel) => {
-    const { settings, wordsByLevel } = get()
-    const cachedWords = wordsByLevel[level]
+    const { settings, wordsByLevel } = get();
+    const cachedWords = wordsByLevel[level];
     if (cachedWords) {
-      return cachedWords
+      return cachedWords;
     }
 
-    set({ isWordDataLoading: true })
+    set({ isWordDataLoading: true });
 
     try {
-      const levelWords = await quizDatabase.getLevelWords(level, settings.language)
+      const levelWords = await quizDatabase.getLevelWords(level, settings.language);
       set((state) => ({
         wordsByLevel: {
           ...state.wordsByLevel,
           [level]: levelWords
         }
-      }))
-      return levelWords
+      }));
+      return levelWords;
     } finally {
-      set({ isWordDataLoading: false })
+      set({ isWordDataLoading: false });
     }
-  }
+  };
 
   const preloadAllLevels = async () => {
     for (const level of LEVELS_ASCENDING) {
-      await ensureLevelWords(level)
+      await ensureLevelWords(level);
     }
-  }
+  };
 
   return {
     isReady: false,
@@ -146,13 +149,14 @@ export const useAppStore = create<AppState>((set, get) => {
     currentWrongWordIds: [],
     lastSummary: null,
     totalStudyCount: 0,
+    selectedSource: "jlpt",
 
     async initialize() {
-      const fallbackSettings = defaultSettings()
-      const fallbackProgress = defaultProgress()
+      const fallbackSettings = defaultSettings();
+      const fallbackProgress = defaultProgress();
 
-      await quizDatabase.migrateLegacyDataIfNeeded()
-      await quizDatabase.clearWordCache() // Clear cache on every run as requested
+      await quizDatabase.migrateLegacyDataIfNeeded();
+      // Removed: quizDatabase.clearWordCache() - Should not clear on every run
 
       const [
         storedSettings,
@@ -174,29 +178,24 @@ export const useAppStore = create<AppState>((set, get) => {
         storage.readCustomWords([]),
         storage.readBookmarkWordIds(),
         storage.readMemorizedWordIds()
-      ])
+      ]);
 
       const settings = {
         ...fallbackSettings,
         ...storedSettings
-      }
+      };
 
-      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {}
-      const allLevels = await Promise.all(
-        LEVELS_ASCENDING.map(async (level) => {
-          const words = await quizDatabase.getLevelWords(level, settings.language)
-          return { level, words }
-        })
-      )
-      for (const { level, words } of allLevels) {
-        wordsByLevel[level] = words
-      }
+      // Optimization: Only load the words for the current selected level at startup
+      set({ isWordDataLoading: true });
+      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
+      const currentLevelWords = await quizDatabase.getLevelWords(settings.level, settings.language);
+      wordsByLevel[settings.level] = currentLevelWords;
 
-      const totalStudyCount = history.reduce((sum, entry) => sum + entry.total, 0)
+      const totalStudyCount = history.reduce((sum, entry) => sum + entry.total, 0);
       const normalizedProgress =
         progress.date === todayKey()
           ? progress
-          : { ...fallbackProgress, goal: progress.goal }
+          : { ...fallbackProgress, goal: progress.goal };
 
       set({
         isReady: true,
@@ -213,7 +212,25 @@ export const useAppStore = create<AppState>((set, get) => {
         memorizedWordIds,
         isWordDataLoading: false,
         totalStudyCount
-      })
+      });
+    },
+
+    async refreshWordData() {
+      const { settings } = get();
+      set({ isWordDataLoading: true });
+      
+      try {
+        await quizDatabase.clearWordCache();
+        const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
+        // Reload all levels to ensure entire cache is fresh
+        for (const level of LEVELS_ASCENDING) {
+          const words = await quizDatabase.getLevelWords(level, settings.language);
+          wordsByLevel[level] = words;
+        }
+        set({ wordsByLevel });
+      } finally {
+        set({ isWordDataLoading: false });
+      }
     },
 
     ensureLevelWords,
@@ -221,52 +238,72 @@ export const useAppStore = create<AppState>((set, get) => {
     preloadAllLevels,
 
     async setLevel(level) {
-      const nextSettings = { ...get().settings, level }
-      set({ settings: nextSettings })
-      await storage.writeSettings(nextSettings)
-      await ensureLevelWords(level)
+      const { settings, wordsByLevel } = get();
+      const needsLoad = !wordsByLevel[level];
+      
+      const nextSettings = { ...settings, level };
+      set({ 
+        settings: nextSettings,
+        isWordDataLoading: needsLoad || get().isWordDataLoading
+      });
+      
+      await storage.writeSettings(nextSettings);
+      await ensureLevelWords(level);
     },
 
     async setLanguage(language) {
-      const nextSettings = { ...get().settings, language }
+      const nextSettings = { ...get().settings, language };
       set({ 
         settings: nextSettings,
-        wordsByLevel: {}, // Clear cache on language change
+        wordsByLevel: {}, // Clear memory cache
         isWordDataLoading: true 
-      })
-      await storage.writeSettings(nextSettings)
-      await quizDatabase.clearWordCache() // Clear SQLite cache for new language
+      });
+      await storage.writeSettings(nextSettings);
       
-      const allLevels = await Promise.all(
-        LEVELS_ASCENDING.map(async (level) => {
-          const words = await quizDatabase.getLevelWords(level, nextSettings.language)
-          return { level, words }
-        })
-      )
-      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {}
-      for (const { level, words } of allLevels) {
-        wordsByLevel[level] = words
-      }
+      // Clear SQLite cache for new language to ensure fresh translations
+      await quizDatabase.clearWordCache();
+      
+      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {};
+      // Load current level immediately
+      const words = await quizDatabase.getLevelWords(nextSettings.level, nextSettings.language);
+      wordsByLevel[nextSettings.level] = words;
 
-      set({ wordsByLevel, isWordDataLoading: false })
+      set({ wordsByLevel, isWordDataLoading: false });
+      
+      // Load other levels in background
+      for (const level of LEVELS_ASCENDING) {
+        if (level !== nextSettings.level) {
+          quizDatabase.getLevelWords(level, nextSettings.language)
+            .then(words => {
+              set(state => ({
+                wordsByLevel: { ...state.wordsByLevel, [level]: words }
+              }));
+            })
+            .catch(error => console.error(`Failed to preload level ${level}`, error));
+        }
+      }
+    },
+
+    setSelectedSource(selectedSource) {
+      set({ selectedSource });
     },
 
     async setTtsEnabled(ttsEnabled) {
-      const nextSettings = { ...get().settings, ttsEnabled }
-      set({ settings: nextSettings })
-      await storage.writeSettings(nextSettings)
+      const nextSettings = { ...get().settings, ttsEnabled };
+      set({ settings: nextSettings });
+      await storage.writeSettings(nextSettings);
     },
 
     async setSpeechRate(speechRate) {
-      const nextSettings = { ...get().settings, speechRate }
-      set({ settings: nextSettings })
-      await storage.writeSettings(nextSettings)
+      const nextSettings = { ...get().settings, speechRate };
+      set({ settings: nextSettings });
+      await storage.writeSettings(nextSettings);
     },
 
     async setSpeechPitch(speechPitch) {
-      const nextSettings = { ...get().settings, speechPitch }
-      set({ settings: nextSettings })
-      await storage.writeSettings(nextSettings)
+      const nextSettings = { ...get().settings, speechPitch };
+      set({ settings: nextSettings });
+      await storage.writeSettings(nextSettings);
     },
 
 
@@ -275,28 +312,32 @@ export const useAppStore = create<AppState>((set, get) => {
       const nextSettings = {
         ...get().settings,
         ...partialSettings
-      }
+      };
 
       set({
         settings: nextSettings,
         hasCompletedOnboarding: true,
         screen: "home"
-      })
+      });
 
       await Promise.all([
         storage.writeSettings(nextSettings),
         storage.writeOnboardingCompleted(true)
-      ])
+      ]);
+
+      // After onboarding, ensure current level is loaded
+      await ensureLevelWords(nextSettings.level);
     },
 
     async resetStudyData() {
-      const progress = defaultProgress()
+      const progress = defaultProgress();
 
       set({
         dailyProgress: progress,
         streak: 0,
         wrongAnswers: [],
         history: [],
+        customWords: [], // Now clearing custom words as well
         bookmarkWordIds: [],
         memorizedWordIds: [],
         currentQuestions: [],
@@ -305,25 +346,26 @@ export const useAppStore = create<AppState>((set, get) => {
         lastSummary: null,
         totalStudyCount: 0,
         screen: "home"
-      })
+      });
 
       await Promise.all([
         quizDatabase.clearStudyData(),
         storage.clearProgress(),
         storage.clearStreak(),
         storage.clearBookmarkWordIds(),
-        storage.clearMemorizedWordIds()
-      ])
+        storage.clearMemorizedWordIds(),
+        storage.writeCustomWords([]) // Persist the empty custom words
+      ]);
     },
 
     async addCustomWord(input) {
-      const state = get()
-      const trimmedKana = input.kana.trim()
-      const trimmedKanji = (input.kanji ?? "").trim()
-      const trimmedMeaning = input.meaning.trim()
+      const state = get();
+      const trimmedKana = input.kana.trim();
+      const trimmedKanji = (input.kanji ?? "").trim();
+      const trimmedMeaning = input.meaning.trim();
 
       if (!trimmedKana || !trimmedMeaning) {
-        return
+        return;
       }
 
       const customWord: WordEntry = {
@@ -334,56 +376,56 @@ export const useAppStore = create<AppState>((set, get) => {
         meaningKo: resolveLanguage(state.settings.language) === "ko" ? trimmedMeaning : undefined,
         jlptLevel: state.settings.level,
         source: "custom"
-      }
+      };
 
-      const customWords = [customWord, ...state.customWords]
-      set({ customWords })
-      await storage.writeCustomWords(customWords)
+      const customWords = [customWord, ...state.customWords];
+      set({ customWords });
+      await storage.writeCustomWords(customWords);
     },
 
     async removeCustomWord(wordId) {
-      const state = get()
-      const customWords = state.customWords.filter((word) => word.id !== wordId)
-      const bookmarkWordIds = state.bookmarkWordIds.filter((id) => id !== wordId)
-      const memorizedWordIds = state.memorizedWordIds.filter((id) => id !== wordId)
-      const wrongAnswers = state.wrongAnswers.filter((record) => record.wordId !== wordId)
+      const state = get();
+      const customWords = state.customWords.filter((word) => word.id !== wordId);
+      const bookmarkWordIds = state.bookmarkWordIds.filter((id) => id !== wordId);
+      const memorizedWordIds = state.memorizedWordIds.filter((id) => id !== wordId);
+      const wrongAnswers = state.wrongAnswers.filter((record) => record.wordId !== wordId);
 
       set({
         customWords,
         bookmarkWordIds,
         memorizedWordIds,
         wrongAnswers
-      })
+      });
 
       await Promise.all([
         storage.writeCustomWords(customWords),
         storage.writeBookmarkWordIds(bookmarkWordIds),
         storage.writeMemorizedWordIds(memorizedWordIds)
-      ])
+      ]);
     },
 
     async toggleWordBookmark(wordId) {
       const bookmarkWordIds = get().bookmarkWordIds.includes(wordId)
         ? get().bookmarkWordIds.filter((id) => id !== wordId)
-        : [...get().bookmarkWordIds, wordId]
+        : [...get().bookmarkWordIds, wordId];
 
-      set({ bookmarkWordIds })
-      await storage.writeBookmarkWordIds(bookmarkWordIds)
+      set({ bookmarkWordIds });
+      await storage.writeBookmarkWordIds(bookmarkWordIds);
     },
 
     async toggleWordMemorized(wordId) {
       const memorizedWordIds = get().memorizedWordIds.includes(wordId)
         ? get().memorizedWordIds.filter((id) => id !== wordId)
-        : [...get().memorizedWordIds, wordId]
+        : [...get().memorizedWordIds, wordId];
 
-      set({ memorizedWordIds })
-      await storage.writeMemorizedWordIds(memorizedWordIds)
+      set({ memorizedWordIds });
+      await storage.writeMemorizedWordIds(memorizedWordIds);
     },
 
     async startSession(mode = "mixed", source = "jlpt") {
-      const { settings, wrongAnswers, customWords } = get()
-      const allJlptWords = Object.values(get().wordsByLevel).flat().filter((w): w is WordEntry => !!w)
-      const currentLevelWords = get().wordsByLevel[settings.level] || []
+      const { settings, wrongAnswers, customWords } = get();
+      const allJlptWords = Object.values(get().wordsByLevel).flat().filter((w): w is WordEntry => !!w);
+      const currentLevelWords = get().wordsByLevel[settings.level] || [];
       
       const sourceWords =
         mode === "review"
@@ -392,16 +434,16 @@ export const useAppStore = create<AppState>((set, get) => {
             ? currentLevelWords
             : source === "custom"
               ? customWords
-              : [...currentLevelWords, ...customWords]
+              : [...currentLevelWords, ...customWords];
       
-      const effectiveSource = mode === "review" ? "combined" : source
-      const words = getStudyWords(sourceWords)
+      const effectiveSource = mode === "review" ? "combined" : source;
+      const words = getStudyWords(sourceWords);
 
       if (words.length === 0) {
-        return
+        return;
       }
 
-      const currentQuestions = buildSessionQuestions(words, wrongAnswers, 5, mode, settings.language)
+      const currentQuestions = buildSessionQuestions(words, wrongAnswers, 3, mode, settings.language);
 
       set({
         screen: "quiz",
@@ -410,69 +452,69 @@ export const useAppStore = create<AppState>((set, get) => {
         currentIndex: 0,
         currentWrongWordIds: [],
         lastSummary: null
-      })
+      });
     },
 
     answerCurrentQuestion(isCorrect) {
-      const state = get()
-      const question = state.currentQuestions[state.currentIndex]
+      const state = get();
+      const question = state.currentQuestions[state.currentIndex];
       if (!question) {
-        return
+        return;
       }
 
-      const nextWrongAnswers = [...state.wrongAnswers]
-      const currentWrongWordIds = [...state.currentWrongWordIds]
+      const nextWrongAnswers = [...state.wrongAnswers];
+      const currentWrongWordIds = [...state.currentWrongWordIds];
 
       if (!isCorrect) {
-        currentWrongWordIds.push(question.wordId)
+        currentWrongWordIds.push(question.wordId);
         const index = nextWrongAnswers.findIndex(
           (record) => record.wordId === question.wordId && record.questionType === question.type
-        )
+        );
         if (index >= 0) {
           nextWrongAnswers[index] = {
             ...nextWrongAnswers[index],
             wrongCount: nextWrongAnswers[index].wrongCount + 1,
             lastWrongAt: new Date().toISOString()
-          }
+          };
         } else {
           nextWrongAnswers.push({
             wordId: question.wordId,
             questionType: question.type,
             wrongCount: 1,
             lastWrongAt: new Date().toISOString()
-          })
+          });
         }
 
         const latestRecord = nextWrongAnswers.find(
           (record) => record.wordId === question.wordId && record.questionType === question.type
-        )
+        );
         if (latestRecord) {
           quizDatabase.upsertWrongAnswer(latestRecord).catch((error: unknown) => {
-            console.error("Failed to save wrong answer", error)
-          })
+            console.error("Failed to save wrong answer", error);
+          });
         }
       }
 
-      const nextIndex = state.currentIndex + 1
-      const isSessionDone = nextIndex >= state.currentQuestions.length
+      const nextIndex = state.currentIndex + 1;
+      const isSessionDone = nextIndex >= state.currentQuestions.length;
 
       if (!isSessionDone) {
         set({
           currentIndex: nextIndex,
           wrongAnswers: nextWrongAnswers,
           currentWrongWordIds
-        })
-        return
+        });
+        return;
       }
 
-      const correctCount = state.currentQuestions.length - currentWrongWordIds.length
+      const correctCount = state.currentQuestions.length - currentWrongWordIds.length;
       const progress =
         state.dailyProgress.date === todayKey()
           ? {
               ...state.dailyProgress,
               completedSessions: state.dailyProgress.completedSessions + 1
             }
-          : { date: todayKey(), completedSessions: 1, goal: state.dailyProgress.goal }
+          : { date: todayKey(), completedSessions: 1, goal: state.dailyProgress.goal };
 
       const historyEntry: SessionHistory = {
         id: `${Date.now()}`,
@@ -481,23 +523,23 @@ export const useAppStore = create<AppState>((set, get) => {
         total: state.currentQuestions.length,
         correct: correctCount,
         wrongWordIds: currentWrongWordIds
-      }
+      };
 
-      const history = [historyEntry, ...state.history].slice(0, 20)
+      const history = [historyEntry, ...state.history].slice(0, 20);
       const wrongWords = state.currentQuestions
         .map((item) => item.word)
-        .filter((word, index, words) => currentWrongWordIds.includes(word.id) && words.findIndex((candidate) => candidate.id === word.id) === index)
+        .filter((word, index, words) => currentWrongWordIds.includes(word.id) && words.findIndex((candidate) => candidate.id === word.id) === index);
 
-      const completedAt = historyEntry.completedAt.slice(0, 10)
-      const previousDate = state.history[0]?.completedAt.slice(0, 10)
+      const completedAt = historyEntry.completedAt.slice(0, 10);
+      const previousDate = state.history[0]?.completedAt.slice(0, 10);
       const shouldIncreaseStreak =
-        previousDate === yesterdayKey() || state.streak === 0 || previousDate === completedAt
+        previousDate === yesterdayKey() || state.streak === 0 || previousDate === completedAt;
       const streak =
         previousDate === completedAt
           ? state.streak
           : shouldIncreaseStreak
             ? state.streak + 1
-            : 1
+            : 1;
 
       set({
         screen: "result",
@@ -512,42 +554,58 @@ export const useAppStore = create<AppState>((set, get) => {
           totalCount: state.currentQuestions.length,
           wrongWords
         }
-      })
+      });
 
       Promise.all([
         quizDatabase.insertHistory(historyEntry),
         storage.writeProgress(progress),
         storage.writeStreak(streak)
       ]).catch((error: unknown) => {
-        console.error("Failed to persist session results", error)
-      })
+        console.error("Failed to persist session results", error);
+      });
     },
 
     goHome() {
-      set({ screen: "home" })
+      set({ screen: "home" });
     },
 
     async openReview() {
-      set({ screen: "review" })
-      await ensureLevelWords(get().settings.level)
+      const { settings, wordsByLevel } = get();
+      const needsLoad = !wordsByLevel[settings.level];
+      
+      set({ 
+        screen: "review",
+        isWordDataLoading: needsLoad || get().isWordDataLoading
+      });
+      await ensureLevelWords(settings.level);
     },
 
     async openWords() {
-      set({ screen: "words" })
-      await ensureLevelWords(get().settings.level)
+      const { settings, wordsByLevel } = get();
+      const needsLoad = !wordsByLevel[settings.level];
+
+      set({ 
+        screen: "words",
+        isWordDataLoading: needsLoad || get().isWordDataLoading
+      });
+      await ensureLevelWords(settings.level);
     },
 
     async openBookmarks() {
-      await preloadAllLevels()
-      set({ screen: "bookmarks" })
+      set({ 
+        screen: "bookmarks",
+        isWordDataLoading: true
+      });
+      await preloadAllLevels();
+      set({ isWordDataLoading: false });
     },
 
     openSettings() {
-      set({ screen: "settings" })
+      set({ screen: "settings" });
     },
 
     speakEnabled() {
-      return get().settings.ttsEnabled
+      return get().settings.ttsEnabled;
     }
-  }
-})
+  };
+});

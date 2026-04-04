@@ -1,105 +1,126 @@
-import React from "react"
-import { StyleSheet, View } from "react-native"
-import { AppIcon } from "../components/AppIcon"
-import { AppText as Text } from "../components/AppText"
-import { BunnyBadge } from "../components/BunnyBadge"
-import { Card } from "../components/Card"
-import { CelebrationBurst } from "../components/CelebrationBurst"
-import { PrimaryButton } from "../components/PrimaryButton"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { t, tf } from "../lib/i18n"
-import { getLocalizedMeaning } from "../lib/quiz"
-import { useAppStore } from "../store/useAppStore"
-import { FoxTeacher } from "../components/FoxTeacher"
-import { MetricPill } from "../components/MetricPill"
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { AppIcon } from "../components/AppIcon";
+import { AppText as Text } from "../components/AppText";
+import { BunnyBadge } from "../components/BunnyBadge";
+import { Card } from "../components/Card";
+import { CelebrationBurst } from "../components/CelebrationBurst";
+import { PrimaryButton } from "../components/PrimaryButton";
+import { AnimateEntrance } from "../components/AnimateEntrance";
+import { borderWidths, colors, radii, spacing, animations } from "../constants/theme";
+import { t, tf } from "../lib/i18n";
+import { getLocalizedMeaning } from "../lib/quiz";
+import { useAppStore } from "../store/useAppStore";
+import { FoxTeacher } from "../components/FoxTeacher";
 
 export function ResultScreen() {
-  const { settings, streak, dailyProgress, lastSummary, currentSessionSource, startSession, goHome } = useAppStore()
-  const copy = settings.language
+  const { settings, streak, dailyProgress, lastSummary, currentSessionSource, startSession, goHome } = useAppStore();
+  const copy = settings.language;
 
   if (!lastSummary) {
-    return null
+    return null;
   }
 
-  const ratio = lastSummary.correctCount / lastSummary.totalCount
-  const mood = ratio >= 0.8 ? "happy" : "soft"
-  const firstWrongWord = lastSummary.wrongWords[0]
-  const filledGarden = Array.from({ length: lastSummary.totalCount }, (_, index) => index < lastSummary.correctCount)
-  const hasCompletedDailyGoal = dailyProgress.completedSessions >= dailyProgress.goal
+  const ratio = lastSummary.correctCount / lastSummary.totalCount;
+  const mood = ratio >= 0.8 ? "happy" : "soft";
+  const firstWrongWord = lastSummary.wrongWords[0];
+  const filledGarden = Array.from({ length: lastSummary.totalCount }, (_, index) => index < lastSummary.correctCount);
+  const hasCompletedDailyGoal = dailyProgress.completedSessions >= dailyProgress.goal;
 
   return (
-    <View style={styles.container}>
-      <View style={styles.hero}>
-        <View style={[styles.bunnyHero, hasCompletedDailyGoal && styles.bunnyHeroCelebration]}>
-          <CelebrationBurst active={hasCompletedDailyGoal} />
-          {hasCompletedDailyGoal ? (
-            <FoxTeacher type="good" size={160} />
+    <AnimateEntrance type="fade" duration={animations.duration.base}>
+      <View style={styles.container}>
+      <AnimateEntrance type="scale" duration={600}>
+        <View style={styles.hero}>
+          <View style={[styles.bunnyHero, hasCompletedDailyGoal && styles.bunnyHeroCelebration]}>
+            <CelebrationBurst active={hasCompletedDailyGoal} delay={600} intensity="high" />
+            {hasCompletedDailyGoal ? (
+              <FoxTeacher type="good" size={160} />
+            ) : (
+              <BunnyBadge mood={mood} />
+            )}
+          </View>
+          <Text style={styles.score}>{tf(copy, "resultScore", { correct: lastSummary.correctCount, total: lastSummary.totalCount })}</Text>
+          <Text style={styles.kicker}>{t(copy, hasCompletedDailyGoal ? "goalCompleteKicker" : "resultKicker")}</Text>
+          {hasCompletedDailyGoal ? <Text style={styles.goalPrompt}>{t(copy, "goalCompletePrompt")}</Text> : null}
+        </View>
+      </AnimateEntrance>
+
+      <AnimateEntrance delay={150}>
+        <Card style={styles.metricsCard}>
+          <View style={styles.metricItem}>
+            <Text style={styles.metricLabel}>{t(copy, "accuracy")}</Text>
+            <Text style={[styles.metricValue, { color: colors.garden }]}>{Math.round(ratio * 100)}%</Text>
+          </View>
+          <View style={styles.metricDivider} />
+          <View style={styles.metricItem}>
+            <Text style={styles.metricLabel}>{t(copy, "streak")}</Text>
+            <Text style={[styles.metricValue, { color: colors.amberDeep }]}>{tf(copy, "streakValue", { count: streak })}</Text>
+          </View>
+        </Card>
+      </AnimateEntrance>
+
+      <AnimateEntrance delay={300}>
+        <Card style={styles.reviewCard}>
+          <View style={styles.reviewHeader}>
+            <Text style={styles.reviewEyebrow}>{t(copy, "needsReview")}</Text>
+            <AppIcon name="chevronRight" size={18} color={colors.text} />
+          </View>
+          {firstWrongWord ? (
+            <Text style={styles.reviewWord}>
+              {firstWrongWord.kana} <Text style={styles.reviewMeaning}>({getLocalizedMeaning(firstWrongWord, settings.language)})</Text>
+            </Text>
           ) : (
-            <BunnyBadge mood={mood} />
+            <Text style={styles.reviewWord}>{t(copy, "perfectRound")}</Text>
           )}
+        </Card>
+      </AnimateEntrance>
+
+      <AnimateEntrance delay={450}>
+        <View style={styles.gardenWrap}>
+          <Text style={styles.gardenLabel}>{t(copy, "gardenGrowth")}</Text>
+          <View style={styles.gardenRow}>
+            {filledGarden.map((filled, index) => (
+              <View key={`${filled ? "filled" : "empty"}-${index}`} style={[styles.gardenDot, filled ? styles.gardenDotFilled : styles.gardenDotEmpty]} />
+            ))}
+          </View>
         </View>
-        <Text style={styles.score}>{tf(copy, "resultScore", { correct: lastSummary.correctCount, total: lastSummary.totalCount })}</Text>
-        <Text style={styles.kicker}>{t(copy, hasCompletedDailyGoal ? "goalCompleteKicker" : "resultKicker")}</Text>
-        {hasCompletedDailyGoal ? <Text style={styles.goalPrompt}>{t(copy, "goalCompletePrompt")}</Text> : null}
-      </View>
+      </AnimateEntrance>
 
-      <View style={styles.statsGrid}>
-        <MetricPill label={t(copy, "accuracy")} value={`${Math.round(ratio * 100)}%`} tone="garden" icon="sprout" />
-        <MetricPill label={t(copy, "streak")} value={tf(copy, "streakValue", { count: streak })} tone="amber" icon="carrot" />
-      </View>
+      <AnimateEntrance delay={600}>
+        <Card>
+          <Text style={styles.sectionLabel}>{t(copy, "missedWords")}</Text>
+          {lastSummary.wrongWords.length === 0 ? (
+            <Text style={styles.preview}>{t(copy, "nothingToReview")}</Text>
+          ) : (
+            lastSummary.wrongWords.map((word) => (
+              <View key={word.id} style={styles.wordRow}>
+                <Text style={styles.word}>{word.kanji || word.kana}</Text>
+                <Text style={styles.meaning}>{word.kana} · {getLocalizedMeaning(word, settings.language)}</Text>
+              </View>
+            ))
+          )}
+        </Card>
+      </AnimateEntrance>
 
-      <Card style={styles.reviewCard}>
-        <View style={styles.reviewHeader}>
-          <Text style={styles.reviewEyebrow}>{t(copy, "needsReview")}</Text>
-          <AppIcon name="chevronRight" size={18} color={colors.text} />
+      <AnimateEntrance delay={750} type="lift">
+        <View style={styles.actions}>
+          <PrimaryButton 
+            label={t(copy, "playAgain")} 
+            onPress={() => startSession("mixed", currentSessionSource)} 
+            decoration="retry"
+          />
+          <PrimaryButton
+            label={t(copy, "goHome")}
+            onPress={goHome}
+            variant="secondary"
+            decoration="home"
+          />
         </View>
-        {firstWrongWord ? (
-          <Text style={styles.reviewWord}>
-            {firstWrongWord.kana} <Text style={styles.reviewMeaning}>({getLocalizedMeaning(firstWrongWord, settings.language)})</Text>
-          </Text>
-        ) : (
-          <Text style={styles.reviewWord}>{t(copy, "perfectRound")}</Text>
-        )}
-      </Card>
-
-      <View style={styles.gardenWrap}>
-        <Text style={styles.gardenLabel}>{t(copy, "gardenGrowth")}</Text>
-        <View style={styles.gardenRow}>
-          {filledGarden.map((filled, index) => (
-            <View key={`${filled ? "filled" : "empty"}-${index}`} style={[styles.gardenDot, filled ? styles.gardenDotFilled : styles.gardenDotEmpty]} />
-          ))}
-        </View>
+      </AnimateEntrance>
       </View>
-
-      <Card>
-        <Text style={styles.sectionLabel}>{t(copy, "missedWords")}</Text>
-        {lastSummary.wrongWords.length === 0 ? (
-          <Text style={styles.preview}>{t(copy, "nothingToReview")}</Text>
-        ) : (
-          lastSummary.wrongWords.map((word) => (
-            <View key={word.id} style={styles.wordRow}>
-              <Text style={styles.word}>{word.kanji || word.kana}</Text>
-              <Text style={styles.meaning}>{word.kana} · {getLocalizedMeaning(word, settings.language)}</Text>
-            </View>
-          ))
-        )}
-      </Card>
-
-      <View style={styles.actions}>
-        <PrimaryButton 
-          label={t(copy, "playAgain")} 
-          onPress={() => startSession("mixed", currentSessionSource)} 
-          decoration="retry"
-        />
-        <PrimaryButton
-          label={t(copy, "goHome")}
-          onPress={goHome}
-          variant="secondary"
-          decoration="home"
-        />
-      </View>
-    </View>
-  )
+    </AnimateEntrance>
+  );
 }
 
 const styles = StyleSheet.create({
@@ -146,25 +167,32 @@ const styles = StyleSheet.create({
     lineHeight: 22,
     textAlign: "center"
   },
-  statsGrid: {
+  metricsCard: {
     flexDirection: "row",
-    gap: spacing.md
+    backgroundColor: colors.surface,
+    paddingVertical: spacing.md
   },
-  statCard: {
-    flex: 1
+  metricItem: {
+    flex: 1,
+    alignItems: "center",
+    gap: 4
   },
-  statEyebrow: {
-    color: colors.textMuted,
+  metricDivider: {
+    width: borderWidths.base,
+    backgroundColor: colors.borderSoft,
+    marginVertical: spacing.xs
+  },
+  metricLabel: {
     fontSize: 10,
     fontWeight: "900",
-    letterSpacing: 1.2,
+    color: colors.textMuted,
     textTransform: "uppercase",
-    marginBottom: spacing.sm
+    letterSpacing: 1.2
   },
-  statValue: {
-    color: colors.text,
-    fontSize: 28,
-    fontWeight: "900"
+  metricValue: {
+    fontSize: 24,
+    fontWeight: "900",
+    color: colors.text
   },
   reviewCard: {
     backgroundColor: colors.surface
@@ -245,4 +273,4 @@ const styles = StyleSheet.create({
     color: colors.textMuted,
     marginTop: 4
   }
-})
+});

@@ -1,4 +1,4 @@
-import { WordEntry } from "../types/app"
+import { WordEntry } from "../types/app";
 
 export const n5Words: WordEntry[] = [
   { id: "n5-1", kana: "がくせい", kanji: "学生", meaning: "student", jlptLevel: "N5" },
@@ -21,4 +21,4 @@ export const n5Words: WordEntry[] = [
   { id: "n5-18", kana: "くるま", kanji: "車", meaning: "car", jlptLevel: "N5" },
   { id: "n5-19", kana: "あたらしい", kanji: "新しい", meaning: "new", jlptLevel: "N5" },
   { id: "n5-20", kana: "たかい", kanji: "高い", meaning: "expensive", jlptLevel: "N5" }
-]
+];

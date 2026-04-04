@@ -1,22 +1,24 @@
-import * as Speech from "expo-speech"
-import React, { useEffect, useMemo, useState } from "react"
-import { ActivityIndicator, Pressable, StyleSheet, TextInput, View, useWindowDimensions } from "react-native"
-import { AppIcon } from "../components/AppIcon"
-import { AppText as Text } from "../components/AppText"
-import { BunnyBadge } from "../components/BunnyBadge"
-import { Card } from "../components/Card"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { resolveLanguage, t, tf } from "../lib/i18n"
-import { getLocalizedMeaning, getStudyWords } from "../lib/quiz"
-import { getSpeechOptions } from "../lib/speech"
-import { useAppStore } from "../store/useAppStore"
-import { WordEntry } from "../types/app"
-import { FoxTeacher } from "../components/FoxTeacher"
+import * as Speech from "expo-speech";
+import React, { useEffect, useMemo, useState } from "react";
+import { ActivityIndicator, Pressable, StyleSheet, TextInput, View, useWindowDimensions } from "react-native";
+import { AppIcon } from "../components/AppIcon";
+import { AppText as Text } from "../components/AppText";
+import { BunnyBadge } from "../components/BunnyBadge";
+import { Card } from "../components/Card";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
+import { resolveLanguage, t, tf } from "../lib/i18n";
+import { getLocalizedMeaning, getStudyWords } from "../lib/quiz";
+import { getSpeechOptions } from "../lib/speech";
+import { useAppStore } from "../store/useAppStore";
+import { FoxTeacher } from "../components/FoxTeacher";
+import { AnimateEntrance } from "../components/AnimateEntrance";
+import { ScaleInteract } from "../components/ScaleInteract";
+import { animations } from "../constants/theme";
 
-const PAGE_SIZE = 24
-type MemorizedFilter = "all" | "hidden" | "only"
-type WordTab = "jlpt" | "custom"
-type FilterAccordion = "kanaRow" | "length" | "memorized" | null
+const PAGE_SIZE = 24;
+type MemorizedFilter = "all" | "hidden" | "only";
+type WordTab = "jlpt" | "custom";
+type FilterAccordion = "kanaRow" | "length" | "memorized" | null;
 type KanaRowFilter =
   | "a"
   | "ka"
@@ -27,7 +29,7 @@ type KanaRowFilter =
   | "ma"
   | "ya"
   | "ra"
-  | "wa"
+  | "wa";
 
 const KANA_ROW_OPTIONS: KanaRowFilter[] = [
   "a",
@@ -40,7 +42,7 @@ const KANA_ROW_OPTIONS: KanaRowFilter[] = [
   "ya",
   "ra",
   "wa"
-]
+];
 
 const KANA_ROW_LABEL_KEYS: Record<
   KanaRowFilter,
@@ -65,7 +67,7 @@ const KANA_ROW_LABEL_KEYS: Record<
   ya: "kanaRowya",
   ra: "kanaRowra",
   wa: "kanaRowwa"
-}
+};
 
 const SMALL_KANA_NORMALIZATION: Record<string, string> = {
   ぁ: "あ",
@@ -80,7 +82,7 @@ const SMALL_KANA_NORMALIZATION: Record<string, string> = {
   ゎ: "わ",
   ゕ: "か",
   ゖ: "け"
-}
+};
 
 const HIRAGANA_ROW_MAP: Record<string, KanaRowFilter> = {
   あ: "a",
@@ -156,30 +158,30 @@ const HIRAGANA_ROW_MAP: Record<string, KanaRowFilter> = {
   ゑ: "wa",
   を: "wa",
   ん: "wa"
-}
+};
 
 function getWordLength(kana: string) {
-  return Array.from(kana.replace(/\s+/g, "")).length
+  return Array.from(kana.replace(/\s+/g, "")).length;
 }
 
 function normalizeKanaLeadCharacter(kana: string) {
-  const leadCharacter = kana.trim().charAt(0)
+  const leadCharacter = kana.trim().charAt(0);
 
   if (!leadCharacter) {
-    return ""
+    return "";
   }
 
   const normalizedKatakana =
     leadCharacter >= "ァ" && leadCharacter <= "ヶ"
       ? String.fromCharCode(leadCharacter.charCodeAt(0) - 0x60)
-      : leadCharacter
+      : leadCharacter;
 
-  return SMALL_KANA_NORMALIZATION[normalizedKatakana] ?? normalizedKatakana
+  return SMALL_KANA_NORMALIZATION[normalizedKatakana] ?? normalizedKatakana;
 }
 
 function getKanaRow(kana: string) {
-  const normalizedLeadCharacter = normalizeKanaLeadCharacter(kana)
-  return HIRAGANA_ROW_MAP[normalizedLeadCharacter] ?? null
+  const normalizedLeadCharacter = normalizeKanaLeadCharacter(kana);
+  return HIRAGANA_ROW_MAP[normalizedLeadCharacter] ?? null;
 }
 
 function renderHighlightedCopy(
@@ -188,23 +190,23 @@ function renderHighlightedCopy(
   textStyles: Partial<Record<string, object>>
 ) {
   return template.split(/(\{\w+\})/g).map((part, index) => {
-    const match = part.match(/^\{(\w+)\}$/)
+    const match = part.match(/^\{(\w+)\}$/);
 
     if (!match) {
-      return part
+      return <Text key={`text-${index}`}>{part}</Text>;
     }
 
-    const token = match[1]
+    const token = match[1];
     return (
       <Text key={`${token}-${index}`} style={textStyles[token]}>
         {values[token]}
       </Text>
-    )
-  })
+    );
+  });
 }
 
 export function WordsScreen() {
-  const { width } = useWindowDimensions()
+  const { width } = useWindowDimensions();
   const {
     settings,
     customWords,
@@ -218,64 +220,60 @@ export function WordsScreen() {
     speakEnabled,
     isWordDataLoading,
     totalStudyCount
-  } = useAppStore()
+  } = useAppStore();
 
-  const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1
+  const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1;
 
-  const [activeTab, setActiveTab] = useState<WordTab>("jlpt")
-  const [selectedLength, setSelectedLength] = useState<number | null>(null)
+  const [activeTab, setActiveTab] = useState<WordTab>("jlpt");
+  const [selectedLength, setSelectedLength] = useState<number | null>(null);
   const [selectedKanaRow, setSelectedKanaRow] = useState<KanaRowFilter | null>(
     null
-  )
+  );
   const [openFilterAccordion, setOpenFilterAccordion] =
-    useState<FilterAccordion>("kanaRow")
+    useState<FilterAccordion>(null);
   const [memorizedFilter, setMemorizedFilter] =
-    useState<MemorizedFilter>("hidden")
-  const [page, setPage] = useState(1)
-  const [showMeanings, setShowMeanings] = useState(true)
-  const [newKana, setNewKana] = useState("")
-  const [newKanji, setNewKanji] = useState("")
-  const [newMeaning, setNewMeaning] = useState("")
-  const [showValidation, setShowValidation] = useState(false)
+    useState<MemorizedFilter>("hidden");
+  const [page, setPage] = useState(1);
+  const [showMeanings, setShowMeanings] = useState(true);
+  const [newKana, setNewKana] = useState("");
+  const [newKanji, setNewKanji] = useState("");
+  const [newMeaning, setNewMeaning] = useState("");
+  const [showValidation, setShowValidation] = useState(false);
   
-  const [filteredWords, setFilteredWords] = useState<WordEntry[]>([])
-  const [lengthOptions, setLengthOptions] = useState<number[]>([])
+  const resolvedLanguage = resolveLanguage(settings.language);
 
-  const resolvedLanguage = resolveLanguage(settings.language)
-
-  useEffect(() => {
-    const sourceWords = wordsByLevel[settings.level] ?? []
-    const studyWords = getStudyWords(sourceWords)
+  const { filteredWords, lengthOptions } = useMemo(() => {
+    const sourceWords = wordsByLevel[settings.level] ?? [];
+    const studyWords = getStudyWords(sourceWords);
     
     const filtered = studyWords.filter((word) => {
       const matchesLength =
         selectedLength === null ||
-        getWordLength(word.kana) === selectedLength
+        getWordLength(word.kana) === selectedLength;
       const matchesKanaRow =
-        selectedKanaRow === null || getKanaRow(word.kana) === selectedKanaRow
-      const isMemorized = memorizedWordIds.includes(word.id)
+        selectedKanaRow === null || getKanaRow(word.kana) === selectedKanaRow;
+      const isMemorized = memorizedWordIds.includes(word.id);
 
       if (!matchesLength || !matchesKanaRow) {
-        return false
+        return false;
       }
 
       if (memorizedFilter === "hidden") {
-        return !isMemorized
+        return !isMemorized;
       }
 
       if (memorizedFilter === "only") {
-        return isMemorized
+        return isMemorized;
       }
 
-      return true
-    })
+      return true;
+    });
 
-    setFilteredWords(filtered)
-    setLengthOptions(
-      Array.from(new Set(studyWords.map((word) => getWordLength(word.kana)))).sort(
-        (left, right) => left - right
-      )
-    )
+    const lengths = Array.from(new Set(studyWords.map((word) => getWordLength(word.kana)))).sort(
+      (left, right) => left - right
+    );
+
+    return { filteredWords: filtered, lengthOptions: lengths };
   }, [
     settings.level,
     wordsByLevel,
@@ -283,122 +281,130 @@ export function WordsScreen() {
     selectedKanaRow,
     memorizedFilter,
     memorizedWordIds
-  ])
+  ]);
 
-  const totalPages = Math.max(1, Math.ceil(filteredWords.length / PAGE_SIZE))
-  const safePage = Math.min(page, totalPages)
+  const totalPages = Math.max(1, Math.ceil(filteredWords.length / PAGE_SIZE));
+  const safePage = Math.min(page, totalPages);
   const visibleWords = filteredWords.slice(
     (safePage - 1) * PAGE_SIZE,
     safePage * PAGE_SIZE
-  )
+  );
   const rangeStart =
-    filteredWords.length === 0 ? 0 : (safePage - 1) * PAGE_SIZE + 1
+    filteredWords.length === 0 ? 0 : (safePage - 1) * PAGE_SIZE + 1;
   const rangeEnd =
     filteredWords.length === 0
       ? 0
-      : Math.min(safePage * PAGE_SIZE, filteredWords.length)
+      : Math.min(safePage * PAGE_SIZE, filteredWords.length);
 
   const visiblePageCount = useMemo(() => {
     if (width < 360) {
-      return 3
+      return 3;
     }
 
     if (width < 420) {
-      return 5
+      return 5;
     }
 
     if (width < 520) {
-      return 7
+      return 7;
     }
 
     if (width < 680) {
-      return 9
+      return 9;
     }
 
-    return 11
-  }, [width])
+    return 11;
+  }, [width]);
 
   const pageWindow = useMemo(() => {
-    const half = Math.floor(visiblePageCount / 2)
+    const half = Math.floor(visiblePageCount / 2);
     const start = Math.max(
       1,
       Math.min(safePage - half, totalPages - visiblePageCount + 1)
-    )
-    const end = Math.min(totalPages, start + visiblePageCount - 1)
+    );
+    const end = Math.min(totalPages, start + visiblePageCount - 1);
 
-    return Array.from({ length: end - start + 1 }, (_, index) => start + index)
-  }, [safePage, totalPages, visiblePageCount])
+    return Array.from({ length: end - start + 1 }, (_, index) => start + index);
+  }, [safePage, totalPages, visiblePageCount]);
 
   useEffect(() => {
-    setPage(1)
-  }, [selectedKanaRow, selectedLength, settings.level, memorizedFilter])
+    setPage(1);
+  }, [selectedKanaRow, selectedLength, settings.level, memorizedFilter]);
 
   useEffect(() => {
     if (page > totalPages) {
-      setPage(totalPages)
+      setPage(totalPages);
     }
-  }, [page, totalPages])
+  }, [page, totalPages]);
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-        <View style={styles.headerRow}>
-          <View style={styles.headerCopy}>
-            <Text style={styles.eyebrow}>
-              {t(settings.language, "wordBankEyebrow")}
-            </Text>
-            <Text style={styles.title}>
-              {t(settings.language, "wordBankTitle")}
-            </Text>
-          </View>
-          <FoxTeacher type="insight" size={84} style={styles.headerFox} />
-        </View>
-        <Text style={styles.helper}>
-          {renderHighlightedCopy(
-            t(settings.language, "wordBankHelper"),
-            {
-              level: settings.level,
-              count: activeTab === "jlpt" ? filteredWords.length : customWords.length
-            },
-            {
-              level: styles.helperLevelStrong,
-              count: styles.helperCountStrong
-            }
-          )}
-        </Text>
-      </View>
-
-      <View style={styles.tabRow}>
-        {(
-          [
-            ["jlpt", "jlptWordsTab"],
-            ["custom", "customNotebookTab"]
-          ] as const
-        ).map(([value, labelKey]) => {
-          const isActive = activeTab === value
-
-          return (
-            <Pressable
-              key={value}
-              onPress={() => setActiveTab(value)}
-              style={({ pressed }) => [
-                styles.tabChip,
-                isActive && styles.tabChipActive,
-                pressed && styles.pressed
-              ]}
-            >
-              <Text
-                style={[
-                  styles.tabChipText,
-                  isActive && styles.tabChipTextActive
-                ]}
-              >
-                {t(settings.language, labelKey)}
+      <AnimateEntrance duration={animations.duration.long} type="lift">
+        <View style={styles.header}>
+          <View style={styles.headerRow}>
+            <View style={styles.headerCopy}>
+              {activeTab === "jlpt" && (
+                <Text style={styles.eyebrow}>
+                  {t(settings.language, "wordBankEyebrow")}
+                </Text>
+              )}
+              <Text style={styles.title}>
+                {t(settings.language, "wordBankTitle")}
               </Text>
-            </Pressable>
-          )
-        })}
-      </View>
+            </View>
+            <FoxTeacher type="insight" size={84} style={styles.headerFox} />
+          </View>
+          <Text style={styles.helper}>
+            {renderHighlightedCopy(
+              t(settings.language, "wordBankHelper"),
+              {
+                level: settings.level,
+                count: activeTab === "jlpt" ? filteredWords.length : customWords.length
+              },
+              {
+                level: styles.helperLevelStrong,
+                count: styles.helperCountStrong
+              }
+            )}
+          </Text>
+        </View>
+      </AnimateEntrance>
+
+      <AnimateEntrance delay={100} duration={animations.duration.long} type="lift">
+        <View style={styles.tabRow}>
+          {(
+            [
+              ["jlpt", "jlptWordsTab"],
+              ["custom", "customNotebookTab"]
+            ] as const
+          ).map(([value, labelKey]) => {
+            const isActive = activeTab === value;
+
+            return (
+              <ScaleInteract
+                key={value}
+                onPress={() => setActiveTab(value)}
+                style={styles.tabChipScale}
+              >
+                <View
+                  style={styles.tabChip}
+                >
+                  <Text
+                    numberOfLines={1}
+                    style={[
+                      styles.tabChipText,
+                      isActive && styles.tabChipTextActive
+                    ]}
+                  >
+                    {t(settings.language, labelKey)}
+                  </Text>
+                  {isActive && <View style={styles.tabIndicator} />}
+                </View>
+              </ScaleInteract>
+            );
+          })}
+        </View>
+      </AnimateEntrance>
 
       <View style={styles.noticeControls}>
         <Pressable
@@ -474,7 +480,7 @@ export function WordsScreen() {
                 </Text>
               </Pressable>
               {KANA_ROW_OPTIONS.map((row) => {
-                const isActive = selectedKanaRow === row
+                const isActive = selectedKanaRow === row;
                 return (
                   <Pressable
                     key={row}
@@ -494,7 +500,7 @@ export function WordsScreen() {
                       {t(settings.language, KANA_ROW_LABEL_KEYS[row])}
                     </Text>
                   </Pressable>
-                )
+                );
               })}
             </View>
           ) : null}
@@ -550,7 +556,7 @@ export function WordsScreen() {
                 </Text>
               </Pressable>
               {lengthOptions.map((length) => {
-                const isActive = selectedLength === length
+                const isActive = selectedLength === length;
                 return (
                   <Pressable
                     key={length}
@@ -570,7 +576,7 @@ export function WordsScreen() {
                       {tf(settings.language, "lengthOption", { count: length })}
                     </Text>
                   </Pressable>
-                )
+                );
               })}
             </View>
           ) : null}
@@ -615,7 +621,7 @@ export function WordsScreen() {
                   ["only", "memorizedOnlyFilter"]
                 ] as const
               ).map(([value, labelKey]) => {
-                const isActive = memorizedFilter === value
+                const isActive = memorizedFilter === value;
                 return (
                   <Pressable
                     key={value}
@@ -635,7 +641,7 @@ export function WordsScreen() {
                       {t(settings.language, labelKey)}
                     </Text>
                   </Pressable>
-                )
+                );
               })}
             </View>
           ) : null}
@@ -671,9 +677,9 @@ export function WordsScreen() {
                 <TextInput
                   value={newKana}
                   onChangeText={(value) => {
-                    setNewKana(value)
+                    setNewKana(value);
                     if (showValidation) {
-                      setShowValidation(false)
+                      setShowValidation(false);
                     }
                   }}
                   placeholder={t(settings.language, "customWordKanaPlaceholder")}
@@ -700,9 +706,9 @@ export function WordsScreen() {
                 <TextInput
                   value={newMeaning}
                   onChangeText={(value) => {
-                    setNewMeaning(value)
+                    setNewMeaning(value);
                     if (showValidation) {
-                      setShowValidation(false)
+                      setShowValidation(false);
                     }
                   }}
                   placeholder={t(settings.language, "customWordMeaningPlaceholder")}
@@ -721,19 +727,19 @@ export function WordsScreen() {
             <Pressable
               onPress={async () => {
                 if (!newKana.trim() || !newMeaning.trim()) {
-                  setShowValidation(true)
-                  return
+                  setShowValidation(true);
+                  return;
                 }
 
                 await addCustomWord({
                   kana: newKana,
                   kanji: newKanji,
                   meaning: newMeaning
-                })
-                setNewKana("")
-                setNewKanji("")
-                setNewMeaning("")
-                setShowValidation(false)
+                });
+                setNewKana("");
+                setNewKanji("");
+                setNewMeaning("");
+                setShowValidation(false);
               }}
               style={({ pressed }) => [
                 styles.addButton,
@@ -775,7 +781,7 @@ export function WordsScreen() {
                       </View>
                       <Pressable
                         onPress={async () => {
-                          await removeCustomWord(word.id)
+                          await removeCustomWord(word.id);
                         }}
                         style={({ pressed }) => [
                           styles.deleteButton,
@@ -823,14 +829,19 @@ export function WordsScreen() {
           </Card>
         ) : null}
         {isWordDataLoading !== true && visibleWords.map((word, index) => {
-          const isBookmarked = bookmarkWordIds.includes(word.id)
-          const isMemorized = memorizedWordIds.includes(word.id)
+          const isBookmarked = bookmarkWordIds.includes(word.id);
+          const isMemorized = memorizedWordIds.includes(word.id);
 
           return (
-            <Card
+            <AnimateEntrance
               key={word.id}
-              style={[styles.wordCard, isMemorized && styles.wordCardMemorized]}
+              delay={150 + index * 40}
+              duration={animations.duration.long}
+              type="lift"
             >
+              <Card
+                style={[styles.wordCard, isMemorized && styles.wordCardMemorized]}
+              >
               <View style={styles.wordHeader}>
                 <View style={styles.wordMetaRow}>
                   <View style={styles.badge}>
@@ -852,7 +863,7 @@ export function WordsScreen() {
                   <Pressable
                     onPress={() => {
                       if (speakEnabled()) {
-                        Speech.speak(word.kana, getSpeechOptions(settings))
+                        Speech.speak(word.kana, getSpeechOptions(settings));
                       }
                     }}
                     style={({ pressed }) => [
@@ -868,7 +879,7 @@ export function WordsScreen() {
                   </Pressable>
                   <Pressable
                     onPress={async () => {
-                      await toggleWordMemorized(word.id)
+                      await toggleWordMemorized(word.id);
                     }}
                     style={({ pressed }) => [
                       styles.bookmarkIconButton,
@@ -884,7 +895,7 @@ export function WordsScreen() {
                   </Pressable>
                   <Pressable
                     onPress={async () => {
-                      await toggleWordBookmark(word.id)
+                      await toggleWordBookmark(word.id);
                     }}
                     style={({ pressed }) => [
                       styles.bookmarkIconButton,
@@ -905,9 +916,7 @@ export function WordsScreen() {
               {word.kanji ? <Text style={styles.kana}>{word.kana}</Text> : null}
               <View style={styles.meaningBlock}>
                 <Text style={styles.meaningLabel}>
-                  {resolvedLanguage === "ko" && !word.meaningKo
-                    ? t(settings.language, "englishMeaningLabel")
-                    : t(settings.language, "meaningLabel")}
+                  {t(settings.language, "meaningLabel")}
                 </Text>
                 <Text
                   style={[
@@ -919,13 +928,13 @@ export function WordsScreen() {
                     <>
                       {getLocalizedMeaning(word, settings.language)}
                       {(() => {
-                        const additionalMeanings = (resolvedLanguage === "ko" ? word.meaningsKo : word.meanings)?.slice(1) ?? []
-                        if (additionalMeanings.length === 0) return null
+                        const additionalMeanings = (resolvedLanguage === "ko" ? word.meaningsKo : word.meanings)?.slice(1) ?? [];
+                        if (additionalMeanings.length === 0) return null;
                         return (
                           <Text style={styles.additionalMeanings}>
                             {"  "}{additionalMeanings.join(", ")}
                           </Text>
-                        )
+                        );
                       })()}
                     </>
                   ) : (
@@ -934,8 +943,8 @@ export function WordsScreen() {
                 </Text>
               </View>
             </Card>
-          )
-        })}
+          </AnimateEntrance>
+        );})}
       </View>
       ) : null}
 
@@ -968,7 +977,7 @@ export function WordsScreen() {
             ) : null}
 
             {pageWindow.map((pageNumber) => {
-              const isActive = pageNumber === safePage
+              const isActive = pageNumber === safePage;
 
               return (
                 <Pressable
@@ -976,7 +985,7 @@ export function WordsScreen() {
                   onPress={() => setPage(pageNumber)}
                   style={({ pressed }) => [
                     styles.pageChip,
-                    isActive && styles.pageChipActive,
+                    isActive && styles.filterChipActive,
                     pressed && styles.pressed
                   ]}
                 >
@@ -989,7 +998,7 @@ export function WordsScreen() {
                     {pageNumber}
                   </Text>
                 </Pressable>
-              )
+              );
             })}
 
             {pageWindow[pageWindow.length - 1] < totalPages ? (
@@ -1013,7 +1022,7 @@ export function WordsScreen() {
       </View>
       ) : null}
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -1023,30 +1032,40 @@ const styles = StyleSheet.create({
   },
   tabRow: {
     flexDirection: "row",
-    gap: spacing.sm
+    borderBottomWidth: borderWidths.base,
+    borderColor: colors.borderSoft,
+    paddingHorizontal: spacing.sm,
+    marginBottom: spacing.xs
+  },
+  tabChipScale: {
+    flex: 1
   },
   tabChip: {
     flex: 1,
-    minHeight: 46,
-    borderRadius: radii.lg,
-    borderWidth: borderWidths.base,
-    borderColor: colors.borderSoft,
-    backgroundColor: colors.surface,
+    minHeight: 48,
     alignItems: "center",
     justifyContent: "center",
-    paddingHorizontal: spacing.md
+    position: "relative"
   },
-  tabChipActive: {
-    backgroundColor: colors.primarySoft,
-    borderColor: colors.border
+  tabChipActive: {},
+  tabIndicator: {
+    position: "absolute",
+    bottom: -borderWidths.base,
+    left: spacing.md,
+    right: spacing.md,
+    height: 4,
+    backgroundColor: colors.primary,
+    borderRadius: radii.pill
   },
   tabChipText: {
     color: colors.textMuted,
-    fontSize: 13,
-    fontWeight: "800"
+    fontSize: 14,
+    fontWeight: "800",
+    textAlign: "center"
   },
   tabChipTextActive: {
-    color: colors.text
+    color: colors.text,
+    fontWeight: "900"
   },
   eyebrow: {
     color: colors.textMuted,
@@ -1346,7 +1365,7 @@ const styles = StyleSheet.create({
   },
   headerFox: {
     marginBottom: -spacing.sm,
-    marginRight: -spacing.sm
+    marginRight: spacing.sm
   },
   list: {
     gap: spacing.md,
@@ -1532,4 +1551,4 @@ const styles = StyleSheet.create({
   pressed: {
     transform: [{ translateX: 1 }, { translateY: 1 }]
   }
-})
+});

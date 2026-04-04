@@ -1,5 +1,5 @@
-import React from "react"
-import type { StyleProp, ViewStyle } from "react-native"
+import React from "react";
+import type { StyleProp, ViewStyle } from "react-native";
 import {
   BookOpenText,
   Bookmark,
@@ -13,8 +13,8 @@ import {
   Settings2,
   SlidersHorizontal,
   Volume2
-} from "lucide-react-native"
-import { colors } from "../constants/theme"
+} from "lucide-react-native";
+import { colors } from "../constants/theme";
 
 const icons = {
   home: House,
@@ -29,9 +29,9 @@ const icons = {
   check: Check,
   filters: SlidersHorizontal,
   volume: Volume2
-} as const
+} as const;
 
-type IconName = keyof typeof icons
+type IconName = keyof typeof icons;
 
 type Props = {
   name: IconName;
@@ -39,7 +39,7 @@ type Props = {
   color?: string;
   strokeWidth?: number;
   style?: StyleProp<ViewStyle>;
-}
+};
 
 export function AppIcon({
   name,
@@ -48,9 +48,9 @@ export function AppIcon({
   strokeWidth = 1.7,
   style
 }: Props) {
-  const Icon = icons[name]
+  const Icon = icons[name];
 
   return (
     <Icon color={color} size={size} strokeWidth={strokeWidth} style={style} />
-  )
+  );
 }

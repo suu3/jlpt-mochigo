@@ -1,5 +1,5 @@
-import React from "react"
-import { Image, ImageSourcePropType, StyleSheet, View, ViewStyle } from "react-native"
+import React from "react";
+import { Image, ImageSourcePropType, StyleSheet, View, ViewStyle } from "react-native";
 
 type DecorationName = 
   | "home" 
@@ -11,13 +11,13 @@ type DecorationName =
   | "setting" 
   | "speaker" 
   | "sprout" 
-  | "treasure"
+  | "treasure";
 
 type Props = {
   name: DecorationName;
   size?: number;
   style?: ViewStyle;
-}
+};
 
 const icons: Record<DecorationName, ImageSourcePropType> = {
   home: require("../assets/icons/home.png"),
@@ -30,14 +30,14 @@ const icons: Record<DecorationName, ImageSourcePropType> = {
   speaker: require("../assets/icons/speaker.png"),
   sprout: require("../assets/icons/sprout.png"),
   treasure: require("../assets/icons/treasure.png")
-} as const
+} as const;
 
 export function DecoratedIcon({ name, size = 24, style }: Props) {
   return (
     <View style={[{ width: size, height: size }, style]}>
       <Image source={icons[name]} style={styles.image} resizeMode="contain" />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -45,4 +45,4 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%"
   }
-})
+});

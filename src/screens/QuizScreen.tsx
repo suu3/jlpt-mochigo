@@ -1,14 +1,14 @@
-import * as Speech from "expo-speech"
-import React, { useMemo, useState } from "react"
-import { Pressable, StyleSheet, View } from "react-native"
-import { AppIcon } from "../components/AppIcon"
-import { AppText as Text } from "../components/AppText"
-import { BunnyBadge } from "../components/BunnyBadge"
-import { Card } from "../components/Card"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { t } from "../lib/i18n"
-import { getSpeechOptions } from "../lib/speech"
-import { useAppStore } from "../store/useAppStore"
+import * as Speech from "expo-speech";
+import React, { useMemo, useState } from "react";
+import { Pressable, StyleSheet, View } from "react-native";
+import { AppIcon } from "../components/AppIcon";
+import { AppText as Text } from "../components/AppText";
+import { BunnyBadge } from "../components/BunnyBadge";
+import { Card } from "../components/Card";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
+import { t } from "../lib/i18n";
+import { getSpeechOptions } from "../lib/speech";
+import { useAppStore } from "../store/useAppStore";
 
 export function QuizScreen() {
   const {
@@ -17,29 +17,29 @@ export function QuizScreen() {
     currentQuestions,
     answerCurrentQuestion,
     speakEnabled
-  } = useAppStore()
-  const question = currentQuestions[currentIndex]
-  const copy = settings.language
-  const [selectedChoice, setSelectedChoice] = useState<string | null>(null)
+  } = useAppStore();
+  const question = currentQuestions[currentIndex];
+  const copy = settings.language;
+  const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
 
   const feedback = useMemo(() => {
     if (!selectedChoice) {
-      return null
+      return null;
     }
-    return selectedChoice === question.answer ? "correct" : "wrong"
-  }, [question.answer, selectedChoice])
+    return selectedChoice === question.answer ? "correct" : "wrong";
+  }, [question.answer, selectedChoice]);
 
   if (!question) {
-    return null
+    return null;
   }
 
   const submitChoice = (choice: string) => {
-    setSelectedChoice(choice)
+    setSelectedChoice(choice);
     setTimeout(() => {
-      answerCurrentQuestion(choice === question.answer)
-      setSelectedChoice(null)
-    }, 500)
-  }
+      answerCurrentQuestion(choice === question.answer);
+      setSelectedChoice(null);
+    }, 500);
+  };
 
   return (
     <View style={styles.container}>
@@ -82,7 +82,7 @@ export function QuizScreen() {
         <Pressable
           onPress={() => {
             if (speakEnabled()) {
-              Speech.speak(question.word.kana, getSpeechOptions(settings))
+              Speech.speak(question.word.kana, getSpeechOptions(settings));
             }
           }}
           style={({ pressed }) => [styles.listenButton, pressed && styles.listenButtonPressed]}
@@ -94,9 +94,9 @@ export function QuizScreen() {
 
       <View style={styles.choices}>
         {question.choices.map((choice, index) => {
-          const isSelected = selectedChoice === choice
-          const isAnswer = question.answer === choice
-          const showState = selectedChoice !== null
+          const isSelected = selectedChoice === choice;
+          const isAnswer = question.answer === choice;
+          const showState = selectedChoice !== null;
 
           return (
             <Pressable
@@ -115,7 +115,7 @@ export function QuizScreen() {
               </View>
               <Text style={styles.choiceText}>{choice}</Text>
             </Pressable>
-          )
+          );
         })}
       </View>
 
@@ -127,7 +127,7 @@ export function QuizScreen() {
         </View>
       ) : null}
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -302,4 +302,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: colors.text
   }
-})
+});

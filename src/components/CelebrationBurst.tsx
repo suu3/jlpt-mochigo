@@ -1,85 +1,130 @@
-import React, { useEffect, useMemo, useRef, useState } from "react"
-import { AccessibilityInfo, Animated, Easing, StyleSheet, View } from "react-native"
-import { colors } from "../constants/theme"
+import React, { useEffect, useMemo, useRef, useState } from "react";
+import {
+  AccessibilityInfo,
+  Animated,
+  Easing,
+  StyleSheet,
+  View
+} from "react-native";
+import { colors } from "../constants/theme";
 
 type CelebrationBurstProps = {
-  active: boolean;
-}
+  active: boolean
+  intensity?: "normal" | "high"
+  delay?: number
+};
 
 const PARTICLES = [
-  { x: -62, y: -70, size: 12, color: colors.primarySoft },
-  { x: -24, y: -92, size: 8, color: colors.roseSoft },
-  { x: 20, y: -96, size: 10, color: colors.accentSoft },
-  { x: 60, y: -68, size: 12, color: colors.primary },
-  { x: 76, y: -10, size: 8, color: colors.rose },
-  { x: 58, y: 44, size: 10, color: colors.primaryWash },
-  { x: 8, y: 70, size: 12, color: colors.gardenSoft },
-  { x: -46, y: 56, size: 8, color: colors.amberSoft },
-  { x: -82, y: 8, size: 10, color: colors.accent },
-  { x: -6, y: -58, size: 6, color: colors.surfaceHighest }
-] as const
+  { x: -15, y: -25, size: 8, color: colors.primarySoft, rotation: 15, isCircle: true },
+  { x: 15, y: -35, size: 6, color: colors.roseSoft, rotation: -20, isCircle: false },
+  { x: 25, y: -15, size: 7, color: colors.accentSoft, rotation: 30, isCircle: true },
+  { x: -10, y: -10, size: 9, color: colors.primary, rotation: -10, isCircle: false },
+  { x: 35, y: 15, size: 6, color: colors.rose, rotation: 45, isCircle: true },
+  { x: -20, y: 30, size: 7, color: colors.primaryWash, rotation: -30, isCircle: false },
+  { x: 15, y: 35, size: 8, color: colors.gardenSoft, rotation: 60, isCircle: true },
+  { x: -30, y: 15, size: 6, color: colors.amberSoft, rotation: -15, isCircle: false },
+  { x: -25, y: -10, size: 7, color: colors.accent, rotation: 25, isCircle: true },
+  { x: 10, y: -30, size: 5, color: colors.surfaceHighest, rotation: -40, isCircle: false },
+  { x: -12, y: -45, size: 7, color: colors.primary, rotation: 10, isCircle: true },
+  { x: 30, y: -35, size: 6, color: colors.accent, rotation: -10, isCircle: false },
+  { x: 15, y: 20, size: 8, color: colors.roseSoft, rotation: 20, isCircle: true },
+  { x: -35, y: -20, size: 6, color: colors.gardenSoft, rotation: -20, isCircle: false },
+  { x: -5, y: 45, size: 7, color: colors.amberSoft, rotation: 35, isCircle: true },
+  { x: 25, y: 5, size: 6, color: colors.primarySoft, rotation: -35, isCircle: false },
+  { x: -25, y: 25, size: 5, color: colors.rose, rotation: 10, isCircle: true },
+  { x: 35, y: -10, size: 7, color: colors.accent, rotation: -15, isCircle: false },
+  { x: 5, y: -45, size: 6, color: colors.garden, rotation: 45, isCircle: true },
+  { x: -40, y: 0, size: 8, color: colors.primary, rotation: -45, isCircle: false },
+  { x: -20, y: -50, size: 6, color: colors.accentSoft, rotation: 20, isCircle: true },
+  { x: 20, y: -50, size: 5, color: colors.roseSoft, rotation: -20, isCircle: false },
+  { x: 40, y: 40, size: 7, color: colors.gardenSoft, rotation: 10, isCircle: true },
+  { x: -40, y: 40, size: 6, color: colors.primaryWash, rotation: -10, isCircle: false },
+  { x: 0, y: -25, size: 9, color: colors.success, rotation: 0, isCircle: true }
+] as const;
 
-export function CelebrationBurst({ active }: CelebrationBurstProps) {
-  const [reduceMotionEnabled, setReduceMotionEnabled] = useState(false)
-  const particleProgress = useRef(PARTICLES.map(() => new Animated.Value(0))).current
-  const haloProgress = useRef(new Animated.Value(0)).current
+const HIGH_INTENSITY_PARTICLES = [
+  ...PARTICLES,
+  { x: 0, y: -55, size: 10, color: colors.primary, rotation: 0, isCircle: true },
+  { x: -50, y: -25, size: 8, color: colors.accent, rotation: -45, isCircle: false },
+  { x: 50, y: -25, size: 9, color: colors.rose, rotation: 45, isCircle: true },
+  { x: 0, y: 50, size: 8, color: colors.gardenSoft, rotation: 180, isCircle: false },
+  { x: -30, y: -50, size: 7, color: colors.amberSoft, rotation: 30, isCircle: true },
+  { x: 30, y: -50, size: 8, color: colors.primarySoft, rotation: -30, isCircle: false },
+  { x: -55, y: 20, size: 6, color: colors.accentSoft, rotation: 15, isCircle: true },
+  { x: 55, y: 20, size: 7, color: colors.roseSoft, rotation: -15, isCircle: false }
+] as const;
+
+export function CelebrationBurst({
+  active,
+  intensity = "normal",
+  delay = 0
+}: CelebrationBurstProps) {
+  const [reduceMotionEnabled, setReduceMotionEnabled] = useState(false);
+  const particles = intensity === "high" ? HIGH_INTENSITY_PARTICLES : PARTICLES;
+  const particleProgress = useRef(
+    HIGH_INTENSITY_PARTICLES.map(() => new Animated.Value(0))
+  ).current;
 
   useEffect(() => {
-    let mounted = true
+    let mounted = true;
 
     AccessibilityInfo.isReduceMotionEnabled()
       .then((enabled) => {
         if (mounted) {
-          setReduceMotionEnabled(enabled)
+          setReduceMotionEnabled(enabled);
         }
       })
       .catch(() => {
         if (mounted) {
-          setReduceMotionEnabled(false)
+          setReduceMotionEnabled(false);
         }
-      })
+      });
 
-    const subscription = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduceMotionEnabled)
+    const subscription = AccessibilityInfo.addEventListener(
+      "reduceMotionChanged",
+      setReduceMotionEnabled
+    );
 
     return () => {
-      mounted = false
-      subscription.remove()
-    }
-  }, [])
+      mounted = false;
+      subscription.remove();
+    };
+  }, []);
 
   useEffect(() => {
     if (!active || reduceMotionEnabled) {
-      return
+      return;
     }
 
-    particleProgress.forEach((value) => value.setValue(0))
-    haloProgress.setValue(0)
+    const timer = setTimeout(() => {
+      particleProgress.forEach((value) => value.setValue(0));
 
-    Animated.parallel([
-      Animated.timing(haloProgress, {
-        toValue: 1,
-        duration: 520,
-        easing: Easing.out(Easing.exp),
-        useNativeDriver: true
-      }),
       Animated.stagger(
-        22,
-        particleProgress.map((value) =>
-          Animated.timing(value, {
+        15,
+        particles.map((_, index) =>
+          Animated.timing(particleProgress[index], {
             toValue: 1,
-            duration: 560,
-            easing: Easing.out(Easing.exp),
+            duration: 800,
+            easing: Easing.out(Easing.bezier(0.23, 1, 0.32, 1)),
             useNativeDriver: true
           })
         )
-      )
-    ]).start()
-  }, [active, haloProgress, particleProgress, reduceMotionEnabled])
+      ).start();
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [
+    active,
+    particleProgress,
+    reduceMotionEnabled,
+    particles,
+    delay
+  ]);
 
   const staticDots = useMemo(
-    () => PARTICLES.filter((_, index) => index % 2 === 0),
-    []
-  )
+    () => particles.filter((_, index) => index % 2 === 0),
+    [particles]
+  );
 
   return (
     <View pointerEvents="none" style={styles.wrap}>
@@ -95,6 +140,7 @@ export function CelebrationBurst({ active }: CelebrationBurstProps) {
                     backgroundColor: particle.color,
                     width: particle.size,
                     height: particle.size,
+                    borderRadius: particle.isCircle ? 999 : 2,
                     left: 96 + particle.x * 0.4,
                     top: 96 + particle.y * 0.4
                   }
@@ -104,71 +150,62 @@ export function CelebrationBurst({ active }: CelebrationBurstProps) {
           </View>
         ) : (
           <>
-            <Animated.View
-              style={[
-                styles.halo,
-                {
-                  opacity: haloProgress.interpolate({
-                    inputRange: [0, 0.18, 1],
-                    outputRange: [0, 0.85, 0]
-                  }),
-                  transform: [
-                    {
-                      scale: haloProgress.interpolate({
-                        inputRange: [0, 1],
-                        outputRange: [0.5, 1.35]
-                      })
-                    }
-                  ]
-                }
-              ]}
-            />
-            {PARTICLES.map((particle, index) => {
-              const progress = particleProgress[index]
+            {(intensity === "high" ? HIGH_INTENSITY_PARTICLES : PARTICLES).map(
+              (particle, index) => {
+                const progress = particleProgress[index];
+                if (!progress) return null;
 
-              return (
-                <Animated.View
-                  key={`particle-${index}`}
-                  style={[
-                    styles.particle,
-                    {
-                      backgroundColor: particle.color,
-                      width: particle.size,
-                      height: particle.size,
-                      opacity: progress.interpolate({
-                        inputRange: [0, 0.14, 1],
-                        outputRange: [0, 1, 0]
-                      }),
-                      transform: [
-                        {
-                          translateX: progress.interpolate({
-                            inputRange: [0, 1],
-                            outputRange: [0, particle.x]
-                          })
-                        },
-                        {
-                          translateY: progress.interpolate({
-                            inputRange: [0, 1],
-                            outputRange: [0, particle.y]
-                          })
-                        },
-                        {
-                          scale: progress.interpolate({
-                            inputRange: [0, 0.18, 1],
-                            outputRange: [0.35, 1, 0.9]
-                          })
-                        }
-                      ]
-                    }
-                  ]}
-                />
-              )
-            })}
+                return (
+                  <Animated.View
+                    key={`particle-${index}`}
+                    style={[
+                      styles.particle,
+                      {
+                        backgroundColor: particle.color,
+                        width: particle.size,
+                        height: particle.size,
+                        borderRadius: particle.isCircle ? 999 : 2,
+                        opacity: progress.interpolate({
+                          inputRange: [0, 0.1, 0.8, 1],
+                          outputRange: [0, 1, 1, 0]
+                        }),
+                        transform: [
+                          {
+                            translateX: progress.interpolate({
+                              inputRange: [0, 1],
+                              outputRange: [0, particle.x]
+                            })
+                          },
+                          {
+                            translateY: progress.interpolate({
+                              inputRange: [0, 1],
+                              outputRange: [0, particle.y]
+                            })
+                          },
+                          {
+                            scale: progress.interpolate({
+                              inputRange: [0, 0.2, 1],
+                              outputRange: [0.5, 1.2, 0.4]
+                            })
+                          },
+                          {
+                            rotate: progress.interpolate({
+                              inputRange: [0, 1],
+                              outputRange: ["0deg", `${particle.rotation * 4}deg`]
+                            })
+                          }
+                        ]
+                      }
+                    ]}
+                  />
+                );
+              }
+            )}
           </>
         )
       ) : null}
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -177,23 +214,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center"
   },
-  halo: {
-    position: "absolute",
-    width: 148,
-    height: 148,
-    borderRadius: 999,
-    backgroundColor: colors.primaryWash
-  },
   particle: {
-    position: "absolute",
-    borderRadius: 999
+    position: "absolute"
   },
   staticWrap: {
     ...StyleSheet.absoluteFillObject
   },
   staticDot: {
     position: "absolute",
-    borderRadius: 999,
     opacity: 0.9
   }
-})
+});

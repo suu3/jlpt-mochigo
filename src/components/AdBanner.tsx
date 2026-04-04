@@ -1,3 +1,3 @@
 export function AdBanner() {
-  return null
+  return null;
 }

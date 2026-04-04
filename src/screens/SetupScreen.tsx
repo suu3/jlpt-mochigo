@@ -1,19 +1,18 @@
-import React, { useState } from "react"
-import { StyleSheet, View } from "react-native"
-import { FoxTeacher } from "../components/FoxTeacher"
-import { DecoratedIcon } from "../components/DecoratedIcon"
-import { AppText as Text } from "../components/AppText"
-import { PrimaryButton } from "../components/PrimaryButton"
-import { SettingsPanel } from "../components/SettingsPanel"
-import { colors, spacing } from "../constants/theme"
-import { AppLanguage, t } from "../lib/i18n"
-import { useAppStore } from "../store/useAppStore"
-import { JLPTLevel } from "../types/app"
+import React, { useState } from "react";
+import { StyleSheet, View } from "react-native";
+import { FoxTeacher } from "../components/FoxTeacher";
+import { AppText as Text } from "../components/AppText";
+import { PrimaryButton } from "../components/PrimaryButton";
+import { SettingsPanel } from "../components/SettingsPanel";
+import { colors, spacing } from "../constants/theme";
+import { AppLanguage, t } from "../lib/i18n";
+import { useAppStore } from "../store/useAppStore";
+import { JLPTLevel } from "../types/app";
 
 export function SetupScreen() {
-  const { settings, completeOnboarding } = useAppStore()
-  const [level, setLevel] = useState<JLPTLevel>(settings.level)
-  const [language, setLanguage] = useState<AppLanguage>(settings.language)
+  const { settings, completeOnboarding } = useAppStore();
+  const [level, setLevel] = useState<JLPTLevel>(settings.level);
+  const [language, setLanguage] = useState<AppLanguage>(settings.language);
 
   return (
     <View style={styles.container}>
@@ -24,7 +23,6 @@ export function SetupScreen() {
           </View>
           <View style={styles.titleRow}>
             <Text style={styles.title}>{t(language, "setupTitle")}</Text>
-            <DecoratedIcon name="sprout" size={32} />
           </View>
           <Text style={styles.helper}>{t(language, "setupHelper")}</Text>
         </View>
@@ -40,11 +38,11 @@ export function SetupScreen() {
       <PrimaryButton
         label={t(language, "saveAndStart")}
         onPress={async () => {
-          await completeOnboarding({ level, language })
+          await completeOnboarding({ level, language });
         }}
       />
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
@@ -94,4 +92,4 @@ const styles = StyleSheet.create({
     fontSize: 16,
     lineHeight: 25
   }
-})
+});

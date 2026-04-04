@@ -1,13 +1,13 @@
-import React, { PropsWithChildren } from "react"
-import { StyleProp, StyleSheet, View, ViewStyle } from "react-native"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
+import React, { PropsWithChildren } from "react";
+import { StyleProp, StyleSheet, View, ViewStyle } from "react-native";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
 
 type Props = PropsWithChildren<{
   style?: StyleProp<ViewStyle>;
-}>
+}>;
 
 export function Card({ children, style }: Props) {
-  return <View style={[styles.card, style]}>{children}</View>
+  return <View style={[styles.card, style]}>{children}</View>;
 }
 
 const styles = StyleSheet.create({
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 3, height: 3 },
     elevation: 0
   }
-})
+});

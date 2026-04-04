@@ -1,16 +1,16 @@
-import React from "react"
-import { StyleSheet, View } from "react-native"
-import { AppText as Text } from "./AppText"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { AppText as Text } from "./AppText";
+import { borderWidths, colors, radii, spacing } from "../constants/theme";
 
-import { DecoratedIcon } from "./DecoratedIcon"
+import { DecoratedIcon } from "./DecoratedIcon";
 
 type Props = {
   label: string;
   value: string;
   tone?: "default" | "garden" | "rose" | "amber";
   icon?: React.ComponentProps<typeof DecoratedIcon>["name"];
-}
+};
 
 const toneStyles = {
   default: {
@@ -29,52 +29,59 @@ const toneStyles = {
     wrap: { backgroundColor: colors.amberSoft },
     value: { color: colors.amberDeep }
   }
-} as const
+} as const;
 
 export function MetricPill({ label, value, tone = "default", icon }: Props) {
-  const palette = toneStyles[tone]
+  const palette = toneStyles[tone];
 
   return (
     <View style={[styles.wrap, palette.wrap]}>
-      <Text style={styles.label}>{label}</Text>
       <View style={styles.contentRow}>
-        <Text style={[styles.value, palette.value]}>{value}</Text>
-        {icon && <DecoratedIcon name={icon} size={32} style={styles.icon} />}
+        <View style={styles.textColumn}>
+          <Text style={styles.label}>{label}</Text>
+          <Text style={[styles.value, palette.value]}>{value}</Text>
+        </View>
+        {icon && (
+          <View style={styles.iconWrap}>
+            <DecoratedIcon name={icon} size={28} />
+          </View>
+        )}
       </View>
     </View>
-  )
+  );
 }
 
 const styles = StyleSheet.create({
   wrap: {
     flex: 1,
     backgroundColor: colors.surface,
-    borderRadius: radii.lg,
+    borderRadius: radii.xl,
     paddingHorizontal: spacing.lg,
-    paddingVertical: spacing.md,
-    gap: 4,
+    paddingVertical: spacing.sm,
     borderWidth: borderWidths.base,
     borderColor: colors.border
   },
   contentRow: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
-    gap: spacing.sm
+    justifyContent: "space-between"
   },
-  icon: {
-    marginTop: -spacing.xs
+  textColumn: {
+    gap: 0
+  },
+  iconWrap: {
+    marginLeft: spacing.sm
   },
   label: {
     color: colors.textMuted,
-    fontSize: 11,
-    fontWeight: "800",
-    letterSpacing: 1.2,
+    fontSize: 9,
+    fontWeight: "900",
+    letterSpacing: 1.1,
     textTransform: "uppercase"
   },
   value: {
     color: colors.text,
-    fontSize: 28,
+    fontSize: 18,
     fontWeight: "900"
   }
-})
+});

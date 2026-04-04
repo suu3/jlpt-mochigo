@@ -1,72 +1,73 @@
-import { QuizQuestion, QuizType, WordEntry, WrongAnswerRecord } from "../types/app"
-import { AppLanguage, resolveLanguage } from "./i18n"
+import { QuizQuestion, QuizType, WordEntry, WrongAnswerRecord } from "../types/app";
+import { AppLanguage, resolveLanguage } from "./i18n";
 
 function shuffle<T>(items: T[]) {
-  const clone = [...items]
+  const clone = [...items];
   for (let index = clone.length - 1; index > 0; index -= 1) {
     const randomIndex = Math.floor(Math.random() * (index + 1));
-    [clone[index], clone[randomIndex]] = [clone[randomIndex], clone[index]]
+    [clone[index], clone[randomIndex]] = [clone[randomIndex], clone[index]];
   }
-  return clone
+  return clone;
 }
 
 function sampleChoices(correct: string, pool: string[]) {
-  const distractors = shuffle(pool.filter((item) => item !== correct)).slice(0, 3)
-  return shuffle([correct, ...distractors])
+  const distractors = shuffle(pool.filter((item) => item !== correct)).slice(0, 3);
+  return shuffle([correct, ...distractors]);
 }
 
 function buildMixedQuestionTypes(count: number) {
-  const meaningCount = Math.ceil(count / 2)
-  const readingCount = Math.floor(count / 2)
+  const meaningCount = Math.ceil(count / 2);
+  const readingCount = Math.floor(count / 2);
   const questionTypes: QuizType[] = [
     ...Array.from({ length: meaningCount }, () => "meaning" as const),
     ...Array.from({ length: readingCount }, () => "reading" as const)
-  ]
+  ];
 
-  return shuffle(questionTypes)
+  return shuffle(questionTypes);
 }
 
 export function getLocalizedMeaning(word: WordEntry, language: AppLanguage) {
-  const resolvedLanguage = resolveLanguage(language)
+  const resolvedLanguage = resolveLanguage(language);
   if (resolvedLanguage === "ko" && word.meaningKo) {
-    return word.meaningKo
+    return word.meaningKo;
   }
 
-  return word.meaning
+  // In bundled files (generated/ko/*.json), the meaning field already contains the Korean translation.
+  return word.meaning;
 }
 
 export function rankWordsForStudy(words: WordEntry[]) {
   return [...words].sort((left, right) => {
-    const leftLength = Array.from(left.kana.replace(/\s+/g, "")).length
-    const rightLength = Array.from(right.kana.replace(/\s+/g, "")).length
+    const leftLength = Array.from(left.kana.replace(/\s+/g, "")).length;
+    const rightLength = Array.from(right.kana.replace(/\s+/g, "")).length;
 
     if (leftLength !== rightLength) {
-      return leftLength - rightLength
+      return leftLength - rightLength;
     }
 
-    const kanaCompare = left.kana.localeCompare(right.kana, "ja")
+    const kanaCompare = left.kana.localeCompare(right.kana, "ja");
     if (kanaCompare !== 0) {
-      return kanaCompare
+      return kanaCompare;
     }
 
-    const kanjiCompare = (left.kanji || left.kana).localeCompare(right.kanji || right.kana, "ja")
+    const kanjiCompare = (left.kanji || left.kana).localeCompare(right.kanji || right.kana, "ja");
     if (kanjiCompare !== 0) {
-      return kanjiCompare
+      return kanjiCompare;
     }
 
-    return left.id.localeCompare(right.id)
-  })
+    return left.id.localeCompare(right.id);
+  });
 }
 
 export function getStudyWords(words: WordEntry[]) {
-  return words
+  return words;
 }
 
 function buildQuestion(word: WordEntry, words: WordEntry[], type: QuizType, language: AppLanguage): QuizQuestion {
-  const meaningPool = words.map((item) => getLocalizedMeaning(item, language))
-  const readingPool = words.map((item) => item.kana)
-  const isMeaning = type === "meaning"
-  const localizedMeaning = getLocalizedMeaning(word, language)
+  const meaningPool = words.map((item) => getLocalizedMeaning(item, language));
+  const readingPool = words.map((item) => item.kana);
+  const isMeaning = type === "meaning";
+  const localizedMeaning = getLocalizedMeaning(word, language);
 
   return {
     id: `${word.id}-${type}`,
@@ -78,38 +79,38 @@ function buildQuestion(word: WordEntry, words: WordEntry[], type: QuizType, lang
       : sampleChoices(word.kana, readingPool),
     answer: isMeaning ? localizedMeaning : word.kana,
     word
-  }
+  };
 }
 
 export function buildSessionQuestions(
   words: WordEntry[],
   wrongAnswers: WrongAnswerRecord[],
-  count = 5,
+  count = 3,
   mode: "mixed" | "review" = "mixed",
   language: AppLanguage = "en"
 ) {
   const prioritizedWords = shuffle(words).sort((left, right) => {
-    const leftWrong = wrongAnswers.find((record) => record.wordId === left.id)?.wrongCount ?? 0
-    const rightWrong = wrongAnswers.find((record) => record.wordId === right.id)?.wrongCount ?? 0
-    return rightWrong - leftWrong
-  })
+    const leftWrong = wrongAnswers.find((record) => record.wordId === left.id)?.wrongCount ?? 0;
+    const rightWrong = wrongAnswers.find((record) => record.wordId === right.id)?.wrongCount ?? 0;
+    return rightWrong - leftWrong;
+  });
 
   const reviewWords = prioritizedWords.filter((word) =>
     wrongAnswers.some((record) => record.wordId === word.id)
-  )
+  );
 
-  const selected = (mode === "review" ? reviewWords : prioritizedWords).slice(0, count)
-  const fallbackWords = prioritizedWords.slice(0, count)
-  const finalWords = shuffle(selected.length >= count ? selected : fallbackWords)
-  const mixedQuestionTypes = buildMixedQuestionTypes(finalWords.length)
+  const selected = (mode === "review" ? reviewWords : prioritizedWords).slice(0, count);
+  const fallbackWords = prioritizedWords.slice(0, count);
+  const finalWords = shuffle(selected.length >= count ? selected : fallbackWords);
+  const mixedQuestionTypes = buildMixedQuestionTypes(finalWords.length);
 
   return finalWords.map((word, index) => {
-    const forcedType = wrongAnswers.find((record) => record.wordId === word.id)?.questionType
+    const forcedType = wrongAnswers.find((record) => record.wordId === word.id)?.questionType;
     const type: QuizType =
       mode === "review" && forcedType
         ? forcedType
-        : mixedQuestionTypes[index] ?? "meaning"
+        : mixedQuestionTypes[index] ?? "meaning";
 
-    return buildQuestion(word, words, type, language)
-  })
+    return buildQuestion(word, words, type, language);
+  });
 }
