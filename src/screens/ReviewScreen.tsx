@@ -82,17 +82,19 @@ export function ReviewScreen() {
         </Card>
       ) : null}
 
-      <PrimaryButton
-        label={t(copy, "startReview")}
-        onPress={() => startSession("review")}
-        disabled={reviewItems.length === 0}
-      />
-      <PrimaryButton
-        label={t(copy, "goHome")}
-        onPress={goHome}
-        variant="secondary"
-        style={styles.homeButton}
-      />
+      <View style={styles.actions}>
+        <PrimaryButton
+          label={t(copy, "startReview")}
+          onPress={() => startSession("review")}
+          disabled={reviewItems.length === 0}
+        />
+        <PrimaryButton
+          label={t(copy, "goHome")}
+          icon="home"
+          onPress={goHome}
+          variant="secondary"
+        />
+      </View>
     </View>
   )
 }
@@ -100,6 +102,9 @@ export function ReviewScreen() {
 const styles = StyleSheet.create({
   container: {
     gap: spacing.lg
+  },
+  actions: {
+    gap: spacing.sm
   },
   header: {
     gap: spacing.xs
@@ -234,8 +239,5 @@ const styles = StyleSheet.create({
     height: 6,
     borderRadius: radii.pill,
     backgroundColor: colors.borderSoft
-  },
-  homeButton: {
-    marginTop: spacing.sm
   }
 })

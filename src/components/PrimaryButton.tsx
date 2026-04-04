@@ -1,6 +1,7 @@
 import React from "react"
 import { Pressable, StyleSheet, ViewStyle } from "react-native"
 import { AppText as Text } from "./AppText"
+import { AppIcon } from "./AppIcon"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 
 type Props = {
@@ -9,6 +10,7 @@ type Props = {
   variant?: "primary" | "secondary" | "ghost";
   disabled?: boolean;
   style?: ViewStyle;
+  icon?: React.ComponentProps<typeof AppIcon>["name"];
 }
 
 export function PrimaryButton({
@@ -16,7 +18,8 @@ export function PrimaryButton({
   onPress,
   variant = "primary",
   disabled = false,
-  style
+  style,
+  icon
 }: Props) {
   return (
     <Pressable
@@ -32,6 +35,13 @@ export function PrimaryButton({
         style
       ]}
     >
+      {icon ? (
+        <AppIcon
+          name={icon}
+          size={20}
+          color={variant === "primary" ? colors.primaryDeep : colors.text}
+        />
+      ) : null}
       <Text
         style={[
           styles.label,
@@ -46,6 +56,8 @@ export function PrimaryButton({
 
 const styles = StyleSheet.create({
   base: {
+    flexDirection: "row",
+    gap: spacing.xs,
     minHeight: 60,
     borderRadius: radii.lg,
     alignItems: "center",

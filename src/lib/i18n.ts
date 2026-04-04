@@ -278,8 +278,8 @@ const dictionary = {
     readingLabel: "읽기",
     focusNextWord:
       '다음엔 "{word}"만 한 번 더 보면 돼요. 금방 손에 익을 거예요.',
-    level: "레벨",
-    wordBankEyebrow: "워드 뱅크",
+    level: "난이도",
+    wordBankEyebrow: "단어 모음",
     wordBankTitle: "단어 모아보기",
     wordBankHelper: "{level} 단어 {count}개를 빠르게 훑어볼 수 있어요.",
     jlptWordsTab: "JLPT 단어",

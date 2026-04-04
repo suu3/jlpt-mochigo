@@ -98,7 +98,7 @@ const styles = StyleSheet.create({
   wrap: {
     backgroundColor: colors.background,
     paddingHorizontal: spacing.lg,
-    paddingBottom: spacing.md,
+    paddingBottom: spacing.xl,
     paddingTop: spacing.sm
   },
   wrapCompact: {

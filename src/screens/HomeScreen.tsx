@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { DimensionValue, Pressable, StyleSheet, View, useWindowDimensions } from "react-native"
 import { BunnyBadge } from "../components/BunnyBadge"
 import { CelebrationBurst } from "../components/CelebrationBurst"
+import { AdBanner } from "../components/AdBanner"
 import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { GoalGardenHalo } from "../components/GoalGardenHalo"
@@ -298,6 +299,8 @@ export function HomeScreen() {
           </View>
         </Pressable>
       </View>
+
+      <AdBanner />
 
       <Card style={styles.footerCard}>
         <View style={styles.sessionHeader}>

@@ -17,7 +17,13 @@ type MobileAdsModule = {
   };
 }
 
+import Constants, { ExecutionEnvironment } from "expo-constants"
+
 function getMobileAdsModule(): MobileAdsModule | null {
+  if (Constants.executionEnvironment === ExecutionEnvironment.StoreClient) {
+    return null
+  }
+  
   try {
     return require("react-native-google-mobile-ads") as MobileAdsModule
   } catch {

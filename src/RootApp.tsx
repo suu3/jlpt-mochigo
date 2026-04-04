@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { ActivityIndicator, ScrollView, StyleSheet, View, useWindowDimensions } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
-import { AdBanner } from "./components/AdBanner"
+
 import { AppText as Text } from "./components/AppText"
 import { BottomNav } from "./components/BottomNav"
 import { BookmarksScreen } from "./screens/BookmarksScreen"
@@ -55,7 +55,6 @@ export function RootApp() {
           {isReady && screen === "settings" ? <SettingsScreen /> : null}
         </ScrollView>
 
-        {isReady && screen !== "setup" ? <AdBanner /> : null}
         {isReady && screen !== "setup" ? <BottomNav /> : null}
       </View>
     </SafeAreaView>

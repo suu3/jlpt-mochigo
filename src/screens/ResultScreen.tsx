@@ -85,13 +85,15 @@ export function ResultScreen() {
         )}
       </Card>
 
-      <PrimaryButton label={t(copy, "playAgain")} onPress={() => startSession("mixed", currentSessionSource)} />
-      <PrimaryButton
-        label={t(copy, "goHome")}
-        onPress={goHome}
-        variant="secondary"
-        style={styles.homeButton}
-      />
+      <View style={styles.actions}>
+        <PrimaryButton label={t(copy, "playAgain")} onPress={() => startSession("mixed", currentSessionSource)} />
+        <PrimaryButton
+          label={t(copy, "goHome")}
+          icon="home"
+          onPress={goHome}
+          variant="secondary"
+        />
+      </View>
     </View>
   )
 }
@@ -99,6 +101,9 @@ export function ResultScreen() {
 const styles = StyleSheet.create({
   container: {
     gap: spacing.lg
+  },
+  actions: {
+    gap: spacing.sm
   },
   hero: {
     alignItems: "center"
@@ -235,8 +240,5 @@ const styles = StyleSheet.create({
   meaning: {
     color: colors.textMuted,
     marginTop: 4
-  },
-  homeButton: {
-    marginTop: spacing.sm
   }
 })

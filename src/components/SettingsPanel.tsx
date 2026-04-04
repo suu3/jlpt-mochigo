@@ -363,7 +363,7 @@ const styles = StyleSheet.create({
     flexWrap: "wrap"
   },
   levelButton: {
-    width: "31%",
+    width: "30%",
     minHeight: 50,
     borderRadius: radii.md,
     borderWidth: borderWidths.base,
