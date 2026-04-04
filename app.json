@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "JLPT Bunny",
+    "slug": "jlpt-bunny",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "icon": "./src/assets/icon.png",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icon.png",
+        "backgroundColor": "#F3F0E8"
+      }
+    },
+    "plugins": [
+      "expo-sqlite"
+    ]
+  }
+}

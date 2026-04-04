@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-04-02T02:25:57.731Z",
+  "sources": {
+    "jmDict": "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+    "jlptWordList": "https://github.com/elzup/jlpt-word-list"
+  },
+  "counts": {
+    "N1": 5282,
+    "N2": 3086,
+    "N3": 4834,
+    "N4": 1354,
+    "N5": 1561
+  }
+}

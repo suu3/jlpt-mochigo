@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Usagi Zen - Vocabulary Quiz</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#93000a",
+                        "surface-bright": "#faf9f5",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "tertiary-fixed": "#ffdad6",
+                        "tertiary": "#80524e",
+                        "secondary": "#5f5e5e",
+                        "secondary-fixed": "#e4e2e1",
+                        "inverse-surface": "#2f312e",
+                        "surface-container-highest": "#e3e2df",
+                        "on-primary-container": "#224a3d",
+                        "background": "#faf9f5",
+                        "inverse-on-surface": "#f2f1ed",
+                        "on-surface-variant": "#414845",
+                        "on-surface": "#1b1c1a",
+                        "secondary-container": "#e4e2e1",
+                        "on-background": "#1b1c1a",
+                        "on-tertiary-fixed-variant": "#653b38",
+                        "on-secondary-fixed-variant": "#474747",
+                        "surface": "#faf9f5",
+                        "primary": "#3e6658",
+                        "on-tertiary-fixed": "#32110f",
+                        "on-primary-fixed": "#002117",
+                        "on-error": "#ffffff",
+                        "outline": "#717975",
+                        "on-tertiary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-secondary-container": "#656464",
+                        "tertiary-container": "#dba29d",
+                        "tertiary-fixed-dim": "#f4b8b3",
+                        "inverse-primary": "#a5d0be",
+                        "primary-container": "#8fb9a8",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#a5d0be",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c0c8c3",
+                        "on-primary-fixed-variant": "#264e41",
+                        "surface-dim": "#dbdad6",
+                        "surface-variant": "#e3e2df",
+                        "surface-container-high": "#e9e8e4",
+                        "on-tertiary-container": "#613834",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#c0ecda",
+                        "surface-tint": "#3e6658",
+                        "surface-container": "#efeeea",
+                        "surface-container-low": "#f4f4f0"
+                    },
+                    fontFamily: {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(27, 28, 26, 1);
+        }
+        .neo-shadow-sm {
+            box-shadow: 2px 2px 0px 0px rgba(27, 28, 26, 1);
+        }
+        .active-press {
+            transform: translate(2px, 2px);
+            box-shadow: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-background min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="flex items-center justify-between w-full px-6 py-4 sticky top-0 z-50 bg-[#FAF9F5] dark:bg-zinc-900 border-b-2 border-[#1B1C1A] dark:border-zinc-100 shadow-[4px_4px_0px_0px_rgba(27,28,26,1)]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full border-2 border-on-surface overflow-hidden bg-primary-fixed">
+<img alt="Mascot" data-alt="Minimalist Zen Rabbit mascot avatar with simple geometric features and a calming expression on a soft mint background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB62J-usvTSPnBhliYT10pkndvosp1en6trIHEmXPBeARZXjWnuvQzAxEdxRs-VPqdHLusp1zil0clELbDBoQvxCbxalTd9nGE4NCWlMaKobTMe535eL_L5Yqb2YYEyu58vz7j8nO2kGT8oLBpUtoZ9obCj9QRjmzgJP3t6A0d3wFqFo6nVonnrI8FGGs7iXGKrhChOjdjq4KWuIczti3ind5-rComrUp8l6CIiEx_PBpj-NhhGN6FkHtDjUIkPRhfjYdLuIVuTjKu2"/>
+</div>
+<h1 class="font-['Plus_Jakarta_Sans'] font-extrabold tracking-tighter text-lg text-[#3E6658] dark:text-[#8FB9A8]">The Zen Rabbit</h1>
+</div>
+<button class="material-symbols-outlined text-[#3E6658] hover:bg-[#8FB9A8]/10 p-2 rounded-lg transition-all active:translate-x-[2px] active:translate-y-[2px]">
+            settings
+        </button>
+</header>
+<main class="flex-grow flex flex-col px-6 pt-8 pb-32 max-w-2xl mx-auto w-full">
+<!-- Progress "Garden" Section -->
+<div class="mb-10">
+<div class="flex items-center justify-between mb-3 px-1">
+<span class="font-label text-xs font-bold uppercase tracking-widest text-secondary">Lesson Progress</span>
+<span class="font-label text-xs font-bold text-primary">3 / 5</span>
+</div>
+<div class="flex gap-3 justify-between items-center h-4">
+<!-- Progress Icons: Minimalist Rabbit Heads -->
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">pets</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">pets</span>
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">pets</span>
+<span class="material-symbols-outlined text-outline-variant opacity-40">pets</span>
+<span class="material-symbols-outlined text-outline-variant opacity-40">pets</span>
+</div>
+<!-- Standard Progress Bar Fallback for clarity -->
+<div class="w-full h-3 bg-surface-container-high rounded-full border-2 border-on-surface mt-4 overflow-hidden">
+<div class="h-full bg-primary-container w-3/5 border-r-2 border-on-surface"></div>
+</div>
+</div>
+<!-- Question Header -->
+<div class="mb-8">
+<p class="font-label text-sm font-bold uppercase tracking-[0.2em] text-primary mb-2">Meaning Quiz</p>
+<div class="bg-surface-container-lowest border-2 border-on-surface rounded-xl p-8 neo-shadow flex flex-col items-center justify-center relative overflow-hidden">
+<!-- Decorative Grid Pattern -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#1b1c1a 1px, transparent 1px); background-size: 20px 20px;"></div>
+<h2 class="text-7xl md:text-8xl font-bold tracking-tight text-on-surface z-10">猫</h2>
+<p class="text-secondary font-medium mt-4 z-10">Select the correct translation</p>
+</div>
+</div>
+<!-- Answer Options Bento Grid -->
+<div class="grid grid-cols-2 gap-4 md:gap-6 mb-8">
+<!-- Option 1 -->
+<button class="bg-surface-container-lowest border-2 border-on-surface p-6 rounded-xl font-bold text-xl neo-shadow hover:bg-surface-container-low transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none text-left flex items-center justify-between group">
+                Dog
+                <span class="material-symbols-outlined opacity-0 group-active:opacity-100 transition-opacity">radio_button_unchecked</span>
+</button>
+<!-- Option 2 (Selected/Correct) -->
+<button class="bg-primary-container border-2 border-on-surface p-6 rounded-xl font-bold text-xl shadow-[2px_2px_0px_0px_rgba(27,28,26,1)] translate-x-[2px] translate-y-[2px] text-left flex items-center justify-between ring-4 ring-primary-fixed/30">
+                Cat
+                <span class="material-symbols-outlined text-on-primary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<!-- Option 3 -->
+<button class="bg-surface-container-lowest border-2 border-on-surface p-6 rounded-xl font-bold text-xl neo-shadow hover:bg-surface-container-low transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none text-left flex items-center justify-between group">
+                Bird
+                <span class="material-symbols-outlined opacity-0 group-active:opacity-100 transition-opacity">radio_button_unchecked</span>
+</button>
+<!-- Option 4 -->
+<button class="bg-surface-container-lowest border-2 border-on-surface p-6 rounded-xl font-bold text-xl neo-shadow hover:bg-surface-container-low transition-all active:translate-x-[2px] active:translate-y-[2px] active:shadow-none text-left flex items-center justify-between group">
+                Fish
+                <span class="material-symbols-outlined opacity-0 group-active:opacity-100 transition-opacity">radio_button_unchecked</span>
+</button>
+</div>
+<!-- Mascot Feedback Section -->
+<div class="mt-auto flex items-end justify-start gap-4">
+<div class="relative group">
+<!-- Speech Bubble -->
+<div class="absolute -top-16 left-8 bg-on-surface text-surface px-4 py-2 rounded-2xl rounded-bl-none font-bold text-lg whitespace-nowrap neo-shadow-sm">
+                    Neko! ✨
+                </div>
+<!-- Mascot -->
+<div class="w-24 h-24 transform -rotate-3 hover:rotate-0 transition-transform cursor-pointer">
+<img alt="Happy Rabbit" class="drop-shadow-md" data-alt="A cute minimalist white rabbit character with a happy expression and simple rounded limbs, standing in a playful pose" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWzbLzkAPn1sHA7of1kKTQqBhMc8U9VTLCiSULSSCNufrZ90zOQudHqhDq3wwSxJceWzuM2phU082qfZ3T_fIjBitB5m7z6-56-Ib8YlYXIpProvp9ZQ0lZUpaLVUN1dhNUvHNTPjaPJVIPxAa2VqFHVeHS4OwJ4rBipovrUUcPH9s2yxFc4cpGGSHn1HQlzVDSeAHWrTakvp6rW3wjggVMSZQdTHH5p99Ey4JFh5YPG7f7UyeGAfUrPqmTnfwv_7ytSxtQM7HfgPu"/>
+</div>
+</div>
+<div class="pb-4">
+<p class="text-primary font-bold italic">"Purr-fect! You're getting it."</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-[#FAF9F5] dark:bg-zinc-900 pb-safe border-t-2 border-[#1B1C1A] dark:border-zinc-100 rounded-t-xl shadow-[0px_-4px_0px_0px_rgba(27,28,26,1)]">
+<a class="flex flex-col items-center justify-center text-[#5F5E5E] px-4 py-2 opacity-70 hover:text-[#3E6658] active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#8FB9A8] text-[#1B1C1A] border-2 border-[#1B1C1A] rounded-xl px-4 py-1 translate-x-[-2px] translate-y-[-2px] shadow-[2px_2px_0px_0px_rgba(27,28,26,1)] active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">rebase_edit</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Review</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#5F5E5E] px-4 py-2 opacity-70 hover:text-[#3E6658] active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[10px] uppercase tracking-widest mt-1">Profile</span>
+</a>
+</nav>
+</body></html>

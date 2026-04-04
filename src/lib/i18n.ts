@@ -1,0 +1,493 @@
+import { getLocales } from "expo-localization"
+
+export type AppLanguage = "system" | "ko" | "en"
+export type ResolvedLanguage = "ko" | "en"
+
+export type CopyKey =
+  | "title"
+  | "tagline"
+  | "loading"
+  | "heroBadge"
+  | "heroTitle"
+  | "homeGoalCompleteTitle"
+  | "homeGoalCompleteBody"
+  | "dailyGoal"
+  | "dailyProgressHint"
+  | "dailyProgressCompleteHint"
+  | "streak"
+  | "streakValue"
+  | "start"
+  | "review"
+  | "difficulty"
+  | "languageSettings"
+  | "languageHelper"
+  | "languageSystem"
+  | "languageSystemValue"
+  | "languageKorean"
+  | "languageEnglish"
+  | "setupTitle"
+  | "setupHelper"
+  | "saveAndStart"
+  | "startKicker"
+  | "startBody"
+  | "reviewKicker"
+  | "reviewBody"
+  | "focusGarden"
+  | "currentLevel"
+  | "dashboardHelper"
+  | "settingsEyebrow"
+  | "settingsTitle"
+  | "settingsHelper"
+  | "recentLevel"
+  | "meaningQuiz"
+  | "readingQuiz"
+  | "focusRound"
+  | "chooseMeaning"
+  | "chooseReading"
+  | "meaningHint"
+  | "readingHint"
+  | "listen"
+  | "correct"
+  | "wrong"
+  | "next"
+  | "resultTitle"
+  | "resultScore"
+  | "resultKicker"
+  | "goalCompleteKicker"
+  | "goalCompletePrompt"
+  | "accuracy"
+  | "needsReview"
+  | "perfectRound"
+  | "gardenGrowth"
+  | "missedWords"
+  | "nothingToReview"
+  | "playAgain"
+  | "goHome"
+  | "reviewTitle"
+  | "emptyReview"
+  | "startReview"
+  | "question"
+  | "of"
+  | "adPlaceholder"
+  | "encourageGood"
+  | "encourageRetry"
+  | "filters"
+  | "sortedByRecent"
+  | "sessions"
+  | "knowledgeGrowth"
+  | "mistakesCount"
+  | "highPriorityFocus"
+  | "reviewNeeded"
+  | "meaningLabel"
+  | "readingLabel"
+  | "focusNextWord"
+  | "level"
+  | "wordBankEyebrow"
+  | "wordBankTitle"
+  | "wordBankHelper"
+  | "wordsTab"
+  | "bookmarksTab"
+  | "bookmarksEyebrow"
+  | "bookmarksTitle"
+  | "bookmarksHelper"
+  | "emptyBookmarks"
+  | "bookmarkAdded"
+  | "memorizedAdded"
+  | "memorizeWord"
+  | "unmemorizeWord"
+  | "wordLengthFilter"
+  | "memorizedFilter"
+  | "allWordsFilter"
+  | "hideMemorizedFilter"
+  | "memorizedOnlyFilter"
+  | "emptyFilteredWords"
+  | "bookmarkAdd"
+  | "bookmarkRemove"
+  | "studyLevelTitle"
+  | "studyLevelStage"
+  | "studyLevelProgress"
+  | "allLengths"
+  | "lengthOption"
+  | "pageSummary"
+  | "previousPage"
+  | "nextPage"
+  | "showingWordsSummary"
+  | "loadMoreWords"
+  | "englishMeaningLabel"
+  | "meaningLocalizationNotice"
+  | "showMeanings"
+  | "hideMeanings"
+  | "meaningHidden"
+  | "ttsSettings"
+  | "ttsHelper"
+  | "ttsOn"
+  | "ttsOff"
+  | "speechRate"
+  | "speechPitch"
+  | "speechRateSlow"
+  | "speechRateNormal"
+  | "speechRateFast"
+  | "speechPitchLow"
+  | "speechPitchNormal"
+  | "speechPitchHigh"
+  | "homeDensity"
+  | "homeDensityHelper"
+  | "densityRich"
+  | "densityBalanced"
+  | "densitySimple"
+  | "resetStudyDataTitle"
+  | "resetStudyDataHelper"
+  | "resetStudyDataButton"
+  | "resetStudyDataConfirmTitle"
+  | "resetStudyDataConfirmBody"
+  | "resetStudyDataCancel"
+  | "resetStudyDataConfirm"
+  | "dataSourcesTitle"
+  | "dataSourcesHelper"
+  | "dataSourceJmdict"
+  | "dataSourceJlptWordList"
+  | "dataSourceDisclaimer"
+
+const dictionary = {
+  ko: {
+    title: "JLPT Bunny",
+    tagline: "짧게 풀고 바로 복습하는 JLPT 단어 암기 루틴을 만들어봐요",
+    loading: "학습 화면을 불러오고 있어요...",
+    heroBadge: "오늘 루틴",
+    heroTitle: "가볍게 한 세션, 바로 시작해볼까요?",
+    homeGoalCompleteTitle: "오늘 정원이 다 채워졌어요.",
+    homeGoalCompleteBody: "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 세션 더 이어가도 좋아요.",
+    dailyGoal: "오늘 분량",
+    dailyProgressHint: "오늘 목표까지 {count}세션 남았어요.",
+    dailyProgressCompleteHint: "오늘 목표는 다 채웠어요. 다해도 더 공부해볼까요?",
+    streak: "연속 학습",
+    streakValue: "{count}일",
+    start: "바로 시작",
+    review: "오답 복습",
+    difficulty: "난이도",
+    languageSettings: "언어 설정",
+    languageHelper:
+      "기본값은 기기 언어를 따르고, 여기서 언제든 바꿀 수 있어요.",
+    languageSystem: "시스템",
+    languageSystemValue: "기기 언어 사용",
+    languageKorean: "한국어",
+    languageEnglish: "English",
+    setupTitle: "내 학습 설정부터 가볍게 맞출게요",
+    setupHelper:
+      "레벨과 언어만 정하면 바로 풀 수 있어요. 나중에 설정에서 언제든 바꿀 수 있어요.",
+    saveAndStart: "이대로 시작",
+    startKicker: "학습 세션",
+    startBody:
+      "{level} 기준 {count}문제예요. 틀린 단어는 다음 세션에 먼저 다시 나와요.",
+    reviewKicker: "복습 세션",
+    reviewBody: "다시 볼 단어가 {count}개 있어요",
+    focusGarden: "학습 현황",
+    currentLevel: "현재 레벨 {level}",
+    dashboardHelper:
+      "오늘 학습 현황, 누적 세션, 다시 볼 단어를 한 화면에서 바로 확인할 수 있어요.",
+    settingsEyebrow: "앱 설정",
+    settingsTitle: "설정",
+    settingsHelper: "학습 레벨과 앱 언어를 여기서 바로 바꿀 수 있어요.",
+    recentLevel: "최근 레벨",
+    meaningQuiz: "의미 맞추기",
+    readingQuiz: "읽기 맞추기",
+    focusRound: "집중 라운드",
+    chooseMeaning: "알맞은 뜻을 골라주세요",
+    chooseReading: "알맞은 읽기를 골라주세요",
+    meaningHint: "이 단어와 맞는 뜻 하나를 고르면 돼요.",
+    readingHint: "이 단어와 맞는 가나 읽기 하나를 고르면 돼요.",
+    listen: "소리 듣기",
+    correct: "정답",
+    wrong: "오답",
+    next: "다음 문제",
+    resultTitle: "이번 세션 결과",
+    resultScore: "{correct} / {total} 정답",
+    resultKicker: "이번 세션 완료",
+    goalCompleteKicker: "오늘 루틴 완료",
+    goalCompletePrompt: "조금 더 해두면 내일이 더 가벼워져요.",
+    accuracy: "정확도",
+    needsReview: "복습 필요",
+    perfectRound: "복습할 단어 없음",
+    gardenGrowth: "이번 세션 기록",
+    missedWords: "다시 볼 단어",
+    nothingToReview: "이번 세션은 바로 넘어가도 괜찮아요.",
+    playAgain: "한 번 더 풀기",
+    goHome: "홈으로",
+    reviewTitle: "복습 리스트",
+    emptyReview: "아직 다시 볼 단어가 없어요. 첫 세션부터 가볍게 시작해보세요.",
+    startReview: "복습 시작하기",
+    question: "문제",
+    of: "/",
+    adPlaceholder: "세션 종료 후 전면 광고 위치",
+    encourageGood: "좋아요. 감이 잘 올라오고 있어요.",
+    encourageRetry: "한 번만 더 보면 훨씬 익숙해질 거예요.",
+    filters: "최근 틀린 순",
+    sortedByRecent: "가장 최근에 헷갈린 단어부터 보여드릴게요.",
+    sessions: "세션",
+    knowledgeGrowth: "학습 흐름",
+    mistakesCount: "{count}회 틀림",
+    highPriorityFocus: "먼저 다시 보기",
+    reviewNeeded: "복습 추천",
+    meaningLabel: "의미",
+    readingLabel: "읽기",
+    focusNextWord:
+      '다음엔 "{word}"만 한 번 더 보면 돼요. 금방 손에 익을 거예요.',
+    level: "레벨",
+    wordBankEyebrow: "워드 뱅크",
+    wordBankTitle: "단어 모아보기",
+    wordBankHelper: "{level} 단어 {count}개를 빠르게 훑어볼 수 있어요.",
+    wordsTab: "단어",
+    bookmarksTab: "북마크",
+    bookmarksEyebrow: "저장한 단어",
+    bookmarksTitle: "북마크",
+    bookmarksHelper: "별표한 단어만 따로 모아서 볼 수 있어요.",
+    emptyBookmarks:
+      "아직 저장한 단어가 없어요. 단어 화면에서 별표를 눌러 담아보세요.",
+    bookmarkAdded: "저장됨",
+    memorizedAdded: "외웠음",
+    memorizeWord: "외웠어요",
+    unmemorizeWord: "다시 볼래요",
+    wordLengthFilter: "글자 수로 보기",
+    memorizedFilter: "외운 단어 보기",
+    allWordsFilter: "전체 보기",
+    hideMemorizedFilter: "외운 단어 숨기기",
+    memorizedOnlyFilter: "외운 단어만",
+    emptyFilteredWords:
+      "지금 필터에는 보이는 단어가 없어요. 외운 단어 숨기기를 풀거나 글자 수를 바꿔보세요.",
+    bookmarkAdd: "북마크 추가",
+    bookmarkRemove: "북마크 해제",
+    studyLevelTitle: "토끼 레벨",
+    studyLevelStage: "Lv.{level}",
+    studyLevelProgress: "지금까지 {count}문제를 풀었어요.",
+    allLengths: "전체",
+    lengthOption: "{count}글자",
+    pageSummary: "{current} / {total} 페이지",
+    previousPage: "이전",
+    nextPage: "다음",
+    showingWordsSummary: "{start}-{end} / {total}개",
+    loadMoreWords: "더 크게 보기",
+    englishMeaningLabel: "영문 뜻 원문",
+    meaningLocalizationNotice:
+      "한국어 뜻 데이터는 직접 채워 넣는 방식으로 붙고 있어요. 아직 번역이 없는 항목은 영문 뜻 원문을 보여줘요.",
+    showMeanings: "뜻 보기",
+    hideMeanings: "뜻 가리기",
+    meaningHidden: "••••••",
+    ttsSettings: "음성 설정",
+    ttsHelper: "문제와 단어 카드에서 들리는 일본어 발음의 느낌을 조절해요.",
+    ttsOn: "TTS 켜기",
+    ttsOff: "TTS 끄기",
+    speechRate: "말하기 속도",
+    speechPitch: "음성 톤",
+    speechRateSlow: "느리게",
+    speechRateNormal: "보통",
+    speechRateFast: "빠르게",
+    speechPitchLow: "낮게",
+    speechPitchNormal: "보통",
+    speechPitchHigh: "또렷하게",
+    homeDensity: "학습 단어 범위",
+    homeDensityHelper: "현재 레벨에서 학습 대상으로 포함할 전체 단어 수를 정해요.",
+    densityRich: "많이 외우기",
+    densityBalanced: "중간 외우기",
+    densitySimple: "간단 외우기",
+    resetStudyDataTitle: "학습 기록 초기화",
+    resetStudyDataHelper:
+      "세션 기록, 오답, 북마크, 외운 단어, 연속 학습 수치가 모두 삭제돼요. 설정은 그대로 남아요.",
+    resetStudyDataButton: "학습 기록 전체 삭제",
+    resetStudyDataConfirmTitle: "학습 기록을 모두 삭제할까요?",
+    resetStudyDataConfirmBody: "이 작업은 되돌릴 수 없어요. 지금까지의 학습 기록이 모두 삭제됩니다.",
+    resetStudyDataCancel: "취소",
+    resetStudyDataConfirm: "삭제하기",
+    dataSourcesTitle: "데이터 출처",
+    dataSourcesHelper: "광고 포함 배포를 위해 실제 사용 중인 데이터 소스와 라이선스를 함께 안내합니다.",
+    dataSourceJmdict:
+      "JMdict (EDRDG) · CC BY-SA 4.0\n단어 표기, 읽기, 영문 뜻 데이터에 사용\nhttps://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+    dataSourceJlptWordList:
+      "jlpt-word-list by elzup · MIT\nJLPT 레벨 매핑 참고 데이터에 사용\nhttps://github.com/elzup/jlpt-word-list",
+    dataSourceDisclaimer:
+      "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다."
+  },
+  en: {
+    title: "JLPT Bunny",
+    tagline:
+      "A calm Japanese vocab app with short sessions and automatic review",
+    loading: "Preparing your calm study session...",
+    heroBadge: "Daily Focus",
+    heroTitle: "You're finding your flow.",
+    homeGoalCompleteTitle: "Your garden is glowing today.",
+    homeGoalCompleteBody: "You've finished today's goal. Rest here for a moment, or keep the calm going with one more round.",
+    dailyGoal: "Daily Goal",
+    dailyProgressHint: "{count} more sessions to reach today's calm finish.",
+    dailyProgressCompleteHint: "Today's goal is complete. Want to keep going for one more calm round?",
+    streak: "Streak",
+    streakValue: "{count} days",
+    start: "Start Session",
+    review: "Review Mistakes",
+    difficulty: "Difficulty",
+    languageSettings: "Language",
+    languageHelper:
+      "By default the app follows your device language, and you can change it here anytime.",
+    languageSystem: "System",
+    languageSystemValue: "Use device language",
+    languageKorean: "Korean",
+    languageEnglish: "English",
+    setupTitle: "Let's set things up first",
+    setupHelper:
+      "Choose your level and app language once before you start. You can change both later in Settings.",
+    saveAndStart: "Save and Start",
+    startKicker: "Start Session",
+    startBody:
+      "{level} level · {count} questions · missed words are mixed back in first",
+    reviewKicker: "Review Deck",
+    reviewBody: "{count} tricky words waiting for another pass",
+    focusGarden: "Study Overview",
+    currentLevel: "Current level {level}",
+    dashboardHelper:
+      "Your existing study data stays intact. This dashboard simply reshapes your current sessions, streak, and review queue into the new layout.",
+    settingsEyebrow: "App Settings",
+    settingsTitle: "Settings",
+    settingsHelper: "Change your study level and app language here anytime.",
+    recentLevel: "Recent Level",
+    meaningQuiz: "Meaning Quiz",
+    readingQuiz: "Reading Quiz",
+    focusRound: "Focus Round",
+    chooseMeaning: "Choose the meaning",
+    chooseReading: "Choose the reading",
+    meaningHint: "Pick the English meaning that matches this word.",
+    readingHint: "Pick the kana reading that matches this word.",
+    listen: "Listen",
+    correct: "Correct",
+    wrong: "Wrong",
+    next: "Next",
+    resultTitle: "Session Result",
+    resultScore: "{correct} / {total} correct",
+    resultKicker: "Otsukaresama",
+    goalCompleteKicker: "Today's goal is complete",
+    goalCompletePrompt: "One more gentle round now can make tomorrow feel lighter.",
+    accuracy: "Accuracy",
+    needsReview: "Needs Review",
+    perfectRound: "Perfect round",
+    gardenGrowth: "Garden Growth",
+    missedWords: "Missed words",
+    nothingToReview: "Perfect round. Nothing to review this time.",
+    playAgain: "Play Again",
+    goHome: "Home",
+    reviewTitle: "Mistake Review",
+    emptyReview: "No mistakes saved yet. Let's begin with a short session.",
+    startReview: "Start Review",
+    question: "Question",
+    of: "/",
+    adPlaceholder: "Interstitial ad slot after the session",
+    encourageGood: "Nice calm run. You're building momentum.",
+    encourageRetry: "A few more rounds and these words will stick.",
+    filters: "Recently missed",
+    sortedByRecent: "Showing the words you missed most recently.",
+    sessions: "sessions",
+    knowledgeGrowth: "Knowledge Growth",
+    mistakesCount: "{count} mistakes",
+    highPriorityFocus: "High priority focus",
+    reviewNeeded: "Review needed",
+    meaningLabel: "Meaning",
+    readingLabel: "Reading",
+    focusNextWord:
+      'Focus on "{word}" next. One more calm pass will help it stick.',
+    level: "Level",
+    wordBankEyebrow: "Memory Cards",
+    wordBankTitle: "Word Bank",
+    wordBankHelper: "Browse all {count} words in {level} at a glance.",
+    wordsTab: "Words",
+    bookmarksTab: "Bookmarks",
+    bookmarksEyebrow: "Saved Words",
+    bookmarksTitle: "Bookmarks",
+    bookmarksHelper: "See only the words you've saved with the star icon.",
+    emptyBookmarks:
+      "No bookmarked words yet. Tap the star in the word bank to save one.",
+    bookmarkAdded: "Bookmarked",
+    memorizedAdded: "Memorized",
+    memorizeWord: "I know this",
+    unmemorizeWord: "Show again",
+    wordLengthFilter: "Length Filter",
+    memorizedFilter: "Memorized Filter",
+    allWordsFilter: "Show all",
+    hideMemorizedFilter: "Hide memorized",
+    memorizedOnlyFilter: "Memorized only",
+    emptyFilteredWords:
+      "No words match this filter right now. Try showing memorized words again or change the length filter.",
+    bookmarkAdd: "Add Bookmark",
+    bookmarkRemove: "Remove Bookmark",
+    studyLevelTitle: "Bunny Growth",
+    studyLevelStage: "Lv.{level} Bunny",
+    studyLevelProgress: "You've studied {count} questions so far.",
+    allLengths: "All",
+    lengthOption: "{count} characters",
+    pageSummary: "Page {current} / {total}",
+    previousPage: "Previous",
+    nextPage: "Next",
+    showingWordsSummary: "{start}-{end} of {total}",
+    loadMoreWords: "Show More",
+    englishMeaningLabel: "English meaning",
+    meaningLocalizationNotice:
+      "Korean meanings are being added directly into the dataset. Entries without a Korean meaning still fall back to the original English gloss.",
+    showMeanings: "Show meanings",
+    hideMeanings: "Hide meanings",
+    meaningHidden: "••••••",
+    ttsSettings: "Speech",
+    ttsHelper: "Control how Japanese pronunciation sounds on quiz and word cards.",
+    ttsOn: "TTS On",
+    ttsOff: "TTS Off",
+    speechRate: "Speech Rate",
+    speechPitch: "Voice Tone",
+    speechRateSlow: "Slow",
+    speechRateNormal: "Normal",
+    speechRateFast: "Fast",
+    speechPitchLow: "Lower",
+    speechPitchNormal: "Normal",
+    speechPitchHigh: "Clearer",
+    homeDensity: "Study Word Range",
+    homeDensityHelper: "Choose how many words from the current level are included in your study pool.",
+    densityRich: "More Words",
+    densityBalanced: "Balanced",
+    densitySimple: "Light",
+    resetStudyDataTitle: "Reset Study Data",
+    resetStudyDataHelper:
+      "This deletes session history, review mistakes, bookmarks, memorized words, and streak progress. Your settings stay as they are.",
+    resetStudyDataButton: "Delete All Study Data",
+    resetStudyDataConfirmTitle: "Delete all study data?",
+    resetStudyDataConfirmBody:
+      "This cannot be undone. Your accumulated study history will be permanently removed.",
+    resetStudyDataCancel: "Cancel",
+    resetStudyDataConfirm: "Delete",
+    dataSourcesTitle: "Data Sources",
+    dataSourcesHelper:
+      "These are the data sources and licenses currently used in the shipped app build.",
+    dataSourceJmdict:
+      "JMdict (EDRDG) · CC BY-SA 4.0\nUsed for word forms, readings, and English meanings\nhttps://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+    dataSourceJlptWordList:
+      "jlpt-word-list by elzup · MIT\nUsed as a community-maintained JLPT level mapping reference\nhttps://github.com/elzup/jlpt-word-list",
+    dataSourceDisclaimer:
+      "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT)."
+  }
+} as const
+
+export function detectLanguage(): ResolvedLanguage {
+  const locale = getLocales()[0]?.languageCode ?? "en"
+  return locale === "ko" ? "ko" : "en"
+}
+
+export function resolveLanguage(language: AppLanguage): ResolvedLanguage {
+  return language === "system" ? detectLanguage() : language
+}
+
+export function t(language: AppLanguage, key: CopyKey) {
+  return dictionary[resolveLanguage(language)][key]
+}
+
+export function tf(
+  language: AppLanguage,
+  key: CopyKey,
+  values: Record<string, string | number>
+) {
+  return t(language, key).replace(
+    /\{(\w+)\}/g,
+    (_, token: string) => `${values[token] ?? ""}`
+  )
+}
