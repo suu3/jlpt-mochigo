@@ -73,14 +73,29 @@ type AppState = {
   speakEnabled: () => boolean;
 };
 
+function dateKey(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
 function todayKey() {
-  return new Date().toISOString().slice(0, 10);
+  return dateKey();
 }
 
 function yesterdayKey() {
   const date = new Date();
   date.setDate(date.getDate() - 1);
-  return date.toISOString().slice(0, 10);
+  return dateKey(date);
+}
+
+function historyDateKey(isoString?: string) {
+  if (!isoString) {
+    return null;
+  }
+
+  return dateKey(new Date(isoString));
 }
 
 function defaultSettings(): AppSettings {
@@ -554,8 +569,8 @@ export const useAppStore = create<AppState>((set, get) => {
         .map((item) => item.word)
         .filter((word, index, words) => currentWrongWordIds.includes(word.id) && words.findIndex((candidate) => candidate.id === word.id) === index);
 
-      const completedAt = historyEntry.completedAt.slice(0, 10);
-      const previousDate = state.history[0]?.completedAt.slice(0, 10);
+      const completedAt = historyDateKey(historyEntry.completedAt);
+      const previousDate = historyDateKey(state.history[0]?.completedAt);
       const shouldIncreaseStreak =
         previousDate === yesterdayKey() || state.streak === 0 || previousDate === completedAt;
       const streak =

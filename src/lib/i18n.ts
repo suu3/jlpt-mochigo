@@ -91,6 +91,7 @@ export type CopyKey =
   | "wordBankEyebrow"
   | "wordBankTitle"
   | "wordBankHelper"
+  | "customWordBankHelper"
   | "jlptWordsTab"
   | "customNotebookTab"
   | "wordsTab"
@@ -288,6 +289,8 @@ const dictionary = {
     wordBankEyebrow: "단어 모음",
     wordBankTitle: "단어 모아보기",
     wordBankHelper: "{level} 단어 {count}개를 빠르게 훑어볼 수 있어요.",
+    customWordBankHelper:
+      "나만의 단어장에 등록된 단어 {count}개를 빠르게 훑어볼 수 있어요.",
     jlptWordsTab: "JLPT 단어",
     customNotebookTab: "나만의 단어장",
     wordsTab: "단어",
@@ -296,7 +299,7 @@ const dictionary = {
     bookmarksTitle: "북마크",
     bookmarksHelper: "북마크한 단어만 따로 모아서 볼 수 있어요.",
     emptyBookmarks:
-      "아직 저장한 단어가 없어요. 단어 화면에서 북마크해서 담아보세요.",
+      "아직 저장된 단어가 없어요.\n단어 화면에서 북마크해서 담아보세요.",
     bookmarkAdded: "저장됨",
     memorizedAdded: "외웠음",
     memorizeWord: "외웠어요",
@@ -495,6 +498,8 @@ const dictionary = {
     wordBankEyebrow: "Memory Cards",
     wordBankTitle: "Word Bank",
     wordBankHelper: "Browse all {count} words in {level} at a glance.",
+    customWordBankHelper:
+      "Browse all {count} words saved in your notebook at a glance.",
     jlptWordsTab: "JLPT Words",
     customNotebookTab: "My Notebook",
     wordsTab: "Words",
@@ -503,7 +508,7 @@ const dictionary = {
     bookmarksTitle: "Bookmarks",
     bookmarksHelper: "Browse only the words you've bookmarked.",
     emptyBookmarks:
-      "No bookmarked words yet. Bookmark a word in the word bank to see it here.",
+      "No bookmarked words yet.\nBookmark a word in the word bank to see it here.",
     bookmarkAdded: "Bookmarked",
     memorizedAdded: "Memorized",
     memorizeWord: "I know this",

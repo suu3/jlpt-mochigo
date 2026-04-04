@@ -1,6 +1,14 @@
 import * as Speech from "expo-speech";
 import React, { useEffect, useMemo, useState } from "react";
-import { ActivityIndicator, Pressable, StyleSheet, TextInput, View, useWindowDimensions } from "react-native";
+import {
+  ActivityIndicator,
+  PanResponder,
+  Pressable,
+  StyleSheet,
+  TextInput,
+  View,
+  useWindowDimensions
+} from "react-native";
 import { AppIcon } from "../components/AppIcon";
 import { AppText as Text } from "../components/AppText";
 import { BunnyBadge } from "../components/BunnyBadge";
@@ -16,6 +24,7 @@ import { ScaleInteract } from "../components/ScaleInteract";
 import { animations } from "../constants/theme";
 
 const PAGE_SIZE = 24;
+const SWIPE_TRIGGER_DISTANCE = 48;
 type MemorizedFilter = "all" | "hidden" | "only";
 type WordTab = "jlpt" | "custom";
 type FilterAccordion = "kanaRow" | "length" | "memorized" | null;
@@ -242,6 +251,29 @@ export function WordsScreen() {
   const [showValidation, setShowValidation] = useState(false);
   
   const resolvedLanguage = resolveLanguage(settings.language);
+  const helperCopy =
+    activeTab === "jlpt"
+      ? t(settings.language, "wordBankHelper")
+      : t(settings.language, "customWordBankHelper");
+
+  const panResponder = useMemo(
+    () =>
+      PanResponder.create({
+        onMoveShouldSetPanResponder: (_, gestureState) =>
+          Math.abs(gestureState.dx) > 18 && Math.abs(gestureState.dx) > Math.abs(gestureState.dy) * 1.4,
+        onPanResponderRelease: (_, gestureState) => {
+          if (gestureState.dx <= -SWIPE_TRIGGER_DISTANCE && activeTab === "jlpt") {
+            setActiveTab("custom");
+            return;
+          }
+
+          if (gestureState.dx >= SWIPE_TRIGGER_DISTANCE && activeTab === "custom") {
+            setActiveTab("jlpt");
+          }
+        }
+      }),
+    [activeTab]
+  );
 
   const { filteredWords, lengthOptions } = useMemo(() => {
     const sourceWords = wordsByLevel[settings.level] ?? [];
@@ -340,8 +372,9 @@ export function WordsScreen() {
 
   return (
     <View style={styles.container}>
-      <AnimateEntrance duration={animations.duration.long} type="lift">
-        <View style={styles.header}>
+      <View {...panResponder.panHandlers} style={styles.swipeArea}>
+        <AnimateEntrance duration={animations.duration.long} type="lift">
+          <View style={styles.header}>
           <View style={styles.headerRow}>
             <View style={styles.headerCopy}>
               {activeTab === "jlpt" && (
@@ -357,7 +390,7 @@ export function WordsScreen() {
           </View>
           <Text style={styles.helper}>
             {renderHighlightedCopy(
-              t(settings.language, "wordBankHelper"),
+              helperCopy,
               {
                 level: settings.level,
                 count: activeTab === "jlpt" ? filteredWords.length : customWords.length
@@ -368,11 +401,11 @@ export function WordsScreen() {
               }
             )}
           </Text>
-        </View>
-      </AnimateEntrance>
+          </View>
+        </AnimateEntrance>
 
-      <AnimateEntrance delay={100} duration={animations.duration.long} type="lift">
-        <View style={styles.tabRow}>
+        <AnimateEntrance delay={100} duration={animations.duration.long} type="lift">
+          <View style={styles.tabRow}>
           {(
             [
               ["jlpt", "jlptWordsTab"],
@@ -404,10 +437,10 @@ export function WordsScreen() {
               </ScaleInteract>
             );
           })}
-        </View>
-      </AnimateEntrance>
+          </View>
+        </AnimateEntrance>
 
-      <View style={styles.noticeControls}>
+        <View style={styles.noticeControls}>
         <Pressable
           onPress={() => setShowMeanings((current) => !current)}
           style={({ pressed }) => [
@@ -426,9 +459,9 @@ export function WordsScreen() {
               : t(settings.language, "showMeanings")}
           </Text>
         </Pressable>
-      </View>
+        </View>
 
-      {activeTab === "jlpt" ? (
+        {activeTab === "jlpt" ? (
         <Card style={styles.noticeCard}>
         <View style={styles.filterSection}>
           <Pressable
@@ -813,7 +846,7 @@ export function WordsScreen() {
         </>
       )}
 
-      {activeTab === "jlpt" ? (
+        {activeTab === "jlpt" ? (
       <View style={styles.list}>
         {isWordDataLoading === true ? (
           <View style={styles.inlineLoading}>
@@ -956,7 +989,7 @@ export function WordsScreen() {
       </View>
       ) : null}
 
-      {activeTab === "jlpt" && isWordDataLoading !== true ? (
+        {activeTab === "jlpt" && isWordDataLoading !== true ? (
       <View style={styles.pagination}>
         <Text style={styles.pageSummary}>
           {tf(settings.language, "showingWordsSummary", {
@@ -1028,7 +1061,8 @@ export function WordsScreen() {
           </View>
         ) : null}
       </View>
-      ) : null}
+        ) : null}
+      </View>
     </View>
   );
 }
@@ -1037,6 +1071,9 @@ const styles = StyleSheet.create({
   container: {
     gap: spacing.lg,
     flex: 1
+  },
+  swipeArea: {
+    gap: spacing.lg
   },
   tabRow: {
     flexDirection: "row",
