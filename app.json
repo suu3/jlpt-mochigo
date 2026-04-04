@@ -2,7 +2,7 @@
   "expo": {
     "name": "Mochigo: JLPT Vocabulary & Japanese Quiz",
     "slug": "mochigo",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "icon": "./src/assets/icon.png",
@@ -21,16 +21,29 @@
         "foregroundImage": "./src/assets/icon.png",
         "backgroundColor": "#F3F0E8"
       },
-      "package": "com.mochigo.app"
+      "package": "com.mochigo.app",
+      "versionCode": 2
     },
     "plugins": [
       "expo-font",
       "expo-localization",
-      "expo-sqlite"
+      "expo-sqlite",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-3886701004172830~3432691195",
+          "iosAppId": "ca-app-pub-xxxxxxxxxxxxxxxx~xxxxxxxxxx"
+        }
+      ]
     ],
     "locales": {
       "ko": "./locales/ko.json",
       "en": "./locales/en.json"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "50557580-48a9-446c-8784-4a276891e070"
+      }
     }
   }
 }

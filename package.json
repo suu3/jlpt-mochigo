@@ -15,7 +15,7 @@
     "data:download": "node scripts/download-data.mjs",
     "data:build": "node scripts/build-jlpt-data.mjs",
     "data:refresh": "npm run data:download && npm run data:build",
-    "build:android": "npx eas-cli build -p android --local"
+    "build:android": "eas build -p android --profile production"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
@@ -47,6 +47,7 @@
     "@types/node": "^24.12.0",
     "@types/react": "~19.1.17",
     "babel-preset-expo": "~54.0.10",
+    "eas-cli": "^18.5.0",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.5.0",
