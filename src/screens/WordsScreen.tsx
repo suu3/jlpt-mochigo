@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useState } from "react"
 import { ActivityIndicator, Pressable, StyleSheet, TextInput, View, useWindowDimensions } from "react-native"
 import { AppIcon } from "../components/AppIcon"
 import { AppText as Text } from "../components/AppText"
+import { BunnyBadge } from "../components/BunnyBadge"
 import { Card } from "../components/Card"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { resolveLanguage, t, tf } from "../lib/i18n"
@@ -215,8 +216,11 @@ export function WordsScreen() {
     toggleWordBookmark,
     toggleWordMemorized,
     speakEnabled,
-    isWordDataLoading
+    isWordDataLoading,
+    totalStudyCount
   } = useAppStore()
+
+  const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1
 
   const [activeTab, setActiveTab] = useState<WordTab>("jlpt")
   const [selectedLength, setSelectedLength] = useState<number | null>(null)
@@ -751,6 +755,9 @@ export function WordsScreen() {
             </View>
             {customWords.length === 0 ? (
               <Card style={styles.emptyCard}>
+                <View style={styles.emptyBunnyWrap}>
+                  <BunnyBadge mood="soft" stage={bunnyStage} />
+                </View>
                 <Text style={styles.emptyText}>
                   {t(settings.language, "emptyCustomWords")}
                 </Text>
@@ -807,6 +814,9 @@ export function WordsScreen() {
           </View>
         ) : filteredWords.length === 0 ? (
           <Card style={styles.emptyCard}>
+            <View style={styles.emptyBunnyWrap}>
+              <BunnyBadge mood="soft" stage={bunnyStage} />
+            </View>
             <Text style={styles.emptyText}>
               {t(settings.language, "emptyFilteredWords")}
             </Text>
@@ -1315,7 +1325,13 @@ const styles = StyleSheet.create({
   },
   emptyText: {
     color: colors.textMuted,
-    lineHeight: 22
+    lineHeight: 22,
+    textAlign: "center"
+  },
+  emptyBunnyWrap: {
+    alignItems: "center",
+    marginBottom: spacing.md,
+    opacity: 0.8
   },
   header: {
     gap: spacing.md
