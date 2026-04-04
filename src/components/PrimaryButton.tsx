@@ -4,6 +4,8 @@ import { AppText as Text } from "./AppText"
 import { AppIcon } from "./AppIcon"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 
+import { DecoratedIcon } from "./DecoratedIcon"
+
 type Props = {
   label: string;
   onPress: () => void;
@@ -11,6 +13,7 @@ type Props = {
   disabled?: boolean;
   style?: ViewStyle;
   icon?: React.ComponentProps<typeof AppIcon>["name"];
+  decoration?: React.ComponentProps<typeof DecoratedIcon>["name"];
 }
 
 export function PrimaryButton({
@@ -19,7 +22,8 @@ export function PrimaryButton({
   variant = "primary",
   disabled = false,
   style,
-  icon
+  icon,
+  decoration
 }: Props) {
   return (
     <Pressable
@@ -35,7 +39,9 @@ export function PrimaryButton({
         style
       ]}
     >
-      {icon ? (
+      {decoration ? (
+        <DecoratedIcon name={decoration} size={28} />
+      ) : icon ? (
         <AppIcon
           name={icon}
           size={20}

@@ -19,9 +19,7 @@
     "kana": "～く",
     "kanji": "～区",
     "meaning": "~ district, ~ ward, ~ borough",
-    "meanings": [
-      "~ district, ~ ward, ~ borough"
-    ],
+    "meanings": ["~ district, ~ ward, ~ borough"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -60,13 +58,7 @@
     "kana": "たいてい",
     "kanji": "大抵",
     "meaning": "mostly",
-    "meanings": [
-      "mostly",
-      "ordinarily",
-      "usually",
-      "generally",
-      "probably"
-    ],
+    "meanings": ["mostly", "ordinarily", "usually", "generally", "probably"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -75,12 +67,7 @@
     "kana": "とうとう",
     "kanji": "とうとう",
     "meaning": "finally",
-    "meanings": [
-      "finally",
-      "at last",
-      "in the end",
-      "ultimately"
-    ],
+    "meanings": ["finally", "at last", "in the end", "ultimately"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -89,10 +76,7 @@
     "kana": "ガソリン",
     "kanji": "ガソリン",
     "meaning": "gasoline",
-    "meanings": [
-      "gasoline",
-      "petrol"
-    ],
+    "meanings": ["gasoline", "petrol"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -101,13 +85,7 @@
     "kana": "なる",
     "kanji": "鳴る",
     "meaning": "to sound",
-    "meanings": [
-      "to sound",
-      "to ring",
-      "to resound",
-      "to echo",
-      "to roar"
-    ],
+    "meanings": ["to sound", "to ring", "to resound", "to echo", "to roar"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -146,9 +124,7 @@
     "kana": "にがい",
     "kanji": "苦い",
     "meaning": "bitter",
-    "meanings": [
-      "bitter"
-    ],
+    "meanings": ["bitter"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -172,13 +148,7 @@
     "kana": "いけん",
     "kanji": "意見",
     "meaning": "opinion",
-    "meanings": [
-      "opinion",
-      "view",
-      "comment",
-      "scolding",
-      "reprimand"
-    ],
+    "meanings": ["opinion", "view", "comment", "scolding", "reprimand"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -187,9 +157,7 @@
     "kana": "やはり; やっぱり",
     "kanji": "やはり; やっぱり",
     "meaning": "as I thought, absolutely",
-    "meanings": [
-      "as I thought, absolutely"
-    ],
+    "meanings": ["as I thought, absolutely"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -198,12 +166,7 @@
     "kana": "まんが",
     "kanji": "漫画",
     "meaning": "cartoon",
-    "meanings": [
-      "cartoon",
-      "comic",
-      "comic strip",
-      "manga"
-    ],
+    "meanings": ["cartoon", "comic", "comic strip", "manga"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -227,10 +190,7 @@
     "kana": "いがく",
     "kanji": "医学",
     "meaning": "medicine",
-    "meanings": [
-      "medicine",
-      "medical science"
-    ],
+    "meanings": ["medicine", "medical science"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -239,10 +199,7 @@
     "kana": "テキスト",
     "kanji": "テキスト",
     "meaning": "text",
-    "meanings": [
-      "text",
-      "textbook"
-    ],
+    "meanings": ["text", "textbook"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -251,9 +208,7 @@
     "kana": "～つき",
     "kanji": "～月",
     "meaning": "month",
-    "meanings": [
-      "month"
-    ],
+    "meanings": ["month"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -277,9 +232,7 @@
     "kana": "～かい",
     "kanji": "～会",
     "meaning": "~ meeting",
-    "meanings": [
-      "~ meeting"
-    ],
+    "meanings": ["~ meeting"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -318,12 +271,7 @@
     "kana": "ぼく",
     "kanji": "僕",
     "meaning": "I",
-    "meanings": [
-      "I",
-      "me",
-      "you",
-      "manservant"
-    ],
+    "meanings": ["I", "me", "you", "manservant"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -377,11 +325,7 @@
     "kana": "とこや",
     "kanji": "床屋",
     "meaning": "barbershop",
-    "meanings": [
-      "barbershop",
-      "barber shop",
-      "barber"
-    ],
+    "meanings": ["barbershop", "barber shop", "barber"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -390,10 +334,7 @@
     "kana": "オートバイ",
     "kanji": "オートバイ",
     "meaning": "motorcycle",
-    "meanings": [
-      "motorcycle",
-      "motorbike"
-    ],
+    "meanings": ["motorcycle", "motorbike"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -417,11 +358,7 @@
     "kana": "やむ",
     "kanji": "止む",
     "meaning": "to cease",
-    "meanings": [
-      "to cease",
-      "to stop",
-      "to be over"
-    ],
+    "meanings": ["to cease", "to stop", "to be over"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -430,11 +367,7 @@
     "kana": "もし",
     "kanji": "もし",
     "meaning": "if",
-    "meanings": [
-      "if",
-      "in case",
-      "supposing"
-    ],
+    "meanings": ["if", "in case", "supposing"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -458,10 +391,7 @@
     "kana": "だいがくせい",
     "kanji": "大学生",
     "meaning": "university student",
-    "meanings": [
-      "university student",
-      "college student"
-    ],
+    "meanings": ["university student", "college student"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -470,10 +400,7 @@
     "kana": "うんてんしゅ",
     "kanji": "運転手",
     "meaning": "driver",
-    "meanings": [
-      "driver",
-      "chauffeur"
-    ],
+    "meanings": ["driver", "chauffeur"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -482,9 +409,7 @@
     "kana": "よしゅう",
     "kanji": "予習",
     "meaning": "preparation for a lesson",
-    "meanings": [
-      "preparation for a lesson"
-    ],
+    "meanings": ["preparation for a lesson"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -493,13 +418,7 @@
     "kana": "しんぱいする",
     "kanji": "心配",
     "meaning": "worry",
-    "meanings": [
-      "worry",
-      "concern",
-      "anxiety",
-      "uneasiness",
-      "fear"
-    ],
+    "meanings": ["worry", "concern", "anxiety", "uneasiness", "fear"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -523,11 +442,7 @@
     "kana": "ひじょうに",
     "kanji": "非常に",
     "meaning": "very",
-    "meanings": [
-      "very",
-      "extremely",
-      "exceedingly"
-    ],
+    "meanings": ["very", "extremely", "exceedingly"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -551,13 +466,7 @@
     "kana": "やわらかい",
     "kanji": "柔らかい",
     "meaning": "soft",
-    "meanings": [
-      "soft",
-      "tender",
-      "supple",
-      "flexible",
-      "limber"
-    ],
+    "meanings": ["soft", "tender", "supple", "flexible", "limber"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -581,9 +490,7 @@
     "kana": "～ございます",
     "kanji": "～ございます",
     "meaning": "to be (polite), to exist",
-    "meanings": [
-      "to be (polite), to exist"
-    ],
+    "meanings": ["to be (polite), to exist"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -592,13 +499,7 @@
     "kana": "き",
     "kanji": "気",
     "meaning": "spirit",
-    "meanings": [
-      "spirit",
-      "mind",
-      "heart",
-      "nature",
-      "disposition"
-    ],
+    "meanings": ["spirit", "mind", "heart", "nature", "disposition"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -621,13 +522,7 @@
     "kana": "ほとんど",
     "kanji": "ほとんど",
     "meaning": "almost",
-    "meanings": [
-      "almost",
-      "nearly",
-      "mostly",
-      "practically",
-      "virtually"
-    ],
+    "meanings": ["almost", "nearly", "mostly", "practically", "virtually"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -636,13 +531,7 @@
     "kana": "つもり",
     "kanji": "つもり",
     "meaning": "intention",
-    "meanings": [
-      "intention",
-      "plan",
-      "purpose",
-      "expectation",
-      "belief"
-    ],
+    "meanings": ["intention", "plan", "purpose", "expectation", "belief"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -707,10 +596,7 @@
     "kana": "きそく",
     "kanji": "規則",
     "meaning": "rule",
-    "meanings": [
-      "rule",
-      "regulation"
-    ],
+    "meanings": ["rule", "regulation"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -719,13 +605,7 @@
     "kana": "うん",
     "kanji": "うん",
     "meaning": "yes",
-    "meanings": [
-      "yes",
-      "yeah",
-      "uh huh",
-      "hum",
-      "hmmm"
-    ],
+    "meanings": ["yes", "yeah", "uh huh", "hum", "hmmm"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -734,10 +614,7 @@
     "kana": "はつおん",
     "kanji": "発音",
     "meaning": "pronunciation",
-    "meanings": [
-      "pronunciation",
-      "production of sound"
-    ],
+    "meanings": ["pronunciation", "production of sound"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -746,13 +623,7 @@
     "kana": "やく",
     "kanji": "焼く",
     "meaning": "to burn",
-    "meanings": [
-      "to burn",
-      "to roast",
-      "to broil",
-      "to grill",
-      "to bake"
-    ],
+    "meanings": ["to burn", "to roast", "to broil", "to grill", "to bake"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -761,9 +632,7 @@
     "kana": "おくじょう",
     "kanji": "屋上",
     "meaning": "rooftop",
-    "meanings": [
-      "rooftop"
-    ],
+    "meanings": ["rooftop"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -787,13 +656,7 @@
     "kana": "ごみ",
     "kanji": "ごみ",
     "meaning": "rubbish",
-    "meanings": [
-      "rubbish",
-      "trash",
-      "garbage",
-      "refuse",
-      "litter"
-    ],
+    "meanings": ["rubbish", "trash", "garbage", "refuse", "litter"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -802,9 +665,7 @@
     "kana": "アフリカ",
     "kanji": "アフリカ",
     "meaning": "Africa",
-    "meanings": [
-      "Africa"
-    ],
+    "meanings": ["Africa"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -813,13 +674,7 @@
     "kana": "てん",
     "kanji": "点",
     "meaning": "dot",
-    "meanings": [
-      "dot",
-      "spot",
-      "point",
-      "speck",
-      "mark"
-    ],
+    "meanings": ["dot", "spot", "point", "speck", "mark"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -843,13 +698,7 @@
     "kana": "こんど",
     "kanji": "今度",
     "meaning": "this time",
-    "meanings": [
-      "this time",
-      "now",
-      "next time",
-      "another time",
-      "shortly"
-    ],
+    "meanings": ["this time", "now", "next time", "another time", "shortly"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -858,11 +707,7 @@
     "kana": "きかい",
     "kanji": "機会",
     "meaning": "chance",
-    "meanings": [
-      "chance",
-      "opportunity",
-      "occasion"
-    ],
+    "meanings": ["chance", "opportunity", "occasion"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -871,10 +716,7 @@
     "kana": "たてる",
     "kanji": "建てる",
     "meaning": "to build",
-    "meanings": [
-      "to build",
-      "to construct"
-    ],
+    "meanings": ["to build", "to construct"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -883,12 +725,7 @@
     "kana": "ふくざつ",
     "kanji": "複雑",
     "meaning": "complex",
-    "meanings": [
-      "complex",
-      "complicated",
-      "intricate",
-      "mixed (feelings)"
-    ],
+    "meanings": ["complex", "complicated", "intricate", "mixed (feelings)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -897,11 +734,7 @@
     "kana": "かれ",
     "kanji": "彼",
     "meaning": "he",
-    "meanings": [
-      "he",
-      "him",
-      "boyfriend"
-    ],
+    "meanings": ["he", "him", "boyfriend"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -910,12 +743,7 @@
     "kana": "いらっしゃる",
     "kanji": "いらっしゃる",
     "meaning": "to come",
-    "meanings": [
-      "to come",
-      "to go",
-      "to be (somewhere)",
-      "to be (doing)"
-    ],
+    "meanings": ["to come", "to go", "to be (somewhere)", "to be (doing)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -937,13 +765,7 @@
     "kana": "だいじ",
     "kanji": "大事",
     "meaning": "important",
-    "meanings": [
-      "important",
-      "serious",
-      "crucial",
-      "valuable",
-      "precious"
-    ],
+    "meanings": ["important", "serious", "crucial", "valuable", "precious"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -952,10 +774,7 @@
     "kana": "おくりもの",
     "kanji": "贈り物",
     "meaning": "present",
-    "meanings": [
-      "present",
-      "gift"
-    ],
+    "meanings": ["present", "gift"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -964,13 +783,7 @@
     "kana": "どろぼう",
     "kanji": "泥棒",
     "meaning": "thief",
-    "meanings": [
-      "thief",
-      "burglar",
-      "robber",
-      "theft",
-      "burglary"
-    ],
+    "meanings": ["thief", "burglar", "robber", "theft", "burglary"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -979,9 +792,7 @@
     "kana": "～せい",
     "kanji": "～製",
     "meaning": "made in ~",
-    "meanings": [
-      "made in ~"
-    ],
+    "meanings": ["made in ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -990,13 +801,7 @@
     "kana": "ちゅうい",
     "kanji": "注意",
     "meaning": "attention",
-    "meanings": [
-      "attention",
-      "notice",
-      "heed",
-      "care",
-      "caution"
-    ],
+    "meanings": ["attention", "notice", "heed", "care", "caution"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1005,10 +810,7 @@
     "kana": "たいふう",
     "kanji": "台風",
     "meaning": "typhoon",
-    "meanings": [
-      "typhoon",
-      "hurricane"
-    ],
+    "meanings": ["typhoon", "hurricane"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1017,13 +819,7 @@
     "kana": "ひ",
     "kanji": "日",
     "meaning": "day",
-    "meanings": [
-      "day",
-      "days",
-      "sun",
-      "sunshine",
-      "sunlight"
-    ],
+    "meanings": ["day", "days", "sun", "sunshine", "sunlight"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1032,9 +828,7 @@
     "kana": "～けん",
     "kanji": "～軒",
     "meaning": "counter for houses",
-    "meanings": [
-      "counter for houses"
-    ],
+    "meanings": ["counter for houses"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1087,9 +881,7 @@
     "kana": "レポート; リポート",
     "kanji": "レポート; リポート",
     "meaning": "report",
-    "meanings": [
-      "report"
-    ],
+    "meanings": ["report"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1128,10 +920,7 @@
     "kana": "かちょう",
     "kanji": "課長",
     "meaning": "section manager",
-    "meanings": [
-      "section manager",
-      "section chief"
-    ],
+    "meanings": ["section manager", "section chief"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1140,9 +929,7 @@
     "kana": "じしん",
     "kanji": "地震",
     "meaning": "earthquake",
-    "meanings": [
-      "earthquake"
-    ],
+    "meanings": ["earthquake"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1151,13 +938,7 @@
     "kana": "すると",
     "kanji": "すると",
     "meaning": "(and) then",
-    "meanings": [
-      "(and) then",
-      "and",
-      "thereupon",
-      "whereupon",
-      "in that case"
-    ],
+    "meanings": ["(and) then", "and", "thereupon", "whereupon", "in that case"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1181,10 +962,7 @@
     "kana": "ガラス",
     "kanji": "ガラス",
     "meaning": "glass",
-    "meanings": [
-      "glass",
-      "pane"
-    ],
+    "meanings": ["glass", "pane"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1193,9 +971,7 @@
     "kana": "～がくぶ",
     "kanji": "～学部",
     "meaning": "department of a university",
-    "meanings": [
-      "department of a university"
-    ],
+    "meanings": ["department of a university"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1204,13 +980,7 @@
     "kana": "きびしい",
     "kanji": "厳しい",
     "meaning": "severe",
-    "meanings": [
-      "severe",
-      "strict",
-      "rigid",
-      "unsparing",
-      "relentless"
-    ],
+    "meanings": ["severe", "strict", "rigid", "unsparing", "relentless"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1219,9 +989,7 @@
     "kana": "エスカレーター",
     "kanji": "エスカレーター",
     "meaning": "escalator",
-    "meanings": [
-      "escalator"
-    ],
+    "meanings": ["escalator"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1230,10 +998,7 @@
     "kana": "じんこう",
     "kanji": "人口",
     "meaning": "population",
-    "meanings": [
-      "population",
-      "common talk"
-    ],
+    "meanings": ["population", "common talk"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1242,13 +1007,7 @@
     "kana": "つき",
     "kanji": "月",
     "meaning": "Moon",
-    "meanings": [
-      "Moon",
-      "month",
-      "moonlight",
-      "(a) moon",
-      "natural satellite"
-    ],
+    "meanings": ["Moon", "month", "moonlight", "(a) moon", "natural satellite"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1257,9 +1016,7 @@
     "kana": "きぬ",
     "kanji": "絹",
     "meaning": "silk",
-    "meanings": [
-      "silk"
-    ],
+    "meanings": ["silk"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1282,13 +1039,7 @@
     "kana": "ふかい",
     "kanji": "深い",
     "meaning": "deep",
-    "meanings": [
-      "deep",
-      "profound",
-      "dense",
-      "thick",
-      "close (relationship)"
-    ],
+    "meanings": ["deep", "profound", "dense", "thick", "close (relationship)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1312,13 +1063,7 @@
     "kana": "ゆれる",
     "kanji": "揺れる",
     "meaning": "to shake",
-    "meanings": [
-      "to shake",
-      "to sway",
-      "to rock",
-      "to swing",
-      "to tremble"
-    ],
+    "meanings": ["to shake", "to sway", "to rock", "to swing", "to tremble"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1355,13 +1100,7 @@
     "kana": "かなしい",
     "kanji": "悲しい",
     "meaning": "sad",
-    "meanings": [
-      "sad",
-      "miserable",
-      "unhappy",
-      "sorrowful",
-      "sad"
-    ],
+    "meanings": ["sad", "miserable", "unhappy", "sorrowful", "sad"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1428,11 +1167,7 @@
     "kana": "アルバイト",
     "kanji": "アルバイト",
     "meaning": "part-time job",
-    "meanings": [
-      "part-time job",
-      "side job",
-      "part-time worker"
-    ],
+    "meanings": ["part-time job", "side job", "part-time worker"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1456,9 +1191,7 @@
     "kana": "いたす",
     "kanji": "致す",
     "meaning": "to do",
-    "meanings": [
-      "to do"
-    ],
+    "meanings": ["to do"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1482,10 +1215,7 @@
     "kana": "あかちゃん",
     "kanji": "赤ちゃん",
     "meaning": "baby",
-    "meanings": [
-      "baby",
-      "infant"
-    ],
+    "meanings": ["baby", "infant"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1509,9 +1239,7 @@
     "kana": "嘘",
     "kanji": "うそ",
     "meaning": "lie",
-    "meanings": [
-      "lie"
-    ],
+    "meanings": ["lie"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1520,11 +1248,7 @@
     "kana": "しょうせつ",
     "kanji": "小説",
     "meaning": "novel",
-    "meanings": [
-      "novel",
-      "story",
-      "(work of) fiction"
-    ],
+    "meanings": ["novel", "story", "(work of) fiction"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1533,13 +1257,7 @@
     "kana": "おや",
     "kanji": "親",
     "meaning": "parent",
-    "meanings": [
-      "parent",
-      "parents",
-      "mother and father",
-      "dealer",
-      "banker"
-    ],
+    "meanings": ["parent", "parents", "mother and father", "dealer", "banker"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1548,12 +1266,7 @@
     "kana": "それに",
     "kanji": "それに",
     "meaning": "besides",
-    "meanings": [
-      "besides",
-      "in addition",
-      "also",
-      "moreover"
-    ],
+    "meanings": ["besides", "in addition", "also", "moreover"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1562,11 +1275,7 @@
     "kana": "せいよう",
     "kanji": "西洋",
     "meaning": "the West",
-    "meanings": [
-      "the West",
-      "the Occident",
-      "Western countries"
-    ],
+    "meanings": ["the West", "the Occident", "Western countries"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1590,9 +1299,7 @@
     "kana": "パート (タイム)",
     "kanji": "パート (タイム)",
     "meaning": "part time (esp. female part time employees)",
-    "meanings": [
-      "part time (esp. female part time employees)"
-    ],
+    "meanings": ["part time (esp. female part time employees)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1601,13 +1308,7 @@
     "kana": "じだい",
     "kanji": "時代",
     "meaning": "period",
-    "meanings": [
-      "period",
-      "epoch",
-      "era",
-      "age",
-      "the times"
-    ],
+    "meanings": ["period", "epoch", "era", "age", "the times"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1616,13 +1317,7 @@
     "kana": "もうしあげる",
     "kanji": "申し上げる",
     "meaning": "to say",
-    "meanings": [
-      "to say",
-      "to tell",
-      "to state",
-      "to express",
-      "to offer"
-    ],
+    "meanings": ["to say", "to tell", "to state", "to express", "to offer"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1631,9 +1326,7 @@
     "kana": "～しき",
     "kanji": "～式",
     "meaning": "~ ceremony; ~ style",
-    "meanings": [
-      "~ ceremony; ~ style"
-    ],
+    "meanings": ["~ ceremony; ~ style"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1642,11 +1335,7 @@
     "kana": "しゅっせきする",
     "kanji": "出席",
     "meaning": "attendance",
-    "meanings": [
-      "attendance",
-      "presence",
-      "appearance"
-    ],
+    "meanings": ["attendance", "presence", "appearance"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1655,9 +1344,7 @@
     "kana": "～か",
     "kanji": "～家",
     "meaning": "person who is specialized in ~",
-    "meanings": [
-      "person who is specialized in ~"
-    ],
+    "meanings": ["person who is specialized in ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1708,11 +1395,7 @@
     "kana": "しゃちょう",
     "kanji": "社長",
     "meaning": "company president",
-    "meanings": [
-      "company president",
-      "manager",
-      "director"
-    ],
+    "meanings": ["company president", "manager", "director"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1721,10 +1404,7 @@
     "kana": "どうぶつえん",
     "kanji": "動物園",
     "meaning": "zoo",
-    "meanings": [
-      "zoo",
-      "zoological gardens"
-    ],
+    "meanings": ["zoo", "zoological gardens"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1748,10 +1428,7 @@
     "kana": "きせつ",
     "kanji": "季節",
     "meaning": "season",
-    "meanings": [
-      "season",
-      "time of year"
-    ],
+    "meanings": ["season", "time of year"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1790,13 +1467,7 @@
     "kana": "ひらく",
     "kanji": "開く",
     "meaning": "to open",
-    "meanings": [
-      "to open",
-      "to undo",
-      "to unseal",
-      "to unpack",
-      "to bloom"
-    ],
+    "meanings": ["to open", "to undo", "to unseal", "to unpack", "to bloom"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1835,12 +1506,7 @@
     "kana": "ざんねん",
     "kanji": "残念",
     "meaning": "regrettable",
-    "meanings": [
-      "regrettable",
-      "unfortunate",
-      "disappointing",
-      "vexing"
-    ],
+    "meanings": ["regrettable", "unfortunate", "disappointing", "vexing"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1849,10 +1515,7 @@
     "kana": "たたみ",
     "kanji": "畳",
     "meaning": "tatami mat",
-    "meanings": [
-      "tatami mat",
-      "Japanese straw floor coverings"
-    ],
+    "meanings": ["tatami mat", "Japanese straw floor coverings"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1861,13 +1524,7 @@
     "kana": "ていねい",
     "kanji": "丁寧",
     "meaning": "polite",
-    "meanings": [
-      "polite",
-      "courteous",
-      "civil",
-      "careful",
-      "close"
-    ],
+    "meanings": ["polite", "courteous", "civil", "careful", "close"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1876,9 +1533,7 @@
     "kana": "ちり",
     "kanji": "地理",
     "meaning": "geography",
-    "meanings": [
-      "geography"
-    ],
+    "meanings": ["geography"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1901,12 +1556,7 @@
     "kana": "こわい",
     "kanji": "怖い",
     "meaning": "scary",
-    "meanings": [
-      "scary",
-      "frightening",
-      "eerie",
-      "dreadful"
-    ],
+    "meanings": ["scary", "frightening", "eerie", "dreadful"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1915,13 +1565,7 @@
     "kana": "つつむ",
     "kanji": "包む",
     "meaning": "to wrap up",
-    "meanings": [
-      "to wrap up",
-      "to pack",
-      "to bundle",
-      "to do up",
-      "to cover"
-    ],
+    "meanings": ["to wrap up", "to pack", "to bundle", "to do up", "to cover"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1959,9 +1603,7 @@
     "kana": "サンドイッチ",
     "kanji": "サンドイッチ",
     "meaning": "sandwich",
-    "meanings": [
-      "sandwich"
-    ],
+    "meanings": ["sandwich"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1970,10 +1612,7 @@
     "kana": "かいぎしつ",
     "kanji": "会議室",
     "meaning": "conference room",
-    "meanings": [
-      "conference room",
-      "council room"
-    ],
+    "meanings": ["conference room", "council room"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -1982,13 +1621,7 @@
     "kana": "しなもの",
     "kanji": "品物",
     "meaning": "article",
-    "meanings": [
-      "article",
-      "item",
-      "thing",
-      "goods",
-      "wares"
-    ],
+    "meanings": ["article", "item", "thing", "goods", "wares"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2012,12 +1645,7 @@
     "kana": "りよう",
     "kanji": "利用",
     "meaning": "use",
-    "meanings": [
-      "use",
-      "utilization",
-      "utilisation",
-      "application"
-    ],
+    "meanings": ["use", "utilization", "utilisation", "application"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2056,13 +1684,7 @@
     "kana": "はずかしい",
     "kanji": "恥ずかしい",
     "meaning": "embarrassing",
-    "meanings": [
-      "embarrassing",
-      "embarrassed",
-      "ashamed",
-      "humiliated",
-      "shy"
-    ],
+    "meanings": ["embarrassing", "embarrassed", "ashamed", "humiliated", "shy"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2071,9 +1693,7 @@
     "kana": "いくら～ても",
     "kanji": "いくら～ても",
     "meaning": "however much one may ~",
-    "meanings": [
-      "however much one may ~"
-    ],
+    "meanings": ["however much one may ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2082,13 +1702,7 @@
     "kana": "ようじ",
     "kanji": "用事",
     "meaning": "business",
-    "meanings": [
-      "business",
-      "things to do",
-      "engagement",
-      "errand",
-      "affairs"
-    ],
+    "meanings": ["business", "things to do", "engagement", "errand", "affairs"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2097,10 +1711,7 @@
     "kana": "ビル",
     "kanji": "ビル",
     "meaning": "multi-floor building",
-    "meanings": [
-      "multi-floor building",
-      "multi-storey building"
-    ],
+    "meanings": ["multi-floor building", "multi-storey building"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2109,9 +1720,7 @@
     "kana": "けんかする",
     "kanji": "けんかする",
     "meaning": "quarrel",
-    "meanings": [
-      "quarrel"
-    ],
+    "meanings": ["quarrel"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2135,13 +1744,7 @@
     "kana": "なげる",
     "kanji": "投げる",
     "meaning": "to throw",
-    "meanings": [
-      "to throw",
-      "to hurl",
-      "to fling",
-      "to toss",
-      "to cast"
-    ],
+    "meanings": ["to throw", "to hurl", "to fling", "to toss", "to cast"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2165,13 +1768,7 @@
     "kana": "ちから",
     "kanji": "力",
     "meaning": "force",
-    "meanings": [
-      "force",
-      "strength",
-      "might",
-      "vigour",
-      "vigor"
-    ],
+    "meanings": ["force", "strength", "might", "vigour", "vigor"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2195,10 +1792,7 @@
     "kana": "きぶん",
     "kanji": "気分",
     "meaning": "feeling",
-    "meanings": [
-      "feeling",
-      "mood"
-    ],
+    "meanings": ["feeling", "mood"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2252,12 +1846,7 @@
     "kana": "ばあい",
     "kanji": "場合",
     "meaning": "case",
-    "meanings": [
-      "case",
-      "occasion",
-      "situation",
-      "circumstances"
-    ],
+    "meanings": ["case", "occasion", "situation", "circumstances"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2266,13 +1855,7 @@
     "kana": "やっと",
     "kanji": "やっと",
     "meaning": "at last",
-    "meanings": [
-      "at last",
-      "finally",
-      "barely",
-      "narrowly",
-      "just"
-    ],
+    "meanings": ["at last", "finally", "barely", "narrowly", "just"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2296,12 +1879,7 @@
     "kana": "おこなう",
     "kanji": "行う",
     "meaning": "to perform",
-    "meanings": [
-      "to perform",
-      "to do",
-      "to conduct oneself",
-      "to carry out"
-    ],
+    "meanings": ["to perform", "to do", "to conduct oneself", "to carry out"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2310,11 +1888,7 @@
     "kana": "ぶどう",
     "kanji": "ぶどう",
     "meaning": "martial arts",
-    "meanings": [
-      "martial arts",
-      "military arts",
-      "Bushido"
-    ],
+    "meanings": ["martial arts", "military arts", "Bushido"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2353,13 +1927,7 @@
     "kana": "せかい",
     "kanji": "世界",
     "meaning": "the world",
-    "meanings": [
-      "the world",
-      "society",
-      "the universe",
-      "sphere",
-      "circle"
-    ],
+    "meanings": ["the world", "society", "the universe", "sphere", "circle"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2381,9 +1949,7 @@
     "kana": "さらいげつ",
     "kanji": "再来月",
     "meaning": "month after next",
-    "meanings": [
-      "month after next"
-    ],
+    "meanings": ["month after next"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2392,13 +1958,7 @@
     "kana": "はやし",
     "kanji": "林",
     "meaning": "wood",
-    "meanings": [
-      "wood",
-      "woods",
-      "forest",
-      "grove",
-      "copse"
-    ],
+    "meanings": ["wood", "woods", "forest", "grove", "copse"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2452,11 +2012,7 @@
     "kana": "せんそう",
     "kanji": "戦争",
     "meaning": "war",
-    "meanings": [
-      "war",
-      "fighting",
-      "fierce competition"
-    ],
+    "meanings": ["war", "fighting", "fierce competition"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2509,12 +2065,7 @@
     "kana": "パパ",
     "kanji": "パパ",
     "meaning": "dad",
-    "meanings": [
-      "dad",
-      "daddy",
-      "papa",
-      "sugar daddy"
-    ],
+    "meanings": ["dad", "daddy", "papa", "sugar daddy"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2523,11 +2074,7 @@
     "kana": "ひかる",
     "kanji": "光る",
     "meaning": "to shine",
-    "meanings": [
-      "to shine",
-      "to glitter",
-      "to be bright"
-    ],
+    "meanings": ["to shine", "to glitter", "to be bright"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2536,9 +2083,7 @@
     "kana": "おっと",
     "kanji": "夫",
     "meaning": "husband",
-    "meanings": [
-      "husband"
-    ],
+    "meanings": ["husband"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2547,9 +2092,7 @@
     "kana": "くも",
     "kanji": "雲",
     "meaning": "cloud",
-    "meanings": [
-      "cloud"
-    ],
+    "meanings": ["cloud"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2558,13 +2101,7 @@
     "kana": "さか",
     "kanji": "坂",
     "meaning": "slope",
-    "meanings": [
-      "slope",
-      "incline",
-      "hill",
-      "milestone",
-      "(age) mark"
-    ],
+    "meanings": ["slope", "incline", "hill", "milestone", "(age) mark"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2573,9 +2110,7 @@
     "kana": "～(て) しまう",
     "kanji": "～(て) しまう",
     "meaning": "to end up ~",
-    "meanings": [
-      "to end up ~"
-    ],
+    "meanings": ["to end up ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2584,11 +2119,7 @@
     "kana": "ひこうじょう",
     "kanji": "飛行場",
     "meaning": "airfield",
-    "meanings": [
-      "airfield",
-      "airport",
-      "aerodrome"
-    ],
+    "meanings": ["airfield", "airport", "aerodrome"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2597,9 +2128,7 @@
     "kana": "じゅうどう",
     "kanji": "柔道",
     "meaning": "judo",
-    "meanings": [
-      "judo"
-    ],
+    "meanings": ["judo"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2623,9 +2152,7 @@
     "kana": "じむしょ",
     "kanji": "事務所",
     "meaning": "office",
-    "meanings": [
-      "office"
-    ],
+    "meanings": ["office"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2649,11 +2176,7 @@
     "kana": "しょうがっこう",
     "kanji": "小学校",
     "meaning": "primary school",
-    "meanings": [
-      "primary school",
-      "elementary school",
-      "grade school"
-    ],
+    "meanings": ["primary school", "elementary school", "grade school"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2662,13 +2185,7 @@
     "kana": "きゃく",
     "kanji": "客",
     "meaning": "guest",
-    "meanings": [
-      "guest",
-      "visitor",
-      "customer",
-      "client",
-      "shopper"
-    ],
+    "meanings": ["guest", "visitor", "customer", "client", "shopper"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2722,9 +2239,7 @@
     "kana": "なさる",
     "kanji": "なさる",
     "meaning": "to do",
-    "meanings": [
-      "to do"
-    ],
+    "meanings": ["to do"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2733,13 +2248,7 @@
     "kana": "こと",
     "kanji": "事",
     "meaning": "thing",
-    "meanings": [
-      "thing",
-      "matter",
-      "incident",
-      "occurrence",
-      "event"
-    ],
+    "meanings": ["thing", "matter", "incident", "occurrence", "event"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2763,12 +2272,7 @@
     "kana": "しあい",
     "kanji": "試合",
     "meaning": "match",
-    "meanings": [
-      "match",
-      "game",
-      "bout",
-      "contest"
-    ],
+    "meanings": ["match", "game", "bout", "contest"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2777,13 +2281,7 @@
     "kana": "てきとう",
     "kanji": "適当",
     "meaning": "suitable",
-    "meanings": [
-      "suitable",
-      "proper",
-      "appropriate",
-      "adequate",
-      "fit"
-    ],
+    "meanings": ["suitable", "proper", "appropriate", "adequate", "fit"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2792,11 +2290,7 @@
     "kana": "すばらしい",
     "kanji": "素晴らしい",
     "meaning": "wonderful",
-    "meanings": [
-      "wonderful",
-      "splendid",
-      "magnificent"
-    ],
+    "meanings": ["wonderful", "splendid", "magnificent"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2805,10 +2299,7 @@
     "kana": "びじゅつかん",
     "kanji": "美術館",
     "meaning": "art museum",
-    "meanings": [
-      "art museum",
-      "art gallery"
-    ],
+    "meanings": ["art museum", "art gallery"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2817,9 +2308,7 @@
     "kana": "ぶんぽう",
     "kanji": "文法",
     "meaning": "grammar",
-    "meanings": [
-      "grammar"
-    ],
+    "meanings": ["grammar"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2828,13 +2317,7 @@
     "kana": "おわり",
     "kanji": "終わり",
     "meaning": "end",
-    "meanings": [
-      "end",
-      "ending",
-      "close",
-      "conclusion",
-      "end of (one's) life"
-    ],
+    "meanings": ["end", "ending", "close", "conclusion", "end of (one's) life"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2843,13 +2326,7 @@
     "kana": "かべ",
     "kanji": "壁",
     "meaning": "wall",
-    "meanings": [
-      "wall",
-      "partition",
-      "barrier",
-      "obstacle",
-      "hindrance"
-    ],
+    "meanings": ["wall", "partition", "barrier", "obstacle", "hindrance"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2873,13 +2350,7 @@
     "kana": "おれい",
     "kanji": "お礼",
     "meaning": "thanks",
-    "meanings": [
-      "thanks",
-      "gratitude",
-      "manners",
-      "etiquette",
-      "bow"
-    ],
+    "meanings": ["thanks", "gratitude", "manners", "etiquette", "bow"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2888,13 +2359,7 @@
     "kana": "しんせつ",
     "kanji": "親切",
     "meaning": "kind",
-    "meanings": [
-      "kind",
-      "gentle",
-      "considerate",
-      "generous",
-      "friendly"
-    ],
+    "meanings": ["kind", "gentle", "considerate", "generous", "friendly"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2903,11 +2368,7 @@
     "kana": "しらせる",
     "kanji": "知らせる",
     "meaning": "to notify",
-    "meanings": [
-      "to notify",
-      "to advise",
-      "to inform"
-    ],
+    "meanings": ["to notify", "to advise", "to inform"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2916,9 +2377,7 @@
     "kana": "はいしゃ",
     "kanji": "歯医者",
     "meaning": "dentist",
-    "meanings": [
-      "dentist"
-    ],
+    "meanings": ["dentist"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -2927,13 +2386,7 @@
     "kana": "ねっしん",
     "kanji": "熱心",
     "meaning": "zealous",
-    "meanings": [
-      "zealous",
-      "enthusiastic",
-      "ardent",
-      "fervent",
-      "keen"
-    ],
+    "meanings": ["zealous", "enthusiastic", "ardent", "fervent", "keen"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3002,13 +2455,7 @@
     "kana": "ねつ",
     "kanji": "熱",
     "meaning": "heat",
-    "meanings": [
-      "heat",
-      "fever",
-      "temperature",
-      "zeal",
-      "passion"
-    ],
+    "meanings": ["heat", "fever", "temperature", "zeal", "passion"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3017,12 +2464,7 @@
     "kana": "おまつり",
     "kanji": "お祭り",
     "meaning": "festival",
-    "meanings": [
-      "festival",
-      "feast",
-      "carnival",
-      "matsuri"
-    ],
+    "meanings": ["festival", "feast", "carnival", "matsuri"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3046,13 +2488,7 @@
     "kana": "におい",
     "kanji": "匂い",
     "meaning": "smell",
-    "meanings": [
-      "smell",
-      "scent",
-      "odour",
-      "odor",
-      "stench"
-    ],
+    "meanings": ["smell", "scent", "odour", "odor", "stench"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3061,9 +2497,7 @@
     "kana": "ベル",
     "kanji": "ベル",
     "meaning": "bell",
-    "meanings": [
-      "bell"
-    ],
+    "meanings": ["bell"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3072,10 +2506,7 @@
     "kana": "あかんぼう",
     "kanji": "赤ん坊",
     "meaning": "baby",
-    "meanings": [
-      "baby",
-      "infant"
-    ],
+    "meanings": ["baby", "infant"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3084,13 +2515,7 @@
     "kana": "おかしい",
     "kanji": "おかしい",
     "meaning": "funny",
-    "meanings": [
-      "funny",
-      "amusing",
-      "comical",
-      "laughable",
-      "ridiculous"
-    ],
+    "meanings": ["funny", "amusing", "comical", "laughable", "ridiculous"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3099,13 +2524,7 @@
     "kana": "じこ",
     "kanji": "事故",
     "meaning": "accident",
-    "meanings": [
-      "accident",
-      "incident",
-      "trouble",
-      "circumstances",
-      "reasons"
-    ],
+    "meanings": ["accident", "incident", "trouble", "circumstances", "reasons"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3114,13 +2533,7 @@
     "kana": "へん",
     "kanji": "変",
     "meaning": "strange",
-    "meanings": [
-      "strange",
-      "odd",
-      "peculiar",
-      "weird",
-      "curious"
-    ],
+    "meanings": ["strange", "odd", "peculiar", "weird", "curious"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3129,10 +2542,7 @@
     "kana": "じてん",
     "kanji": "辞典",
     "meaning": "dictionary",
-    "meanings": [
-      "dictionary",
-      "lexicon"
-    ],
+    "meanings": ["dictionary", "lexicon"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3141,10 +2551,7 @@
     "kana": "のこる",
     "kanji": "残る",
     "meaning": "to remain",
-    "meanings": [
-      "to remain",
-      "to be left"
-    ],
+    "meanings": ["to remain", "to be left"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3183,9 +2590,7 @@
     "kana": "～いん",
     "kanji": "～員",
     "meaning": "member of ~",
-    "meanings": [
-      "member of ~"
-    ],
+    "meanings": ["member of ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3194,11 +2599,7 @@
     "kana": "げんいん",
     "kanji": "原因",
     "meaning": "cause",
-    "meanings": [
-      "cause",
-      "origin",
-      "source"
-    ],
+    "meanings": ["cause", "origin", "source"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3233,9 +2634,7 @@
     "kana": "そぼ",
     "kanji": "祖母",
     "meaning": "grandmother",
-    "meanings": [
-      "grandmother"
-    ],
+    "meanings": ["grandmother"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3244,13 +2643,7 @@
     "kana": "ばしょ",
     "kanji": "場所",
     "meaning": "place",
-    "meanings": [
-      "place",
-      "location",
-      "spot",
-      "position",
-      "area"
-    ],
+    "meanings": ["place", "location", "spot", "position", "area"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3259,13 +2652,7 @@
     "kana": "こたえ",
     "kanji": "答",
     "meaning": "answer",
-    "meanings": [
-      "answer",
-      "reply",
-      "response",
-      "answer",
-      "solution"
-    ],
+    "meanings": ["answer", "reply", "response", "answer", "solution"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3274,11 +2661,7 @@
     "kana": "もちろん",
     "kanji": "もちろん",
     "meaning": "of course",
-    "meanings": [
-      "of course",
-      "certainly",
-      "naturally"
-    ],
+    "meanings": ["of course", "certainly", "naturally"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3287,13 +2670,7 @@
     "kana": "つける",
     "kanji": "漬ける",
     "meaning": "to soak (in)",
-    "meanings": [
-      "to soak (in)",
-      "to steep",
-      "to dip",
-      "to dunk",
-      "to pickle"
-    ],
+    "meanings": ["to soak (in)", "to steep", "to dip", "to dunk", "to pickle"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3332,9 +2709,7 @@
     "kana": "スクリーン",
     "kanji": "スクリーン",
     "meaning": "screen",
-    "meanings": [
-      "screen"
-    ],
+    "meanings": ["screen"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3343,10 +2718,7 @@
     "kana": "ふえる",
     "kanji": "増える",
     "meaning": "to increase",
-    "meanings": [
-      "to increase",
-      "to multiply"
-    ],
+    "meanings": ["to increase", "to multiply"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3355,10 +2727,7 @@
     "kana": "または",
     "kanji": "または",
     "meaning": "or",
-    "meanings": [
-      "or",
-      "either ... or ..."
-    ],
+    "meanings": ["or", "either ... or ..."],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3367,9 +2736,7 @@
     "kana": "けがする",
     "kanji": "けがする",
     "meaning": "injury (to animate object), hurt",
-    "meanings": [
-      "injury (to animate object), hurt"
-    ],
+    "meanings": ["injury (to animate object), hurt"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3393,11 +2760,7 @@
     "kana": "えらぶ",
     "kanji": "選ぶ",
     "meaning": "to choose",
-    "meanings": [
-      "to choose",
-      "to select",
-      "to pick (out)"
-    ],
+    "meanings": ["to choose", "to select", "to pick (out)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3406,9 +2769,7 @@
     "kana": "～ばかり",
     "kanji": "～ばかり",
     "meaning": "just did ~, only",
-    "meanings": [
-      "just did ~, only"
-    ],
+    "meanings": ["just did ~, only"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3431,9 +2792,7 @@
     "kana": "～だす",
     "kanji": "～だす",
     "meaning": "to start doing ~",
-    "meanings": [
-      "to start doing ~"
-    ],
+    "meanings": ["to start doing ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3442,9 +2801,7 @@
     "kana": "サラダ",
     "kanji": "サラダ",
     "meaning": "salad",
-    "meanings": [
-      "salad"
-    ],
+    "meanings": ["salad"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3468,9 +2825,7 @@
     "kana": "挨拶",
     "kanji": "あいさつする",
     "meaning": "greet(ing)",
-    "meanings": [
-      "greet(ing)"
-    ],
+    "meanings": ["greet(ing)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3479,11 +2834,7 @@
     "kana": "けしき",
     "kanji": "景色",
     "meaning": "scenery",
-    "meanings": [
-      "scenery",
-      "scene",
-      "landscape"
-    ],
+    "meanings": ["scenery", "scene", "landscape"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3492,13 +2843,7 @@
     "kana": "たしか",
     "kanji": "確か",
     "meaning": "sure",
-    "meanings": [
-      "sure",
-      "certain",
-      "positive",
-      "definite",
-      "reliable"
-    ],
+    "meanings": ["sure", "certain", "positive", "definite", "reliable"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3507,9 +2852,7 @@
     "kana": "ステーキ",
     "kanji": "ステーキ",
     "meaning": "steak",
-    "meanings": [
-      "steak"
-    ],
+    "meanings": ["steak"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3518,10 +2861,7 @@
     "kana": "しょくりょうひん",
     "kanji": "食料品",
     "meaning": "foodstuff",
-    "meanings": [
-      "foodstuff",
-      "groceries"
-    ],
+    "meanings": ["foodstuff", "groceries"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3530,10 +2870,7 @@
     "kana": "もり",
     "kanji": "森",
     "meaning": "forest",
-    "meanings": [
-      "forest",
-      "shrine grove"
-    ],
+    "meanings": ["forest", "shrine grove"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3542,11 +2879,7 @@
     "kana": "いない",
     "kanji": "以内",
     "meaning": "within",
-    "meanings": [
-      "within",
-      "inside of",
-      "less than"
-    ],
+    "meanings": ["within", "inside of", "less than"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3555,13 +2888,7 @@
     "kana": "よてい",
     "kanji": "予定",
     "meaning": "plans",
-    "meanings": [
-      "plans",
-      "arrangement",
-      "schedule",
-      "program",
-      "programme"
-    ],
+    "meanings": ["plans", "arrangement", "schedule", "program", "programme"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3585,9 +2912,7 @@
     "kana": "かわく",
     "kanji": "乾く",
     "meaning": "to get dry",
-    "meanings": [
-      "to get dry"
-    ],
+    "meanings": ["to get dry"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3596,13 +2921,7 @@
     "kana": "いし",
     "kanji": "石",
     "meaning": "stone",
-    "meanings": [
-      "stone",
-      "rock",
-      "pebble",
-      "jewel",
-      "precious stone"
-    ],
+    "meanings": ["stone", "rock", "pebble", "jewel", "precious stone"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3611,11 +2930,7 @@
     "kana": "おもいだす",
     "kanji": "思い出す",
     "meaning": "to recall",
-    "meanings": [
-      "to recall",
-      "to remember",
-      "to recollect"
-    ],
+    "meanings": ["to recall", "to remember", "to recollect"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3637,13 +2952,7 @@
     "kana": "こまかい",
     "kanji": "細かい",
     "meaning": "small",
-    "meanings": [
-      "small",
-      "fine",
-      "minute",
-      "minor",
-      "trivial"
-    ],
+    "meanings": ["small", "fine", "minute", "minor", "trivial"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3667,10 +2976,7 @@
     "kana": "ごしゅじん",
     "kanji": "ご主人",
     "meaning": "your husband",
-    "meanings": [
-      "your husband",
-      "her husband"
-    ],
+    "meanings": ["your husband", "her husband"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3679,13 +2985,7 @@
     "kana": "めずらしい",
     "kanji": "珍しい",
     "meaning": "rare",
-    "meanings": [
-      "rare",
-      "uncommon",
-      "unusual",
-      "curious",
-      "new"
-    ],
+    "meanings": ["rare", "uncommon", "unusual", "curious", "new"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3694,13 +2994,7 @@
     "kana": "よう",
     "kanji": "用",
     "meaning": "business",
-    "meanings": [
-      "business",
-      "task",
-      "errand",
-      "engagement",
-      "use"
-    ],
+    "meanings": ["business", "task", "errand", "engagement", "use"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3724,10 +3018,7 @@
     "kana": "おじょうさん",
     "kanji": "お嬢さん",
     "meaning": "(another's) daughter",
-    "meanings": [
-      "(another's) daughter",
-      "young lady"
-    ],
+    "meanings": ["(another's) daughter", "young lady"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3796,13 +3087,7 @@
     "kana": "すっかり",
     "kanji": "すっかり",
     "meaning": "all",
-    "meanings": [
-      "all",
-      "completely",
-      "totally",
-      "entirely",
-      "thoroughly"
-    ],
+    "meanings": ["all", "completely", "totally", "entirely", "thoroughly"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3841,10 +3126,7 @@
     "kana": "けしゴム",
     "kanji": "消しゴム",
     "meaning": "eraser",
-    "meanings": [
-      "eraser",
-      "rubber"
-    ],
+    "meanings": ["eraser", "rubber"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3853,10 +3135,7 @@
     "kana": "りょかん",
     "kanji": "旅館",
     "meaning": "ryokan",
-    "meanings": [
-      "ryokan",
-      "traditional Japanese inn"
-    ],
+    "meanings": ["ryokan", "traditional Japanese inn"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3865,13 +3144,7 @@
     "kana": "かいがん",
     "kanji": "海岸",
     "meaning": "seashore",
-    "meanings": [
-      "seashore",
-      "coast",
-      "seaside",
-      "waterfront",
-      "beach"
-    ],
+    "meanings": ["seashore", "coast", "seaside", "waterfront", "beach"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3880,12 +3153,7 @@
     "kana": "さびしい",
     "kanji": "寂しい",
     "meaning": "lonely",
-    "meanings": [
-      "lonely",
-      "lonesome",
-      "solitary",
-      "desolate"
-    ],
+    "meanings": ["lonely", "lonesome", "solitary", "desolate"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3894,11 +3162,7 @@
     "kana": "ひ",
     "kanji": "火",
     "meaning": "fire",
-    "meanings": [
-      "fire",
-      "flame",
-      "blaze"
-    ],
+    "meanings": ["fire", "flame", "blaze"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -3907,13 +3171,7 @@
     "kana": "そだてる",
     "kanji": "育てる",
     "meaning": "to raise",
-    "meanings": [
-      "to raise",
-      "to rear",
-      "to bring up",
-      "to train",
-      "to teach"
-    ],
+    "meanings": ["to raise", "to rear", "to bring up", "to train", "to teach"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4011,13 +3269,7 @@
     "kana": "ぎじゅつ",
     "kanji": "技術",
     "meaning": "technology",
-    "meanings": [
-      "technology",
-      "engineering",
-      "technique",
-      "skill",
-      "art"
-    ],
+    "meanings": ["technology", "engineering", "technique", "skill", "art"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4026,10 +3278,7 @@
     "kana": "ことり",
     "kanji": "小鳥",
     "meaning": "small bird",
-    "meanings": [
-      "small bird",
-      "little bird"
-    ],
+    "meanings": ["small bird", "little bird"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4053,9 +3302,7 @@
     "kana": "ジャム",
     "kanji": "ジャム",
     "meaning": "jam",
-    "meanings": [
-      "jam"
-    ],
+    "meanings": ["jam"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4064,9 +3311,7 @@
     "kana": "しょうたいする",
     "kanji": "招待",
     "meaning": "invitation",
-    "meanings": [
-      "invitation"
-    ],
+    "meanings": ["invitation"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4105,11 +3350,7 @@
     "kana": "ほうりつ",
     "kanji": "法律",
     "meaning": "law",
-    "meanings": [
-      "law",
-      "legislation",
-      "act"
-    ],
+    "meanings": ["law", "legislation", "act"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4176,9 +3417,7 @@
     "kana": "おる",
     "kanji": "おる",
     "meaning": "to weave",
-    "meanings": [
-      "to weave"
-    ],
+    "meanings": ["to weave"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4187,11 +3426,7 @@
     "kana": "もうす",
     "kanji": "申す",
     "meaning": "to say",
-    "meanings": [
-      "to say",
-      "to be called",
-      "to do"
-    ],
+    "meanings": ["to say", "to be called", "to do"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4200,13 +3435,7 @@
     "kana": "しけん",
     "kanji": "試験",
     "meaning": "examination",
-    "meanings": [
-      "examination",
-      "exam",
-      "test",
-      "trial",
-      "experiment"
-    ],
+    "meanings": ["examination", "exam", "test", "trial", "experiment"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4215,13 +3444,7 @@
     "kana": "まじめ",
     "kanji": "真面目",
     "meaning": "serious",
-    "meanings": [
-      "serious",
-      "earnest",
-      "sober",
-      "grave",
-      "honest"
-    ],
+    "meanings": ["serious", "earnest", "sober", "grave", "honest"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4230,9 +3453,7 @@
     "kana": "",
     "kanji": "ごらんになる",
     "meaning": "-- honorific expression for みる --",
-    "meanings": [
-      "-- honorific expression for みる --"
-    ],
+    "meanings": ["-- honorific expression for みる --"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4269,13 +3490,7 @@
     "kana": "よろしい",
     "kanji": "よろしい",
     "meaning": "good",
-    "meanings": [
-      "good",
-      "OK",
-      "all right",
-      "fine",
-      "very well"
-    ],
+    "meanings": ["good", "OK", "all right", "fine", "very well"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4284,10 +3499,7 @@
     "kana": "こんや",
     "kanji": "今夜",
     "meaning": "this evening",
-    "meanings": [
-      "this evening",
-      "tonight"
-    ],
+    "meanings": ["this evening", "tonight"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4296,10 +3508,7 @@
     "kana": "おつり",
     "kanji": "おつり",
     "meaning": "change (for a purchase)",
-    "meanings": [
-      "change (for a purchase)",
-      "toilet splashback"
-    ],
+    "meanings": ["change (for a purchase)", "toilet splashback"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4308,9 +3517,7 @@
     "kana": "チェックする",
     "kanji": "チェックする",
     "meaning": "check",
-    "meanings": [
-      "check"
-    ],
+    "meanings": ["check"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4319,11 +3526,7 @@
     "kana": "かいわ",
     "kanji": "会話",
     "meaning": "conversation",
-    "meanings": [
-      "conversation",
-      "talk",
-      "chat"
-    ],
+    "meanings": ["conversation", "talk", "chat"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4362,9 +3565,7 @@
     "kana": "ワープロ",
     "kanji": "ワープロ",
     "meaning": "word processor",
-    "meanings": [
-      "word processor"
-    ],
+    "meanings": ["word processor"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4402,13 +3603,7 @@
     "kana": "みな",
     "kanji": "皆",
     "meaning": "everyone",
-    "meanings": [
-      "everyone",
-      "everybody",
-      "all",
-      "everything",
-      "all"
-    ],
+    "meanings": ["everyone", "everybody", "all", "everything", "all"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4417,13 +3612,7 @@
     "kana": "あじ",
     "kanji": "味",
     "meaning": "flavor",
-    "meanings": [
-      "flavor",
-      "flavour",
-      "taste",
-      "charm",
-      "appeal"
-    ],
+    "meanings": ["flavor", "flavour", "taste", "charm", "appeal"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4432,9 +3621,7 @@
     "kana": "くうこう",
     "kanji": "空港",
     "meaning": "airport",
-    "meanings": [
-      "airport"
-    ],
+    "meanings": ["airport"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4443,11 +3630,7 @@
     "kana": "てぶくろ",
     "kanji": "手袋",
     "meaning": "glove",
-    "meanings": [
-      "glove",
-      "mitten",
-      "mitt"
-    ],
+    "meanings": ["glove", "mitten", "mitt"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4456,12 +3639,7 @@
     "kana": "こうちょう",
     "kanji": "校長",
     "meaning": "principal",
-    "meanings": [
-      "principal",
-      "head teacher",
-      "headmaster",
-      "headmistress"
-    ],
+    "meanings": ["principal", "head teacher", "headmaster", "headmistress"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4485,9 +3663,7 @@
     "kana": "おどり",
     "kanji": "踊り",
     "meaning": "dance",
-    "meanings": [
-      "dance"
-    ],
+    "meanings": ["dance"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4509,10 +3685,7 @@
     "kana": "ひっこす",
     "kanji": "引っ越す",
     "meaning": "to move (house)",
-    "meanings": [
-      "to move (house)",
-      "to change residence"
-    ],
+    "meanings": ["to move (house)", "to change residence"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4521,10 +3694,7 @@
     "kana": "れいぼう",
     "kanji": "冷房",
     "meaning": "air conditioning",
-    "meanings": [
-      "air conditioning",
-      "air cooling"
-    ],
+    "meanings": ["air conditioning", "air cooling"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4548,13 +3718,7 @@
     "kana": "えんりょする",
     "kanji": "遠慮",
     "meaning": "reserve",
-    "meanings": [
-      "reserve",
-      "constraint",
-      "restraint",
-      "modesty",
-      "diffidence"
-    ],
+    "meanings": ["reserve", "constraint", "restraint", "modesty", "diffidence"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4563,10 +3727,7 @@
     "kana": "なくなる",
     "kanji": "亡くなる",
     "meaning": "to die",
-    "meanings": [
-      "to die",
-      "to pass away"
-    ],
+    "meanings": ["to die", "to pass away"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4646,11 +3807,7 @@
     "kana": "みなと",
     "kanji": "港",
     "meaning": "harbour",
-    "meanings": [
-      "harbour",
-      "harbor",
-      "port"
-    ],
+    "meanings": ["harbour", "harbor", "port"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4734,10 +3891,7 @@
     "kana": "パソコン",
     "kanji": "パソコン",
     "meaning": "personal computer",
-    "meanings": [
-      "personal computer",
-      "PC"
-    ],
+    "meanings": ["personal computer", "PC"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4759,10 +3913,7 @@
     "kana": "かじ",
     "kanji": "火事",
     "meaning": "fire",
-    "meanings": [
-      "fire",
-      "conflagration"
-    ],
+    "meanings": ["fire", "conflagration"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4785,10 +3936,7 @@
     "kana": "きょうかい",
     "kanji": "教会",
     "meaning": "church",
-    "meanings": [
-      "church",
-      "congregation"
-    ],
+    "meanings": ["church", "congregation"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4797,10 +3945,7 @@
     "kana": "かれら",
     "kanji": "彼ら",
     "meaning": "they",
-    "meanings": [
-      "they",
-      "them"
-    ],
+    "meanings": ["they", "them"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4809,9 +3954,7 @@
     "kana": "一杯",
     "kanji": "いっぱい",
     "meaning": "full, to the utmost",
-    "meanings": [
-      "full, to the utmost"
-    ],
+    "meanings": ["full, to the utmost"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4835,11 +3978,7 @@
     "kana": "だんせい",
     "kanji": "男性",
     "meaning": "man",
-    "meanings": [
-      "man",
-      "male",
-      "masculine gender"
-    ],
+    "meanings": ["man", "male", "masculine gender"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4848,13 +3987,7 @@
     "kana": "りゆう",
     "kanji": "理由",
     "meaning": "reason",
-    "meanings": [
-      "reason",
-      "grounds",
-      "pretext",
-      "excuse",
-      "motive"
-    ],
+    "meanings": ["reason", "grounds", "pretext", "excuse", "motive"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4863,10 +3996,7 @@
     "kana": "せいさんする",
     "kanji": "生産",
     "meaning": "production",
-    "meanings": [
-      "production",
-      "manufacture"
-    ],
+    "meanings": ["production", "manufacture"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4889,10 +4019,7 @@
     "kana": "おもちゃ",
     "kanji": "おもちゃ",
     "meaning": "toy",
-    "meanings": [
-      "toy",
-      "(person or thing treated as a) plaything"
-    ],
+    "meanings": ["toy", "(person or thing treated as a) plaything"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4916,13 +4043,7 @@
     "kana": "つる",
     "kanji": "釣る",
     "meaning": "to fish",
-    "meanings": [
-      "to fish",
-      "to angle",
-      "to catch",
-      "to lure in",
-      "to tempt"
-    ],
+    "meanings": ["to fish", "to angle", "to catch", "to lure in", "to tempt"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4931,9 +4052,7 @@
     "kana": "～ちゃん",
     "kanji": "～ちゃん",
     "meaning": "suffix for familiar (female) person",
-    "meanings": [
-      "suffix for familiar (female) person"
-    ],
+    "meanings": ["suffix for familiar (female) person"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4942,13 +4061,7 @@
     "kana": "うつ",
     "kanji": "打つ",
     "meaning": "to hit",
-    "meanings": [
-      "to hit",
-      "to strike",
-      "to knock",
-      "to beat",
-      "to punch"
-    ],
+    "meanings": ["to hit", "to strike", "to knock", "to beat", "to punch"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -4957,13 +4070,7 @@
     "kana": "あんな",
     "kanji": "あんな",
     "meaning": "that sort of",
-    "meanings": [
-      "that sort of",
-      "that kind of",
-      "like that",
-      "such",
-      "so"
-    ],
+    "meanings": ["that sort of", "that kind of", "like that", "such", "so"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5016,11 +4123,7 @@
     "kana": "じょせい",
     "kanji": "女性",
     "meaning": "woman",
-    "meanings": [
-      "woman",
-      "female",
-      "feminine gender"
-    ],
+    "meanings": ["woman", "female", "feminine gender"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5058,10 +4161,7 @@
     "kana": "こくさい",
     "kanji": "国際",
     "meaning": "international",
-    "meanings": [
-      "international",
-      "diplomatic intercourse"
-    ],
+    "meanings": ["international", "diplomatic intercourse"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5099,9 +4199,7 @@
     "kana": "さらいしゅう",
     "kanji": "再来週",
     "meaning": "week after next",
-    "meanings": [
-      "week after next"
-    ],
+    "meanings": ["week after next"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5110,13 +4208,7 @@
     "kana": "ゆめ",
     "kanji": "夢",
     "meaning": "dream",
-    "meanings": [
-      "dream",
-      "dream",
-      "hope",
-      "wish",
-      "aspiration"
-    ],
+    "meanings": ["dream", "dream", "hope", "wish", "aspiration"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5125,11 +4217,7 @@
     "kana": "のど",
     "kanji": "喉",
     "meaning": "throat",
-    "meanings": [
-      "throat",
-      "singing voice",
-      "gutter (inner margins of a book)"
-    ],
+    "meanings": ["throat", "singing voice", "gutter (inner margins of a book)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5138,13 +4226,7 @@
     "kana": "さいきん",
     "kanji": "最近",
     "meaning": "recently",
-    "meanings": [
-      "recently",
-      "lately",
-      "these days",
-      "nowadays",
-      "right now"
-    ],
+    "meanings": ["recently", "lately", "these days", "nowadays", "right now"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5168,9 +4250,7 @@
     "kana": "れきし",
     "kanji": "歴史",
     "meaning": "history",
-    "meanings": [
-      "history"
-    ],
+    "meanings": ["history"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5179,11 +4259,7 @@
     "kana": "ふべん",
     "kanji": "不便",
     "meaning": "inconvenience",
-    "meanings": [
-      "inconvenience",
-      "inexpediency",
-      "unhandiness"
-    ],
+    "meanings": ["inconvenience", "inexpediency", "unhandiness"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5192,13 +4268,7 @@
     "kana": "ち",
     "kanji": "血",
     "meaning": "blood",
-    "meanings": [
-      "blood",
-      "blood",
-      "ancestry",
-      "lineage",
-      "stock"
-    ],
+    "meanings": ["blood", "blood", "ancestry", "lineage", "stock"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5207,9 +4277,7 @@
     "kana": "～つづける",
     "kanji": "～続ける",
     "meaning": "to continue doing ~",
-    "meanings": [
-      "to continue doing ~"
-    ],
+    "meanings": ["to continue doing ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5218,13 +4286,7 @@
     "kana": "け",
     "kanji": "毛",
     "meaning": "hair",
-    "meanings": [
-      "hair",
-      "fur",
-      "wool",
-      "down",
-      "plumage"
-    ],
+    "meanings": ["hair", "fur", "wool", "down", "plumage"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5233,13 +4295,7 @@
     "kana": "ひどい",
     "kanji": "ひどい",
     "meaning": "cruel",
-    "meanings": [
-      "cruel",
-      "heartless",
-      "hard",
-      "harsh",
-      "severe"
-    ],
+    "meanings": ["cruel", "heartless", "hard", "harsh", "severe"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5248,11 +4304,7 @@
     "kana": "たとえば",
     "kanji": "例えば",
     "meaning": "for example",
-    "meanings": [
-      "for example",
-      "for instance",
-      "e.g."
-    ],
+    "meanings": ["for example", "for instance", "e.g."],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5261,13 +4313,7 @@
     "kana": "なかなか",
     "kanji": "中々",
     "meaning": "very",
-    "meanings": [
-      "very",
-      "considerably",
-      "easily",
-      "readily",
-      "fairly"
-    ],
+    "meanings": ["very", "considerably", "easily", "readily", "fairly"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5276,13 +4322,7 @@
     "kana": "ずいぶん",
     "kanji": "随分",
     "meaning": "very",
-    "meanings": [
-      "very",
-      "extremely",
-      "surprisingly",
-      "fairly",
-      "quite"
-    ],
+    "meanings": ["very", "extremely", "surprisingly", "fairly", "quite"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5291,9 +4331,7 @@
     "kana": "～やすい",
     "kanji": "～やすい",
     "meaning": "easy to do ~",
-    "meanings": [
-      "easy to do ~"
-    ],
+    "meanings": ["easy to do ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5314,9 +4352,7 @@
     "kana": "でんとう",
     "kanji": "電灯",
     "meaning": "electric light",
-    "meanings": [
-      "electric light"
-    ],
+    "meanings": ["electric light"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5325,12 +4361,7 @@
     "kana": "しかる",
     "kanji": "叱る",
     "meaning": "to scold",
-    "meanings": [
-      "to scold",
-      "to chide",
-      "to rebuke",
-      "to reprimand"
-    ],
+    "meanings": ["to scold", "to chide", "to rebuke", "to reprimand"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5339,9 +4370,7 @@
     "kana": "サンダル",
     "kanji": "サンダル",
     "meaning": "sandal",
-    "meanings": [
-      "sandal"
-    ],
+    "meanings": ["sandal"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5350,9 +4379,7 @@
     "kana": "びっくりする",
     "kanji": "びっくりする",
     "meaning": "to be surprised",
-    "meanings": [
-      "to be surprised"
-    ],
+    "meanings": ["to be surprised"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5361,13 +4388,7 @@
     "kana": "うまい",
     "kanji": "うまい",
     "meaning": "skillful",
-    "meanings": [
-      "skillful",
-      "skilful",
-      "skilled",
-      "good",
-      "expert"
-    ],
+    "meanings": ["skillful", "skilful", "skilled", "good", "expert"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5391,10 +4412,7 @@
     "kana": "こうどう",
     "kanji": "講堂",
     "meaning": "auditorium",
-    "meanings": [
-      "auditorium",
-      "lecture hall"
-    ],
+    "meanings": ["auditorium", "lecture hall"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5433,11 +4451,7 @@
     "kana": "レジ",
     "kanji": "レジ",
     "meaning": "(cash) register",
-    "meanings": [
-      "(cash) register",
-      "checkout (counter)",
-      "cashier"
-    ],
+    "meanings": ["(cash) register", "checkout (counter)", "cashier"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5461,12 +4475,7 @@
     "kana": "とくに",
     "kanji": "特に",
     "meaning": "particularly",
-    "meanings": [
-      "particularly",
-      "especially",
-      "in particular",
-      "expressly"
-    ],
+    "meanings": ["particularly", "especially", "in particular", "expressly"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5490,13 +4499,7 @@
     "kana": "けいかくする",
     "kanji": "計画",
     "meaning": "plan",
-    "meanings": [
-      "plan",
-      "project",
-      "schedule",
-      "scheme",
-      "program"
-    ],
+    "meanings": ["plan", "project", "schedule", "scheme", "program"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5505,13 +4508,7 @@
     "kana": "とおり",
     "kanji": "通り",
     "meaning": "street",
-    "meanings": [
-      "street",
-      "road",
-      "avenue",
-      "thoroughfare",
-      "traffic"
-    ],
+    "meanings": ["street", "road", "avenue", "thoroughfare", "traffic"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5520,12 +4517,7 @@
     "kana": "したぎ",
     "kanji": "下着",
     "meaning": "underwear",
-    "meanings": [
-      "underwear",
-      "undergarment",
-      "underclothes",
-      "lingerie"
-    ],
+    "meanings": ["underwear", "undergarment", "underclothes", "lingerie"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5549,13 +4541,7 @@
     "kana": "こう",
     "kanji": "こう",
     "meaning": "in this way",
-    "meanings": [
-      "in this way",
-      "like this",
-      "so",
-      "thus",
-      "this (much)"
-    ],
+    "meanings": ["in this way", "like this", "so", "thus", "this (much)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5593,13 +4579,7 @@
     "kana": "ため",
     "kanji": "為",
     "meaning": "good",
-    "meanings": [
-      "good",
-      "advantage",
-      "benefit",
-      "welfare",
-      "sake"
-    ],
+    "meanings": ["good", "advantage", "benefit", "welfare", "sake"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5608,11 +4588,7 @@
     "kana": "おいでになる",
     "kanji": "おいでになる",
     "meaning": "to be",
-    "meanings": [
-      "to be",
-      "to come",
-      "to go"
-    ],
+    "meanings": ["to be", "to come", "to go"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5666,10 +4642,7 @@
     "kana": "ハンバーグ",
     "kanji": "ハンバーグ",
     "meaning": "Hamburg steak",
-    "meanings": [
-      "Hamburg steak",
-      "hamburger steak"
-    ],
+    "meanings": ["Hamburg steak", "hamburger steak"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5678,9 +4651,7 @@
     "kana": "し",
     "kanji": "市",
     "meaning": "city",
-    "meanings": [
-      "city"
-    ],
+    "meanings": ["city"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5702,13 +4673,7 @@
     "kana": "あそび",
     "kanji": "遊び",
     "meaning": "play",
-    "meanings": [
-      "play",
-      "playing",
-      "game",
-      "pleasure",
-      "amusement"
-    ],
+    "meanings": ["play", "playing", "game", "pleasure", "amusement"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5717,10 +4682,7 @@
     "kana": "したくする",
     "kanji": "支度",
     "meaning": "preparation",
-    "meanings": [
-      "preparation",
-      "arrangements"
-    ],
+    "meanings": ["preparation", "arrangements"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5729,9 +4691,7 @@
     "kana": "～はじめる",
     "kanji": "～始める",
     "meaning": "to start doing ~",
-    "meanings": [
-      "to start doing ~"
-    ],
+    "meanings": ["to start doing ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5755,13 +4715,7 @@
     "kana": "じゅうぶん",
     "kanji": "十分",
     "meaning": "enough",
-    "meanings": [
-      "enough",
-      "sufficient",
-      "plenty",
-      "adequate",
-      "satisfactory"
-    ],
+    "meanings": ["enough", "sufficient", "plenty", "adequate", "satisfactory"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5770,12 +4724,7 @@
     "kana": "おと",
     "kanji": "音",
     "meaning": "sound",
-    "meanings": [
-      "sound",
-      "noise",
-      "(musical) note",
-      "fame"
-    ],
+    "meanings": ["sound", "noise", "(musical) note", "fame"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5829,13 +4778,7 @@
     "kana": "だいたい",
     "kanji": "大体",
     "meaning": "generally",
-    "meanings": [
-      "generally",
-      "on the whole",
-      "mostly",
-      "almost",
-      "nearly"
-    ],
+    "meanings": ["generally", "on the whole", "mostly", "almost", "nearly"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5859,13 +4802,7 @@
     "kana": "ただしい",
     "kanji": "正しい",
     "meaning": "right",
-    "meanings": [
-      "right",
-      "correct",
-      "proper",
-      "righteous",
-      "just"
-    ],
+    "meanings": ["right", "correct", "proper", "righteous", "just"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5874,12 +4811,7 @@
     "kana": "ゆにゅう",
     "kanji": "輸入",
     "meaning": "import",
-    "meanings": [
-      "import",
-      "importation",
-      "introduction",
-      "afferent"
-    ],
+    "meanings": ["import", "importation", "introduction", "afferent"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5888,11 +4820,7 @@
     "kana": "へんじ",
     "kanji": "返事",
     "meaning": "reply",
-    "meanings": [
-      "reply",
-      "answer",
-      "response"
-    ],
+    "meanings": ["reply", "answer", "response"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5916,11 +4844,7 @@
     "kana": "さんぎょう",
     "kanji": "産業",
     "meaning": "industry",
-    "meanings": [
-      "industry",
-      "livelihood",
-      "occupation"
-    ],
+    "meanings": ["industry", "livelihood", "occupation"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5944,10 +4868,7 @@
     "kana": "かねもち; おかねもち",
     "kanji": "お金持ち",
     "meaning": "rich person",
-    "meanings": [
-      "rich person",
-      "wealthy person"
-    ],
+    "meanings": ["rich person", "wealthy person"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5984,13 +4905,7 @@
     "kana": "どうぐ",
     "kanji": "道具",
     "meaning": "tool",
-    "meanings": [
-      "tool",
-      "implement",
-      "instrument",
-      "utensil",
-      "apparatus"
-    ],
+    "meanings": ["tool", "implement", "instrument", "utensil", "apparatus"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -5999,13 +4914,7 @@
     "kana": "すべる",
     "kanji": "滑る",
     "meaning": "to slide",
-    "meanings": [
-      "to slide",
-      "to glide",
-      "to skate",
-      "to ski",
-      "to slip"
-    ],
+    "meanings": ["to slide", "to glide", "to skate", "to ski", "to slip"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6014,11 +4923,7 @@
     "kana": "それほど",
     "kanji": "それほど",
     "meaning": "to that degree",
-    "meanings": [
-      "to that degree",
-      "to that extent",
-      "that much"
-    ],
+    "meanings": ["to that degree", "to that extent", "that much"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6042,9 +4947,7 @@
     "kana": "～まま",
     "kanji": "～まま",
     "meaning": "as it is",
-    "meanings": [
-      "as it is"
-    ],
+    "meanings": ["as it is"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6066,10 +4969,7 @@
     "kana": "プレゼント",
     "kanji": "プレゼント",
     "meaning": "present",
-    "meanings": [
-      "present",
-      "gift"
-    ],
+    "meanings": ["present", "gift"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6078,9 +4978,7 @@
     "kana": "～(に) よると",
     "kanji": "～(に) よると",
     "meaning": "according to ~",
-    "meanings": [
-      "according to ~"
-    ],
+    "meanings": ["according to ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6104,10 +5002,7 @@
     "kana": "かえり",
     "kanji": "帰り",
     "meaning": "return",
-    "meanings": [
-      "return",
-      "coming back"
-    ],
+    "meanings": ["return", "coming back"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6116,13 +5011,7 @@
     "kana": "ぐあい",
     "kanji": "具合",
     "meaning": "condition",
-    "meanings": [
-      "condition",
-      "state",
-      "health",
-      "state (of health)",
-      "way"
-    ],
+    "meanings": ["condition", "state", "health", "state (of health)", "way"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6131,11 +5020,7 @@
     "kana": "かたい",
     "kanji": "堅; 硬; 固い",
     "meaning": "negligence",
-    "meanings": [
-      "negligence",
-      "carelessness",
-      "mistake"
-    ],
+    "meanings": ["negligence", "carelessness", "mistake"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6144,12 +5029,7 @@
     "kana": "ちゅうしゃじょう",
     "kanji": "駐車場",
     "meaning": "parking lot",
-    "meanings": [
-      "parking lot",
-      "car park",
-      "carpark",
-      "parking garage"
-    ],
+    "meanings": ["parking lot", "car park", "carpark", "parking garage"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6158,10 +5038,7 @@
     "kana": "スーツ",
     "kanji": "スーツ",
     "meaning": "suit (clothing)",
-    "meanings": [
-      "suit (clothing)",
-      "suit"
-    ],
+    "meanings": ["suit (clothing)", "suit"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6170,12 +5047,7 @@
     "kana": "きけん",
     "kanji": "危険",
     "meaning": "danger",
-    "meanings": [
-      "danger",
-      "peril",
-      "hazard",
-      "risk"
-    ],
+    "meanings": ["danger", "peril", "hazard", "risk"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6184,9 +5056,7 @@
     "kana": "かみ",
     "kanji": "髪",
     "meaning": "hair (on the head)",
-    "meanings": [
-      "hair (on the head)"
-    ],
+    "meanings": ["hair (on the head)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6195,10 +5065,7 @@
     "kana": "てんきよほう",
     "kanji": "天気予報",
     "meaning": "weather forecast",
-    "meanings": [
-      "weather forecast",
-      "weather report"
-    ],
+    "meanings": ["weather forecast", "weather report"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6207,11 +5074,7 @@
     "kana": "かのじょ",
     "kanji": "彼女",
     "meaning": "she",
-    "meanings": [
-      "she",
-      "her",
-      "girlfriend"
-    ],
+    "meanings": ["she", "her", "girlfriend"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6220,13 +5083,7 @@
     "kana": "あいだ",
     "kanji": "間",
     "meaning": "space (between)",
-    "meanings": [
-      "space (between)",
-      "gap",
-      "interval",
-      "distance",
-      "stretch"
-    ],
+    "meanings": ["space (between)", "gap", "interval", "distance", "stretch"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6250,12 +5107,7 @@
     "kana": "それで",
     "kanji": "それで",
     "meaning": "so",
-    "meanings": [
-      "so",
-      "therefore",
-      "and",
-      "(and) then"
-    ],
+    "meanings": ["so", "therefore", "and", "(and) then"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6264,13 +5116,7 @@
     "kana": "えだ",
     "kanji": "枝",
     "meaning": "branch",
-    "meanings": [
-      "branch",
-      "bough",
-      "limb",
-      "twig",
-      "sprig"
-    ],
+    "meanings": ["branch", "bough", "limb", "twig", "sprig"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6369,12 +5215,7 @@
     "kana": "ほうそうする",
     "kanji": "放送",
     "meaning": "broadcasting",
-    "meanings": [
-      "broadcasting",
-      "broadcast",
-      "program",
-      "announcement"
-    ],
+    "meanings": ["broadcasting", "broadcast", "program", "announcement"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6383,10 +5224,7 @@
     "kana": "せいじ",
     "kanji": "政治",
     "meaning": "politics",
-    "meanings": [
-      "politics",
-      "government"
-    ],
+    "meanings": ["politics", "government"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6410,11 +5248,7 @@
     "kana": "ファックス",
     "kanji": "ファックス",
     "meaning": "fax",
-    "meanings": [
-      "fax",
-      "facsimile",
-      "fax machine"
-    ],
+    "meanings": ["fax", "facsimile", "fax machine"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6438,9 +5272,7 @@
     "kana": "ゆびわ",
     "kanji": "指輪",
     "meaning": "(finger) ring",
-    "meanings": [
-      "(finger) ring"
-    ],
+    "meanings": ["(finger) ring"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6449,12 +5281,7 @@
     "kana": "いなか",
     "kanji": "田舎",
     "meaning": "rural area",
-    "meanings": [
-      "rural area",
-      "countryside",
-      "the sticks",
-      "hometown"
-    ],
+    "meanings": ["rural area", "countryside", "the sticks", "hometown"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6478,9 +5305,7 @@
     "kana": "こうこうせい",
     "kanji": "高校生",
     "meaning": "senior high school student",
-    "meanings": [
-      "senior high school student"
-    ],
+    "meanings": ["senior high school student"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6489,9 +5314,7 @@
     "kana": "こうぎ",
     "kanji": "講義",
     "meaning": "lecture",
-    "meanings": [
-      "lecture"
-    ],
+    "meanings": ["lecture"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6500,11 +5323,7 @@
     "kana": "そんなに",
     "kanji": "そんなに",
     "meaning": "so much",
-    "meanings": [
-      "so much",
-      "so",
-      "like that"
-    ],
+    "meanings": ["so much", "so", "like that"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6513,11 +5332,7 @@
     "kana": "ひるやすみ",
     "kanji": "昼休み",
     "meaning": "lunch break",
-    "meanings": [
-      "lunch break",
-      "noon recess",
-      "noon rest period"
-    ],
+    "meanings": ["lunch break", "noon recess", "noon rest period"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6555,13 +5370,7 @@
     "kana": "うで",
     "kanji": "腕",
     "meaning": "arm",
-    "meanings": [
-      "arm",
-      "ability",
-      "skill",
-      "talent",
-      "competence"
-    ],
+    "meanings": ["arm", "ability", "skill", "talent", "competence"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6570,13 +5379,7 @@
     "kana": "わけ",
     "kanji": "訳",
     "meaning": "reason",
-    "meanings": [
-      "reason",
-      "cause",
-      "grounds",
-      "meaning",
-      "sense"
-    ],
+    "meanings": ["reason", "cause", "grounds", "meaning", "sense"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6585,13 +5388,7 @@
     "kana": "しょうちする",
     "kanji": "承知",
     "meaning": "knowledge",
-    "meanings": [
-      "knowledge",
-      "awareness",
-      "acceptance",
-      "consent",
-      "assent"
-    ],
+    "meanings": ["knowledge", "awareness", "acceptance", "consent", "assent"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6600,10 +5397,7 @@
     "kana": "にっき",
     "kanji": "日記",
     "meaning": "diary",
-    "meanings": [
-      "diary",
-      "journal"
-    ],
+    "meanings": ["diary", "journal"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6612,9 +5406,7 @@
     "kana": "こうこう; こうとうがっこう",
     "kanji": "高校; 高等学校",
     "meaning": "high school; senior high school",
-    "meanings": [
-      "high school; senior high school"
-    ],
+    "meanings": ["high school; senior high school"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6638,9 +5430,7 @@
     "kana": "～おわる",
     "kanji": "～おわる",
     "meaning": "to finish doing ~",
-    "meanings": [
-      "to finish doing ~"
-    ],
+    "meanings": ["to finish doing ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6649,9 +5439,7 @@
     "kana": "だんぼう",
     "kanji": "暖房",
     "meaning": "(indoor) heating",
-    "meanings": [
-      "(indoor) heating"
-    ],
+    "meanings": ["(indoor) heating"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6675,13 +5463,7 @@
     "kana": "わりあい",
     "kanji": "割合",
     "meaning": "rate",
-    "meanings": [
-      "rate",
-      "ratio",
-      "percentage",
-      "proportion",
-      "comparatively"
-    ],
+    "meanings": ["rate", "ratio", "percentage", "proportion", "comparatively"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6690,9 +5472,7 @@
     "kana": "てら",
     "kanji": "寺",
     "meaning": "temple (Buddhist)",
-    "meanings": [
-      "temple (Buddhist)"
-    ],
+    "meanings": ["temple (Buddhist)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6716,13 +5496,7 @@
     "kana": "ふつう",
     "kanji": "普通",
     "meaning": "normal",
-    "meanings": [
-      "normal",
-      "ordinary",
-      "regular",
-      "usual",
-      "common"
-    ],
+    "meanings": ["normal", "ordinary", "regular", "usual", "common"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6746,11 +5520,7 @@
     "kana": "なるほど",
     "kanji": "なるほど",
     "meaning": "I see",
-    "meanings": [
-      "I see",
-      "that's right",
-      "indeed"
-    ],
+    "meanings": ["I see", "that's right", "indeed"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6774,10 +5544,7 @@
     "kana": "むすこ",
     "kanji": "息子",
     "meaning": "son",
-    "meanings": [
-      "son",
-      "penis"
-    ],
+    "meanings": ["son", "penis"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6786,9 +5553,7 @@
     "kana": "おこさん",
     "kanji": "お子さん",
     "meaning": "child",
-    "meanings": [
-      "child"
-    ],
+    "meanings": ["child"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6797,13 +5562,7 @@
     "kana": "かいじょう",
     "kanji": "会場",
     "meaning": "assembly hall",
-    "meanings": [
-      "assembly hall",
-      "meeting place",
-      "venue",
-      "site",
-      "grounds"
-    ],
+    "meanings": ["assembly hall", "meeting place", "venue", "site", "grounds"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6827,13 +5586,7 @@
     "kana": "はこぶ",
     "kanji": "運ぶ",
     "meaning": "to carry",
-    "meanings": [
-      "to carry",
-      "to transport",
-      "to move",
-      "to convey",
-      "to come"
-    ],
+    "meanings": ["to carry", "to transport", "to move", "to convey", "to come"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6842,9 +5595,7 @@
     "kana": "ぶんがく",
     "kanji": "文学",
     "meaning": "literature",
-    "meanings": [
-      "literature"
-    ],
+    "meanings": ["literature"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6853,13 +5604,7 @@
     "kana": "ひかり",
     "kanji": "光",
     "meaning": "light",
-    "meanings": [
-      "light",
-      "illumination",
-      "ray",
-      "beam",
-      "gleam"
-    ],
+    "meanings": ["light", "illumination", "ray", "beam", "gleam"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6898,9 +5643,7 @@
     "kana": "～さま",
     "kanji": "～様",
     "meaning": "Mr., Mrs., Ms.",
-    "meanings": [
-      "Mr., Mrs., Ms."
-    ],
+    "meanings": ["Mr., Mrs., Ms."],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6909,11 +5652,7 @@
     "kana": "ごぞんじ",
     "kanji": "ご存じ",
     "meaning": "knowing",
-    "meanings": [
-      "knowing",
-      "being aware (of)",
-      "(an) acquaintance"
-    ],
+    "meanings": ["knowing", "being aware (of)", "(an) acquaintance"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6922,13 +5661,7 @@
     "kana": "さがる",
     "kanji": "下る",
     "meaning": "to come down",
-    "meanings": [
-      "to come down",
-      "to go down",
-      "to fall",
-      "to drop",
-      "to sink"
-    ],
+    "meanings": ["to come down", "to go down", "to fall", "to drop", "to sink"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6952,9 +5685,7 @@
     "kana": "アジア",
     "kanji": "アジア",
     "meaning": "Asia",
-    "meanings": [
-      "Asia"
-    ],
+    "meanings": ["Asia"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -6992,12 +5723,7 @@
     "kana": "あ",
     "kanji": "あ",
     "meaning": "muteness",
-    "meanings": [
-      "muteness",
-      "speech impairment",
-      "mute",
-      "deaf-mute"
-    ],
+    "meanings": ["muteness", "speech impairment", "mute", "deaf-mute"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7006,10 +5732,7 @@
     "kana": "もっとも",
     "kanji": "最も",
     "meaning": "most",
-    "meanings": [
-      "most",
-      "extremely"
-    ],
+    "meanings": ["most", "extremely"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7033,9 +5756,7 @@
     "kana": "～だい",
     "kanji": "～代",
     "meaning": "~ age; period",
-    "meanings": [
-      "~ age; period"
-    ],
+    "meanings": ["~ age; period"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7044,13 +5765,7 @@
     "kana": "さいご",
     "kanji": "最後",
     "meaning": "end",
-    "meanings": [
-      "end",
-      "conclusion",
-      "last",
-      "final",
-      "latest"
-    ],
+    "meanings": ["end", "conclusion", "last", "final", "latest"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7059,10 +5774,7 @@
     "kana": "ねだん",
     "kanji": "値段",
     "meaning": "price",
-    "meanings": [
-      "price",
-      "cost"
-    ],
+    "meanings": ["price", "cost"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7071,10 +5783,7 @@
     "kana": "たいいんする",
     "kanji": "退院",
     "meaning": "leaving hospital",
-    "meanings": [
-      "leaving hospital",
-      "discharge from hospital"
-    ],
+    "meanings": ["leaving hospital", "discharge from hospital"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7083,9 +5792,7 @@
     "kana": "てんらんかい",
     "kanji": "展覧会",
     "meaning": "exhibition",
-    "meanings": [
-      "exhibition"
-    ],
+    "meanings": ["exhibition"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7108,10 +5815,7 @@
     "kana": "カーテン",
     "kanji": "カーテン",
     "meaning": "curtain",
-    "meanings": [
-      "curtain",
-      "curtains"
-    ],
+    "meanings": ["curtain", "curtains"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7120,10 +5824,7 @@
     "kana": "きしゃ",
     "kanji": "汽車",
     "meaning": "train (esp. a long-distance train)",
-    "meanings": [
-      "train (esp. a long-distance train)",
-      "steam train"
-    ],
+    "meanings": ["train (esp. a long-distance train)", "steam train"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7147,10 +5848,7 @@
     "kana": "みつかる",
     "kanji": "見つかる",
     "meaning": "to be found",
-    "meanings": [
-      "to be found",
-      "to be discovered"
-    ],
+    "meanings": ["to be found", "to be discovered"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7159,10 +5857,7 @@
     "kana": "めしあがる",
     "kanji": "召し上がる",
     "meaning": "to eat",
-    "meanings": [
-      "to eat",
-      "to drink"
-    ],
+    "meanings": ["to eat", "to drink"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7185,11 +5880,7 @@
     "kana": "ちゅうしゃ",
     "kanji": "注射",
     "meaning": "injection",
-    "meanings": [
-      "injection",
-      "jab",
-      "shot"
-    ],
+    "meanings": ["injection", "jab", "shot"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7213,9 +5904,7 @@
     "kana": "～おき",
     "kanji": "～おき",
     "meaning": "after every ~",
-    "meanings": [
-      "after every ~"
-    ],
+    "meanings": ["after every ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7224,12 +5913,7 @@
     "kana": "さいしょ",
     "kanji": "最初",
     "meaning": "beginning",
-    "meanings": [
-      "beginning",
-      "outset",
-      "first",
-      "onset"
-    ],
+    "meanings": ["beginning", "outset", "first", "onset"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7238,9 +5922,7 @@
     "kana": "ご～",
     "kanji": "御～",
     "meaning": "honorable ~",
-    "meanings": [
-      "honorable ~"
-    ],
+    "meanings": ["honorable ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7279,11 +5961,7 @@
     "kana": "あつめる",
     "kanji": "集める",
     "meaning": "to collect",
-    "meanings": [
-      "to collect",
-      "to assemble",
-      "to gather"
-    ],
+    "meanings": ["to collect", "to assemble", "to gather"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7352,13 +6030,7 @@
     "kana": "せわする",
     "kanji": "世話",
     "meaning": "care",
-    "meanings": [
-      "care",
-      "looking after",
-      "help",
-      "assistance",
-      "aid"
-    ],
+    "meanings": ["care", "looking after", "help", "assistance", "aid"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7367,11 +6039,7 @@
     "kana": "きんじょ",
     "kanji": "近所",
     "meaning": "neighbourhood",
-    "meanings": [
-      "neighbourhood",
-      "neighborhood",
-      "vicinity"
-    ],
+    "meanings": ["neighbourhood", "neighborhood", "vicinity"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7395,11 +6063,7 @@
     "kana": "おく",
     "kanji": "億",
     "meaning": "hundred million",
-    "meanings": [
-      "hundred million",
-      "100,000,000",
-      "10^8"
-    ],
+    "meanings": ["hundred million", "100,000,000", "10^8"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7408,9 +6072,7 @@
     "kana": "すうがく",
     "kanji": "数学",
     "meaning": "mathematics",
-    "meanings": [
-      "mathematics"
-    ],
+    "meanings": ["mathematics"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7478,13 +6140,7 @@
     "kana": "きみ",
     "kanji": "君",
     "meaning": "you",
-    "meanings": [
-      "you",
-      "buddy",
-      "pal",
-      "monarch",
-      "ruler"
-    ],
+    "meanings": ["you", "buddy", "pal", "monarch", "ruler"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7493,11 +6149,7 @@
     "kana": "ひえる",
     "kanji": "冷える",
     "meaning": "to grow cold",
-    "meanings": [
-      "to grow cold",
-      "to get chilly",
-      "to cool down"
-    ],
+    "meanings": ["to grow cold", "to get chilly", "to cool down"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7536,9 +6188,7 @@
     "kana": "格好",
     "kanji": "かっこう",
     "meaning": "appearance, manner, shape, form, posture",
-    "meanings": [
-      "appearance, manner, shape, form, posture"
-    ],
+    "meanings": ["appearance, manner, shape, form, posture"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7547,9 +6197,7 @@
     "kana": "",
     "kanji": "かまう",
     "meaning": "to mind, to care about, to be concerned about",
-    "meanings": [
-      "to mind, to care about, to be concerned about"
-    ],
+    "meanings": ["to mind, to care about, to be concerned about"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7588,10 +6236,7 @@
     "kana": "あす",
     "kanji": "明日",
     "meaning": "tomorrow",
-    "meanings": [
-      "tomorrow",
-      "near future"
-    ],
+    "meanings": ["tomorrow", "near future"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7600,11 +6245,7 @@
     "kana": "しゅっぱつする",
     "kanji": "出発",
     "meaning": "departure",
-    "meanings": [
-      "departure",
-      "leaving",
-      "setting off"
-    ],
+    "meanings": ["departure", "leaving", "setting off"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7613,10 +6254,7 @@
     "kana": "はいけんする",
     "kanji": "拝見",
     "meaning": "seeing",
-    "meanings": [
-      "seeing",
-      "looking at"
-    ],
+    "meanings": ["seeing", "looking at"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7640,9 +6278,7 @@
     "kana": "せなか",
     "kanji": "背中",
     "meaning": "back (of the body)",
-    "meanings": [
-      "back (of the body)"
-    ],
+    "meanings": ["back (of the body)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7651,9 +6287,7 @@
     "kana": "しんぶんしゃ",
     "kanji": "新聞社",
     "meaning": "newspaper company",
-    "meanings": [
-      "newspaper company"
-    ],
+    "meanings": ["newspaper company"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7677,9 +6311,7 @@
     "kana": "まわる、まわす",
     "kanji": "回る、回す",
     "meaning": "to go around, to revolve",
-    "meanings": [
-      "to go around, to revolve"
-    ],
+    "meanings": ["to go around, to revolve"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7688,9 +6320,7 @@
     "kana": "～くん",
     "kanji": "～君",
     "meaning": "Mr. (junior) ~, master ~",
-    "meanings": [
-      "Mr. (junior) ~, master ~"
-    ],
+    "meanings": ["Mr. (junior) ~, master ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7699,12 +6329,7 @@
     "kana": "おっしゃる",
     "kanji": "おっしゃる",
     "meaning": "to say",
-    "meanings": [
-      "to say",
-      "to speak",
-      "to tell",
-      "to be called"
-    ],
+    "meanings": ["to say", "to speak", "to tell", "to be called"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7713,11 +6338,7 @@
     "kana": "ねむい",
     "kanji": "眠い",
     "meaning": "sleepy",
-    "meanings": [
-      "sleepy",
-      "drowsy",
-      "somnolent"
-    ],
+    "meanings": ["sleepy", "drowsy", "somnolent"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7726,9 +6347,7 @@
     "kana": "ぬれる",
     "kanji": "濡れる",
     "meaning": "to get wet",
-    "meanings": [
-      "to get wet"
-    ],
+    "meanings": ["to get wet"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7752,9 +6371,7 @@
     "kana": "スーパー (マーケット)",
     "kanji": "スーパー (マーケット)",
     "meaning": "supermarket",
-    "meanings": [
-      "supermarket"
-    ],
+    "meanings": ["supermarket"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7791,11 +6408,7 @@
     "kana": "むかう",
     "kanji": "向かう",
     "meaning": "to face",
-    "meanings": [
-      "to face",
-      "to go towards",
-      "to head towards"
-    ],
+    "meanings": ["to face", "to go towards", "to head towards"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7804,10 +6417,7 @@
     "kana": "じゆう",
     "kanji": "自由",
     "meaning": "freedom",
-    "meanings": [
-      "freedom",
-      "liberty"
-    ],
+    "meanings": ["freedom", "liberty"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7816,13 +6426,7 @@
     "kana": "しかた",
     "kanji": "仕方",
     "meaning": "way",
-    "meanings": [
-      "way",
-      "method",
-      "means",
-      "resource",
-      "course"
-    ],
+    "meanings": ["way", "method", "means", "resource", "course"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7831,13 +6435,7 @@
     "kana": "くび",
     "kanji": "首",
     "meaning": "neck",
-    "meanings": [
-      "neck",
-      "head",
-      "dismissal (from a job)",
-      "firing",
-      "sacking"
-    ],
+    "meanings": ["neck", "head", "dismissal (from a job)", "firing", "sacking"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7846,13 +6444,7 @@
     "kana": "ほど",
     "kanji": "程",
     "meaning": "extent",
-    "meanings": [
-      "extent",
-      "degree",
-      "measure",
-      "limit",
-      "bounds"
-    ],
+    "meanings": ["extent", "degree", "measure", "limit", "bounds"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7876,11 +6468,7 @@
     "kana": "しっぱい",
     "kanji": "失敗",
     "meaning": "failure",
-    "meanings": [
-      "failure",
-      "mistake",
-      "blunder"
-    ],
+    "meanings": ["failure", "mistake", "blunder"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7889,9 +6477,7 @@
     "kana": "こうぎょう",
     "kanji": "工業",
     "meaning": "(manufacturing) industry",
-    "meanings": [
-      "(manufacturing) industry"
-    ],
+    "meanings": ["(manufacturing) industry"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7915,9 +6501,7 @@
     "kana": "スーツケース",
     "kanji": "スーツケース",
     "meaning": "suitcase",
-    "meanings": [
-      "suitcase"
-    ],
+    "meanings": ["suitcase"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7926,11 +6510,7 @@
     "kana": "ひげ",
     "kanji": "ひげ",
     "meaning": "self-abasement",
-    "meanings": [
-      "self-abasement",
-      "self-depreciation",
-      "humility"
-    ],
+    "meanings": ["self-abasement", "self-depreciation", "humility"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7939,11 +6519,7 @@
     "kana": "けんきゅうしつ",
     "kanji": "研究室",
     "meaning": "laboratory",
-    "meanings": [
-      "laboratory",
-      "seminar room",
-      "professor's office"
-    ],
+    "meanings": ["laboratory", "seminar room", "professor's office"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7952,12 +6528,7 @@
     "kana": "こうじょう",
     "kanji": "工場",
     "meaning": "factory",
-    "meanings": [
-      "factory",
-      "plant",
-      "mill",
-      "workshop"
-    ],
+    "meanings": ["factory", "plant", "mill", "workshop"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7980,9 +6551,7 @@
     "kana": "けれど; けれども",
     "kanji": "けれど; けれども",
     "meaning": "but, although",
-    "meanings": [
-      "but, although"
-    ],
+    "meanings": ["but, although"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -7991,13 +6560,7 @@
     "kana": "ふね",
     "kanji": "舟",
     "meaning": "ship",
-    "meanings": [
-      "ship",
-      "boat",
-      "watercraft",
-      "vessel",
-      "seaplane"
-    ],
+    "meanings": ["ship", "boat", "watercraft", "vessel", "seaplane"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8006,13 +6569,7 @@
     "kana": "うごく",
     "kanji": "動く",
     "meaning": "to move",
-    "meanings": [
-      "to move",
-      "to stir",
-      "to shift",
-      "to shake",
-      "to swing"
-    ],
+    "meanings": ["to move", "to stir", "to shift", "to shake", "to swing"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8021,9 +6578,7 @@
     "kana": "～(に) ついて",
     "kanji": "～(に) ついて",
     "meaning": "about, concerning",
-    "meanings": [
-      "about, concerning"
-    ],
+    "meanings": ["about, concerning"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8032,9 +6587,7 @@
     "kana": "コンサート",
     "kanji": "コンサート",
     "meaning": "concert",
-    "meanings": [
-      "concert"
-    ],
+    "meanings": ["concert"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8043,13 +6596,7 @@
     "kana": "むし",
     "kanji": "虫",
     "meaning": "insect",
-    "meanings": [
-      "insect",
-      "bug",
-      "cricket",
-      "moth",
-      "worm"
-    ],
+    "meanings": ["insect", "bug", "cricket", "moth", "worm"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8058,13 +6605,7 @@
     "kana": "やさしい",
     "kanji": "優しい",
     "meaning": "tender",
-    "meanings": [
-      "tender",
-      "kind",
-      "gentle",
-      "graceful",
-      "affectionate"
-    ],
+    "meanings": ["tender", "kind", "gentle", "graceful", "affectionate"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8073,9 +6614,7 @@
     "kana": "コンピュータ; コンピューター",
     "kanji": "コンピュータ; コンピューター",
     "meaning": "computer",
-    "meanings": [
-      "computer"
-    ],
+    "meanings": ["computer"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8099,11 +6638,7 @@
     "kana": "りょうほう",
     "kanji": "両方",
     "meaning": "both",
-    "meanings": [
-      "both",
-      "both sides",
-      "both parties"
-    ],
+    "meanings": ["both", "both sides", "both parties"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8127,9 +6662,7 @@
     "kana": "すいえい",
     "kanji": "水泳",
     "meaning": "swimming",
-    "meanings": [
-      "swimming"
-    ],
+    "meanings": ["swimming"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8138,9 +6671,7 @@
     "kana": "けいけんする",
     "kanji": "経験",
     "meaning": "experience",
-    "meanings": [
-      "experience"
-    ],
+    "meanings": ["experience"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8149,10 +6680,7 @@
     "kana": "かつ",
     "kanji": "勝つ",
     "meaning": "to win",
-    "meanings": [
-      "to win",
-      "to gain victory"
-    ],
+    "meanings": ["to win", "to gain victory"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8161,11 +6689,7 @@
     "kana": "すな",
     "kanji": "砂",
     "meaning": "sand",
-    "meanings": [
-      "sand",
-      "grit",
-      "fine gravel"
-    ],
+    "meanings": ["sand", "grit", "fine gravel"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8218,13 +6742,7 @@
     "kana": "かんたん",
     "kanji": "簡単",
     "meaning": "simple",
-    "meanings": [
-      "simple",
-      "easy",
-      "uncomplicated",
-      "brief",
-      "quick"
-    ],
+    "meanings": ["simple", "easy", "uncomplicated", "brief", "quick"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8278,10 +6796,7 @@
     "kana": "ふくしゅう",
     "kanji": "復習",
     "meaning": "review (of learned material)",
-    "meanings": [
-      "review (of learned material)",
-      "revision"
-    ],
+    "meanings": ["review (of learned material)", "revision"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8305,10 +6820,7 @@
     "kana": "やくにたつ",
     "kanji": "役に立つ",
     "meaning": "to be helpful",
-    "meanings": [
-      "to be helpful",
-      "to be useful"
-    ],
+    "meanings": ["to be helpful", "to be useful"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8317,13 +6829,7 @@
     "kana": "もうすぐ",
     "kanji": "もうすぐ",
     "meaning": "soon",
-    "meanings": [
-      "soon",
-      "shortly",
-      "before long",
-      "nearly",
-      "almost"
-    ],
+    "meanings": ["soon", "shortly", "before long", "nearly", "almost"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8332,13 +6838,7 @@
     "kana": "まんなか",
     "kanji": "真中",
     "meaning": "middle",
-    "meanings": [
-      "middle",
-      "centre",
-      "center",
-      "midpoint",
-      "heart"
-    ],
+    "meanings": ["middle", "centre", "center", "midpoint", "heart"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8362,11 +6862,7 @@
     "kana": "けんきゅう",
     "kanji": "研究",
     "meaning": "research",
-    "meanings": [
-      "research",
-      "study",
-      "investigation"
-    ],
+    "meanings": ["research", "study", "investigation"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8375,9 +6871,7 @@
     "kana": "ケーキ",
     "kanji": "ケーキ",
     "meaning": "cake",
-    "meanings": [
-      "cake"
-    ],
+    "meanings": ["cake"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8386,13 +6880,7 @@
     "kana": "くさ",
     "kanji": "草",
     "meaning": "grass",
-    "meanings": [
-      "grass",
-      "weed",
-      "herb",
-      "thatch",
-      "ninja"
-    ],
+    "meanings": ["grass", "weed", "herb", "thatch", "ninja"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8416,13 +6904,7 @@
     "kana": "このごろ",
     "kanji": "この頃",
     "meaning": "these days",
-    "meanings": [
-      "these days",
-      "nowadays",
-      "now",
-      "at present",
-      "recently"
-    ],
+    "meanings": ["these days", "nowadays", "now", "at present", "recently"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8431,11 +6913,7 @@
     "kana": "たずねる",
     "kanji": "訪ねる",
     "meaning": "to visit",
-    "meanings": [
-      "to visit",
-      "to call on",
-      "to pay a visit to"
-    ],
+    "meanings": ["to visit", "to call on", "to pay a visit to"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8459,10 +6937,7 @@
     "kana": "はなみ",
     "kanji": "花見",
     "meaning": "cherry blossom viewing",
-    "meanings": [
-      "cherry blossom viewing",
-      "flower viewing"
-    ],
+    "meanings": ["cherry blossom viewing", "flower viewing"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8486,10 +6961,7 @@
     "kana": "にゅういんする",
     "kanji": "入院",
     "meaning": "hospitalization",
-    "meanings": [
-      "hospitalization",
-      "hospitalisation"
-    ],
+    "meanings": ["hospitalization", "hospitalisation"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8528,9 +7000,7 @@
     "kana": "～ちょう",
     "kanji": "～町",
     "meaning": "the town of ~",
-    "meanings": [
-      "the town of ~"
-    ],
+    "meanings": ["the town of ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8539,10 +7009,7 @@
     "kana": "あんぜん",
     "kanji": "安全",
     "meaning": "safety",
-    "meanings": [
-      "safety",
-      "security"
-    ],
+    "meanings": ["safety", "security"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8551,9 +7018,7 @@
     "kana": "かんごふ",
     "kanji": "看護婦",
     "meaning": "(female) nurse",
-    "meanings": [
-      "(female) nurse"
-    ],
+    "meanings": ["(female) nurse"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8591,11 +7056,7 @@
     "kana": "ガソリンスタンド",
     "kanji": "ガソリンスタンド",
     "meaning": "gas station",
-    "meanings": [
-      "gas station",
-      "petrol station",
-      "filling station"
-    ],
+    "meanings": ["gas station", "petrol station", "filling station"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8604,9 +7065,7 @@
     "kana": "テニス",
     "kanji": "テニス",
     "meaning": "tennis",
-    "meanings": [
-      "tennis"
-    ],
+    "meanings": ["tennis"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8645,12 +7104,7 @@
     "kana": "ほんやく",
     "kanji": "翻訳",
     "meaning": "translation",
-    "meanings": [
-      "translation",
-      "deciphering",
-      "decoding",
-      "translation"
-    ],
+    "meanings": ["translation", "deciphering", "decoding", "translation"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8659,10 +7113,7 @@
     "kana": "しょくじする",
     "kanji": "食事",
     "meaning": "meal (e.g. lunch, dinner)",
-    "meanings": [
-      "meal (e.g. lunch, dinner)",
-      "diet"
-    ],
+    "meanings": ["meal (e.g. lunch, dinner)", "diet"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8671,9 +7122,7 @@
     "kana": "お陰",
     "kanji": "おかげ",
     "meaning": "thanks or owing to",
-    "meanings": [
-      "thanks or owing to"
-    ],
+    "meanings": ["thanks or owing to"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8682,10 +7131,7 @@
     "kana": "むすめ",
     "kanji": "娘",
     "meaning": "daughter",
-    "meanings": [
-      "daughter",
-      "girl (i.e. a young, unmarried woman)"
-    ],
+    "meanings": ["daughter", "girl (i.e. a young, unmarried woman)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8694,12 +7140,7 @@
     "kana": "ゆ",
     "kanji": "湯",
     "meaning": "hot water",
-    "meanings": [
-      "hot water",
-      "hot bath",
-      "hot spring",
-      "molten iron"
-    ],
+    "meanings": ["hot water", "hot bath", "hot spring", "molten iron"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8723,13 +7164,7 @@
     "kana": "かいぎ",
     "kanji": "会議",
     "meaning": "meeting",
-    "meanings": [
-      "meeting",
-      "conference",
-      "session",
-      "assembly",
-      "council"
-    ],
+    "meanings": ["meeting", "conference", "session", "assembly", "council"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8738,9 +7173,7 @@
     "kana": "みずうみ",
     "kanji": "湖",
     "meaning": "lake",
-    "meanings": [
-      "lake"
-    ],
+    "meanings": ["lake"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8749,11 +7182,7 @@
     "kana": "あつまる",
     "kanji": "集まる",
     "meaning": "to gather",
-    "meanings": [
-      "to gather",
-      "to collect",
-      "to assemble"
-    ],
+    "meanings": ["to gather", "to collect", "to assemble"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8762,9 +7191,7 @@
     "kana": "～にくい",
     "kanji": "～にくい",
     "meaning": "difficult to do ~",
-    "meanings": [
-      "difficult to do ~"
-    ],
+    "meanings": ["difficult to do ~"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8773,12 +7200,7 @@
     "kana": "せいかつする",
     "kanji": "生活",
     "meaning": "life",
-    "meanings": [
-      "life",
-      "living",
-      "livelihood",
-      "(one's) living"
-    ],
+    "meanings": ["life", "living", "livelihood", "(one's) living"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8787,11 +7209,7 @@
     "kana": "いと",
     "kanji": "糸",
     "meaning": "thread",
-    "meanings": [
-      "thread",
-      "yarn",
-      "string"
-    ],
+    "meanings": ["thread", "yarn", "string"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8815,10 +7233,7 @@
     "kana": "ピアノ",
     "kanji": "ピアノ",
     "meaning": "piano (instrument)",
-    "meanings": [
-      "piano (instrument)",
-      "piano (dynamic)"
-    ],
+    "meanings": ["piano (instrument)", "piano (dynamic)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8827,9 +7242,7 @@
     "kana": "～め",
     "kanji": "～目",
     "meaning": "number ~ sequence, ~nd; ~th",
-    "meanings": [
-      "number ~ sequence, ~nd; ~th"
-    ],
+    "meanings": ["number ~ sequence, ~nd; ~th"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8838,10 +7251,7 @@
     "kana": "ばんぐみ",
     "kanji": "番組",
     "meaning": "program (e.g. TV)",
-    "meanings": [
-      "program (e.g. TV)",
-      "programme"
-    ],
+    "meanings": ["program (e.g. TV)", "programme"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8850,13 +7260,7 @@
     "kana": "きゅう",
     "kanji": "急",
     "meaning": "sudden",
-    "meanings": [
-      "sudden",
-      "abrupt",
-      "unexpected",
-      "urgent",
-      "pressing"
-    ],
+    "meanings": ["sudden", "abrupt", "unexpected", "urgent", "pressing"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8865,12 +7269,7 @@
     "kana": "たな",
     "kanji": "棚",
     "meaning": "shelf",
-    "meanings": [
-      "shelf",
-      "ledge",
-      "rack",
-      "trellis"
-    ],
+    "meanings": ["shelf", "ledge", "rack", "trellis"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8879,10 +7278,7 @@
     "kana": "もめん",
     "kanji": "木綿",
     "meaning": "cotton (material)",
-    "meanings": [
-      "cotton (material)",
-      "red silk-cotton tree (Bombax ceiba)"
-    ],
+    "meanings": ["cotton (material)", "red silk-cotton tree (Bombax ceiba)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8891,11 +7287,7 @@
     "kana": "ゆしゅつする",
     "kanji": "輸出",
     "meaning": "export",
-    "meanings": [
-      "export",
-      "exportation",
-      "efferent"
-    ],
+    "meanings": ["export", "exportation", "efferent"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8904,13 +7296,7 @@
     "kana": "タイプ",
     "kanji": "タイプ",
     "meaning": "type",
-    "meanings": [
-      "type",
-      "kind",
-      "sort",
-      "style",
-      "type (of person)"
-    ],
+    "meanings": ["type", "kind", "sort", "style", "type (of person)"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8919,12 +7305,7 @@
     "kana": "すり",
     "kanji": "すり",
     "meaning": "repair",
-    "meanings": [
-      "repair",
-      "mending",
-      "fixing",
-      "servicing"
-    ],
+    "meanings": ["repair", "mending", "fixing", "servicing"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8933,9 +7314,7 @@
     "kana": "嬉しい",
     "kanji": "うれしい",
     "meaning": "to be happy; to be glad",
-    "meanings": [
-      "to be happy; to be glad"
-    ],
+    "meanings": ["to be happy; to be glad"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8973,9 +7352,7 @@
     "kana": "じんじゃ",
     "kanji": "神社",
     "meaning": "Shinto shrine",
-    "meanings": [
-      "Shinto shrine"
-    ],
+    "meanings": ["Shinto shrine"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8984,11 +7361,7 @@
     "kana": "だいぶ",
     "kanji": "大分",
     "meaning": "considerably",
-    "meanings": [
-      "considerably",
-      "greatly",
-      "a lot"
-    ],
+    "meanings": ["considerably", "greatly", "a lot"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -8997,13 +7370,7 @@
     "kana": "たのしみ",
     "kanji": "楽しみ",
     "meaning": "enjoyment",
-    "meanings": [
-      "enjoyment",
-      "pleasure",
-      "amusement",
-      "delight",
-      "joy"
-    ],
+    "meanings": ["enjoyment", "pleasure", "amusement", "delight", "joy"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -9012,13 +7379,7 @@
     "kana": "しゅみ",
     "kanji": "趣味",
     "meaning": "hobby",
-    "meanings": [
-      "hobby",
-      "pastime",
-      "tastes",
-      "preference",
-      "liking"
-    ],
+    "meanings": ["hobby", "pastime", "tastes", "preference", "liking"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -9027,9 +7388,7 @@
     "kana": "でんぽう",
     "kanji": "電報",
     "meaning": "telegram",
-    "meanings": [
-      "telegram"
-    ],
+    "meanings": ["telegram"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -9038,11 +7397,7 @@
     "kana": "かない",
     "kanji": "家内",
     "meaning": "(my) wife",
-    "meanings": [
-      "(my) wife",
-      "inside the home",
-      "one's family"
-    ],
+    "meanings": ["(my) wife", "inside the home", "one's family"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -9051,11 +7406,7 @@
     "kana": "ゆび",
     "kanji": "指",
     "meaning": "finger",
-    "meanings": [
-      "finger",
-      "toe",
-      "digit"
-    ],
+    "meanings": ["finger", "toe", "digit"],
     "jlptLevel": "N4",
     "source": "default"
   },
@@ -9079,11 +7430,7 @@
     "kana": "たまに",
     "kanji": "たまに",
     "meaning": "occasionally",
-    "meanings": [
-      "occasionally",
-      "once in a while",
-      "now and then"
-    ],
+    "meanings": ["occasionally", "once in a while", "now and then"],
     "jlptLevel": "N4",
     "source": "default"
   },

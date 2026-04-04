@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, View } from "react-native"
 import { AppIcon } from "./AppIcon"
 import { Card } from "./Card"
 import { AppText as Text } from "./AppText"
+import { DecoratedIcon } from "./DecoratedIcon"
 import { getLevelTheme } from "../constants/levelTheme"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { AppLanguage, t } from "../lib/i18n"
@@ -72,7 +73,10 @@ export function SettingsPanel({
   return (
     <View style={styles.container}>
       <Card style={styles.section}>
-        <Text style={styles.eyebrow}>{t(language, "difficulty")}</Text>
+        <View style={styles.sectionHeaderRow}>
+          <DecoratedIcon name="treasure" size={20} />
+          <Text style={styles.eyebrow}>{t(language, "difficulty")}</Text>
+        </View>
         <View style={styles.levelRow}>
           {selectableLevels.map((candidateLevel) => {
             const isActive = level === candidateLevel
@@ -105,7 +109,10 @@ export function SettingsPanel({
       </Card>
 
       <Card style={styles.section}>
-        <Text style={styles.eyebrow}>{t(language, "languageSettings")}</Text>
+        <View style={styles.sectionHeaderRow}>
+          <DecoratedIcon name="language" size={20} />
+          <Text style={styles.eyebrow}>{t(language, "languageSettings")}</Text>
+        </View>
         <Text style={styles.helper}>{t(language, "languageHelper")}</Text>
         <View style={styles.languageList}>
           {selectableLanguages.map((candidateLanguage) => {
@@ -143,7 +150,10 @@ export function SettingsPanel({
       {showAdvanced ? (
         <>
           <Card style={styles.section}>
-            <Text style={styles.eyebrow}>{t(language, "ttsSettings")}</Text>
+            <View style={styles.sectionHeaderRow}>
+              <DecoratedIcon name="speaker" size={20} />
+              <Text style={styles.eyebrow}>{t(language, "ttsSettings")}</Text>
+            </View>
             <Text style={styles.helper}>{t(language, "ttsHelper")}</Text>
 
             <View style={styles.optionBlock}>
@@ -266,6 +276,12 @@ const styles = StyleSheet.create({
   section: {
     gap: spacing.md,
     backgroundColor: colors.backgroundRaised
+  },
+  sectionHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm,
+    marginBottom: spacing.xs
   },
   eyebrow: {
     color: colors.textMuted,

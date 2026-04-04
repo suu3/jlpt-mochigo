@@ -10,6 +10,7 @@ import { getLocalizedMeaning, getStudyWords } from "../lib/quiz"
 import { getSpeechOptions } from "../lib/speech"
 import { useAppStore } from "../store/useAppStore"
 import { WordEntry } from "../types/app"
+import { FoxTeacher } from "../components/FoxTeacher"
 
 const PAGE_SIZE = 24
 type MemorizedFilter = "all" | "hidden" | "only"
@@ -233,59 +234,44 @@ export function WordsScreen() {
   const [newMeaning, setNewMeaning] = useState("")
   const [showValidation, setShowValidation] = useState(false)
   
-  // Performance optimization: Deferred filtering
   const [filteredWords, setFilteredWords] = useState<WordEntry[]>([])
-  const [isFiltering, setIsFiltering] = useState(false)
   const [lengthOptions, setLengthOptions] = useState<number[]>([])
 
   const resolvedLanguage = resolveLanguage(settings.language)
 
   useEffect(() => {
-    let isMounted = true
-    setIsFiltering(true)
+    const sourceWords = wordsByLevel[settings.level] ?? []
+    const studyWords = getStudyWords(sourceWords)
+    
+    const filtered = studyWords.filter((word) => {
+      const matchesLength =
+        selectedLength === null ||
+        getWordLength(word.kana) === selectedLength
+      const matchesKanaRow =
+        selectedKanaRow === null || getKanaRow(word.kana) === selectedKanaRow
+      const isMemorized = memorizedWordIds.includes(word.id)
 
-    const timer = setTimeout(() => {
-      const sourceWords = wordsByLevel[settings.level] ?? []
-      const studyWords = getStudyWords(sourceWords)
-      
-      const filtered = studyWords.filter((word) => {
-        const matchesLength =
-          selectedLength === null ||
-          getWordLength(word.kana) === selectedLength
-        const matchesKanaRow =
-          selectedKanaRow === null || getKanaRow(word.kana) === selectedKanaRow
-        const isMemorized = memorizedWordIds.includes(word.id)
-
-        if (!matchesLength || !matchesKanaRow) {
-          return false
-        }
-
-        if (memorizedFilter === "hidden") {
-          return !isMemorized
-        }
-
-        if (memorizedFilter === "only") {
-          return isMemorized
-        }
-
-        return true
-      })
-
-      if (isMounted) {
-        setFilteredWords(filtered)
-        setLengthOptions(
-          Array.from(new Set(studyWords.map((word) => getWordLength(word.kana)))).sort(
-            (left, right) => left - right
-          )
-        )
-        setIsFiltering(false)
+      if (!matchesLength || !matchesKanaRow) {
+        return false
       }
-    }, 10)
 
-    return () => {
-      isMounted = false
-      clearTimeout(timer)
-    }
+      if (memorizedFilter === "hidden") {
+        return !isMemorized
+      }
+
+      if (memorizedFilter === "only") {
+        return isMemorized
+      }
+
+      return true
+    })
+
+    setFilteredWords(filtered)
+    setLengthOptions(
+      Array.from(new Set(studyWords.map((word) => getWordLength(word.kana)))).sort(
+        (left, right) => left - right
+      )
+    )
   }, [
     settings.level,
     wordsByLevel,
@@ -352,12 +338,17 @@ export function WordsScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.eyebrow}>
-          {t(settings.language, "wordBankEyebrow")}
-        </Text>
-        <Text style={styles.title}>
-          {t(settings.language, "wordBankTitle")}
-        </Text>
+        <View style={styles.headerRow}>
+          <View style={styles.headerCopy}>
+            <Text style={styles.eyebrow}>
+              {t(settings.language, "wordBankEyebrow")}
+            </Text>
+            <Text style={styles.title}>
+              {t(settings.language, "wordBankTitle")}
+            </Text>
+          </View>
+          <FoxTeacher type="insight" size={84} style={styles.headerFox} />
+        </View>
         <Text style={styles.helper}>
           {renderHighlightedCopy(
             t(settings.language, "wordBankHelper"),
@@ -807,7 +798,7 @@ export function WordsScreen() {
 
       {activeTab === "jlpt" ? (
       <View style={styles.list}>
-        {isFiltering || isWordDataLoading === true ? (
+        {isWordDataLoading === true ? (
           <View style={styles.inlineLoading}>
             <ActivityIndicator size="large" color={colors.primary} />
             <Text style={styles.loadingText}>
@@ -821,7 +812,7 @@ export function WordsScreen() {
             </Text>
           </Card>
         ) : null}
-        {!isFiltering && isWordDataLoading !== true && visibleWords.map((word, index) => {
+        {isWordDataLoading !== true && visibleWords.map((word, index) => {
           const isBookmarked = bookmarkWordIds.includes(word.id)
           const isMemorized = memorizedWordIds.includes(word.id)
 
@@ -938,7 +929,7 @@ export function WordsScreen() {
       </View>
       ) : null}
 
-      {activeTab === "jlpt" && !isFiltering && isWordDataLoading !== true ? (
+      {activeTab === "jlpt" && isWordDataLoading !== true ? (
       <View style={styles.pagination}>
         <Text style={styles.pageSummary}>
           {tf(settings.language, "showingWordsSummary", {
@@ -1019,9 +1010,6 @@ const styles = StyleSheet.create({
   container: {
     gap: spacing.lg,
     flex: 1
-  },
-  header: {
-    gap: spacing.xs
   },
   tabRow: {
     flexDirection: "row",
@@ -1328,6 +1316,21 @@ const styles = StyleSheet.create({
   emptyText: {
     color: colors.textMuted,
     lineHeight: 22
+  },
+  header: {
+    gap: spacing.md
+  },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "flex-end",
+    justifyContent: "space-between"
+  },
+  headerCopy: {
+    flex: 1
+  },
+  headerFox: {
+    marginBottom: -spacing.sm,
+    marginRight: -spacing.sm
   },
   list: {
     gap: spacing.md,

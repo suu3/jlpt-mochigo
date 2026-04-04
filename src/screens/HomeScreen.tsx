@@ -11,7 +11,9 @@ import { getLevelTheme } from "../constants/levelTheme"
 import { borderWidths, breakpoints, colors, radii, spacing } from "../constants/theme"
 import { t, tf } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
-import { QuizSource } from "../types/app"
+import { QuizSource, WordEntry } from "../types/app"
+import { FoxTeacher } from "../components/FoxTeacher"
+import { DecoratedIcon } from "../components/DecoratedIcon"
 
 const SESSION_QUESTION_COUNT = 5
 const actionCardTextColors = {
@@ -68,6 +70,8 @@ export function HomeScreen() {
         ? t(copy, "quizSourceCustom")
         : t(copy, "quizSourceCombined")
   const sourceOptions: QuizSource[] = ["jlpt", "custom", "combined"]
+  const nextThreshold = totalStudyCount < 25 ? 25 : totalStudyCount < 60 ? 60 : totalStudyCount < 100 ? 100 : null
+  const remainingValue = nextThreshold ? nextThreshold - totalStudyCount : 0
 
   return (
     <View style={styles.container}>
@@ -97,20 +101,20 @@ export function HomeScreen() {
                   <Text style={styles.completeMetaValue}>{dailyProgress.completedSessions}/{dailyProgress.goal}</Text>
                 </View>
                 <View style={[styles.completeMetaChip, styles.completeMetaChipRose, isCompact && styles.completeMetaChipCompact]}>
-                  <Text style={styles.completeMetaLabel}>{t(copy, "studyLevelTitle")}</Text>
-                  <Text style={styles.completeMetaValue}>{tf(copy, "studyLevelStage", { level: bunnyStage })}</Text>
+                  <Text style={styles.completeMetaLabel}>{t(copy, "newMistakes")}</Text>
+                  <Text style={styles.completeMetaValue}>{wrongAnswers.length}</Text>
                 </View>
               </View>
             </View>
 
             <View style={styles.completeHeroStage}>
+              <GoalGardenHalo active />
               <View style={styles.completeHeroStageBackdrop}>
-                <GoalGardenHalo active />
                 <View style={styles.completeHeroBunnyWrap}>
-                  <CelebrationBurst active />
                   <BunnyBadge mood="happy" stage={bunnyStage} />
                 </View>
               </View>
+              <CelebrationBurst active />
             </View>
 
             <View style={styles.completeHeroFooter}>
@@ -124,42 +128,23 @@ export function HomeScreen() {
         ) : (
           <>
             <View style={[styles.heroInsights, isCompact && styles.heroInsightsCompact]}>
-              <View
-                style={[
-                  styles.heroSpotlight,
-                  styles.heroSpotlightLevel,
-                  isCompact && styles.heroSpotlightCompact,
-                  {
-                    backgroundColor: currentLevelTheme.tint,
-                    borderColor: currentLevelTheme.border
-                  }
-                ]}
-              >
-                <Text style={[styles.heroSpotlightLabel, { color: currentLevelTheme.text }]}>{t(copy, "level")}</Text>
-                <Text
-                  style={[
-                    styles.heroSpotlightValue,
-                    isCompact && styles.heroSpotlightValueCompact,
-                    { color: currentLevelTheme.text }
-                  ]}
-                >
-                  {settings.level}
-                </Text>
-                <Text style={styles.heroSpotlightCaption}>{t(copy, "focusGarden")}</Text>
-              </View>
-
-              <View style={[styles.heroSpotlight, styles.heroSpotlightGrowth, isCompact && styles.heroSpotlightCompact]}>
+              <View style={[styles.heroSpotlight, styles.heroSpotlightGrowth, isCompact && styles.heroSpotlightCompact, { flex: 1 }]}>
                 <View style={[styles.heroGrowthRow, isExtraCompact && styles.heroGrowthRowCompact]}>
                   <View style={styles.heroGrowthText}>
                     <Text style={[styles.heroSpotlightLabel, styles.heroSpotlightLabelGarden]}>{t(copy, "studyLevelTitle")}</Text>
                     <Text style={[styles.heroSpotlightValue, isCompact && styles.heroSpotlightValueCompact]}>
-                      {tf(copy, "studyLevelStage", { level: bunnyStage })}
+                      {settings.level} · {tf(copy, "studyLevelStage", { level: bunnyStage })}
                     </Text>
                     <Text style={styles.heroSpotlightCaption}>
-                      {renderHighlightedCopy(t(copy, "studyLevelProgress"), { count: totalStudyCount }, { count: styles.inlineGardenStrong })}
+                      {nextThreshold
+                        ? renderHighlightedCopy(
+                          t(copy, "studyLevelProgress"),
+                          { remaining: remainingValue },
+                          { remaining: styles.inlineGardenStrong }
+                        )
+                        : t(copy, "studyLevelMax")}
                     </Text>
-                  </View>
-                  <View style={[styles.heroGrowthBadge, isCompact && styles.heroGrowthBadgeCompact]}>
+                  </View>                  <View style={[styles.heroGrowthBadge, isCompact && styles.heroGrowthBadgeCompact]}>
                     <BunnyBadge mood="calm" stage={bunnyStage} />
                   </View>
                 </View>
@@ -167,11 +152,18 @@ export function HomeScreen() {
             </View>
 
             <View style={styles.heroTop}>
-              <View style={styles.heroBadge}>
-                <Text style={styles.heroBadgeText}>{t(copy, "heroBadge")}</Text>
+              <View style={styles.heroTopRow}>
+                <View style={styles.heroCopy}>
+                  <View style={[styles.heroBadge, { backgroundColor: currentLevelTheme.solid }]}>
+                    <Text style={styles.heroBadgeText}>{settings.level} {t(copy, "heroBadge")}</Text>
+                  </View>
+                  <Text style={[styles.heroTitle, isCompact && styles.heroTitleCompact]}>{t(copy, "heroTitle")}</Text>
+                  <Text style={[styles.heroSubtitle, isCompact && styles.heroSubtitleCompact]}>{t(copy, "tagline")}</Text>
+                </View>
+                {!isExtraCompact && (
+                  <FoxTeacher type="teaching" size={isCompact ? 90 : 120} style={styles.heroFox} />
+                )}
               </View>
-              <Text style={[styles.heroTitle, isCompact && styles.heroTitleCompact]}>{t(copy, "heroTitle")}</Text>
-              <Text style={[styles.heroSubtitle, isCompact && styles.heroSubtitleCompact]}>{t(copy, "tagline")}</Text>
             </View>
 
             <View style={styles.heroBody}>
@@ -197,14 +189,19 @@ export function HomeScreen() {
       </Card>
 
       <View style={[styles.metrics, isCompact && styles.metricsCompact]}>
-        <MetricPill label={t(copy, "streak")} value={tf(copy, "streakValue", { count: streak })} tone="garden" />
-        <MetricPill label={t(copy, "sessions")} value={`${history.length}`} tone="rose" />
+        <MetricPill label={t(copy, "streak")} value={tf(copy, "streakValue", { count: streak })} tone="garden" icon="carrot" />
+        <MetricPill label={t(copy, "sessions")} value={`${history.length}`} tone="rose" icon="treasure" />
       </View>
 
       <View style={styles.actionGrid}>
         <View style={[styles.actionCardPrimary, isCompact && styles.actionCardCompact]}>
-          <Text style={styles.actionKicker}>{t(copy, "startKicker")}</Text>
-          <Text style={[styles.actionTitle, isCompact && styles.actionTitleCompact]}>{t(copy, "start")}</Text>
+          <View style={styles.actionHeaderRow}>
+            <View style={styles.actionTitleBlock}>
+              <Text style={styles.actionKicker}>{t(copy, "startKicker")}</Text>
+              <Text style={[styles.actionTitle, isCompact && styles.actionTitleCompact]}>{t(copy, "start")}</Text>
+            </View>
+            <DecoratedIcon name="sprout" size={48} />
+          </View>
           <View style={styles.sourceSection}>
             <Text style={styles.sourceLabel}>{t(copy, "quizSourceLabel")}</Text>
             <View style={styles.sourceChips}>
@@ -289,33 +286,58 @@ export function HomeScreen() {
           ]}
           onPress={openReview}
         >
-          <Text style={styles.actionKicker}>{t(copy, "reviewKicker")}</Text>
-          <Text style={[styles.actionTitleDark, isCompact && styles.actionTitleDarkCompact]}>{t(copy, "review")}</Text>
+          <View style={styles.actionHeaderRow}>
+            <View style={styles.actionTitleBlock}>
+              <Text style={styles.actionKicker}>{t(copy, "reviewKicker")}</Text>
+              <Text style={[styles.actionTitleDark, isCompact && styles.actionTitleDarkCompact]}>{t(copy, "review")}</Text>
+            </View>
+            <DecoratedIcon name="retry" size={42} />
+          </View>
           <Text style={styles.actionBodyDark}>
             {renderHighlightedCopy(t(copy, "reviewBody"), { count: wrongAnswers.length }, { count: styles.inlineTokenRoseSoft })}
           </Text>
-          <View style={styles.reviewPreview}>
-            <Text style={styles.reviewPreviewText}>{wrongAnswers.length === 0 ? t(copy, "perfectRound") : `${wrongAnswers.length}`}</Text>
+          <View style={styles.reviewPreviewList}>
+            {(() => {
+              const allJlptWords = Object.values(wordsByLevel).flat().filter((w): w is WordEntry => !!w)
+              const allPossibleWords = [...allJlptWords, ...customWords]
+              const uniqueWrongWordIds = Array.from(new Set(wrongAnswers.map(r => r.wordId)))
+              const wrongWordsCount = uniqueWrongWordIds.length
+              
+              if (wrongWordsCount === 0) {
+                return (
+                  <View style={styles.reviewPreviewEmpty}>
+                    <Text style={styles.reviewPreviewEmptyText}>{t(copy, "perfectRound")}</Text>
+                  </View>
+                )
+              }
+
+              const previewWords = uniqueWrongWordIds
+                .map(id => allPossibleWords.find(w => w.id === id))
+                .filter((w): w is NonNullable<typeof w> => !!w)
+                .slice(0, 4)
+
+              return (
+                <>
+                  {previewWords.map(word => (
+                    <View key={word.id} style={styles.reviewWordChip}>
+                      <Text style={styles.reviewWordChipText} numberOfLines={1}>
+                        {word.kanji || word.kana}
+                      </Text>
+                    </View>
+                  ))}
+                  {wrongWordsCount > 4 && (
+                    <View style={[styles.reviewWordChip, styles.reviewWordChipMore]}>
+                      <Text style={styles.reviewWordChipMoreText}>+{wrongWordsCount - 4}</Text>
+                    </View>
+                  )}
+                </>
+              )
+            })()}
           </View>
         </Pressable>
       </View>
 
       <AdBanner />
-
-      <Card style={styles.footerCard}>
-        <View style={styles.sessionHeader}>
-          <View>
-            <Text style={styles.sectionEyebrow}>{t(copy, "focusGarden")}</Text>
-            <Text style={styles.footerTitle}>{t(copy, "knowledgeGrowth")}</Text>
-          </View>
-          <View style={styles.historyBadge}>
-            <Text style={styles.historyText}>
-              {history.length} {t(copy, "sessions")}
-            </Text>
-          </View>
-        </View>
-        <Text style={styles.helper}>{t(copy, "dashboardHelper")}</Text>
-      </Card>
     </View>
   )
 }
@@ -554,6 +576,22 @@ const styles = StyleSheet.create({
     gap: spacing.md,
     zIndex: 1
   },
+  heroTopRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between"
+  },
+  heroCopy: {
+    flex: 1,
+    gap: spacing.md
+  },
+  header: {
+    gap: spacing.md
+  },
+  heroFox: {
+    marginTop: -spacing.xl,
+    marginRight: -spacing.md
+  },
   heroBadge: {
     alignSelf: "flex-start",
     backgroundColor: colors.primarySoft,
@@ -733,6 +771,15 @@ const styles = StyleSheet.create({
   actionTitleCompact: {
     fontSize: 28
   },
+  actionHeaderRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: spacing.xs
+  },
+  actionTitleBlock: {
+    gap: 6
+  },
   actionTitleDark: {
     color: colors.text,
     fontSize: 30,
@@ -833,51 +880,49 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "900"
   },
-  reviewPreview: {
-    alignSelf: "flex-start",
-    marginTop: spacing.sm,
-    backgroundColor: colors.surface,
-    borderRadius: radii.pill,
-    borderWidth: borderWidths.base,
-    borderColor: colors.border,
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm
-  },
-  reviewPreviewText: {
-    color: colors.rose,
-    fontSize: 13,
-    fontWeight: "800"
-  },
-  footerCard: {
-    backgroundColor: colors.surfaceLow,
-    borderColor: colors.border
-  },
-  sessionHeader: {
+  reviewPreviewList: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between"
+    gap: spacing.sm,
+    flexWrap: "wrap",
+    marginTop: spacing.sm
   },
-  historyBadge: {
+  reviewWordChip: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
     backgroundColor: colors.surface,
+    borderRadius: radii.pill,
     borderWidth: borderWidths.base,
     borderColor: colors.border,
-    borderRadius: radii.pill,
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.xs
+    minWidth: 48,
+    alignItems: "center"
   },
-  historyText: {
-    color: colors.text,
-    fontWeight: "800"
-  },
-  footerTitle: {
-    color: colors.text,
-    fontSize: 22,
+  reviewWordChipText: {
+    color: colors.rose,
+    fontSize: 13,
     fontWeight: "900"
   },
-  helper: {
-    fontSize: 14,
-    lineHeight: 22,
-    color: colors.textMuted,
-    marginTop: spacing.md
+  reviewWordChipMore: {
+    backgroundColor: colors.roseSoft,
+    borderColor: colors.rose,
+    minWidth: 40
+  },
+  reviewWordChipMoreText: {
+    color: colors.rose,
+    fontSize: 12,
+    fontWeight: "900"
+  },
+  reviewPreviewEmpty: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    backgroundColor: colors.surface,
+    borderRadius: radii.pill,
+    borderWidth: borderWidths.base,
+    borderColor: colors.border
+  },
+  reviewPreviewEmptyText: {
+    color: colors.rose,
+    fontSize: 13,
+    fontWeight: "900"
   }
 })

@@ -10,6 +10,8 @@ import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { t, tf } from "../lib/i18n"
 import { getLocalizedMeaning } from "../lib/quiz"
 import { useAppStore } from "../store/useAppStore"
+import { FoxTeacher } from "../components/FoxTeacher"
+import { MetricPill } from "../components/MetricPill"
 
 export function ResultScreen() {
   const { settings, streak, dailyProgress, lastSummary, currentSessionSource, startSession, goHome } = useAppStore()
@@ -30,7 +32,11 @@ export function ResultScreen() {
       <View style={styles.hero}>
         <View style={[styles.bunnyHero, hasCompletedDailyGoal && styles.bunnyHeroCelebration]}>
           <CelebrationBurst active={hasCompletedDailyGoal} />
-          <BunnyBadge mood={mood} />
+          {hasCompletedDailyGoal ? (
+            <FoxTeacher type="good" size={160} />
+          ) : (
+            <BunnyBadge mood={mood} />
+          )}
         </View>
         <Text style={styles.score}>{tf(copy, "resultScore", { correct: lastSummary.correctCount, total: lastSummary.totalCount })}</Text>
         <Text style={styles.kicker}>{t(copy, hasCompletedDailyGoal ? "goalCompleteKicker" : "resultKicker")}</Text>
@@ -38,14 +44,8 @@ export function ResultScreen() {
       </View>
 
       <View style={styles.statsGrid}>
-        <Card style={styles.statCard}>
-          <Text style={styles.statEyebrow}>{t(copy, "accuracy")}</Text>
-          <Text style={styles.statValue}>{Math.round(ratio * 100)}%</Text>
-        </Card>
-        <Card style={styles.statCard}>
-          <Text style={styles.statEyebrow}>{t(copy, "streak")}</Text>
-          <Text style={styles.statValue}>{tf(copy, "streakValue", { count: streak })}</Text>
-        </Card>
+        <MetricPill label={t(copy, "accuracy")} value={`${Math.round(ratio * 100)}%`} tone="garden" icon="sprout" />
+        <MetricPill label={t(copy, "streak")} value={tf(copy, "streakValue", { count: streak })} tone="amber" icon="carrot" />
       </View>
 
       <Card style={styles.reviewCard}>
@@ -86,12 +86,16 @@ export function ResultScreen() {
       </Card>
 
       <View style={styles.actions}>
-        <PrimaryButton label={t(copy, "playAgain")} onPress={() => startSession("mixed", currentSessionSource)} />
+        <PrimaryButton 
+          label={t(copy, "playAgain")} 
+          onPress={() => startSession("mixed", currentSessionSource)} 
+          decoration="retry"
+        />
         <PrimaryButton
           label={t(copy, "goHome")}
-          icon="home"
           onPress={goHome}
           variant="secondary"
+          decoration="home"
         />
       </View>
     </View>

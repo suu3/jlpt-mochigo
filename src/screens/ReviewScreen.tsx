@@ -1,5 +1,5 @@
 import React from "react"
-import { Image, Pressable, StyleSheet, View } from "react-native"
+import { Pressable, StyleSheet, View } from "react-native"
 import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { PrimaryButton } from "../components/PrimaryButton"
@@ -7,14 +7,15 @@ import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { getLocalizedMeaning } from "../lib/quiz"
 import { t, tf } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
-
-const reviewEmptyImage = require("../assets/review_empty.png")
+import { FoxTeacher } from "../components/FoxTeacher"
+import { WordEntry } from "../types/app"
 
 export function ReviewScreen() {
   const { settings, wrongAnswers, customWords, wordsByLevel, startSession, goHome } = useAppStore()
   const copy = settings.language
+  const allJlptWords = Object.values(wordsByLevel).flat().filter((w): w is WordEntry => !!w)
   const fullWordPool = [
-    ...(wordsByLevel[settings.level] ?? []),
+    ...allJlptWords,
     ...customWords
   ]
   const reviewItems = [...wrongAnswers]
@@ -36,7 +37,9 @@ export function ReviewScreen() {
       <View style={styles.grid}>
         {reviewItems.length === 0 ? (
           <Card style={styles.emptyCard}>
-            <Image source={reviewEmptyImage} style={styles.emptyImage} resizeMode="contain" />
+            <View style={styles.emptyFoxWrap}>
+              <FoxTeacher type="good" size={160} />
+            </View>
             <Text style={styles.empty}>{t(copy, "emptyReview")}</Text>
           </Card>
         ) : (
@@ -68,13 +71,18 @@ export function ReviewScreen() {
 
       {topItem ? (
         <Card style={styles.mascotCard}>
-          <Text style={styles.mascotQuote}>
-            {tf(copy, "focusNextWord", { word: topItem.word.kanji || topItem.word.kana })}
-          </Text>
-          <View style={styles.mascotBars}>
-            <View style={styles.mascotBarActive} />
-            <View style={styles.mascotBarIdle} />
-            <View style={styles.mascotBarIdleShort} />
+          <View style={styles.mascotRow}>
+            <View style={styles.mascotCopy}>
+              <Text style={styles.mascotQuote}>
+                {tf(copy, "focusNextWord", { word: topItem.word.kanji || topItem.word.kana })}
+              </Text>
+              <View style={styles.mascotBars}>
+                <View style={styles.mascotBarActive} />
+                <View style={styles.mascotBarIdle} />
+                <View style={styles.mascotBarIdleShort} />
+              </View>
+            </View>
+            <FoxTeacher type="teaching" size={80} style={styles.mascotImg} />
           </View>
         </Card>
       ) : null}
@@ -84,12 +92,13 @@ export function ReviewScreen() {
           label={t(copy, "startReview")}
           onPress={() => startSession("review")}
           disabled={reviewItems.length === 0}
+          decoration="retry"
         />
         <PrimaryButton
           label={t(copy, "goHome")}
-          icon="home"
           onPress={goHome}
           variant="secondary"
+          decoration="home"
         />
       </View>
     </View>
@@ -208,11 +217,27 @@ const styles = StyleSheet.create({
   mascotCard: {
     backgroundColor: colors.surfaceHigh
   },
+  mascotRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: spacing.md
+  },
+  mascotCopy: {
+    flex: 1
+  },
   mascotQuote: {
     color: colors.text,
     fontSize: 18,
     fontWeight: "800",
     lineHeight: 28
+  },
+  mascotImg: {
+    marginBottom: -spacing.md,
+    marginRight: -spacing.sm
+  },
+  emptyFoxWrap: {
+    marginBottom: -spacing.lg
   },
   mascotBars: {
     flexDirection: "row",

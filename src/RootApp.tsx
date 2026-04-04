@@ -31,7 +31,7 @@ export function RootApp() {
     })
   }, [initialize])
 
-  const shouldShowOverlay = !isReady || (isWordDataLoading === true && screen !== "words" && screen !== "review")
+  const shouldShowOverlay = !isReady || isWordDataLoading === true
 
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -40,24 +40,28 @@ export function RootApp() {
           style={styles.scrollView}
           contentContainerStyle={[styles.container, isCompact && styles.containerCompact]}
         >
-          {isReady && screen === "setup" ? <SetupScreen /> : null}
-          {isReady && screen === "home" ? <HomeScreen /> : null}
-          {isReady && screen === "quiz" ? <QuizScreen /> : null}
-          {isReady && screen === "result" ? <ResultScreen /> : null}
-          {isReady && screen === "review" ? <ReviewScreen /> : null}
-          {isReady && screen === "words" ? <WordsScreen /> : null}
-          {isReady && screen === "bookmarks" ? <BookmarksScreen /> : null}
-          {isReady && screen === "settings" ? <SettingsScreen /> : null}
-
-          {shouldShowOverlay ? (
-            <View style={styles.loadingOverlay}>
-              <View style={styles.loadingCard}>
-                <ActivityIndicator color={colors.primary} size="large" />
-                <Text style={styles.loadingText}>{t(settings.language, "loading")}</Text>
-              </View>
-            </View>
-          ) : null}
+          {isReady && (
+            <>
+              {screen === "setup" && <SetupScreen />}
+              {screen === "home" && <HomeScreen />}
+              {screen === "quiz" && <QuizScreen />}
+              {screen === "result" && <ResultScreen />}
+              {screen === "review" && <ReviewScreen />}
+              {screen === "words" && <WordsScreen />}
+              {screen === "bookmarks" && <BookmarksScreen />}
+              {screen === "settings" && <SettingsScreen />}
+            </>
+          )}
         </ScrollView>
+
+        {shouldShowOverlay ? (
+          <View style={styles.loadingOverlay}>
+            <View style={styles.loadingCard}>
+              <ActivityIndicator color={colors.primary} size="large" />
+              <Text style={styles.loadingText}>{t(settings.language, "loading")}</Text>
+            </View>
+          </View>
+        ) : null}
 
         {isReady && screen !== "setup" ? <BottomNav /> : null}
       </View>

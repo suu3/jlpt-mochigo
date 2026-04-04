@@ -1,7 +1,7 @@
-import { getLocales } from "expo-localization"
+import { getLocales } from "expo-localization";
 
-export type AppLanguage = "system" | "ko" | "en"
-export type ResolvedLanguage = "ko" | "en"
+export type AppLanguage = "system" | "ko" | "en";
+export type ResolvedLanguage = "ko" | "en";
 
 export type CopyKey =
   | "title"
@@ -126,9 +126,11 @@ export type CopyKey =
   | "emptyFilteredWords"
   | "bookmarkAdd"
   | "bookmarkRemove"
+  | "newMistakes"
   | "studyLevelTitle"
   | "studyLevelStage"
   | "studyLevelProgress"
+  | "studyLevelMax"
   | "allLengths"
   | "lengthOption"
   | "pageSummary"
@@ -191,7 +193,7 @@ export type CopyKey =
   | "dataSourceJlptWordListLinkLabel"
   | "externalLinkErrorTitle"
   | "externalLinkErrorBody"
-  | "dataSourceDisclaimer"
+  | "dataSourceDisclaimer";
 
 const dictionary = {
   ko: {
@@ -201,14 +203,17 @@ const dictionary = {
     heroBadge: "오늘 루틴",
     heroTitle: "가볍게 한 세션, 바로 시작해볼까요?",
     homeGoalCompleteTitle: "오늘 정원이 다 채워졌어요.",
-    homeGoalCompleteBody: "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 세션 더 이어가도 좋아요.",
+    homeGoalCompleteBody:
+      "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 세션 더 이어가도 좋아요.",
     refreshing: "새로고침 중...",
     refreshWordDataTitle: "단어 데이터 새로고침",
-    refreshWordDataHelper: "번역된 최신 단어 정보를 다시 불러옵니다. 기존 학습 기록은 유지돼요.",
+    refreshWordDataHelper:
+      "번역된 최신 단어 정보를 다시 불러옵니다. 기존 학습 기록은 유지돼요.",
     refreshWordDataButton: "데이터 동기화",
     dailyGoal: "오늘 분량",
     dailyProgressHint: "오늘 목표까지 {count}세션 남았어요.",
-    dailyProgressCompleteHint: "오늘 목표는 다 채웠어요. 다해도 더 공부해볼까요?",
+    dailyProgressCompleteHint:
+      "오늘 목표는 다 채웠어요. 다해도 더 공부해볼까요?",
     streak: "연속 학습",
     streakValue: "{count}일",
     start: "바로 시작",
@@ -227,7 +232,7 @@ const dictionary = {
     saveAndStart: "이대로 시작",
     startKicker: "학습 세션",
     startBody:
-      "{level} · {source} · {count}문제예요. 틀린 단어는 다음 세션에 먼저 다시 나와요.",
+      "{source} · {count}문제가 나와요. 틀린 단어는 다음 세션에 먼저 다시 나와요.",
     quizSourceLabel: "출제 범위",
     quizSourceJlpt: "JLPT만",
     quizSourceCustom: "나만의 단어장",
@@ -324,9 +329,11 @@ const dictionary = {
       "지금 필터에는 보이는 단어가 없어요. 외운 단어 숨기기를 풀거나 글자 수를 바꿔보세요.",
     bookmarkAdd: "북마크 추가",
     bookmarkRemove: "북마크 해제",
-    studyLevelTitle: "토끼 레벨",
+    newMistakes: "새로운 오답",
+    studyLevelTitle: "당신의 레벨",
     studyLevelStage: "Lv.{level}",
-    studyLevelProgress: "지금까지 {count}문제를 풀었어요.",
+    studyLevelProgress: "다음 레벨까지 {remaining}문제 남았어요! 화이팅! 🔥",
+    studyLevelMax: "최고 레벨에 도달했어요! 당신은 단어 마스터! 👑",
     allLengths: "전체",
     lengthOption: "{count}글자",
     pageSummary: "{current} / {total} 페이지",
@@ -354,7 +361,8 @@ const dictionary = {
     customWordAdded: "추가됨",
     customWordValidation: "읽기와 뜻은 꼭 입력해 주세요.",
     customWordSectionTitle: "내가 추가한 단어",
-    emptyCustomWords: "아직 직접 추가한 단어가 없어요. 자주 헷갈리는 단어를 먼저 담아보세요.",
+    emptyCustomWords:
+      "아직 직접 추가한 단어가 없어요. 자주 헷갈리는 단어를 먼저 담아보세요.",
     customWordBadge: "내 단어",
     ttsSettings: "음성 설정",
     ttsHelper: "문제와 단어 카드에서 들리는 일본어 발음의 느낌을 조절해요.",
@@ -369,7 +377,8 @@ const dictionary = {
     speechPitchNormal: "보통",
     speechPitchHigh: "또렷하게",
     homeDensity: "학습 단어 범위",
-    homeDensityHelper: "현재 레벨에서 학습 대상으로 포함할 전체 단어 수를 정해요.",
+    homeDensityHelper:
+      "현재 레벨에서 학습 대상으로 포함할 전체 단어 수를 정해요.",
     densityRich: "많이 외우기",
     densityBalanced: "중간 외우기",
     densitySimple: "간단 외우기",
@@ -378,11 +387,13 @@ const dictionary = {
       "세션 기록, 오답, 북마크, 외운 단어, 연속 학습 수치가 모두 삭제돼요. 설정은 그대로 남아요.",
     resetStudyDataButton: "학습 기록 전체 삭제",
     resetStudyDataConfirmTitle: "학습 기록을 모두 삭제할까요?",
-    resetStudyDataConfirmBody: "이 작업은 되돌릴 수 없어요. 지금까지의 학습 기록이 모두 삭제됩니다.",
+    resetStudyDataConfirmBody:
+      "이 작업은 되돌릴 수 없어요. 지금까지의 학습 기록이 모두 삭제됩니다.",
     resetStudyDataCancel: "취소",
     resetStudyDataConfirm: "삭제하기",
     dataSourcesTitle: "데이터 및 라이선스",
-    dataSourcesHelper: "이 앱의 학습 데이터셋을 만드는 데 참고한 데이터 출처와 적용 라이선스를 안내합니다.",
+    dataSourcesHelper:
+      "이 앱의 학습 데이터셋을 만드는 데 참고한 데이터 출처와 적용 라이선스를 안내합니다.",
     dataSourceJmdictTitle: "JMdict (EDRDG) · CC BY-SA 4.0",
     dataSourceJmdictDescription: "단어 표기, 읽기, 영문 뜻 구성에 참고",
     dataSourceJmdictLinkLabel: "JMdict 안내 페이지",
@@ -392,7 +403,7 @@ const dictionary = {
     externalLinkErrorTitle: "링크를 열 수 없어요",
     externalLinkErrorBody: "잠시 후 다시 시도해 주세요.",
     dataSourceDisclaimer:
-      "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다."
+      "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다.",
   },
   en: {
     title: "JLPT Bunny",
@@ -402,14 +413,17 @@ const dictionary = {
     heroBadge: "Daily Focus",
     heroTitle: "You're finding your flow.",
     homeGoalCompleteTitle: "Your garden is glowing today.",
-    homeGoalCompleteBody: "You've finished today's goal. Rest here for a moment, or keep the calm going with one more round.",
+    homeGoalCompleteBody:
+      "You've finished today's goal. Rest here for a moment, or keep the calm going with one more round.",
     refreshing: "Refreshing...",
     refreshWordDataTitle: "Refresh Word Data",
-    refreshWordDataHelper: "Reload latest translated word info from the app bundle. Your history will be kept.",
+    refreshWordDataHelper:
+      "Reload latest translated word info from the app bundle. Your history will be kept.",
     refreshWordDataButton: "Sync Data",
     dailyGoal: "Daily Goal",
     dailyProgressHint: "{count} more sessions to reach today's calm finish.",
-    dailyProgressCompleteHint: "Today's goal is complete. Want to keep going for one more calm round?",
+    dailyProgressCompleteHint:
+      "Today's goal is complete. Want to keep going for one more calm round?",
     streak: "Streak",
     streakValue: "{count} days",
     start: "Start Session",
@@ -459,7 +473,8 @@ const dictionary = {
     resultScore: "{correct} / {total} correct",
     resultKicker: "Otsukaresama",
     goalCompleteKicker: "Today's goal is complete",
-    goalCompletePrompt: "One more gentle round now can make tomorrow feel lighter.",
+    goalCompletePrompt:
+      "One more gentle round now can make tomorrow feel lighter.",
     accuracy: "Accuracy",
     needsReview: "Needs Review",
     perfectRound: "Perfect round",
@@ -525,9 +540,11 @@ const dictionary = {
       "No words match this filter right now. Try showing memorized words again or change the length filter.",
     bookmarkAdd: "Add Bookmark",
     bookmarkRemove: "Remove Bookmark",
-    studyLevelTitle: "Bunny Growth",
-    studyLevelStage: "Lv.{level} Bunny",
-    studyLevelProgress: "You've studied {count} questions so far.",
+    newMistakes: "New Mistakes",
+    studyLevelTitle: "Your Level",
+    studyLevelStage: "Lv.{level}",
+    studyLevelProgress: "{remaining} more to the next level! Keep it up! 🔥",
+    studyLevelMax: "You've reached the top level! You're a word master! 👑",
     allLengths: "All",
     lengthOption: "{count} characters",
     pageSummary: "Page {current} / {total}",
@@ -555,10 +572,12 @@ const dictionary = {
     customWordAdded: "Added",
     customWordValidation: "Reading and meaning are required.",
     customWordSectionTitle: "Your Added Words",
-    emptyCustomWords: "No custom words yet. Add a word you want to practice again in quizzes.",
+    emptyCustomWords:
+      "No custom words yet. Add a word you want to practice again in quizzes.",
     customWordBadge: "Custom",
     ttsSettings: "Speech",
-    ttsHelper: "Control how Japanese pronunciation sounds on quiz and word cards.",
+    ttsHelper:
+      "Control how Japanese pronunciation sounds on quiz and word cards.",
     ttsOn: "TTS On",
     ttsOff: "TTS Off",
     speechRate: "Speech Rate",
@@ -570,7 +589,8 @@ const dictionary = {
     speechPitchNormal: "Normal",
     speechPitchHigh: "Clearer",
     homeDensity: "Study Word Range",
-    homeDensityHelper: "Choose how many words from the current level are included in your study pool.",
+    homeDensityHelper:
+      "Choose how many words from the current level are included in your study pool.",
     densityRich: "More Words",
     densityBalanced: "Balanced",
     densitySimple: "Light",
@@ -587,7 +607,8 @@ const dictionary = {
     dataSourcesHelper:
       "These are the source references and licenses used to shape the study dataset in this app.",
     dataSourceJmdictTitle: "JMdict (EDRDG) · CC BY-SA 4.0",
-    dataSourceJmdictDescription: "Reference for word forms, readings, and English meanings",
+    dataSourceJmdictDescription:
+      "Reference for word forms, readings, and English meanings",
     dataSourceJmdictLinkLabel: "JMdict overview page",
     dataSourceJlptWordListTitle: "jlpt-word-list by elzup · MIT",
     dataSourceJlptWordListDescription:
@@ -596,30 +617,30 @@ const dictionary = {
     externalLinkErrorTitle: "Unable to open link",
     externalLinkErrorBody: "Please try again in a moment.",
     dataSourceDisclaimer:
-      "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT)."
-  }
-} as const
+      "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT).",
+  },
+} as const;
 
 export function detectLanguage(): ResolvedLanguage {
-  const locale = getLocales()[0]?.languageCode ?? "en"
-  return locale === "ko" ? "ko" : "en"
+  const locale = getLocales()[0]?.languageCode ?? "en";
+  return locale === "ko" ? "ko" : "en";
 }
 
 export function resolveLanguage(language: AppLanguage): ResolvedLanguage {
-  return language === "system" ? detectLanguage() : language
+  return language === "system" ? detectLanguage() : language;
 }
 
 export function t(language: AppLanguage, key: CopyKey) {
-  return dictionary[resolveLanguage(language)][key]
+  return dictionary[resolveLanguage(language)][key];
 }
 
 export function tf(
   language: AppLanguage,
   key: CopyKey,
-  values: Record<string, string | number>
+  values: Record<string, string | number>,
 ) {
   return t(language, key).replace(
     /\{(\w+)\}/g,
-    (_, token: string) => `${values[token] ?? ""}`
-  )
+    (_, token: string) => `${values[token] ?? ""}`,
+  );
 }

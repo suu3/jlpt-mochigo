@@ -8,6 +8,7 @@ import { SettingsPanel } from "../components/SettingsPanel"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { t } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
+import { DecoratedIcon } from "../components/DecoratedIcon"
 
 export function SettingsScreen() {
   const {
@@ -78,8 +79,13 @@ export function SettingsScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.eyebrow}>{t(settings.language, "settingsEyebrow")}</Text>
-        <Text style={styles.title}>{t(settings.language, "settingsTitle")}</Text>
+        <View style={styles.headerRow}>
+          <View style={styles.headerCopy}>
+            <Text style={styles.eyebrow}>{t(settings.language, "settingsEyebrow")}</Text>
+            <Text style={styles.title}>{t(settings.language, "settingsTitle")}</Text>
+          </View>
+          <DecoratedIcon name="setting" size={32} />
+        </View>
         <Text style={styles.helper}>{t(settings.language, "settingsHelper")}</Text>
       </View>
 
@@ -171,6 +177,14 @@ const styles = StyleSheet.create({
   },
   header: {
     gap: spacing.xs
+  },
+  headerRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between"
+  },
+  headerCopy: {
+    flex: 1
   },
   eyebrow: {
     color: colors.textMuted,

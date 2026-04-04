@@ -1,28 +1,31 @@
 import React, { useState } from "react"
 import { StyleSheet, View } from "react-native"
-import { BunnyBadge } from "../components/BunnyBadge"
+import { FoxTeacher } from "../components/FoxTeacher"
+import { DecoratedIcon } from "../components/DecoratedIcon"
 import { AppText as Text } from "../components/AppText"
 import { PrimaryButton } from "../components/PrimaryButton"
 import { SettingsPanel } from "../components/SettingsPanel"
 import { colors, spacing } from "../constants/theme"
 import { AppLanguage, t } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
-import { HomeDensitySetting, JLPTLevel } from "../types/app"
+import { JLPTLevel } from "../types/app"
 
 export function SetupScreen() {
   const { settings, completeOnboarding } = useAppStore()
   const [level, setLevel] = useState<JLPTLevel>(settings.level)
   const [language, setLanguage] = useState<AppLanguage>(settings.language)
-  const [homeDensity, setHomeDensity] = useState<HomeDensitySetting>(settings.homeDensity)
 
   return (
     <View style={styles.container}>
       <View style={styles.heroCard}>
         <View style={styles.header}>
           <View style={styles.bunnyPlate}>
-            <BunnyBadge mood="happy" />
+            <FoxTeacher type="teaching" size={120} />
           </View>
-          <Text style={styles.title}>{t(language, "setupTitle")}</Text>
+          <View style={styles.titleRow}>
+            <Text style={styles.title}>{t(language, "setupTitle")}</Text>
+            <DecoratedIcon name="sprout" size={32} />
+          </View>
           <Text style={styles.helper}>{t(language, "setupHelper")}</Text>
         </View>
       </View>
@@ -30,17 +33,14 @@ export function SetupScreen() {
       <SettingsPanel
         language={language}
         level={level}
-        homeDensity={homeDensity}
-        showWordDensity
         onSelectLevel={setLevel}
         onSelectLanguage={setLanguage}
-        onSelectHomeDensity={setHomeDensity}
       />
 
       <PrimaryButton
         label={t(language, "saveAndStart")}
         onPress={async () => {
-          await completeOnboarding({ level, language, homeDensity })
+          await completeOnboarding({ level, language })
         }}
       />
     </View>
@@ -67,6 +67,11 @@ const styles = StyleSheet.create({
   header: {
     gap: spacing.lg,
     alignItems: "flex-start"
+  },
+  titleRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: spacing.sm
   },
   bunnyPlate: {
     width: 124,

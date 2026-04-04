@@ -180,7 +180,17 @@ export const useAppStore = create<AppState>((set, get) => {
         ...fallbackSettings,
         ...storedSettings
       }
-      const initialLevelWords = await quizDatabase.getLevelWords(settings.level, settings.language)
+
+      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {}
+      const allLevels = await Promise.all(
+        LEVELS_ASCENDING.map(async (level) => {
+          const words = await quizDatabase.getLevelWords(level, settings.language)
+          return { level, words }
+        })
+      )
+      for (const { level, words } of allLevels) {
+        wordsByLevel[level] = words
+      }
 
       const totalStudyCount = history.reduce((sum, entry) => sum + entry.total, 0)
       const normalizedProgress =
@@ -198,9 +208,7 @@ export const useAppStore = create<AppState>((set, get) => {
         wrongAnswers,
         history,
         customWords,
-        wordsByLevel: {
-          [settings.level]: initialLevelWords
-        },
+        wordsByLevel,
         bookmarkWordIds,
         memorizedWordIds,
         isWordDataLoading: false,
@@ -228,8 +236,19 @@ export const useAppStore = create<AppState>((set, get) => {
       })
       await storage.writeSettings(nextSettings)
       await quizDatabase.clearWordCache() // Clear SQLite cache for new language
-      await ensureLevelWords(nextSettings.level)
-      set({ isWordDataLoading: false })
+      
+      const allLevels = await Promise.all(
+        LEVELS_ASCENDING.map(async (level) => {
+          const words = await quizDatabase.getLevelWords(level, nextSettings.language)
+          return { level, words }
+        })
+      )
+      const wordsByLevel: Partial<Record<JLPTLevel, WordEntry[]>> = {}
+      for (const { level, words } of allLevels) {
+        wordsByLevel[level] = words
+      }
+
+      set({ wordsByLevel, isWordDataLoading: false })
     },
 
     async setTtsEnabled(ttsEnabled) {
@@ -363,14 +382,19 @@ export const useAppStore = create<AppState>((set, get) => {
 
     async startSession(mode = "mixed", source = "jlpt") {
       const { settings, wrongAnswers, customWords } = get()
-      const levelWords = await ensureLevelWords(settings.level)
-      const effectiveSource = mode === "review" ? "combined" : source
+      const allJlptWords = Object.values(get().wordsByLevel).flat().filter((w): w is WordEntry => !!w)
+      const currentLevelWords = get().wordsByLevel[settings.level] || []
+      
       const sourceWords =
-        effectiveSource === "jlpt"
-          ? levelWords
-          : effectiveSource === "custom"
-            ? customWords
-            : [...levelWords, ...customWords]
+        mode === "review"
+          ? [...allJlptWords, ...customWords]
+          : source === "jlpt"
+            ? currentLevelWords
+            : source === "custom"
+              ? customWords
+              : [...currentLevelWords, ...customWords]
+      
+      const effectiveSource = mode === "review" ? "combined" : source
       const words = getStudyWords(sourceWords)
 
       if (words.length === 0) {
