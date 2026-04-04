@@ -202,7 +202,7 @@ const dictionary = {
     loading: "학습 화면을 불러오고 있어요...",
     heroBadge: "오늘 루틴",
     heroTitle: "가볍게 한 세션, 바로 시작해볼까요?",
-    homeGoalCompleteTitle: "오늘 정원이 다 채워졌어요.",
+    homeGoalCompleteTitle: "오늘 세션을 다 풀었어요.",
     homeGoalCompleteBody:
       "목표를 끝냈어요. 잠깐 쉬어도 좋고, 여유가 있으면 한 세션 더 이어가도 좋아요.",
     refreshing: "새로고침 중...",
@@ -226,7 +226,7 @@ const dictionary = {
     languageSystemValue: "기기 언어 사용",
     languageKorean: "한국어",
     languageEnglish: "English",
-    setupTitle: "내 학습 설정부터 가볍게 맞출게요",
+    setupTitle: "내 학습 설정부터 맞출게요",
     setupHelper:
       "레벨과 언어만 정하면 바로 풀 수 있어요. 나중에 설정에서 언제든 바꿀 수 있어요.",
     saveAndStart: "이대로 시작",
