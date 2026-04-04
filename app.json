@@ -2,13 +2,11 @@
   "expo": {
     "name": "Mochigo: JLPT Vocabulary & Japanese Quiz",
     "slug": "mochigo",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "icon": "./src/assets/icon.png",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
@@ -22,7 +20,7 @@
         "backgroundColor": "#F3F0E8"
       },
       "package": "com.mochigo.app",
-      "versionCode": 2
+      "versionCode": 3
     },
     "plugins": [
       "expo-font",
