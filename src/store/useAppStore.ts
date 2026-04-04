@@ -1,3 +1,4 @@
+import * as Speech from "expo-speech";
 import { create } from "zustand";
 import { LEVELS_ASCENDING } from "../data/levelLoader";
 import { quizDatabase } from "../lib/database";
@@ -291,6 +292,9 @@ export const useAppStore = create<AppState>((set, get) => {
     async setTtsEnabled(ttsEnabled) {
       const nextSettings = { ...get().settings, ttsEnabled };
       set({ settings: nextSettings });
+      if (!ttsEnabled) {
+        await Speech.stop();
+      }
       await storage.writeSettings(nextSettings);
     },
 

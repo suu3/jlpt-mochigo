@@ -20,6 +20,7 @@ export function QuizScreen() {
   } = useAppStore();
   const question = currentQuestions[currentIndex];
   const copy = settings.language;
+  const isTtsEnabled = settings.ttsEnabled;
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
 
   const feedback = useMemo(() => {
@@ -80,15 +81,29 @@ export function QuizScreen() {
         </Text>
 
         <Pressable
+          accessibilityRole="button"
+          accessibilityState={{ disabled: !isTtsEnabled }}
+          disabled={!isTtsEnabled}
           onPress={() => {
             if (speakEnabled()) {
               Speech.speak(question.word.kana, getSpeechOptions(settings));
             }
           }}
-          style={({ pressed }) => [styles.listenButton, pressed && styles.listenButtonPressed]}
+          style={({ pressed }) => [
+            styles.listenButton,
+            !isTtsEnabled && styles.listenButtonDisabled,
+            pressed && isTtsEnabled && styles.listenButtonPressed
+          ]}
         >
-          <AppIcon name="volume" size={16} color={colors.primaryDeep} strokeWidth={2} />
-          <Text style={styles.listenButtonText}>{t(copy, "listen")}</Text>
+          <AppIcon
+            name="volume"
+            size={16}
+            color={isTtsEnabled ? colors.primaryDeep : colors.textFaint}
+            strokeWidth={2}
+          />
+          <Text style={[styles.listenButtonText, !isTtsEnabled && styles.listenButtonTextDisabled]}>
+            {t(copy, "listen")}
+          </Text>
         </Pressable>
       </Card>
 
@@ -228,10 +243,16 @@ const styles = StyleSheet.create({
     transform: [{ translateX: 2 }, { translateY: 2 }],
     shadowOffset: { width: 1, height: 1 }
   },
+  listenButtonDisabled: {
+    opacity: 0.5
+  },
   listenButtonText: {
     color: colors.primaryDeep,
     fontSize: 15,
     fontWeight: "800"
+  },
+  listenButtonTextDisabled: {
+    color: colors.textFaint
   },
   choices: {
     gap: spacing.md

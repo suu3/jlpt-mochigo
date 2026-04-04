@@ -223,6 +223,7 @@ export function WordsScreen() {
   } = useAppStore();
 
   const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1;
+  const isTtsEnabled = settings.ttsEnabled;
 
   const [activeTab, setActiveTab] = useState<WordTab>("jlpt");
   const [selectedLength, setSelectedLength] = useState<number | null>(null);
@@ -864,6 +865,9 @@ export function WordsScreen() {
 
                 <View style={styles.headerActions}>
                   <Pressable
+                    accessibilityRole="button"
+                    accessibilityState={{ disabled: !isTtsEnabled }}
+                    disabled={!isTtsEnabled}
                     onPress={() => {
                       if (speakEnabled()) {
                         Speech.speak(word.kana, getSpeechOptions(settings));
@@ -871,13 +875,14 @@ export function WordsScreen() {
                     }}
                     style={({ pressed }) => [
                       styles.bookmarkIconButton,
-                      pressed && styles.pressed
+                      !isTtsEnabled && styles.bookmarkIconButtonDisabled,
+                      pressed && isTtsEnabled && styles.pressed
                     ]}
                   >
                     <AppIcon
                       name="volume"
                       size={18}
-                      color={colors.primaryDeep}
+                      color={isTtsEnabled ? colors.primaryDeep : colors.textFaint}
                     />
                   </Pressable>
                   <Pressable
@@ -1433,6 +1438,9 @@ const styles = StyleSheet.create({
     backgroundColor: colors.surfaceLow,
     alignItems: "center",
     justifyContent: "center"
+  },
+  bookmarkIconButtonDisabled: {
+    opacity: 0.45
   },
   bookmarkIconButtonActive: {
     borderColor: colors.border,

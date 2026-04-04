@@ -43,7 +43,7 @@ export function ReviewScreen() {
 
   return (
     <View style={styles.container}>
-      <AnimateEntrance duration={animations.duration.long} type="lift">
+      <AnimateEntrance duration={animations.duration.base} type="fade">
         <View style={styles.header}>
           <Text style={styles.eyebrow}>{t(copy, "knowledgeGrowth")}</Text>
           <Text style={styles.title}>{t(copy, "reviewTitle")}</Text>
@@ -63,9 +63,9 @@ export function ReviewScreen() {
           reviewItems.map((item, index) => (
             <AnimateEntrance
               key={`${item.wordId}-${item.questionType}`}
-              delay={100 + index * 50}
-              duration={animations.duration.long}
-              type="lift"
+              delay={Math.min(index * 20, 120)}
+              duration={animations.duration.base}
+              type="fade"
             >
                 <View style={styles.reviewCard}>
                   <View style={styles.row}>
@@ -109,7 +109,7 @@ export function ReviewScreen() {
       </View>
 
       {topItem ? (
-        <AnimateEntrance delay={300} duration={animations.duration.xl} type="lift">
+        <AnimateEntrance delay={120} duration={animations.duration.base} type="fade">
           <Card style={styles.mascotCard}>
             <View style={styles.mascotRow}>
               <View style={styles.mascotCopy}>
@@ -117,15 +117,9 @@ export function ReviewScreen() {
                   {tf(copy, "focusNextWord", { word: topItem.word.kanji || topItem.word.kana })}
                 </Text>
                 <View style={styles.mascotBars}>
-                  <AnimateEntrance delay={600} duration={800} type="scale">
-                    <View style={styles.mascotBarActive} />
-                  </AnimateEntrance>
-                  <AnimateEntrance delay={700} duration={800} type="scale">
-                    <View style={styles.mascotBarIdle} />
-                  </AnimateEntrance>
-                  <AnimateEntrance delay={800} duration={800} type="scale">
-                    <View style={styles.mascotBarIdleShort} />
-                  </AnimateEntrance>
+                  <View style={styles.mascotBarActive} />
+                  <View style={styles.mascotBarIdle} />
+                  <View style={styles.mascotBarIdleShort} />
                 </View>
               </View>
               <FoxTeacher type="teaching" size={80} style={styles.mascotImg} />
