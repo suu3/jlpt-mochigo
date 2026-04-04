@@ -6,6 +6,7 @@ import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { GoalGardenHalo } from "../components/GoalGardenHalo"
 import { MetricPill } from "../components/MetricPill"
+import { getLevelTheme } from "../constants/levelTheme"
 import { borderWidths, breakpoints, colors, radii, spacing } from "../constants/theme"
 import { t, tf } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
@@ -51,6 +52,7 @@ export function HomeScreen() {
   const progressRatio = Math.min(dailyProgress.completedSessions / Math.max(dailyProgress.goal, 1), 1)
   const progressWidth = `${Math.max(progressRatio * 100, 8)}%` as DimensionValue
   const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1
+  const currentLevelTheme = getLevelTheme(settings.level)
   const levelWords = wordsByLevel[settings.level] ?? []
   const startableWordCount =
     selectedSource === "jlpt"
@@ -121,9 +123,27 @@ export function HomeScreen() {
         ) : (
           <>
             <View style={[styles.heroInsights, isCompact && styles.heroInsightsCompact]}>
-              <View style={[styles.heroSpotlight, styles.heroSpotlightLevel, isCompact && styles.heroSpotlightCompact]}>
-                <Text style={[styles.heroSpotlightLabel, styles.heroSpotlightLabelBlue]}>{t(copy, "level")}</Text>
-                <Text style={[styles.heroSpotlightValue, isCompact && styles.heroSpotlightValueCompact]}>{settings.level}</Text>
+              <View
+                style={[
+                  styles.heroSpotlight,
+                  styles.heroSpotlightLevel,
+                  isCompact && styles.heroSpotlightCompact,
+                  {
+                    backgroundColor: currentLevelTheme.tint,
+                    borderColor: currentLevelTheme.border
+                  }
+                ]}
+              >
+                <Text style={[styles.heroSpotlightLabel, { color: currentLevelTheme.text }]}>{t(copy, "level")}</Text>
+                <Text
+                  style={[
+                    styles.heroSpotlightValue,
+                    isCompact && styles.heroSpotlightValueCompact,
+                    { color: currentLevelTheme.text }
+                  ]}
+                >
+                  {settings.level}
+                </Text>
                 <Text style={styles.heroSpotlightCaption}>{t(copy, "focusGarden")}</Text>
               </View>
 
@@ -228,7 +248,7 @@ export function HomeScreen() {
                 count: SESSION_QUESTION_COUNT
               },
               {
-                level: styles.inlineTokenRose,
+                level: { color: currentLevelTheme.text, fontWeight: "900" },
                 source: styles.inlineTokenRose,
                 count: styles.inlineTokenAmber
               }
@@ -508,9 +528,6 @@ const styles = StyleSheet.create({
     fontWeight: "900",
     letterSpacing: 1.2,
     textTransform: "uppercase"
-  },
-  heroSpotlightLabelBlue: {
-    color: colors.primaryDeep
   },
   heroSpotlightLabelGarden: {
     color: colors.garden

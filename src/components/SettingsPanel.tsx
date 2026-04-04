@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, View } from "react-native"
 import { AppIcon } from "./AppIcon"
 import { Card } from "./Card"
 import { AppText as Text } from "./AppText"
+import { getLevelTheme } from "../constants/levelTheme"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { AppLanguage, t } from "../lib/i18n"
 import { HomeDensitySetting, JLPTLevel, SpeechPitchSetting, SpeechRateSetting } from "../types/app"
@@ -81,6 +82,7 @@ export function SettingsPanel({
         <View style={styles.levelRow}>
           {selectableLevels.map((candidateLevel) => {
             const isActive = level === candidateLevel
+            const levelTheme = getLevelTheme(candidateLevel)
 
             return (
               <Pressable
@@ -88,14 +90,17 @@ export function SettingsPanel({
                 onPress={() => onSelectLevel(candidateLevel)}
                 style={({ pressed }) => [
                   styles.levelButton,
-                  isActive && styles.levelButtonActive,
+                  {
+                    backgroundColor: isActive ? levelTheme.solid : levelTheme.wash,
+                    borderColor: levelTheme.border
+                  },
                   pressed && styles.pressed
                 ]}
               >
                 <SelectionLabel
                   label={candidateLevel}
                   isActive={isActive}
-                  textStyle={styles.levelButtonText}
+                  textStyle={[styles.levelButtonText, { color: levelTheme.text }]}
                   activeTextStyle={styles.levelButtonTextActive}
                   activeIconColor={colors.surface}
                 />
@@ -361,18 +366,11 @@ const styles = StyleSheet.create({
     width: "31%",
     minHeight: 50,
     borderRadius: radii.md,
-    backgroundColor: colors.surface,
     borderWidth: borderWidths.base,
-    borderColor: colors.borderSoft,
     alignItems: "center",
     justifyContent: "center"
   },
-  levelButtonActive: {
-    backgroundColor: colors.primary,
-    borderColor: colors.primaryDeep
-  },
   levelButtonText: {
-    color: colors.textMuted,
     fontSize: 14,
     fontWeight: "800"
   },
