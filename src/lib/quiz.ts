@@ -1,5 +1,4 @@
-import { wordsByLevel } from "../data/levels"
-import { HomeDensitySetting, JLPTLevel, QuizQuestion, QuizType, WordEntry, WrongAnswerRecord } from "../types/app"
+import { HomeDensitySetting, QuizQuestion, QuizType, WordEntry, WrongAnswerRecord } from "../types/app"
 import { AppLanguage, resolveLanguage } from "./i18n"
 
 const WORD_POOL_RATIO: Record<HomeDensitySetting, number> = {
@@ -25,11 +24,12 @@ function sampleChoices(correct: string, pool: string[]) {
 function buildMixedQuestionTypes(count: number) {
   const meaningCount = Math.ceil(count / 2)
   const readingCount = Math.floor(count / 2)
+  const questionTypes: QuizType[] = [
+    ...Array.from({ length: meaningCount }, () => "meaning" as const),
+    ...Array.from({ length: readingCount }, () => "reading" as const)
+  ]
 
-  return shuffle<QuizType>([
-    ...Array.from({ length: meaningCount }, () => "meaning"),
-    ...Array.from({ length: readingCount }, () => "reading")
-  ])
+  return shuffle(questionTypes)
 }
 
 export function getLocalizedMeaning(word: WordEntry, language: AppLanguage) {
@@ -41,30 +41,7 @@ export function getLocalizedMeaning(word: WordEntry, language: AppLanguage) {
   return word.meaning
 }
 
-function buildQuestion(word: WordEntry, words: WordEntry[], type: QuizType, language: AppLanguage): QuizQuestion {
-  const meaningPool = words.map((item) => getLocalizedMeaning(item, language))
-  const readingPool = words.map((item) => item.kana)
-  const isMeaning = type === "meaning"
-  const localizedMeaning = getLocalizedMeaning(word, language)
-
-  return {
-    id: `${word.id}-${type}`,
-    wordId: word.id,
-    type,
-    prompt: isMeaning ? word.kanji || word.kana : word.kanji || word.kana,
-    choices: isMeaning
-      ? sampleChoices(localizedMeaning, meaningPool)
-      : sampleChoices(word.kana, readingPool),
-    answer: isMeaning ? localizedMeaning : word.kana,
-    word
-  }
-}
-
-export function getWordsByLevel(level: JLPTLevel) {
-  return wordsByLevel[level] ?? []
-}
-
-function rankWordsForStudy(words: WordEntry[]) {
+export function rankWordsForStudy(words: WordEntry[]) {
   return [...words].sort((left, right) => {
     const leftLength = Array.from(left.kana.replace(/\s+/g, "")).length
     const rightLength = Array.from(right.kana.replace(/\s+/g, "")).length
@@ -87,8 +64,7 @@ function rankWordsForStudy(words: WordEntry[]) {
   })
 }
 
-export function getStudyWordsByLevel(level: JLPTLevel, range: HomeDensitySetting) {
-  const words = getWordsByLevel(level)
+export function getStudyWords(words: WordEntry[], range: HomeDensitySetting) {
   const ratio = WORD_POOL_RATIO[range]
 
   if (ratio >= 1) {
@@ -102,15 +78,32 @@ export function getStudyWordsByLevel(level: JLPTLevel, range: HomeDensitySetting
   return shuffle(rankedWords.slice(0, candidateCount)).slice(0, targetCount)
 }
 
+function buildQuestion(word: WordEntry, words: WordEntry[], type: QuizType, language: AppLanguage): QuizQuestion {
+  const meaningPool = words.map((item) => getLocalizedMeaning(item, language))
+  const readingPool = words.map((item) => item.kana)
+  const isMeaning = type === "meaning"
+  const localizedMeaning = getLocalizedMeaning(word, language)
+
+  return {
+    id: `${word.id}-${type}`,
+    wordId: word.id,
+    type,
+    prompt: word.kanji || word.kana,
+    choices: isMeaning
+      ? sampleChoices(localizedMeaning, meaningPool)
+      : sampleChoices(word.kana, readingPool),
+    answer: isMeaning ? localizedMeaning : word.kana,
+    word
+  }
+}
+
 export function buildSessionQuestions(
-  level: JLPTLevel,
+  words: WordEntry[],
   wrongAnswers: WrongAnswerRecord[],
   count = 5,
   mode: "mixed" | "review" = "mixed",
-  language: AppLanguage = "en",
-  range: HomeDensitySetting = "rich"
+  language: AppLanguage = "en"
 ) {
-  const words = getStudyWordsByLevel(level, range)
   const prioritizedWords = shuffle(words).sort((left, right) => {
     const leftWrong = wrongAnswers.find((record) => record.wordId === left.id)?.wrongCount ?? 0
     const rightWrong = wrongAnswers.find((record) => record.wordId === right.id)?.wrongCount ?? 0
@@ -121,9 +114,7 @@ export function buildSessionQuestions(
     wrongAnswers.some((record) => record.wordId === word.id)
   )
 
-  const selected = (mode === "review" ? reviewWords : prioritizedWords)
-    .slice(0, count)
-
+  const selected = (mode === "review" ? reviewWords : prioritizedWords).slice(0, count)
   const fallbackWords = prioritizedWords.slice(0, count)
   const finalWords = shuffle(selected.length >= count ? selected : fallbackWords)
   const mixedQuestionTypes = buildMixedQuestionTypes(finalWords.length)

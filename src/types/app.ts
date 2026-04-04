@@ -1,6 +1,7 @@
 export type JLPTLevel = "N5" | "N4" | "N3" | "N2" | "N1"
 
 export type QuizType = "meaning" | "reading"
+export type QuizSource = "jlpt" | "custom" | "combined"
 
 export type WordEntry = {
   id: string;
@@ -11,6 +12,7 @@ export type WordEntry = {
   meaningKo?: string;
   meaningsKo?: string[];
   jlptLevel: JLPTLevel;
+  source?: "default" | "custom";
 }
 
 export type QuizQuestion = {

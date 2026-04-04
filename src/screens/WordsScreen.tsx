@@ -1,20 +1,182 @@
 import * as Speech from "expo-speech"
 import React, { useEffect, useMemo, useState } from "react"
-import { Pressable, StyleSheet, View, useWindowDimensions } from "react-native"
+import { Pressable, StyleSheet, TextInput, View, useWindowDimensions } from "react-native"
 import { AppIcon } from "../components/AppIcon"
 import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { resolveLanguage, t, tf } from "../lib/i18n"
-import { getLocalizedMeaning, getStudyWordsByLevel } from "../lib/quiz"
+import { getLocalizedMeaning, getStudyWords } from "../lib/quiz"
 import { getSpeechOptions } from "../lib/speech"
 import { useAppStore } from "../store/useAppStore"
 
 const PAGE_SIZE = 24
 type MemorizedFilter = "all" | "hidden" | "only"
+type WordTab = "jlpt" | "custom"
+type FilterAccordion = "kanaRow" | "length" | "memorized" | null
+type KanaRowFilter =
+  | "a"
+  | "ka"
+  | "sa"
+  | "ta"
+  | "na"
+  | "ha"
+  | "ma"
+  | "ya"
+  | "ra"
+  | "wa"
+
+const KANA_ROW_OPTIONS: KanaRowFilter[] = [
+  "a",
+  "ka",
+  "sa",
+  "ta",
+  "na",
+  "ha",
+  "ma",
+  "ya",
+  "ra",
+  "wa"
+]
+
+const KANA_ROW_LABEL_KEYS: Record<
+  KanaRowFilter,
+  | "kanaRowa"
+  | "kanaRowka"
+  | "kanaRowsa"
+  | "kanaRowta"
+  | "kanaRowna"
+  | "kanaRowha"
+  | "kanaRowma"
+  | "kanaRowya"
+  | "kanaRowra"
+  | "kanaRowwa"
+> = {
+  a: "kanaRowa",
+  ka: "kanaRowka",
+  sa: "kanaRowsa",
+  ta: "kanaRowta",
+  na: "kanaRowna",
+  ha: "kanaRowha",
+  ma: "kanaRowma",
+  ya: "kanaRowya",
+  ra: "kanaRowra",
+  wa: "kanaRowwa"
+}
+
+const SMALL_KANA_NORMALIZATION: Record<string, string> = {
+  ぁ: "あ",
+  ぃ: "い",
+  ぅ: "う",
+  ぇ: "え",
+  ぉ: "お",
+  っ: "つ",
+  ゃ: "や",
+  ゅ: "ゆ",
+  ょ: "よ",
+  ゎ: "わ",
+  ゕ: "か",
+  ゖ: "け"
+}
+
+const HIRAGANA_ROW_MAP: Record<string, KanaRowFilter> = {
+  あ: "a",
+  い: "a",
+  う: "a",
+  え: "a",
+  お: "a",
+  か: "ka",
+  き: "ka",
+  く: "ka",
+  け: "ka",
+  こ: "ka",
+  が: "ka",
+  ぎ: "ka",
+  ぐ: "ka",
+  げ: "ka",
+  ご: "ka",
+  さ: "sa",
+  し: "sa",
+  す: "sa",
+  せ: "sa",
+  そ: "sa",
+  ざ: "sa",
+  じ: "sa",
+  ず: "sa",
+  ぜ: "sa",
+  ぞ: "sa",
+  た: "ta",
+  ち: "ta",
+  つ: "ta",
+  て: "ta",
+  と: "ta",
+  だ: "ta",
+  ぢ: "ta",
+  づ: "ta",
+  で: "ta",
+  ど: "ta",
+  な: "na",
+  に: "na",
+  ぬ: "na",
+  ね: "na",
+  の: "na",
+  は: "ha",
+  ひ: "ha",
+  ふ: "ha",
+  へ: "ha",
+  ほ: "ha",
+  ば: "ha",
+  び: "ha",
+  ぶ: "ha",
+  べ: "ha",
+  ぼ: "ha",
+  ぱ: "ha",
+  ぴ: "ha",
+  ぷ: "ha",
+  ぺ: "ha",
+  ぽ: "ha",
+  ま: "ma",
+  み: "ma",
+  む: "ma",
+  め: "ma",
+  も: "ma",
+  や: "ya",
+  ゆ: "ya",
+  よ: "ya",
+  ら: "ra",
+  り: "ra",
+  る: "ra",
+  れ: "ra",
+  ろ: "ra",
+  わ: "wa",
+  ゐ: "wa",
+  ゑ: "wa",
+  を: "wa",
+  ん: "wa"
+}
 
 function getWordLength(kana: string) {
   return Array.from(kana.replace(/\s+/g, "")).length
+}
+
+function normalizeKanaLeadCharacter(kana: string) {
+  const leadCharacter = kana.trim().charAt(0)
+
+  if (!leadCharacter) {
+    return ""
+  }
+
+  const normalizedKatakana =
+    leadCharacter >= "ァ" && leadCharacter <= "ヶ"
+      ? String.fromCharCode(leadCharacter.charCodeAt(0) - 0x60)
+      : leadCharacter
+
+  return SMALL_KANA_NORMALIZATION[normalizedKatakana] ?? normalizedKatakana
+}
+
+function getKanaRow(kana: string) {
+  const normalizedLeadCharacter = normalizeKanaLeadCharacter(kana)
+  return HIRAGANA_ROW_MAP[normalizedLeadCharacter] ?? null
 }
 
 function renderHighlightedCopy(
@@ -42,37 +204,56 @@ export function WordsScreen() {
   const { width } = useWindowDimensions()
   const {
     settings,
+    customWords,
+    wordsByLevel,
+    addCustomWord,
+    removeCustomWord,
     bookmarkWordIds,
     memorizedWordIds,
     toggleWordBookmark,
     toggleWordMemorized,
     speakEnabled
   } = useAppStore()
-  const words = getStudyWordsByLevel(settings.level, settings.homeDensity)
+  const jlptWords = useMemo(
+    () => getStudyWords(wordsByLevel[settings.level] ?? [], settings.homeDensity),
+    [settings.homeDensity, settings.level, wordsByLevel]
+  )
+  const [activeTab, setActiveTab] = useState<WordTab>("jlpt")
   const [selectedLength, setSelectedLength] = useState<number | null>(null)
+  const [selectedKanaRow, setSelectedKanaRow] = useState<KanaRowFilter | null>(
+    null
+  )
+  const [openFilterAccordion, setOpenFilterAccordion] =
+    useState<FilterAccordion>("kanaRow")
   const [memorizedFilter, setMemorizedFilter] =
     useState<MemorizedFilter>("hidden")
   const [page, setPage] = useState(1)
   const [showMeanings, setShowMeanings] = useState(true)
+  const [newKana, setNewKana] = useState("")
+  const [newKanji, setNewKanji] = useState("")
+  const [newMeaning, setNewMeaning] = useState("")
+  const [showValidation, setShowValidation] = useState(false)
   const resolvedLanguage = resolveLanguage(settings.language)
 
   const lengthOptions = useMemo(
     () =>
-      Array.from(new Set(words.map((word) => getWordLength(word.kana)))).sort(
+      Array.from(new Set(jlptWords.map((word) => getWordLength(word.kana)))).sort(
         (left, right) => left - right
       ),
-    [words]
+    [jlptWords]
   )
 
   const filteredWords = useMemo(
     () =>
-      words.filter((word) => {
+      jlptWords.filter((word) => {
         const matchesLength =
           selectedLength === null ||
           getWordLength(word.kana) === selectedLength
+        const matchesKanaRow =
+          selectedKanaRow === null || getKanaRow(word.kana) === selectedKanaRow
         const isMemorized = memorizedWordIds.includes(word.id)
 
-        if (!matchesLength) {
+        if (!matchesLength || !matchesKanaRow) {
           return false
         }
 
@@ -86,7 +267,7 @@ export function WordsScreen() {
 
         return true
       }),
-    [selectedLength, words, memorizedFilter, memorizedWordIds]
+    [selectedKanaRow, selectedLength, jlptWords, memorizedFilter, memorizedWordIds]
   )
 
   const totalPages = Math.max(1, Math.ceil(filteredWords.length / PAGE_SIZE))
@@ -135,7 +316,7 @@ export function WordsScreen() {
 
   useEffect(() => {
     setPage(1)
-  }, [selectedLength, settings.level, memorizedFilter])
+  }, [selectedKanaRow, selectedLength, settings.level, memorizedFilter])
 
   useEffect(() => {
     if (page > totalPages) {
@@ -155,13 +336,48 @@ export function WordsScreen() {
         <Text style={styles.helper}>
           {renderHighlightedCopy(
             t(settings.language, "wordBankHelper"),
-            { level: settings.level, count: filteredWords.length },
+            {
+              level: settings.level,
+              count: activeTab === "jlpt" ? filteredWords.length : customWords.length
+            },
             {
               level: styles.helperLevelStrong,
               count: styles.helperCountStrong
             }
           )}
         </Text>
+      </View>
+
+      <View style={styles.tabRow}>
+        {(
+          [
+            ["jlpt", "jlptWordsTab"],
+            ["custom", "customNotebookTab"]
+          ] as const
+        ).map(([value, labelKey]) => {
+          const isActive = activeTab === value
+
+          return (
+            <Pressable
+              key={value}
+              onPress={() => setActiveTab(value)}
+              style={({ pressed }) => [
+                styles.tabChip,
+                isActive && styles.tabChipActive,
+                pressed && styles.pressed
+              ]}
+            >
+              <Text
+                style={[
+                  styles.tabChipText,
+                  isActive && styles.tabChipTextActive
+                ]}
+              >
+                {t(settings.language, labelKey)}
+              </Text>
+            </Pressable>
+          )
+        })}
       </View>
 
       <View style={styles.noticeControls}>
@@ -185,9 +401,97 @@ export function WordsScreen() {
         </Pressable>
       </View>
 
-      <Card style={styles.noticeCard}>
+      {activeTab === "jlpt" ? (
+        <Card style={styles.noticeCard}>
         <View style={styles.filterSection}>
-          <View style={styles.filterSectionHeader}>
+          <Pressable
+            onPress={() =>
+              setOpenFilterAccordion((current) =>
+                current === "kanaRow" ? null : "kanaRow"
+              )
+            }
+            style={({ pressed }) => [
+              styles.filterSectionHeader,
+              styles.filterAccordionButton,
+              pressed && styles.pressed
+            ]}
+          >
+              <View style={styles.filterTitleRow}>
+              <View style={styles.filterIconBadge}>
+                <AppIcon name="words" size={14} color={colors.primaryDeep} />
+              </View>
+              <Text style={styles.noticeTitle}>
+                {t(settings.language, "kanaRowFilter")}
+              </Text>
+            </View>
+            <AppIcon
+              name="chevronRight"
+              size={16}
+              color={colors.textMuted}
+              strokeWidth={2}
+              style={openFilterAccordion === "kanaRow"
+                ? styles.filterChevronOpen
+                : styles.filterChevron}
+            />
+          </Pressable>
+          {openFilterAccordion === "kanaRow" ? (
+            <View style={styles.filterRow}>
+              <Pressable
+                onPress={() => setSelectedKanaRow(null)}
+                style={({ pressed }) => [
+                  styles.filterChip,
+                  selectedKanaRow === null && styles.filterChipActive,
+                  pressed && styles.pressed
+                ]}
+              >
+                <Text
+                  style={[
+                    styles.filterChipText,
+                    selectedKanaRow === null && styles.filterChipTextActive
+                  ]}
+                >
+                  {t(settings.language, "allKanaRows")}
+                </Text>
+              </Pressable>
+              {KANA_ROW_OPTIONS.map((row) => {
+                const isActive = selectedKanaRow === row
+                return (
+                  <Pressable
+                    key={row}
+                    onPress={() => setSelectedKanaRow(row)}
+                    style={({ pressed }) => [
+                      styles.filterChip,
+                      isActive && styles.filterChipActive,
+                      pressed && styles.pressed
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.filterChipText,
+                        isActive && styles.filterChipTextActive
+                      ]}
+                    >
+                      {t(settings.language, KANA_ROW_LABEL_KEYS[row])}
+                    </Text>
+                  </Pressable>
+                )
+              })}
+            </View>
+          ) : null}
+        </View>
+        <View style={styles.filterSection}>
+          <Pressable
+            onPress={() =>
+              setOpenFilterAccordion((current) =>
+                current === "length" ? null : "length"
+              )
+            }
+            style={({ pressed }) => [
+              styles.filterSectionHeader,
+              styles.filterAccordionButton,
+              pressed && styles.pressed
+            ]}
+          >
             <View style={styles.filterTitleRow}>
               <View style={styles.filterIconBadge}>
                 <AppIcon name="filters" size={14} color={colors.text} />
@@ -196,52 +500,74 @@ export function WordsScreen() {
                 {t(settings.language, "wordLengthFilter")}
               </Text>
             </View>
-          </View>
-          <View style={styles.filterRow}>
-            <Pressable
-              onPress={() => setSelectedLength(null)}
-              style={({ pressed }) => [
-                styles.filterChip,
-                selectedLength === null && styles.filterChipActive,
-                pressed && styles.pressed
-              ]}
-            >
-              <Text
-                style={[
-                  styles.filterChipText,
-                  selectedLength === null && styles.filterChipTextActive
+            <AppIcon
+              name="chevronRight"
+              size={16}
+              color={colors.textMuted}
+              strokeWidth={2}
+              style={openFilterAccordion === "length"
+                ? styles.filterChevronOpen
+                : styles.filterChevron}
+            />
+          </Pressable>
+          {openFilterAccordion === "length" ? (
+            <View style={styles.filterRow}>
+              <Pressable
+                onPress={() => setSelectedLength(null)}
+                style={({ pressed }) => [
+                  styles.filterChip,
+                  selectedLength === null && styles.filterChipActive,
+                  pressed && styles.pressed
                 ]}
               >
-                {t(settings.language, "allLengths")}
-              </Text>
-            </Pressable>
-            {lengthOptions.map((length) => {
-              const isActive = selectedLength === length
-              return (
-                <Pressable
-                  key={length}
-                  onPress={() => setSelectedLength(length)}
-                  style={({ pressed }) => [
-                    styles.filterChip,
-                    isActive && styles.filterChipActive,
-                    pressed && styles.pressed
+                <Text
+                  style={[
+                    styles.filterChipText,
+                    selectedLength === null && styles.filterChipTextActive
                   ]}
                 >
-                  <Text
-                    style={[
-                      styles.filterChipText,
-                      isActive && styles.filterChipTextActive
+                  {t(settings.language, "allLengths")}
+                </Text>
+              </Pressable>
+              {lengthOptions.map((length) => {
+                const isActive = selectedLength === length
+                return (
+                  <Pressable
+                    key={length}
+                    onPress={() => setSelectedLength(length)}
+                    style={({ pressed }) => [
+                      styles.filterChip,
+                      isActive && styles.filterChipActive,
+                      pressed && styles.pressed
                     ]}
                   >
-                    {tf(settings.language, "lengthOption", { count: length })}
-                  </Text>
-                </Pressable>
-              )
-            })}
-          </View>
+                    <Text
+                      style={[
+                        styles.filterChipText,
+                        isActive && styles.filterChipTextActive
+                      ]}
+                    >
+                      {tf(settings.language, "lengthOption", { count: length })}
+                    </Text>
+                  </Pressable>
+                )
+              })}
+            </View>
+          ) : null}
         </View>
         <View style={styles.filterSection}>
-          <View style={styles.filterSectionHeader}>
+          <Pressable
+            onPress={() =>
+              setOpenFilterAccordion((current) =>
+                current === "memorized" ? null : "memorized"
+              )
+            }
+            style={({ pressed }) => [
+              styles.filterSectionHeader,
+              styles.filterAccordionButton,
+              pressed && styles.pressed
+            ]}
+          >
             <View style={styles.filterTitleRow}>
               <View style={styles.filterIconBadge}>
                 <AppIcon name="check" size={14} color={colors.garden} />
@@ -250,46 +576,206 @@ export function WordsScreen() {
                 {t(settings.language, "memorizedFilter")}
               </Text>
             </View>
-          </View>
-          <View style={styles.filterRow}>
-            {(
-              [
-                ["all", "allWordsFilter"],
-                ["hidden", "hideMemorizedFilter"],
-                ["only", "memorizedOnlyFilter"]
-              ] as const
-            ).map(([value, labelKey]) => {
-              const isActive = memorizedFilter === value
-              return (
-                <Pressable
-                  key={value}
-                  onPress={() => setMemorizedFilter(value)}
-                  style={({ pressed }) => [
-                    styles.filterChip,
-                    isActive && styles.filterChipActive,
-                    pressed && styles.pressed
-                  ]}
-                >
-                  <Text
-                    style={[
-                      styles.filterChipText,
-                      isActive && styles.filterChipTextActive
+            <AppIcon
+              name="chevronRight"
+              size={16}
+              color={colors.textMuted}
+              strokeWidth={2}
+              style={openFilterAccordion === "memorized"
+                ? styles.filterChevronOpen
+                : styles.filterChevron}
+            />
+          </Pressable>
+          {openFilterAccordion === "memorized" ? (
+            <View style={styles.filterRow}>
+              {(
+                [
+                  ["all", "allWordsFilter"],
+                  ["hidden", "hideMemorizedFilter"],
+                  ["only", "memorizedOnlyFilter"]
+                ] as const
+              ).map(([value, labelKey]) => {
+                const isActive = memorizedFilter === value
+                return (
+                  <Pressable
+                    key={value}
+                    onPress={() => setMemorizedFilter(value)}
+                    style={({ pressed }) => [
+                      styles.filterChip,
+                      isActive && styles.filterChipActive,
+                      pressed && styles.pressed
                     ]}
                   >
-                    {t(settings.language, labelKey)}
-                  </Text>
-                </Pressable>
-              )
-            })}
-          </View>
+                    <Text
+                      style={[
+                        styles.filterChipText,
+                        isActive && styles.filterChipTextActive
+                      ]}
+                    >
+                      {t(settings.language, labelKey)}
+                    </Text>
+                  </Pressable>
+                )
+              })}
+            </View>
+          ) : null}
         </View>
-        {resolvedLanguage === "ko" ? (
-          <Text style={styles.noticeText}>
-            {t(settings.language, "meaningLocalizationNotice")}
-          </Text>
-        ) : null}
       </Card>
+      ) : (
+        <>
+          <Card style={styles.addCard}>
+            <View style={styles.addHeader}>
+              <Text style={styles.addTitle}>
+                {t(settings.language, "customWordFormTitle")}
+              </Text>
+              <View style={styles.customCountBadge}>
+                <Text style={styles.customCountBadgeText}>
+                  {t(settings.language, "customWordBadge")}
+                </Text>
+              </View>
+            </View>
+            <Text style={styles.addHelper}>
+              {t(settings.language, "customWordsHelper")}
+            </Text>
+            <Text style={styles.customIncludedText}>
+              {tf(settings.language, "customWordsIncluded", {
+                count: customWords.length
+              })}
+            </Text>
 
+            <View style={styles.formGrid}>
+              <View style={styles.field}>
+                <Text style={styles.fieldLabel}>
+                  {t(settings.language, "customWordKanaLabel")}
+                </Text>
+                <TextInput
+                  value={newKana}
+                  onChangeText={(value) => {
+                    setNewKana(value)
+                    if (showValidation) {
+                      setShowValidation(false)
+                    }
+                  }}
+                  placeholder={t(settings.language, "customWordKanaPlaceholder")}
+                  placeholderTextColor={colors.textFaint}
+                  style={styles.input}
+                />
+              </View>
+              <View style={styles.field}>
+                <Text style={styles.fieldLabel}>
+                  {t(settings.language, "customWordKanjiLabel")}
+                </Text>
+                <TextInput
+                  value={newKanji}
+                  onChangeText={setNewKanji}
+                  placeholder={t(settings.language, "customWordKanjiPlaceholder")}
+                  placeholderTextColor={colors.textFaint}
+                  style={styles.input}
+                />
+              </View>
+              <View style={styles.field}>
+                <Text style={styles.fieldLabel}>
+                  {t(settings.language, "customWordMeaningLabel")}
+                </Text>
+                <TextInput
+                  value={newMeaning}
+                  onChangeText={(value) => {
+                    setNewMeaning(value)
+                    if (showValidation) {
+                      setShowValidation(false)
+                    }
+                  }}
+                  placeholder={t(settings.language, "customWordMeaningPlaceholder")}
+                  placeholderTextColor={colors.textFaint}
+                  style={styles.input}
+                />
+              </View>
+            </View>
+
+            {showValidation ? (
+              <Text style={styles.validationText}>
+                {t(settings.language, "customWordValidation")}
+              </Text>
+            ) : null}
+
+            <Pressable
+              onPress={async () => {
+                if (!newKana.trim() || !newMeaning.trim()) {
+                  setShowValidation(true)
+                  return
+                }
+
+                await addCustomWord({
+                  kana: newKana,
+                  kanji: newKanji,
+                  meaning: newMeaning
+                })
+                setNewKana("")
+                setNewKanji("")
+                setNewMeaning("")
+                setShowValidation(false)
+              }}
+              style={({ pressed }) => [
+                styles.addButton,
+                pressed && styles.pressed
+              ]}
+            >
+              <Text style={styles.addButtonText}>
+                {t(settings.language, "addCustomWord")}
+              </Text>
+            </Pressable>
+          </Card>
+
+          <View style={styles.customSection}>
+            <View style={styles.customSectionHeader}>
+              <Text style={styles.customSectionTitle}>
+                {t(settings.language, "customWordsTitle")}
+              </Text>
+              <Text style={styles.customSectionCount}>{customWords.length}</Text>
+            </View>
+            {customWords.length === 0 ? (
+              <Card style={styles.emptyCard}>
+                <Text style={styles.emptyText}>
+                  {t(settings.language, "emptyCustomWords")}
+                </Text>
+              </Card>
+            ) : (
+              <View style={styles.customList}>
+                {customWords.map((word) => (
+                  <Card key={word.id} style={styles.customWordCard}>
+                    <View style={styles.customWordTopRow}>
+                      <View style={styles.customWordIdentity}>
+                        <Text style={styles.customWordKanji}>
+                          {word.kanji || word.kana}
+                        </Text>
+                        <Text style={styles.customWordKana}>{word.kana}</Text>
+                      </View>
+                      <Pressable
+                        onPress={async () => {
+                          await removeCustomWord(word.id)
+                        }}
+                        style={({ pressed }) => [
+                          styles.deleteButton,
+                          pressed && styles.pressed
+                        ]}
+                      >
+                        <Text style={styles.deleteButtonText}>
+                          {t(settings.language, "customWordDelete")}
+                        </Text>
+                      </Pressable>
+                    </View>
+                    <Text style={styles.customWordMeaning}>
+                      {getLocalizedMeaning(word, settings.language)}
+                    </Text>
+                  </Card>
+                ))}
+              </View>
+            )}
+          </View>
+        </>
+      )}
+
+      {activeTab === "jlpt" ? (
       <View style={styles.list}>
         {visibleWords.length === 0 ? (
           <Card style={styles.emptyCard}>
@@ -315,6 +801,13 @@ export function WordsScreen() {
                     </Text>
                   </View>
                   <Text style={styles.levelText}>{word.jlptLevel}</Text>
+                  {word.source === "custom" ? (
+                    <View style={styles.inlineCustomBadge}>
+                      <Text style={styles.inlineCustomBadgeText}>
+                        {t(settings.language, "customWordBadge")}
+                      </Text>
+                    </View>
+                  ) : null}
                 </View>
 
                 <View style={styles.headerActions}>
@@ -393,7 +886,9 @@ export function WordsScreen() {
           )
         })}
       </View>
+      ) : null}
 
+      {activeTab === "jlpt" ? (
       <View style={styles.pagination}>
         <Text style={styles.pageSummary}>
           {tf(settings.language, "showingWordsSummary", {
@@ -465,6 +960,7 @@ export function WordsScreen() {
           </View>
         ) : null}
       </View>
+      ) : null}
     </View>
   )
 }
@@ -476,6 +972,33 @@ const styles = StyleSheet.create({
   },
   header: {
     gap: spacing.xs
+  },
+  tabRow: {
+    flexDirection: "row",
+    gap: spacing.sm
+  },
+  tabChip: {
+    flex: 1,
+    minHeight: 46,
+    borderRadius: radii.lg,
+    borderWidth: borderWidths.base,
+    borderColor: colors.borderSoft,
+    backgroundColor: colors.surface,
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: spacing.md
+  },
+  tabChipActive: {
+    backgroundColor: colors.primarySoft,
+    borderColor: colors.border
+  },
+  tabChipText: {
+    color: colors.textMuted,
+    fontSize: 13,
+    fontWeight: "800"
+  },
+  tabChipTextActive: {
+    color: colors.text
   },
   eyebrow: {
     color: colors.textMuted,
@@ -506,6 +1029,86 @@ const styles = StyleSheet.create({
     gap: spacing.md,
     backgroundColor: colors.surfaceLow
   },
+  addCard: {
+    gap: spacing.md,
+    backgroundColor: colors.surface
+  },
+  addHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    gap: spacing.md
+  },
+  addTitle: {
+    color: colors.primaryDeep,
+    fontSize: 22,
+    fontWeight: "900"
+  },
+  addHelper: {
+    color: colors.textMuted,
+    lineHeight: 22
+  },
+  customIncludedText: {
+    color: colors.garden,
+    fontSize: 13,
+    fontWeight: "700"
+  },
+  customCountBadge: {
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.xs,
+    borderRadius: radii.pill,
+    backgroundColor: colors.primarySoft,
+    borderWidth: borderWidths.base,
+    borderColor: colors.border
+  },
+  customCountBadgeText: {
+    color: colors.primaryDeep,
+    fontSize: 11,
+    fontWeight: "900"
+  },
+  formGrid: {
+    gap: spacing.sm
+  },
+  field: {
+    gap: spacing.xs
+  },
+  fieldLabel: {
+    color: colors.textMuted,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 1.1,
+    textTransform: "uppercase"
+  },
+  input: {
+    minHeight: 48,
+    borderRadius: radii.md,
+    borderWidth: borderWidths.base,
+    borderColor: colors.borderSoft,
+    backgroundColor: colors.backgroundRaised,
+    color: colors.text,
+    paddingHorizontal: spacing.md,
+    paddingVertical: spacing.sm,
+    fontSize: 16
+  },
+  validationText: {
+    color: colors.error,
+    fontSize: 13,
+    fontWeight: "700"
+  },
+  addButton: {
+    minHeight: 52,
+    borderRadius: radii.md,
+    backgroundColor: colors.primarySoft,
+    borderWidth: borderWidths.base,
+    borderColor: colors.border,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  addButtonText: {
+    color: colors.primaryDeep,
+    fontSize: 15,
+    fontWeight: "900"
+  },
   filterSection: {
     gap: spacing.sm,
     padding: spacing.md,
@@ -519,6 +1122,70 @@ const styles = StyleSheet.create({
     marginTop: -spacing.xs,
     marginBottom: -spacing.xs
   },
+  customSection: {
+    gap: spacing.sm
+  },
+  customSectionHeader: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center"
+  },
+  customSectionTitle: {
+    color: colors.primaryDeep,
+    fontSize: 18,
+    fontWeight: "900"
+  },
+  customSectionCount: {
+    color: colors.textMuted,
+    fontSize: 14,
+    fontWeight: "800"
+  },
+  customList: {
+    gap: spacing.sm
+  },
+  customWordCard: {
+    gap: spacing.sm,
+    backgroundColor: colors.surfaceMuted
+  },
+  customWordTopRow: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
+    gap: spacing.md
+  },
+  customWordIdentity: {
+    flex: 1,
+    gap: 4
+  },
+  customWordKanji: {
+    color: colors.text,
+    fontSize: 22,
+    fontWeight: "900"
+  },
+  customWordKana: {
+    color: colors.primary,
+    fontSize: 14,
+    fontWeight: "700"
+  },
+  customWordMeaning: {
+    color: colors.text,
+    lineHeight: 22
+  },
+  deleteButton: {
+    minHeight: 34,
+    paddingHorizontal: spacing.md,
+    borderRadius: radii.pill,
+    borderWidth: borderWidths.base,
+    borderColor: colors.borderSoft,
+    backgroundColor: colors.errorSoft,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  deleteButtonText: {
+    color: colors.text,
+    fontSize: 12,
+    fontWeight: "800"
+  },
   noticeTitle: {
     color: colors.text,
     fontSize: 14,
@@ -531,6 +1198,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center"
+  },
+  filterAccordionButton: {
+    minHeight: 32
   },
   filterTitleRow: {
     flexDirection: "row",
@@ -551,6 +1221,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     gap: spacing.sm
+  },
+  filterChevron: {
+    transform: [{ rotate: "0deg" }]
+  },
+  filterChevronOpen: {
+    transform: [{ rotate: "90deg" }]
   },
   visibilityButton: {
     minHeight: 36,
@@ -648,6 +1324,19 @@ const styles = StyleSheet.create({
     color: colors.textMuted,
     fontSize: 12,
     fontWeight: "800"
+  },
+  inlineCustomBadge: {
+    paddingHorizontal: spacing.sm,
+    paddingVertical: 4,
+    borderRadius: radii.pill,
+    borderWidth: borderWidths.base,
+    borderColor: colors.borderSoft,
+    backgroundColor: colors.primaryWash
+  },
+  inlineCustomBadgeText: {
+    color: colors.primaryDeep,
+    fontSize: 10,
+    fontWeight: "900"
   },
   bookmarkIconButton: {
     width: 42,

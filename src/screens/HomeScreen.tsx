@@ -1,16 +1,22 @@
-import React from "react"
-import { DimensionValue, Pressable, StyleSheet, View } from "react-native"
+import React, { useState } from "react"
+import { DimensionValue, Pressable, StyleSheet, View, useWindowDimensions } from "react-native"
 import { BunnyBadge } from "../components/BunnyBadge"
 import { CelebrationBurst } from "../components/CelebrationBurst"
 import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { GoalGardenHalo } from "../components/GoalGardenHalo"
 import { MetricPill } from "../components/MetricPill"
-import { borderWidths, colors, radii, spacing } from "../constants/theme"
+import { borderWidths, breakpoints, colors, radii, spacing } from "../constants/theme"
 import { t, tf } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
+import { QuizSource } from "../types/app"
 
 const SESSION_QUESTION_COUNT = 5
+const actionCardTextColors = {
+  rose: "#8E5661",
+  amber: "#8F5517",
+  garden: "#4D6940"
+}
 
 function renderHighlightedCopy(
   template: string,
@@ -34,32 +40,60 @@ function renderHighlightedCopy(
 }
 
 export function HomeScreen() {
-  const { settings, dailyProgress, streak, history, wrongAnswers, startSession, openReview, totalStudyCount } = useAppStore()
+  const { width } = useWindowDimensions()
+  const { settings, dailyProgress, streak, history, wrongAnswers, customWords, wordsByLevel, startSession, openReview, totalStudyCount } = useAppStore()
   const copy = settings.language
+  const [selectedSource, setSelectedSource] = useState<QuizSource>("jlpt")
+  const isCompact = width <= breakpoints.phoneCompact
+  const isExtraCompact = width <= breakpoints.phoneTight
   const remainingSessions = Math.max(dailyProgress.goal - dailyProgress.completedSessions, 0)
   const hasCompletedDailyGoal = remainingSessions === 0
   const progressRatio = Math.min(dailyProgress.completedSessions / Math.max(dailyProgress.goal, 1), 1)
   const progressWidth = `${Math.max(progressRatio * 100, 8)}%` as DimensionValue
   const bunnyStage = totalStudyCount >= 100 ? 4 : totalStudyCount >= 60 ? 3 : totalStudyCount >= 25 ? 2 : 1
+  const levelWords = wordsByLevel[settings.level] ?? []
+  const startableWordCount =
+    selectedSource === "jlpt"
+      ? levelWords.length
+      : selectedSource === "custom"
+        ? customWords.length
+        : levelWords.length + customWords.length
+  const sourceLabel =
+    selectedSource === "jlpt"
+      ? t(copy, "quizSourceJlpt")
+      : selectedSource === "custom"
+        ? t(copy, "quizSourceCustom")
+        : t(copy, "quizSourceCombined")
+  const sourceOptions: QuizSource[] = ["jlpt", "custom", "combined"]
 
   return (
     <View style={styles.container}>
-      <Card style={[styles.hero, hasCompletedDailyGoal && styles.heroComplete]}>
+      <Card
+        style={[
+          styles.hero,
+          isCompact && styles.heroCompact,
+          hasCompletedDailyGoal && styles.heroComplete
+        ]}
+      >
         {hasCompletedDailyGoal ? (
           <View style={styles.completeHeroWrap}>
             <View style={styles.completeHeroCopy}>
               <View style={styles.completeHeroBadge}>
                 <Text style={styles.completeHeroBadgeText}>{t(copy, "goalCompleteKicker")}</Text>
               </View>
-              <Text style={styles.completeHeroTitle}>{t(copy, "homeGoalCompleteTitle")}</Text>
-              <Text style={styles.completeHeroBody}>{t(copy, "homeGoalCompleteBody")}</Text>
+              <Text style={[styles.completeHeroTitle, isCompact && styles.completeHeroTitleCompact]}>
+                {t(copy, "homeGoalCompleteTitle")}
+              </Text>
+              <Text style={[styles.completeHeroBody, isCompact && styles.completeHeroBodyCompact]}>
+                {t(copy, "homeGoalCompleteBody")}
+              </Text>
 
-              <View style={styles.completeHeroMetaRow}>
-                <View style={[styles.completeMetaChip, styles.completeMetaChipGarden]}>
+              <View style={[styles.completeHeroMetaRow, isCompact && styles.completeHeroMetaRowCompact]}>
+                <View style={[styles.completeMetaChip, styles.completeMetaChipGarden, isCompact && styles.completeMetaChipCompact]}>
                   <Text style={styles.completeMetaLabel}>{t(copy, "dailyGoal")}</Text>
                   <Text style={styles.completeMetaValue}>{dailyProgress.completedSessions}/{dailyProgress.goal}</Text>
                 </View>
-                <View style={[styles.completeMetaChip, styles.completeMetaChipRose]}>
+                <View style={[styles.completeMetaChip, styles.completeMetaChipRose, isCompact && styles.completeMetaChipCompact]}>
                   <Text style={styles.completeMetaLabel}>{t(copy, "studyLevelTitle")}</Text>
                   <Text style={styles.completeMetaValue}>{tf(copy, "studyLevelStage", { level: bunnyStage })}</Text>
                 </View>
@@ -86,23 +120,25 @@ export function HomeScreen() {
           </View>
         ) : (
           <>
-            <View style={styles.heroInsights}>
-              <View style={[styles.heroSpotlight, styles.heroSpotlightLevel]}>
+            <View style={[styles.heroInsights, isCompact && styles.heroInsightsCompact]}>
+              <View style={[styles.heroSpotlight, styles.heroSpotlightLevel, isCompact && styles.heroSpotlightCompact]}>
                 <Text style={[styles.heroSpotlightLabel, styles.heroSpotlightLabelBlue]}>{t(copy, "level")}</Text>
-                <Text style={styles.heroSpotlightValue}>{settings.level}</Text>
+                <Text style={[styles.heroSpotlightValue, isCompact && styles.heroSpotlightValueCompact]}>{settings.level}</Text>
                 <Text style={styles.heroSpotlightCaption}>{t(copy, "focusGarden")}</Text>
               </View>
 
-              <View style={[styles.heroSpotlight, styles.heroSpotlightGrowth]}>
-                <View style={styles.heroGrowthRow}>
+              <View style={[styles.heroSpotlight, styles.heroSpotlightGrowth, isCompact && styles.heroSpotlightCompact]}>
+                <View style={[styles.heroGrowthRow, isExtraCompact && styles.heroGrowthRowCompact]}>
                   <View style={styles.heroGrowthText}>
                     <Text style={[styles.heroSpotlightLabel, styles.heroSpotlightLabelGarden]}>{t(copy, "studyLevelTitle")}</Text>
-                    <Text style={styles.heroSpotlightValue}>{tf(copy, "studyLevelStage", { level: bunnyStage })}</Text>
+                    <Text style={[styles.heroSpotlightValue, isCompact && styles.heroSpotlightValueCompact]}>
+                      {tf(copy, "studyLevelStage", { level: bunnyStage })}
+                    </Text>
                     <Text style={styles.heroSpotlightCaption}>
                       {renderHighlightedCopy(t(copy, "studyLevelProgress"), { count: totalStudyCount }, { count: styles.inlineGardenStrong })}
                     </Text>
                   </View>
-                  <View style={styles.heroGrowthBadge}>
+                  <View style={[styles.heroGrowthBadge, isCompact && styles.heroGrowthBadgeCompact]}>
                     <BunnyBadge mood="calm" stage={bunnyStage} />
                   </View>
                 </View>
@@ -113,8 +149,8 @@ export function HomeScreen() {
               <View style={styles.heroBadge}>
                 <Text style={styles.heroBadgeText}>{t(copy, "heroBadge")}</Text>
               </View>
-              <Text style={styles.heroTitle}>{t(copy, "heroTitle")}</Text>
-              <Text style={styles.heroSubtitle}>{t(copy, "tagline")}</Text>
+              <Text style={[styles.heroTitle, isCompact && styles.heroTitleCompact]}>{t(copy, "heroTitle")}</Text>
+              <Text style={[styles.heroSubtitle, isCompact && styles.heroSubtitleCompact]}>{t(copy, "tagline")}</Text>
             </View>
 
             <View style={styles.heroBody}>
@@ -139,31 +175,101 @@ export function HomeScreen() {
         )}
       </Card>
 
-      <View style={styles.metrics}>
+      <View style={[styles.metrics, isCompact && styles.metricsCompact]}>
         <MetricPill label={t(copy, "streak")} value={tf(copy, "streakValue", { count: streak })} tone="garden" />
         <MetricPill label={t(copy, "sessions")} value={`${history.length}`} tone="rose" />
       </View>
 
       <View style={styles.actionGrid}>
-        <Pressable style={({ pressed }) => [styles.actionCardPrimary, pressed && styles.actionPressed]} onPress={() => startSession("mixed")}>
+        <View style={[styles.actionCardPrimary, isCompact && styles.actionCardCompact]}>
           <Text style={styles.actionKicker}>{t(copy, "startKicker")}</Text>
-          <Text style={styles.actionTitle}>{t(copy, "start")}</Text>
+          <Text style={[styles.actionTitle, isCompact && styles.actionTitleCompact]}>{t(copy, "start")}</Text>
+          <View style={styles.sourceSection}>
+            <Text style={styles.sourceLabel}>{t(copy, "quizSourceLabel")}</Text>
+            <View style={styles.sourceChips}>
+              {sourceOptions.map((source) => {
+                const isActive = selectedSource === source
+                const label =
+                  source === "jlpt"
+                    ? t(copy, "quizSourceJlpt")
+                    : source === "custom"
+                      ? t(copy, "quizSourceCustom")
+                      : t(copy, "quizSourceCombined")
+
+                return (
+                  <Pressable
+                    key={source}
+                    onPress={() => setSelectedSource(source)}
+                    style={({ pressed }) => [
+                      styles.sourceChip,
+                      isActive && styles.sourceChipActive,
+                      pressed && styles.sourceChipPressed
+                    ]}
+                  >
+                    <Text
+                      style={[
+                        styles.sourceChipText,
+                        isActive && styles.sourceChipTextActive
+                      ]}
+                    >
+                      {label}
+                    </Text>
+                  </Pressable>
+                )
+              })}
+            </View>
+          </View>
           <Text style={styles.actionBody}>
             {renderHighlightedCopy(
               t(copy, "startBody"),
-              { level: settings.level, count: SESSION_QUESTION_COUNT },
-              { level: styles.inlineTokenRose, count: styles.inlineTokenAmber }
+              {
+                level: settings.level,
+                source: sourceLabel,
+                count: SESSION_QUESTION_COUNT
+              },
+              {
+                level: styles.inlineTokenRose,
+                source: styles.inlineTokenRose,
+                count: styles.inlineTokenAmber
+              }
             )}
           </Text>
+          {startableWordCount === 0 ? (
+            <Text style={styles.sourceEmptyText}>{t(copy, "quizSourceEmpty")}</Text>
+          ) : null}
           <View style={styles.actionFoot}>
-            <Text style={styles.actionFootText}>{t(copy, "dailyGoal")}</Text>
-            <Text style={styles.actionFootValue}>{dailyProgress.goal}</Text>
+            <Text style={styles.actionFootText}>{t(copy, "quizSourceLabel")}</Text>
+            <Text style={styles.actionFootValue}>{startableWordCount}</Text>
           </View>
-        </Pressable>
+          <Pressable
+            disabled={startableWordCount === 0}
+            style={({ pressed }) => [
+              styles.startButton,
+              pressed && startableWordCount > 0 && styles.actionPressed,
+              startableWordCount === 0 && styles.startButtonDisabled
+            ]}
+            onPress={async () => {
+              try {
+                await startSession("mixed", selectedSource)
+              } catch (error: unknown) {
+                console.error("Failed to start session", error)
+              }
+            }}
+          >
+            <Text style={styles.startButtonText}>{t(copy, "start")}</Text>
+          </Pressable>
+        </View>
 
-        <Pressable style={({ pressed }) => [styles.actionCardSecondary, pressed && styles.actionPressed]} onPress={openReview}>
+        <Pressable
+          style={({ pressed }) => [
+            styles.actionCardSecondary,
+            isCompact && styles.actionCardCompact,
+            pressed && styles.actionPressed
+          ]}
+          onPress={openReview}
+        >
           <Text style={styles.actionKicker}>{t(copy, "reviewKicker")}</Text>
-          <Text style={styles.actionTitleDark}>{t(copy, "review")}</Text>
+          <Text style={[styles.actionTitleDark, isCompact && styles.actionTitleDarkCompact]}>{t(copy, "review")}</Text>
           <Text style={styles.actionBodyDark}>
             {renderHighlightedCopy(t(copy, "reviewBody"), { count: wrongAnswers.length }, { count: styles.inlineTokenRoseSoft })}
           </Text>
@@ -201,6 +307,10 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.xxxl,
     overflow: "hidden"
   },
+  heroCompact: {
+    padding: spacing.lg,
+    paddingBottom: spacing.xxl
+  },
   heroComplete: {
     backgroundColor: colors.backgroundRaised,
     paddingBottom: spacing.xxl
@@ -234,15 +344,25 @@ const styles = StyleSheet.create({
     lineHeight: 46,
     fontWeight: "900"
   },
+  completeHeroTitleCompact: {
+    fontSize: 32,
+    lineHeight: 38
+  },
   completeHeroBody: {
     color: colors.textMuted,
     fontSize: 15,
     lineHeight: 24,
     maxWidth: 312
   },
+  completeHeroBodyCompact: {
+    maxWidth: "100%"
+  },
   completeHeroMetaRow: {
     flexDirection: "row",
     gap: spacing.sm
+  },
+  completeHeroMetaRowCompact: {
+    flexDirection: "column"
   },
   completeMetaChip: {
     flex: 1,
@@ -252,6 +372,9 @@ const styles = StyleSheet.create({
     borderRadius: radii.lg,
     borderWidth: borderWidths.base,
     borderColor: colors.border
+  },
+  completeMetaChipCompact: {
+    width: "100%"
   },
   completeMetaChipGarden: {
     backgroundColor: colors.gardenSoft
@@ -335,6 +458,9 @@ const styles = StyleSheet.create({
     gap: spacing.sm,
     zIndex: 1
   },
+  heroInsightsCompact: {
+    flexDirection: "column"
+  },
   heroSpotlight: {
     flex: 1,
     borderWidth: borderWidths.base,
@@ -343,6 +469,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.lg,
     paddingVertical: spacing.md,
     gap: 6
+  },
+  heroSpotlightCompact: {
+    paddingHorizontal: spacing.md
   },
   heroSpotlightLevel: {
     backgroundColor: colors.accentSoft
@@ -355,6 +484,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     gap: spacing.sm
   },
+  heroGrowthRowCompact: {
+    alignItems: "flex-start"
+  },
   heroGrowthText: {
     flex: 1,
     gap: 6
@@ -365,6 +497,10 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     position: "relative"
+  },
+  heroGrowthBadgeCompact: {
+    width: 64,
+    height: 64
   },
   heroSpotlightLabel: {
     color: colors.textMuted,
@@ -384,6 +520,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     lineHeight: 30,
     fontWeight: "900"
+  },
+  heroSpotlightValueCompact: {
+    fontSize: 20,
+    lineHeight: 26
   },
   heroSpotlightCaption: {
     color: colors.textMuted,
@@ -416,10 +556,18 @@ const styles = StyleSheet.create({
     fontWeight: "900",
     color: colors.text
   },
+  heroTitleCompact: {
+    fontSize: 30,
+    lineHeight: 36
+  },
   heroSubtitle: {
     fontSize: 16,
     lineHeight: 26,
     color: colors.textMuted
+  },
+  heroSubtitleCompact: {
+    fontSize: 15,
+    lineHeight: 23
   },
   heroBody: {
     flexDirection: "row",
@@ -488,11 +636,11 @@ const styles = StyleSheet.create({
     fontWeight: "900"
   },
   inlineTokenRose: {
-    color: colors.rose,
+    color: actionCardTextColors.rose,
     fontWeight: "900"
   },
   inlineTokenAmber: {
-    color: colors.amberDeep,
+    color: actionCardTextColors.amber,
     fontWeight: "900"
   },
   inlineTokenRoseSoft: {
@@ -502,6 +650,9 @@ const styles = StyleSheet.create({
   metrics: {
     flexDirection: "row",
     gap: spacing.md
+  },
+  metricsCompact: {
+    flexDirection: "column"
   },
   sectionEyebrow: {
     color: colors.textMuted,
@@ -540,6 +691,9 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 4, height: 4 },
     elevation: 0
   },
+  actionCardCompact: {
+    padding: spacing.xl
+  },
   actionPressed: {
     transform: [{ translateX: 2 }, { translateY: 2 }],
     shadowOffset: { width: 2, height: 2 }
@@ -556,15 +710,64 @@ const styles = StyleSheet.create({
     fontSize: 34,
     fontWeight: "900"
   },
+  actionTitleCompact: {
+    fontSize: 28
+  },
   actionTitleDark: {
     color: colors.text,
     fontSize: 30,
     fontWeight: "900"
   },
+  actionTitleDarkCompact: {
+    fontSize: 26
+  },
   actionBody: {
     color: colors.primaryDeep,
     fontSize: 15,
     lineHeight: 23
+  },
+  sourceSection: {
+    gap: spacing.sm
+  },
+  sourceLabel: {
+    color: colors.primaryDeep,
+    fontSize: 11,
+    fontWeight: "900",
+    letterSpacing: 1.3,
+    textTransform: "uppercase"
+  },
+  sourceChips: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: spacing.sm
+  },
+  sourceChip: {
+    minHeight: 38,
+    paddingHorizontal: spacing.md,
+    borderRadius: radii.pill,
+    borderWidth: borderWidths.base,
+    borderColor: colors.border,
+    backgroundColor: colors.surface
+  },
+  sourceChipActive: {
+    backgroundColor: colors.primarySoft
+  },
+  sourceChipPressed: {
+    transform: [{ translateX: 1 }, { translateY: 1 }]
+  },
+  sourceChipText: {
+    color: colors.textMuted,
+    fontSize: 12,
+    fontWeight: "800",
+    lineHeight: 36
+  },
+  sourceChipTextActive: {
+    color: colors.text
+  },
+  sourceEmptyText: {
+    color: colors.primaryDeep,
+    fontSize: 13,
+    fontWeight: "700"
   },
   actionBodyDark: {
     color: colors.primaryDeep,
@@ -581,15 +784,33 @@ const styles = StyleSheet.create({
     borderTopColor: colors.border
   },
   actionFootText: {
-    color: colors.garden,
+    color: actionCardTextColors.garden,
     fontSize: 12,
     fontWeight: "900",
     textTransform: "uppercase",
     letterSpacing: 1.2
   },
   actionFootValue: {
-    color: colors.amberDeep,
+    color: actionCardTextColors.amber,
     fontSize: 22,
+    fontWeight: "900"
+  },
+  startButton: {
+    minHeight: 56,
+    marginTop: spacing.sm,
+    borderRadius: radii.lg,
+    borderWidth: borderWidths.base,
+    borderColor: colors.border,
+    backgroundColor: colors.surface,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  startButtonDisabled: {
+    opacity: 0.45
+  },
+  startButtonText: {
+    color: colors.primaryDeep,
+    fontSize: 16,
     fontWeight: "900"
   },
   reviewPreview: {

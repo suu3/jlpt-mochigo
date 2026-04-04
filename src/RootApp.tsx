@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import { ActivityIndicator, ScrollView, StyleSheet, View } from "react-native"
+import { ActivityIndicator, ScrollView, StyleSheet, View, useWindowDimensions } from "react-native"
 import { SafeAreaView } from "react-native-safe-area-context"
 import { AdBanner } from "./components/AdBanner"
 import { AppText as Text } from "./components/AppText"
@@ -12,12 +12,14 @@ import { ReviewScreen } from "./screens/ReviewScreen"
 import { SettingsScreen } from "./screens/SettingsScreen"
 import { SetupScreen } from "./screens/SetupScreen"
 import { WordsScreen } from "./screens/WordsScreen"
-import { colors, spacing } from "./constants/theme"
+import { breakpoints, colors, spacing } from "./constants/theme"
 import { t } from "./lib/i18n"
 import { useAppStore } from "./store/useAppStore"
 
 export function RootApp() {
-  const { initialize, isReady, screen, settings } = useAppStore()
+  const { width } = useWindowDimensions()
+  const { initialize, isReady, isWordDataLoading, screen, settings } = useAppStore()
+  const isCompact = width <= breakpoints.phoneCompact
 
   useEffect(() => {
     const runInitialization = async () => {
@@ -32,8 +34,11 @@ export function RootApp() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.appShell}>
-        <ScrollView style={styles.scrollView} contentContainerStyle={styles.container}>
-          {!isReady ? (
+        <ScrollView
+          style={styles.scrollView}
+          contentContainerStyle={[styles.container, isCompact && styles.containerCompact]}
+        >
+          {!isReady || isWordDataLoading ? (
             <View style={styles.loading}>
               <ActivityIndicator color={colors.primary} />
               <Text style={styles.loadingText}>{t(settings.language, "loading")}</Text>
@@ -75,6 +80,10 @@ const styles = StyleSheet.create({
     paddingBottom: spacing.xl,
     backgroundColor: colors.background,
     flexGrow: 1
+  },
+  containerCompact: {
+    paddingHorizontal: spacing.md,
+    paddingTop: spacing.lg
   },
   loading: {
     flex: 1,

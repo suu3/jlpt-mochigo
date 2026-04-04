@@ -1,5 +1,8 @@
-import { SessionHistory, WrongAnswerRecord } from "../types/app"
+import { JLPTLevel, SessionHistory, WordEntry, WrongAnswerRecord } from "../types/app"
+import { loadBundledLevelWords } from "../data/levelLoader"
 import { storage } from "./storage"
+
+const wordCache = new Map<JLPTLevel, WordEntry[]>()
 
 export const quizDatabase = {
   async initialize() {
@@ -8,6 +11,21 @@ export const quizDatabase = {
 
   async migrateLegacyDataIfNeeded() {
     return
+  },
+
+  async getCachedLevelWords(level: JLPTLevel) {
+    return wordCache.get(level) ?? []
+  },
+
+  async getLevelWords(level: JLPTLevel) {
+    const cachedWords = wordCache.get(level)
+    if (cachedWords) {
+      return cachedWords
+    }
+
+    const bundledWords = await loadBundledLevelWords(level)
+    wordCache.set(level, bundledWords)
+    return bundledWords
   },
 
   async getWrongAnswers() {

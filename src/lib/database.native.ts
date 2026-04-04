@@ -1,6 +1,7 @@
 import * as SQLite from "expo-sqlite"
 import { storage } from "./storage"
-import { SessionHistory, WrongAnswerRecord } from "../types/app"
+import { JLPTLevel, SessionHistory, WordEntry, WrongAnswerRecord } from "../types/app"
+import { loadBundledLevelWords } from "../data/levelLoader"
 
 const DATABASE_NAME = "jlpt-bunny.db"
 
@@ -20,6 +21,10 @@ type HistoryRow = {
   wrong_word_ids: string;
 }
 
+type WordRow = {
+  payload: string;
+}
+
 let databasePromise: Promise<SQLite.SQLiteDatabase> | null = null
 
 async function getDatabase() {
@@ -33,6 +38,14 @@ function parseWrongWordIds(value: string) {
     return Array.isArray(parsed) ? parsed.filter((item): item is string => typeof item === "string") : []
   } catch {
     return []
+  }
+}
+
+function parseWordPayload(value: string) {
+  try {
+    return JSON.parse(value) as WordEntry
+  } catch {
+    return null
   }
 }
 
@@ -58,6 +71,16 @@ export const quizDatabase = {
         correct INTEGER NOT NULL,
         wrong_word_ids TEXT NOT NULL
       );
+
+      CREATE TABLE IF NOT EXISTS word_entries (
+        id TEXT PRIMARY KEY NOT NULL,
+        level TEXT NOT NULL,
+        payload TEXT NOT NULL,
+        cached_at TEXT NOT NULL
+      );
+
+      CREATE INDEX IF NOT EXISTS idx_word_entries_level
+      ON word_entries (level);
     `)
   },
 
@@ -114,6 +137,48 @@ export const quizDatabase = {
       shouldMigrateWrongAnswers ? storage.legacy.clearWrongAnswers() : Promise.resolve(),
       shouldMigrateHistory ? storage.legacy.clearHistory() : Promise.resolve()
     ])
+  },
+
+  async getCachedLevelWords(level: JLPTLevel) {
+    await this.initialize()
+    const db = await getDatabase()
+    const rows = await db.getAllAsync<WordRow>(
+      `SELECT payload
+       FROM word_entries
+       WHERE level = ?
+       ORDER BY id ASC`,
+      level
+    )
+
+    return rows
+      .map((row) => parseWordPayload(row.payload))
+      .filter((word): word is WordEntry => word !== null)
+  },
+
+  async getLevelWords(level: JLPTLevel) {
+    const cachedWords = await this.getCachedLevelWords(level)
+    if (cachedWords.length > 0) {
+      return cachedWords
+    }
+
+    const bundledWords = await loadBundledLevelWords(level)
+    const db = await getDatabase()
+    const cachedAt = new Date().toISOString()
+
+    await db.withTransactionAsync(async () => {
+      for (const word of bundledWords) {
+        await db.runAsync(
+          `INSERT OR REPLACE INTO word_entries (id, level, payload, cached_at)
+           VALUES (?, ?, ?, ?)`,
+          word.id,
+          level,
+          JSON.stringify(word),
+          cachedAt
+        )
+      }
+    })
+
+    return bundledWords
   },
 
   async getWrongAnswers() {

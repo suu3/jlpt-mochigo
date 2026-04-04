@@ -3,6 +3,7 @@ import {
   AppSettings,
   DailyProgress,
   SessionHistory,
+  WordEntry,
   WrongAnswerRecord
 } from "../types/app"
 
@@ -13,6 +14,7 @@ const KEYS = {
   streak: "jlpt-bunny/streak",
   bookmarkWordIds: "jlpt-bunny/bookmark-word-ids",
   memorizedWordIds: "jlpt-bunny/memorized-word-ids",
+  customWords: "jlpt-bunny/custom-words",
   wrongAnswers: "jlpt-bunny/wrong-answers",
   history: "jlpt-bunny/history",
   sqliteMigrated: "jlpt-bunny/sqlite-migrated-v1"
@@ -83,6 +85,12 @@ export const storage = {
   },
   clearMemorizedWordIds() {
     return AsyncStorage.removeItem(KEYS.memorizedWordIds)
+  },
+  readCustomWords(fallback: WordEntry[] = []) {
+    return readJson(KEYS.customWords, fallback)
+  },
+  writeCustomWords(value: WordEntry[]) {
+    return writeJson(KEYS.customWords, value)
   },
   readSqliteMigrated() {
     return readJson(KEYS.sqliteMigrated, false)

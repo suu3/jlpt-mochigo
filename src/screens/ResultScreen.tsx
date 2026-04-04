@@ -8,10 +8,11 @@ import { CelebrationBurst } from "../components/CelebrationBurst"
 import { PrimaryButton } from "../components/PrimaryButton"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
 import { t, tf } from "../lib/i18n"
+import { getLocalizedMeaning } from "../lib/quiz"
 import { useAppStore } from "../store/useAppStore"
 
 export function ResultScreen() {
-  const { settings, streak, dailyProgress, lastSummary, startSession, goHome } = useAppStore()
+  const { settings, streak, dailyProgress, lastSummary, currentSessionSource, startSession, goHome } = useAppStore()
   const copy = settings.language
 
   if (!lastSummary) {
@@ -54,7 +55,7 @@ export function ResultScreen() {
         </View>
         {firstWrongWord ? (
           <Text style={styles.reviewWord}>
-            {firstWrongWord.kana} <Text style={styles.reviewMeaning}>({firstWrongWord.meaning})</Text>
+            {firstWrongWord.kana} <Text style={styles.reviewMeaning}>({getLocalizedMeaning(firstWrongWord, settings.language)})</Text>
           </Text>
         ) : (
           <Text style={styles.reviewWord}>{t(copy, "perfectRound")}</Text>
@@ -77,14 +78,14 @@ export function ResultScreen() {
         ) : (
           lastSummary.wrongWords.map((word) => (
             <View key={word.id} style={styles.wordRow}>
-              <Text style={styles.word}>{word.kanji}</Text>
-              <Text style={styles.meaning}>{word.kana} · {word.meaning}</Text>
+              <Text style={styles.word}>{word.kanji || word.kana}</Text>
+              <Text style={styles.meaning}>{word.kana} · {getLocalizedMeaning(word, settings.language)}</Text>
             </View>
           ))
         )}
       </Card>
 
-      <PrimaryButton label={t(copy, "playAgain")} onPress={() => startSession("mixed")} />
+      <PrimaryButton label={t(copy, "playAgain")} onPress={() => startSession("mixed", currentSessionSource)} />
       <PrimaryButton
         label={t(copy, "goHome")}
         onPress={goHome}

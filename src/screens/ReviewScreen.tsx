@@ -4,16 +4,22 @@ import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { PrimaryButton } from "../components/PrimaryButton"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
-import { getStudyWordsByLevel } from "../lib/quiz"
+import { getStudyWords } from "../lib/quiz"
 import { t, tf } from "../lib/i18n"
 import { useAppStore } from "../store/useAppStore"
 
 const reviewEmptyImage = require("../assets/review_empty.png")
 
 export function ReviewScreen() {
-  const { settings, wrongAnswers, startSession, goHome } = useAppStore()
+  const { settings, wrongAnswers, customWords, wordsByLevel, startSession, goHome } = useAppStore()
   const copy = settings.language
-  const words = getStudyWordsByLevel(settings.level, settings.homeDensity)
+  const words = getStudyWords(
+    [
+      ...(wordsByLevel[settings.level] ?? []),
+      ...customWords
+    ],
+    settings.homeDensity
+  )
   const reviewItems = [...wrongAnswers]
     .sort((left, right) => right.lastWrongAt.localeCompare(left.lastWrongAt))
     .flatMap((record) => {

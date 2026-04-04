@@ -53,6 +53,12 @@ export const borderWidths = {
   base: 1.2
 }
 
+export const breakpoints = {
+  phoneTight: 360,
+  phoneCompact: 450,
+  tablet: 680
+}
+
 export const fonts = {
   body: "PretendardJP"
 }

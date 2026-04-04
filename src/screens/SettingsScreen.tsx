@@ -1,5 +1,5 @@
 import React from "react"
-import { Alert, Pressable, StyleSheet, View } from "react-native"
+import { Alert, Linking, Pressable, StyleSheet, View } from "react-native"
 import { AppIcon } from "../components/AppIcon"
 import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
@@ -22,6 +22,22 @@ export function SettingsScreen() {
   } = useAppStore()
   const [isResetting, setIsResetting] = React.useState(false)
   const [isSourcesExpanded, setIsSourcesExpanded] = React.useState(false)
+  const dataSources = [
+    {
+      key: "jmdict",
+      title: t(settings.language, "dataSourceJmdictTitle"),
+      description: t(settings.language, "dataSourceJmdictDescription"),
+      linkLabel: t(settings.language, "dataSourceJmdictLinkLabel"),
+      url: "https://www.edrdg.org/jmdict/j_jmdict.html"
+    },
+    {
+      key: "jlpt-word-list",
+      title: t(settings.language, "dataSourceJlptWordListTitle"),
+      description: t(settings.language, "dataSourceJlptWordListDescription"),
+      linkLabel: t(settings.language, "dataSourceJlptWordListLinkLabel"),
+      url: "https://github.com/elzup/jlpt-word-list"
+    }
+  ] as const
 
   const handleResetStudyData = React.useCallback(() => {
     Alert.alert(
@@ -47,6 +63,18 @@ export function SettingsScreen() {
       ]
     )
   }, [resetStudyData, settings.language])
+
+  const handleOpenLink = React.useCallback(
+    (url: string) => {
+      Linking.openURL(url).catch(() => {
+        Alert.alert(
+          t(settings.language, "externalLinkErrorTitle"),
+          t(settings.language, "externalLinkErrorBody")
+        )
+      })
+    },
+    [settings.language]
+  )
 
   return (
     <View style={styles.container}>
@@ -105,8 +133,22 @@ export function SettingsScreen() {
 
         {isSourcesExpanded ? (
           <View style={styles.sourcesContent}>
-            <Text style={styles.sourceItem}>{t(settings.language, "dataSourceJmdict")}</Text>
-            <Text style={styles.sourceItem}>{t(settings.language, "dataSourceJlptWordList")}</Text>
+            {dataSources.map((source) => (
+              <View key={source.key} style={styles.sourceItem}>
+                <Text style={styles.sourceTitle}>{source.title}</Text>
+                <Text style={styles.sourceDescription}>{source.description}</Text>
+                <Pressable
+                  accessibilityRole="link"
+                  onPress={() => handleOpenLink(source.url)}
+                  style={({ pressed }) => [
+                    styles.sourceLinkWrap,
+                    pressed && styles.pressed
+                  ]}
+                >
+                  <Text style={styles.sourceLink}>{source.linkLabel}</Text>
+                </Pressable>
+              </View>
+            ))}
             <Text style={styles.disclaimer}>{t(settings.language, "dataSourceDisclaimer")}</Text>
           </View>
         ) : null}
@@ -180,8 +222,24 @@ const styles = StyleSheet.create({
     borderTopColor: colors.border
   },
   sourceItem: {
+    gap: spacing.xs
+  },
+  sourceTitle: {
     color: colors.text,
+    fontWeight: "800",
     lineHeight: 22
+  },
+  sourceDescription: {
+    color: colors.textMuted,
+    lineHeight: 22
+  },
+  sourceLinkWrap: {
+    alignSelf: "flex-start"
+  },
+  sourceLink: {
+    color: colors.rose,
+    lineHeight: 22,
+    textDecorationLine: "underline"
   },
   disclaimer: {
     color: colors.textMuted,

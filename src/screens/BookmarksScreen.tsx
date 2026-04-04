@@ -4,24 +4,29 @@ import { AppIcon } from "../components/AppIcon"
 import { AppText as Text } from "../components/AppText"
 import { Card } from "../components/Card"
 import { borderWidths, colors, radii, spacing } from "../constants/theme"
+import { LEVELS_ASCENDING } from "../data/levelLoader"
 import { resolveLanguage, t } from "../lib/i18n"
-import { getLocalizedMeaning, getWordsByLevel } from "../lib/quiz"
+import { getLocalizedMeaning } from "../lib/quiz"
 import { useAppStore } from "../store/useAppStore"
-import { JLPTLevel } from "../types/app"
-
-const LEVELS: JLPTLevel[] = ["N5", "N4", "N3", "N2", "N1"]
 
 export function BookmarksScreen() {
-  const { settings, bookmarkWordIds, toggleWordBookmark } = useAppStore()
+  const { settings, bookmarkWordIds, customWords, toggleWordBookmark, wordsByLevel } = useAppStore()
   const resolvedLanguage = resolveLanguage(settings.language)
   const [showMeanings, setShowMeanings] = useState(true)
+  const allWords = useMemo(
+    () => [
+      ...LEVELS_ASCENDING.flatMap((level) => wordsByLevel[level] ?? []),
+      ...customWords
+    ],
+    [customWords, wordsByLevel]
+  )
 
   const bookmarkedWords = useMemo(
     () =>
-      LEVELS.flatMap((level) => getWordsByLevel(level)).filter((word) =>
+      allWords.filter((word) =>
         bookmarkWordIds.includes(word.id)
       ),
-    [bookmarkWordIds]
+    [allWords, bookmarkWordIds]
   )
 
   return (

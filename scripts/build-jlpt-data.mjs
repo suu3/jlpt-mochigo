@@ -197,7 +197,7 @@ await mkdir(resolve(localizationDir, "ko"), { recursive: true })
 const metadata = {
   generatedAt: new Date().toISOString(),
   sources: {
-    jmDict: "https://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
+    jmDict: "https://www.edrdg.org/jmdict/j_jmdict.html",
     jlptWordList: "https://github.com/elzup/jlpt-word-list"
   },
   counts: {}

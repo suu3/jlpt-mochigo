@@ -30,6 +30,11 @@ export type CopyKey =
   | "saveAndStart"
   | "startKicker"
   | "startBody"
+  | "quizSourceLabel"
+  | "quizSourceJlpt"
+  | "quizSourceCustom"
+  | "quizSourceCombined"
+  | "quizSourceEmpty"
   | "reviewKicker"
   | "reviewBody"
   | "focusGarden"
@@ -85,6 +90,8 @@ export type CopyKey =
   | "wordBankEyebrow"
   | "wordBankTitle"
   | "wordBankHelper"
+  | "jlptWordsTab"
+  | "customNotebookTab"
   | "wordsTab"
   | "bookmarksTab"
   | "bookmarksEyebrow"
@@ -95,6 +102,18 @@ export type CopyKey =
   | "memorizedAdded"
   | "memorizeWord"
   | "unmemorizeWord"
+  | "kanaRowFilter"
+  | "allKanaRows"
+  | "kanaRowa"
+  | "kanaRowka"
+  | "kanaRowsa"
+  | "kanaRowta"
+  | "kanaRowna"
+  | "kanaRowha"
+  | "kanaRowma"
+  | "kanaRowya"
+  | "kanaRowra"
+  | "kanaRowwa"
   | "wordLengthFilter"
   | "memorizedFilter"
   | "allWordsFilter"
@@ -114,10 +133,26 @@ export type CopyKey =
   | "showingWordsSummary"
   | "loadMoreWords"
   | "englishMeaningLabel"
-  | "meaningLocalizationNotice"
   | "showMeanings"
   | "hideMeanings"
   | "meaningHidden"
+  | "customWordsTitle"
+  | "customWordFormTitle"
+  | "customWordsHelper"
+  | "customWordsIncluded"
+  | "customWordKanaLabel"
+  | "customWordKanjiLabel"
+  | "customWordMeaningLabel"
+  | "customWordKanaPlaceholder"
+  | "customWordKanjiPlaceholder"
+  | "customWordMeaningPlaceholder"
+  | "addCustomWord"
+  | "customWordDelete"
+  | "customWordAdded"
+  | "customWordValidation"
+  | "customWordSectionTitle"
+  | "emptyCustomWords"
+  | "customWordBadge"
   | "ttsSettings"
   | "ttsHelper"
   | "ttsOn"
@@ -144,8 +179,14 @@ export type CopyKey =
   | "resetStudyDataConfirm"
   | "dataSourcesTitle"
   | "dataSourcesHelper"
-  | "dataSourceJmdict"
-  | "dataSourceJlptWordList"
+  | "dataSourceJmdictTitle"
+  | "dataSourceJmdictDescription"
+  | "dataSourceJmdictLinkLabel"
+  | "dataSourceJlptWordListTitle"
+  | "dataSourceJlptWordListDescription"
+  | "dataSourceJlptWordListLinkLabel"
+  | "externalLinkErrorTitle"
+  | "externalLinkErrorBody"
   | "dataSourceDisclaimer"
 
 const dictionary = {
@@ -178,7 +219,12 @@ const dictionary = {
     saveAndStart: "이대로 시작",
     startKicker: "학습 세션",
     startBody:
-      "{level} 기준 {count}문제예요. 틀린 단어는 다음 세션에 먼저 다시 나와요.",
+      "{level} · {source} · {count}문제예요. 틀린 단어는 다음 세션에 먼저 다시 나와요.",
+    quizSourceLabel: "출제 범위",
+    quizSourceJlpt: "JLPT만",
+    quizSourceCustom: "나만의 단어장",
+    quizSourceCombined: "같이 풀기",
+    quizSourceEmpty: "현재 범위에 출제할 단어가 없어요.",
     reviewKicker: "복습 세션",
     reviewBody: "다시 볼 단어가 {count}개 있어요",
     focusGarden: "학습 현황",
@@ -236,6 +282,8 @@ const dictionary = {
     wordBankEyebrow: "워드 뱅크",
     wordBankTitle: "단어 모아보기",
     wordBankHelper: "{level} 단어 {count}개를 빠르게 훑어볼 수 있어요.",
+    jlptWordsTab: "JLPT 단어",
+    customNotebookTab: "나만의 단어장",
     wordsTab: "단어",
     bookmarksTab: "북마크",
     bookmarksEyebrow: "저장한 단어",
@@ -247,8 +295,20 @@ const dictionary = {
     memorizedAdded: "외웠음",
     memorizeWord: "외웠어요",
     unmemorizeWord: "다시 볼래요",
-    wordLengthFilter: "글자 수로 보기",
-    memorizedFilter: "외운 단어 보기",
+    kanaRowFilter: "일본어 행 별로 보기",
+    allKanaRows: "전체",
+    kanaRowa: "あ行",
+    kanaRowka: "か行",
+    kanaRowsa: "さ行",
+    kanaRowta: "た行",
+    kanaRowna: "な行",
+    kanaRowha: "は行",
+    kanaRowma: "ま行",
+    kanaRowya: "や行",
+    kanaRowra: "ら行",
+    kanaRowwa: "わ行",
+    wordLengthFilter: "글자 수 별로 보기",
+    memorizedFilter: "외운 단어 별로 보기",
     allWordsFilter: "전체 보기",
     hideMemorizedFilter: "외운 단어 숨기기",
     memorizedOnlyFilter: "외운 단어만",
@@ -267,11 +327,27 @@ const dictionary = {
     showingWordsSummary: "{start}-{end} / {total}개",
     loadMoreWords: "더 크게 보기",
     englishMeaningLabel: "영문 뜻 원문",
-    meaningLocalizationNotice:
-      "한국어 뜻 데이터는 직접 채워 넣는 방식으로 붙고 있어요. 아직 번역이 없는 항목은 영문 뜻 원문을 보여줘요.",
     showMeanings: "뜻 보기",
     hideMeanings: "뜻 가리기",
     meaningHidden: "••••••",
+    customWordsTitle: "나만의 단어장",
+    customWordFormTitle: "단어 추가",
+    customWordsHelper:
+      "직접 추가한 단어를 따로 모아두고, 홈에서 선택했을 때만 퀴즈에 포함해요.",
+    customWordsIncluded: "나만의 단어 {count}개가 저장되어 있어요.",
+    customWordKanaLabel: "읽기",
+    customWordKanjiLabel: "표기",
+    customWordMeaningLabel: "뜻",
+    customWordKanaPlaceholder: "예: たべる",
+    customWordKanjiPlaceholder: "예: 食べる (선택)",
+    customWordMeaningPlaceholder: "예: 먹다",
+    addCustomWord: "내 단어 추가",
+    customWordDelete: "삭제",
+    customWordAdded: "추가됨",
+    customWordValidation: "읽기와 뜻은 꼭 입력해 주세요.",
+    customWordSectionTitle: "내가 추가한 단어",
+    emptyCustomWords: "아직 직접 추가한 단어가 없어요. 자주 헷갈리는 단어를 먼저 담아보세요.",
+    customWordBadge: "내 단어",
     ttsSettings: "음성 설정",
     ttsHelper: "문제와 단어 카드에서 들리는 일본어 발음의 느낌을 조절해요.",
     ttsOn: "TTS 켜기",
@@ -297,12 +373,16 @@ const dictionary = {
     resetStudyDataConfirmBody: "이 작업은 되돌릴 수 없어요. 지금까지의 학습 기록이 모두 삭제됩니다.",
     resetStudyDataCancel: "취소",
     resetStudyDataConfirm: "삭제하기",
-    dataSourcesTitle: "데이터 출처",
-    dataSourcesHelper: "광고 포함 배포를 위해 실제 사용 중인 데이터 소스와 라이선스를 함께 안내합니다.",
-    dataSourceJmdict:
-      "JMdict (EDRDG) · CC BY-SA 4.0\n단어 표기, 읽기, 영문 뜻 데이터에 사용\nhttps://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
-    dataSourceJlptWordList:
-      "jlpt-word-list by elzup · MIT\nJLPT 레벨 매핑 참고 데이터에 사용\nhttps://github.com/elzup/jlpt-word-list",
+    dataSourcesTitle: "데이터 및 라이선스",
+    dataSourcesHelper: "이 앱의 학습 데이터셋을 만드는 데 참고한 데이터 출처와 적용 라이선스를 안내합니다.",
+    dataSourceJmdictTitle: "JMdict (EDRDG) · CC BY-SA 4.0",
+    dataSourceJmdictDescription: "단어 표기, 읽기, 영문 뜻 구성에 참고",
+    dataSourceJmdictLinkLabel: "JMdict 안내 페이지",
+    dataSourceJlptWordListTitle: "jlpt-word-list by elzup · MIT",
+    dataSourceJlptWordListDescription: "JLPT 레벨 매핑 참고 데이터",
+    dataSourceJlptWordListLinkLabel: "jlpt-word-list 저장소",
+    externalLinkErrorTitle: "링크를 열 수 없어요",
+    externalLinkErrorBody: "잠시 후 다시 시도해 주세요.",
     dataSourceDisclaimer:
       "이 앱은 공식 JLPT 시험과 무관하며, 일본어능력시험을 주관하는 기관의 승인이나 후원을 받지 않았습니다."
   },
@@ -336,7 +416,12 @@ const dictionary = {
     saveAndStart: "Save and Start",
     startKicker: "Start Session",
     startBody:
-      "{level} level · {count} questions · missed words are mixed back in first",
+      "{level} level · {source} · {count} questions · missed words are mixed back in first",
+    quizSourceLabel: "Quiz Source",
+    quizSourceJlpt: "JLPT only",
+    quizSourceCustom: "My notebook",
+    quizSourceCombined: "Both together",
+    quizSourceEmpty: "There are no words to quiz from this source yet.",
     reviewKicker: "Review Deck",
     reviewBody: "{count} tricky words waiting for another pass",
     focusGarden: "Study Overview",
@@ -394,6 +479,8 @@ const dictionary = {
     wordBankEyebrow: "Memory Cards",
     wordBankTitle: "Word Bank",
     wordBankHelper: "Browse all {count} words in {level} at a glance.",
+    jlptWordsTab: "JLPT Words",
+    customNotebookTab: "My Notebook",
     wordsTab: "Words",
     bookmarksTab: "Bookmarks",
     bookmarksEyebrow: "Saved Words",
@@ -405,6 +492,18 @@ const dictionary = {
     memorizedAdded: "Memorized",
     memorizeWord: "I know this",
     unmemorizeWord: "Show again",
+    kanaRowFilter: "Kana Row Filter",
+    allKanaRows: "All",
+    kanaRowa: "A-row",
+    kanaRowka: "Ka-row",
+    kanaRowsa: "Sa-row",
+    kanaRowta: "Ta-row",
+    kanaRowna: "Na-row",
+    kanaRowha: "Ha-row",
+    kanaRowma: "Ma-row",
+    kanaRowya: "Ya-row",
+    kanaRowra: "Ra-row",
+    kanaRowwa: "Wa-row",
     wordLengthFilter: "Length Filter",
     memorizedFilter: "Memorized Filter",
     allWordsFilter: "Show all",
@@ -425,11 +524,27 @@ const dictionary = {
     showingWordsSummary: "{start}-{end} of {total}",
     loadMoreWords: "Show More",
     englishMeaningLabel: "English meaning",
-    meaningLocalizationNotice:
-      "Korean meanings are being added directly into the dataset. Entries without a Korean meaning still fall back to the original English gloss.",
     showMeanings: "Show meanings",
     hideMeanings: "Hide meanings",
     meaningHidden: "••••••",
+    customWordsTitle: "My Notebook",
+    customWordFormTitle: "Add a Word",
+    customWordsHelper:
+      "Keep your own words in a separate notebook, and include them in quizzes only when you choose to.",
+    customWordsIncluded: "{count} notebook words are saved.",
+    customWordKanaLabel: "Reading",
+    customWordKanjiLabel: "Written form",
+    customWordMeaningLabel: "Meaning",
+    customWordKanaPlaceholder: "Example: たべる",
+    customWordKanjiPlaceholder: "Example: 食べる (optional)",
+    customWordMeaningPlaceholder: "Example: to eat",
+    addCustomWord: "Add Word",
+    customWordDelete: "Delete",
+    customWordAdded: "Added",
+    customWordValidation: "Reading and meaning are required.",
+    customWordSectionTitle: "Your Added Words",
+    emptyCustomWords: "No custom words yet. Add a word you want to practice again in quizzes.",
+    customWordBadge: "Custom",
     ttsSettings: "Speech",
     ttsHelper: "Control how Japanese pronunciation sounds on quiz and word cards.",
     ttsOn: "TTS On",
@@ -456,13 +571,18 @@ const dictionary = {
       "This cannot be undone. Your accumulated study history will be permanently removed.",
     resetStudyDataCancel: "Cancel",
     resetStudyDataConfirm: "Delete",
-    dataSourcesTitle: "Data Sources",
+    dataSourcesTitle: "Data & Licenses",
     dataSourcesHelper:
-      "These are the data sources and licenses currently used in the shipped app build.",
-    dataSourceJmdict:
-      "JMdict (EDRDG) · CC BY-SA 4.0\nUsed for word forms, readings, and English meanings\nhttps://www.edrdg.org/pub/Nihongo/JMdict_e.gz",
-    dataSourceJlptWordList:
-      "jlpt-word-list by elzup · MIT\nUsed as a community-maintained JLPT level mapping reference\nhttps://github.com/elzup/jlpt-word-list",
+      "These are the source references and licenses used to shape the study dataset in this app.",
+    dataSourceJmdictTitle: "JMdict (EDRDG) · CC BY-SA 4.0",
+    dataSourceJmdictDescription: "Reference for word forms, readings, and English meanings",
+    dataSourceJmdictLinkLabel: "JMdict overview page",
+    dataSourceJlptWordListTitle: "jlpt-word-list by elzup · MIT",
+    dataSourceJlptWordListDescription:
+      "Community-maintained reference for JLPT level mapping",
+    dataSourceJlptWordListLinkLabel: "jlpt-word-list repository",
+    externalLinkErrorTitle: "Unable to open link",
+    externalLinkErrorBody: "Please try again in a moment.",
     dataSourceDisclaimer:
       "This app is not affiliated with or endorsed by the official Japanese-Language Proficiency Test (JLPT)."
   }

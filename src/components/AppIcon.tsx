@@ -1,4 +1,5 @@
 import React from "react"
+import type { StyleProp, ViewStyle } from "react-native"
 import {
   BookOpenText,
   Bookmark,
@@ -37,15 +38,19 @@ type Props = {
   size?: number;
   color?: string;
   strokeWidth?: number;
+  style?: StyleProp<ViewStyle>;
 }
 
 export function AppIcon({
   name,
   size = 20,
   color = colors.textMuted,
-  strokeWidth = 1.7
+  strokeWidth = 1.7,
+  style
 }: Props) {
   const Icon = icons[name]
 
-  return <Icon color={color} size={size} strokeWidth={strokeWidth} />
+  return (
+    <Icon color={color} size={size} strokeWidth={strokeWidth} style={style} />
+  )
 }

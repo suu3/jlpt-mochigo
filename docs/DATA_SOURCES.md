@@ -7,7 +7,7 @@
 
 - 설명: 일본어 단어 사전 데이터
 - 용도: 단어, 읽기, 의미 구성
-- 출처: https://www.edrdg.org/pub/Nihongo/JMdict_e.gz
+- 출처: https://www.edrdg.org/jmdict/j_jmdict.html
 - 라이선스: CC BY-SA 4.0
 - 비고: 앱 내 출처 표기 필요. 사전 데이터의 뜻과 표제어는 JMDict 기반이다.
 
@@ -38,7 +38,7 @@
 
 ## 현재 배포 판단
 
-- 현재 빌드 스크립트는 JMDict와 elzup/jlpt-word-list만 실제로 사용한다.
+- 현재 빌드 스크립트는 JMDict와 elzup/jlpt-word-list를 사용해 앱용 번들 데이터셋을 생성한다.
 - KANJIDIC2는 다운로드 대상이지만 현재 최종 앱 데이터 생성에는 사용하지 않는다.
 - 광고 기반 플레이스토어 배포 시 최소한 JMDict와 jlpt-word-list 출처 표기는 앱 내부 화면에 노출한다.
 
