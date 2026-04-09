@@ -23,6 +23,15 @@ npm run start
 
 광고를 붙일 때는 `.env`의 AdMob 값만 수정한 뒤 `npx expo prebuild`로 네이티브 설정을 다시 생성하면 됩니다. 자세한 내용은 `docs/ADMOB_SETUP.md`를 참고하세요.
 
+## GitHub Pages
+
+GitHub Pages가 활성화되면 정적 검증 페이지와 `app-ads.txt`가 함께 배포됩니다.
+
+- 배포 주소: `https://suu3.github.io/jlpt-mochigo/`
+- app-ads.txt 주소: `https://suu3.github.io/jlpt-mochigo/app-ads.txt`
+
+Pages 배포는 `.github/workflows/deploy-pages.yml`에서 처리합니다.
+
 ## 현재 구현 메모
 
 - 문서의 MVP 범위를 우선 반영했습니다.
